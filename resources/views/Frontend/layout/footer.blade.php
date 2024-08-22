@@ -60,6 +60,9 @@
                             <h5 class="footer-ul-title">Navigation</h5>
                             <ul class="footer-ul">
                                 <li class="footer-ul-item">
+                                    <a href="{{ route('about') }}" class="footer-item">About us</a>
+                                </li>
+                                <li class="footer-ul-item">
                                     <a href="{{ route('services') }}" class="footer-item">Services</a>
                                 </li>
                                 <li class="footer-ul-item">
@@ -67,9 +70,6 @@
                                 </li>
                                 <li class="footer-ul-item">
                                     <a href="{{ route('blogs') }}" class="footer-item">Blogs</a>
-                                </li>
-                                <li class="footer-ul-item">
-                                    <a href="#" class="footer-item">Shop</a>
                                 </li>
                             </ul>
                         </div>
@@ -229,6 +229,6 @@
     </section>
     <section class="container text-center">
         <hr>
-        <p class="copyright">Copyright © 2023 Synex Digital</p>
+        <p class="copyright">Copyright © 2024 Synex Digital</p>
     </section>
 </footer>

@@ -287,7 +287,7 @@
                     </div>
                 </div>
                 <div class="text-center">
-                    <a href="{{ route('blogs') }}" class="btn btn-primary btn-default mt-md-4">View All</a>
+                    <a href="{{ route('blogs') }}" class="btn btn-primary btn-default mt-3 mt-md-4">View All</a>
                 </div>
             </div>
         </div>

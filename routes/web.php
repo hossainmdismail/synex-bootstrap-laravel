@@ -14,3 +14,4 @@ Route::get('/about', [AboutController::class, 'index'])->name('about');
 Route::get('/services', [ServiceController::class, 'services'])->name('services');
 Route::get('/service/{slug}', [ServiceController::class, 'service'])->name('service');
 Route::get('/contact', [HomeController::class, 'getintouch'])->name('contact');
+Route::get('/thankyou', [HomeController::class, 'thanks'])->name('thanks');

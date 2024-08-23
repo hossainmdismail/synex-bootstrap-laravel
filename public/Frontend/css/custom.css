@@ -270,6 +270,12 @@ cursor: pointer;
 .w-505{
   width: 505px;
 }
+.page-404{
+  background-image: url(../images/svg/404.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
 .image-record {
   /* background-image: url(../images/Frame10.jpeg); */

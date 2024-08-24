@@ -1,6 +1,8 @@
 @extends('Frontend.layout.app')
 
 @section('content')
+    @include('Frontend.layout.calendly')
+
     <section class="container-fluid service-hero" style="background-image: url({{ asset('Frontend') }}/images/hero.webp);">
         <div class="shadow">
             <div class="container py-5 h-100 d-flex flex-column justify-content-between">
@@ -472,4 +474,10 @@
             </div>
         </div>
     </section>
+
+    <!-- Collaborate -->
+    <x-collaborate />
+
+    <!-- News Letter-->
+    <x-newsletter />
 @endsection

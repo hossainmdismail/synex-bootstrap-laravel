@@ -34,6 +34,8 @@
             ],
         ];
     @endphp
+    @include('Frontend.layout.calendly')
+
     <section class="container-fluid py-5 service-page overflow-hidden">
         <div class="container py-5">
             <div class="row py-3 py-md-5">

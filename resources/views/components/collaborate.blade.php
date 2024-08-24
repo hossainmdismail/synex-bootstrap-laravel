@@ -17,8 +17,8 @@
                         </path>
                     </svg>
                 </a>
-                <a href="{{ route('contact') }}"
-                    class="btn-default btn btn-outline-light collaborate-btn-2 mb-3">Schedule Metting
+                <button class="btn-default btn btn-outline-light collaborate-btn-2 mb-3" id="calendly-btn">Schedule
+                    Metting
 
                     <svg class="ms-3 collaborate-icon" width="16" height="15" viewBox="0 0 16 15" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
@@ -26,7 +26,7 @@
                             stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                     </svg>
 
-                </a>
+                </button>
             </div>
         </div>
     </div>

@@ -106,7 +106,7 @@
             ],
         ];
     @endphp
-
+    @include('Frontend.layout.calendly')
     <!-- Hero section -->
     <section class="container-fluid">
         <div class="container py-md-5">

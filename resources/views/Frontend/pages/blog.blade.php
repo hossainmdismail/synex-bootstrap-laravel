@@ -57,6 +57,8 @@
             ],
         ];
     @endphp
+    @include('Frontend.layout.calendly')
+
     <!-- about us -->
     <section class="container-fluid">
         {{-- <img class="rightsvg" src="{{ asset('Frontend') }}/images/aboutus-right.svg" loading="lazy" alt=""> --}}

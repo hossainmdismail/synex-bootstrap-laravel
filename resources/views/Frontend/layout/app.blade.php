@@ -23,6 +23,19 @@
     <script src="{{ asset('Frontend') }}/js/jquery.min.js"></script>
     <script src="{{ asset('Frontend') }}/js/popper.min.js"></script>
     <script src="{{ asset('Frontend') }}/js/custom.js"></script>
+
+    <script>
+        document.getElementById('calendly-btn').addEventListener('click', function() {
+            const calendlyBox = document.querySelector('.calendly-box');
+            calendlyBox.style.display = 'block';
+        });
+
+        document.getElementById('calendly-close').addEventListener('click', function() {
+            const calendlyBox = document.querySelector('.calendly-box');
+            calendlyBox.style.display = 'none';
+        });
+    </script>
+
 </body>
 
 </html>

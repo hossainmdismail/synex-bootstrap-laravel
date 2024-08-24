@@ -1,5 +1,6 @@
 @extends('Frontend.layout.app')
 @section('content')
+    @include('Frontend.layout.calendly')
     <!-- about us -->
     <section class="container-fluid">
         <img class="leftsvg" src="{{ asset('Frontend') }}/images/aboutus-left.svg" loading="lazy" alt="">
@@ -289,4 +290,10 @@
         </div>
 
     </section>
+
+    <!-- Collaborate -->
+    <x-collaborate />
+
+    <!-- News Letter-->
+    <x-newsletter />
 @endsection

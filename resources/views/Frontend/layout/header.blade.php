@@ -66,13 +66,10 @@
                         <a class="nav-link fw-medium " aria-current="page" href="{{ route('services') }}">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link fw-medium" href="#">Project</a>
+                        <a class="nav-link fw-medium" href="{{ route('projects') }}">Project</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link fw-medium" href="{{ route('blogs') }}">Blogs</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link fw-medium" href="#">Shop</a>
                     </li>
                 </ul>
                 <a class="btn btn-primary btn-default" href="#">Get in touch</a>

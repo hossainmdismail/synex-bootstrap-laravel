@@ -13,9 +13,10 @@ class projectCard extends Component
      */
     // public array $project;
     public function __construct(
+        public string $name,
         public string $title,
         public string $description,
-        public string $status,
+        public string $category,
         public string $image,
     ) {}
 

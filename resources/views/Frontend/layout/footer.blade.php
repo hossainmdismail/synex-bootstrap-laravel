@@ -66,7 +66,7 @@
                                     <a href="{{ route('services') }}" class="footer-item">Services</a>
                                 </li>
                                 <li class="footer-ul-item">
-                                    <a href="#" class="footer-item">Projects</a>
+                                    <a href="{{ route('projects') }}" class="footer-item">Projects</a>
                                 </li>
                                 <li class="footer-ul-item">
                                     <a href="{{ route('blogs') }}" class="footer-item">Blogs</a>
@@ -78,7 +78,7 @@
                             <h5 class="footer-ul-title">Supports</h5>
                             <ul class="footer-ul">
                                 <li class="footer-ul-item">
-                                    <a href="#" class="footer-item">Privacy Policy</a>
+                                    <a href="{{ route('privacy') }}" class="footer-item">Privacy Policy</a>
                                 </li>
                                 <li class="footer-ul-item">
                                     <a href="{{ route('contact') }}" class="footer-item">Help & Support</a>
@@ -94,42 +94,46 @@
                             <h5 class="footer-ul-title">Contact us</h5>
                             <ul class="footer-ul">
                                 <li class="footer-ul-item footer-phone">
-                                    <svg class="me-2 footer-phone-svg" width="31" height="30" viewBox="0 0 41 40"
-                                        fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <circle cx="20.5" cy="20" r="20" fill="#DBEAFE" />
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M10 12.5C10 11.7044 10.3161 10.9413 10.8787 10.3787C11.4413 9.81607 12.2044 9.5 13 9.5H14.372C15.232 9.5 15.982 10.086 16.191 10.92L17.296 15.343C17.3855 15.701 17.3675 16.0775 17.244 16.4252C17.1206 16.773 16.8972 17.0766 16.602 17.298L15.309 18.268C15.174 18.369 15.145 18.517 15.183 18.62C15.7474 20.1549 16.6386 21.5487 17.7949 22.7051C18.9513 23.8614 20.3451 24.7526 21.88 25.317C21.983 25.355 22.13 25.326 22.232 25.191L23.202 23.898C23.4234 23.6028 23.727 23.3794 24.0748 23.256C24.4225 23.1325 24.799 23.1145 25.157 23.204L29.58 24.309C30.414 24.518 31 25.268 31 26.129V27.5C31 28.2956 30.6839 29.0587 30.1213 29.6213C29.5587 30.1839 28.7956 30.5 28 30.5H25.75C17.052 30.5 10 23.448 10 14.75V12.5Z"
-                                            fill="#111111" />
-                                    </svg>
-                                    0123456789
+                                    <a href="tel:+8801757-647319" class="font-second">
+                                        <svg class="me-2 footer-phone-svg " width="24" height="24"
+                                            viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="20.5" cy="20" r="20" fill="#DBEAFE" />
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M10 12.5C10 11.7044 10.3161 10.9413 10.8787 10.3787C11.4413 9.81607 12.2044 9.5 13 9.5H14.372C15.232 9.5 15.982 10.086 16.191 10.92L17.296 15.343C17.3855 15.701 17.3675 16.0775 17.244 16.4252C17.1206 16.773 16.8972 17.0766 16.602 17.298L15.309 18.268C15.174 18.369 15.145 18.517 15.183 18.62C15.7474 20.1549 16.6386 21.5487 17.7949 22.7051C18.9513 23.8614 20.3451 24.7526 21.88 25.317C21.983 25.355 22.13 25.326 22.232 25.191L23.202 23.898C23.4234 23.6028 23.727 23.3794 24.0748 23.256C24.4225 23.1325 24.799 23.1145 25.157 23.204L29.58 24.309C30.414 24.518 31 25.268 31 26.129V27.5C31 28.2956 30.6839 29.0587 30.1213 29.6213C29.5587 30.1839 28.7956 30.5 28 30.5H25.75C17.052 30.5 10 23.448 10 14.75V12.5Z"
+                                                fill="#111111" />
+                                        </svg>
+                                        +8801757-647319
+                                    </a>
                                 </li>
                                 <li class="footer-ul-item footer-mail">
-                                    <svg class="me-2 footer-mail-svg" width="31" height="30" viewBox="0 0 41 40"
-                                        fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <circle cx="20.5" cy="20" r="20" fill="#DBEAFE" />
-                                        <path
-                                            d="M10 16.6699V25.2499C10 26.0456 10.3161 26.8086 10.8787 27.3712C11.4413 27.9339 12.2044 28.2499 13 28.2499H28C28.7956 28.2499 29.5587 27.9339 30.1213 27.3712C30.6839 26.8086 31 26.0456 31 25.2499V16.6699L22.072 22.1629C21.5992 22.4538 21.0551 22.6078 20.5 22.6078C19.9449 22.6078 19.4008 22.4538 18.928 22.1629L10 16.6699Z"
-                                            fill="#111111" />
-                                        <path
-                                            d="M31 14.908V14.75C31 13.9544 30.6839 13.1913 30.1213 12.6287C29.5587 12.0661 28.7956 11.75 28 11.75H13C12.2044 11.75 11.4413 12.0661 10.8787 12.6287C10.3161 13.1913 10 13.9544 10 14.75V14.908L19.714 20.886C19.9504 21.0314 20.2225 21.1084 20.5 21.1084C20.7775 21.1084 21.0496 21.0314 21.286 20.886L31 14.908Z"
-                                            fill="#111111" />
-                                    </svg>
-
-                                    example@mail.com
+                                    <a href="mailto:office@synexdigital.com" class="font-second">
+                                        <svg class="me-2 footer-mail-svg" width="24" height="24"
+                                            viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="20.5" cy="20" r="20" fill="#DBEAFE" />
+                                            <path
+                                                d="M10 16.6699V25.2499C10 26.0456 10.3161 26.8086 10.8787 27.3712C11.4413 27.9339 12.2044 28.2499 13 28.2499H28C28.7956 28.2499 29.5587 27.9339 30.1213 27.3712C30.6839 26.8086 31 26.0456 31 25.2499V16.6699L22.072 22.1629C21.5992 22.4538 21.0551 22.6078 20.5 22.6078C19.9449 22.6078 19.4008 22.4538 18.928 22.1629L10 16.6699Z"
+                                                fill="#111111" />
+                                            <path
+                                                d="M31 14.908V14.75C31 13.9544 30.6839 13.1913 30.1213 12.6287C29.5587 12.0661 28.7956 11.75 28 11.75H13C12.2044 11.75 11.4413 12.0661 10.8787 12.6287C10.3161 13.1913 10 13.9544 10 14.75V14.908L19.714 20.886C19.9504 21.0314 20.2225 21.1084 20.5 21.1084C20.7775 21.1084 21.0496 21.0314 21.286 20.886L31 14.908Z"
+                                                fill="#111111" />
+                                        </svg>
+                                        office@synexdigital.com
+                                    </a>
                                 </li>
                                 <li class="footer-ul-item pt-2">
-                                    <a class="text-decoration-none me-2" target="_blank" rel="nofollow"
-                                        href="https://www.facebook.com/synexdigital">
-                                        <svg fill="#000000" width="16px" height="17px" viewBox="0 0 1920 1920"
+                                    <a class="text-decoration-none social-footer me-2" style="padding: 5px"
+                                        target="_blank" rel="nofollow" href="https://www.facebook.com/synexdigital">
+                                        <svg fill="#3B82F6" width="16px" height="17px" viewBox="0 0 1920 1920"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <path
                                                 d="M1168.737 487.897c44.672-41.401 113.824-36.889 118.9-36.663l289.354-.113 6.317-417.504L1539.65 22.9C1511.675 16.02 1426.053 0 1237.324 0 901.268 0 675.425 235.206 675.425 585.137v93.97H337v451.234h338.425V1920h451.234v-789.66h356.7l62.045-451.233H1126.66v-69.152c0-54.937 14.214-96.112 42.078-122.058"
                                                 fill-rule="evenodd" />
                                         </svg>
                                     </a>
-                                    <a class="text-decoration-none me-2" target="_blank" rel="nofollow"
+                                    <a class="text-decoration-none social-footer me-2" style="padding: 5px"
+                                        target="_blank" rel="nofollow"
                                         href="https://www.linkedin.com/company/synex-digital">
-                                        <svg fill="#000000" width="18px" version="1.1" id="Layer_1"
+                                        <svg fill="#0A66C2" width="18px" version="1.1" id="Layer_1"
                                             xmlns="http://www.w3.org/2000/svg"
                                             xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-271 283.9 256 235.1"
                                             xml:space="preserve">
@@ -143,9 +147,10 @@
                                         </svg>
 
                                     </a>
-                                    <a class="text-decoration-none me-2" target="_blank" rel="nofollow"
+                                    <a class="text-decoration-none social-footer me-2" style="padding: 5px"
+                                        target="_blank" rel="nofollow"
                                         href="https://www.upwork.com/agencies/1705648766983696384/">
-                                        <svg fill="#000000" width="20px" height="20px" viewBox="0 0 32 32"
+                                        <svg fill="#14A800" width="20px" height="20px" viewBox="0 0 32 32"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <path
                                                 d="M24.75 17.542c-1.469 0-2.849-0.62-4.099-1.635l0.302-1.432 0.010-0.057c0.276-1.521 1.13-4.078 3.786-4.078 1.99 0 3.604 1.615 3.604 3.604 0 1.984-1.615 3.599-3.604 3.599zM24.75 6.693c-3.385 0-6.016 2.198-7.083 5.818-1.625-2.443-2.865-5.38-3.583-7.854h-3.646v9.484c-0.005 1.875-1.521 3.391-3.396 3.396-1.875-0.005-3.391-1.526-3.396-3.396v-9.484h-3.646v9.484c0 3.885 3.161 7.068 7.042 7.068 3.885 0 7.042-3.182 7.042-7.068v-1.589c0.708 1.474 1.578 2.974 2.635 4.297l-2.234 10.495h3.729l1.62-7.615c1.417 0.906 3.047 1.479 4.917 1.479 4 0 7.25-3.271 7.25-7.266 0-4-3.25-7.25-7.25-7.25z" />

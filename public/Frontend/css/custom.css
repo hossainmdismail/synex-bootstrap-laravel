@@ -820,8 +820,26 @@ li.item-main:hover svg {
   background: white;
   box-shadow: 0.1rem 0.7rem 0.8rem rgba(0, 0, 0, .075) !important;
 }
+.card-2 {
+    padding: 1rem;
+    border-radius: 1rem;
+    transition: 0.2s ease-in-out;
+  }
+  .card-2:hover {
+    box-shadow: 0.1rem 0.7rem 0.8rem rgba(0, 0, 0, .075) !important;
+  }
 .card-pan {
     color: #252222c2;
+}
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+}
+a.page-link {
+    background: #eff6ff;
+    border: solid 0.01rem #e0e0e0;
 }
 .card-title-sm {
     text-decoration: none;

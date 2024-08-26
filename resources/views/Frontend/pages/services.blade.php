@@ -18,7 +18,7 @@
                 <div class="row">
                     <div class="col-md-6 m-auto text-center">
                         <p class="scroll-text">Scroll Down</p>
-                        <a href="#"><svg class="scrolldown" width="23" height="22" viewBox="0 0 23 22"
+                        <a href="#content"><svg class="scrolldown" width="23" height="22" viewBox="0 0 23 22"
                                 fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M11.5 7V15M11.5 15L15 11.5M11.5 15L8 11.5" stroke="white" stroke-width="1.5"
                                     stroke-linecap="round" stroke-linejoin="round" />
@@ -35,7 +35,7 @@
     </section>
 
     <!-- Section 1 -->
-    <section class="container-fluid bg-testimonial">
+    <section class="container-fluid bg-testimonial" id="content">
         <div class="container py-4 p-md-5">
             <div class="row py-md-5">
                 <div class="col-md-6 d-flex z-3 justify-content-center justify-content-md-end order-2 order-md-1">

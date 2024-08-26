@@ -1,6 +1,6 @@
 <div class="card card-blog rounded border-0 ">
     <div class="card-body">
-        <img src="{{ asset('Frontend/images/cta-image.jpg') }}" class="card-img-top w-100 rounded mb-2" alt="Blog Image">
+        <img src="{{ $image }}" class="card-img-top w-100 rounded mb-2" alt="Blog Image">
         <div class="d-flex justify-content-between py-2">
             <div class="card-pan">{{ $category }} • {{ $date }}</div>
             <small class="text-muted">

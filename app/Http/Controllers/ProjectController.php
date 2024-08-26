@@ -27,21 +27,5 @@ class ProjectController extends Controller
             'projects' => $project,
             'pagination' => $pagination
         ]);
-        // $project = [];
-        // $pagination = [];
-
-        // //Project
-        // $projectUrl = app('domainName') . '/api/projects';
-        // $projectResponse = Http::get($projectUrl);
-
-        // if ($projectResponse->successful()) {
-        //     $project = $projectResponse->json()['data'];
-        //     $pagination = $projectResponse->json()['pagination'];
-        // }
-
-        // return view('Frontend.pages.projects', [
-        //     'projects' => $project,
-        //     'pagination' => $pagination
-        // ]);
     }
 }

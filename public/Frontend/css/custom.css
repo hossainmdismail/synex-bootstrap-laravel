@@ -12,6 +12,15 @@ a {
     background-repeat: no-repeat; /* Prevent the background image from repeating */
     height: 80vh;
 }
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+}
+.nav-gap {
+    width: 100%;
+    height: 74px;
+}
 .rounded {
     border-radius: 1rem !important;
 }
@@ -870,6 +879,7 @@ a.page-link {
   color: #353535d6;
   font-size: 14px;
   font-weight: 600;
+  margin-bottom: 0;
 }
 
 /* Privacy */
@@ -1199,6 +1209,19 @@ ul.service-list li span {
         top: 102px;
         right: -193px;
     }
+    .service-hero {
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 0 !important;
+        height: 70vh;
+      }
+    .shadow{
+        background: #00000090;
+        width: 100%;
+        height: 100%;
+        backdrop-filter: blur(3px);
+      }
 }
 
 /* responsive */

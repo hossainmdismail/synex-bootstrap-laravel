@@ -17,6 +17,7 @@
 
 <body>
     @include('Frontend.layout.header')
+    <div class="nav-gap"></div>
     <main>
         @yield('content')
     </main>

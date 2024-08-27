@@ -16,7 +16,7 @@ class indexBlog extends Component
         public $title,
         public $image,
         public $slug,
-        // public $total_view
+        public $count
     ) {}
 
     /**

@@ -205,7 +205,7 @@
                                     </a>
 
                                     <div class="pt-3">
-                                        <div class="d-flex gap-3 mb-1">
+                                        <div class="d-flex gap-3 mb-1 justify-content-between">
                                             <!-- Authors -->
                                             <div class="d-flex gap-1 align-items-center">
                                                 <svg width="15" height="14" viewBox="0 0 18 17" fill="none"
@@ -215,11 +215,11 @@
                                                         stroke="black" stroke-width="1.5" stroke-linecap="round"
                                                         stroke-linejoin="round" />
                                                 </svg>
-                                                <a href="#" class="card-nap">{{ $blogs['popular']['author'] }}</a>
+                                                <p class="card-nap">{{ $blogs['popular']['author'] }}</p>
                                             </div>
                                             <!-- Comments -->
-                                            <div class="d-flex gap-1 align-items-center">{{ $blogs['popular']['view'] }}<a
-                                                    href="#" class="card-nap">View</a>
+                                            <div class="d-flex gap-1 align-items-center">{{ $blogs['popular']['view'] }}<p
+                                                    class="card-nap">View</p>
                                             </div>
                                         </div>
 
@@ -235,8 +235,9 @@
                         <div class="row g-3">
                             @foreach ($blogs['blogs'] as $blog)
                                 <div class="col-md-6">
-                                    <x-index-blog author="{{ $blogs['popular']['author'] }}" title="{{ $blog['title'] }}"
-                                        image="{{ $blog['image'] }}" slug="{{ $blog['slug'] }}" />
+                                    <x-index-blog author="{{ $blogs['popular']['author'] }}" count="{{ $blog['view'] }}"
+                                        title="{{ $blog['title'] }}" image="{{ $blog['image'] }}"
+                                        slug="{{ $blog['slug'] }}" />
                                 </div>
                             @endforeach
                         </div>

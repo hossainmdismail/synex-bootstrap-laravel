@@ -1,4 +1,13 @@
 @extends('Frontend.layout.app')
+
+@section('style')
+    <style>
+        .force-pan {
+            font-size: 13px;
+        }
+    </style>
+@endsection
+
 @section('content')
     @php
         $blogs = [
@@ -90,10 +99,10 @@
                 {{-- Blog description --}}
                 <div class="col-md-7 py-md-2 d-flex align-items-center">
                     <div class="blog-info">
-                        <h1>What is a blog? Definition, types, benefits and why you need one</h1>
+                        <h1>{{ $content['title'] }}</h1>
                         <p class="pt-2">
-                            by <a href="#">Esmail Khalifa</a> | 17 Jan 2024 | <a href="#"
-                                class="badge-default">Coding</a>
+                            by <a href="#">{{ $content['author'] }}</a> | {{ $content['date'] }} | <a href="#"
+                                class="badge-default">{{ $content['category'] }}</a>
                         </p>
                         <div class="share-on d-none d-md-flex">
                             Share :
@@ -144,8 +153,7 @@
                 </div>
                 {{-- Thumbnail --}}
                 <div class="col-md-5">
-                    <img src="{{ asset('Frontend') }}/images/Teamwork.webp" class="rounded" loading="lazy" width="100%"
-                        alt="">
+                    <img src="{{ $content['image'] }}" class="rounded" loading="lazy" width="100%" alt="">
                 </div>
             </div>
         </div>
@@ -155,41 +163,8 @@
         <div class="row g-3">
             {{-- Content --}}
             <div class="col-md-8 px-3 px-md-2">
-                <div class="blog-content">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum.
-                        Cras id scelerisque mauris. Proin varius, ex sit amet elementum tristique, felis dolor auctor
-                        enim, nec tempor felis libero in ante. Aliquam erat volutpat. Nulla facilisi. Vestibulum euismod
-                        malesuada eros, at pharetra justo feugiat eu. Donec et erat nec metus ullamcorper lacinia. metus
-                        ullamcorper lacinia.</p>
-                    <h4>Lorem ipsum Heading</h4>
-                    <p>Curabitur auctor urna et erat convallis, sit amet tincidunt ligula tincidunt. Sed eget nibh vel
-                        est dapibus dictum. Fusce id nunc a eros venenatis tristique. Integer id felis vitae velit
-                        volutpat facilisis ac vel est. Praesent non libero vitae turpis faucibus ultricies. Sed in
-                        consequat sapien, id lacinia eros. Donec fermentum orci ut libero dictum, nec maximus turpis
-                        dignissim. Mauris id ipsum et ante varius iaculis. Pellentesque habitant morbi tristique
-                        senectus et netus et malesuada fames ac turpis egestas. Integer euismod arcu vel orci suscipit,
-                        nec ultrices nulla cursus. Aenean tristique, felis vel suscipit malesuada, odio nulla elementum
-                        metus, vel convallis magna lectus nec quam. Nunc ut vestibulum lorem. Sed in feugiat magna.
-                        Quisque vestibulum, lorem et gravida elementum, magna ligula tempor metus, id maximus sem mi eu
-                        felis.</p>
-                    <h4>Lorem ipsum Heading</h4>
-                    <p>Mauris id ipsum et ante varius iaculis. Pellentesque habitant morbi tristique senectus et netus
-                        et malesuada fames ac turpis egestas. Integer euismod arcu vel orci suscipit, nec ultrices nulla
-                        cursus. Aenean tristique, felis vel suscipit malesuada, odio nulla elementum metus, vel
-                        convallis magna lectus nec quam. Nunc ut vestibulum lorem. Sed in feugiat magna. Quisque
-                        vestibulum, lorem et gravida elementum, magna ligula tempor metus, id maximus sem mi eu felis.
-                    </p>
-                    <p>Proin nec diam vel risus suscipit ullamcorper. Integer sit amet magna nec risus eleifend
-                        facilisis. Aenean auctor sollicitudin est, non dictum eros ullamcorper nec. In hac habitasse
-                        platea dictumst. Donec ac magna libero. Vivamus finibus condimentum est in faucibus. Mauris
-                        malesuada erat vitae nisl tincidunt, at pharetra ipsum dictum. Pellentesque id diam nec elit
-                        tincidunt condimentum.Mauris id ipsum et ante varius iaculis. Pellentesque habitant morbi
-                        tristique senectus et netus et malesuada fames ac turpis egestas. Integer euismod arcu vel orci
-                        suscipit, nec ultrices nulla cursus. Aenean tristique, felis vel suscipit malesuada, odio nulla
-                        elementum metus, vel convallis magna lectus nec quam. Nunc ut vestibulum lorem. Sed in feugiat
-                        magna. Quisque vestibulum, lorem et gravida elementum, magna ligula tempor metus, id maximus sem
-                        mi eu felis.
-                    </p>
+                <div class="blog-content py-4">
+                    {{ $content['content'] }}
                 </div>
 
                 {{-- Share button --}}
@@ -246,10 +221,11 @@
                 {{-- Related --}}
                 <div class="row py-4 py-md-5">
                     <h4 class="pb-3 pb-md-4">Related</h4>
-                    @foreach ($blogHero as $blog)
+                    @foreach ($related as $blog)
                         <div class="col-md-4 mb-4">
-                            <x-blog title="{{ $blog['title'] }}" category="{{ $blog['category'] }}"
-                                date="{{ $blog['date'] }}" views="{{ $blog['view'] }}" image="{{ $blog['image'] }}" />
+                            <x-blog title="{{ $blog['title'] }}" slug="{{ $blog['slug'] }}"
+                                category="{{ $blog['category'] }}" date="{{ $blog['date'] }}"
+                                views="{{ $blog['view'] }}" image="{{ $blog['image'] }}" />
                         </div>
                     @endforeach
                 </div>
@@ -279,9 +255,10 @@
                                 </h5>
 
                                 <div class="pt-4 text-start">
-                                    @foreach ($blogs as $blog)
-                                        <x-blog-list title="{{ $blog['title'] }}" image="{{ $blog['image'] }}"
-                                            date="{{ $blog['date'] }}" slug="{{ $blog['slug'] }}" />
+                                    @foreach ($popuar as $blog)
+                                        <x-blog-list title="{{ $blog['title'] }}" slug="{{ $blog['slug'] }}"
+                                            image="{{ $blog['image'] }}" date="{{ $blog['date'] }}"
+                                            slug="{{ $blog['slug'] }}" />
                                     @endforeach
                                 </div>
                             </div>
@@ -300,45 +277,23 @@
 
                                 <div class="pt-4 text-start">
                                     <ul class="cat-list">
-                                        <li class="d-flex">
-                                            <a class="cat-list-item" href="#">
-                                                <svg class="mr-4" width="20px" height="20px" viewBox="0 0 24 24"
-                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path opacity="0.5"
-                                                        d="M4 11.25C3.58579 11.25 3.25 11.5858 3.25 12C3.25 12.4142 3.58579 12.75 4 12.75V11.25ZM4 12.75H20V11.25H4V12.75Z"
-                                                        fill="#1C274C" />
-                                                    <path d="M14 6L20 12L14 18" stroke="#1C274C" stroke-width="1.5"
-                                                        stroke-linecap="round" stroke-linejoin="round" />
-                                                </svg>
-                                                <span class="pl-3">Marketing</span>
-                                            </a>
-                                        </li>
-                                        <li class="d-flex">
-                                            <a class="cat-list-item" href="#">
-                                                <svg class="mr-4" width="20px" height="20px" viewBox="0 0 24 24"
-                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path opacity="0.5"
-                                                        d="M4 11.25C3.58579 11.25 3.25 11.5858 3.25 12C3.25 12.4142 3.58579 12.75 4 12.75V11.25ZM4 12.75H20V11.25H4V12.75Z"
-                                                        fill="#1C274C" />
-                                                    <path d="M14 6L20 12L14 18" stroke="#1C274C" stroke-width="1.5"
-                                                        stroke-linecap="round" stroke-linejoin="round" />
-                                                </svg>
-                                                <span class="pl-3">Hosting</span>
-                                            </a>
-                                        </li>
-                                        <li class="d-flex">
-                                            <a class="cat-list-item" href="#">
-                                                <svg class="mr-4" width="20px" height="20px" viewBox="0 0 24 24"
-                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path opacity="0.5"
-                                                        d="M4 11.25C3.58579 11.25 3.25 11.5858 3.25 12C3.25 12.4142 3.58579 12.75 4 12.75V11.25ZM4 12.75H20V11.25H4V12.75Z"
-                                                        fill="#1C274C" />
-                                                    <path d="M14 6L20 12L14 18" stroke="#1C274C" stroke-width="1.5"
-                                                        stroke-linecap="round" stroke-linejoin="round" />
-                                                </svg>
-                                                <span class="pl-3">Coding</span>
-                                            </a>
-                                        </li>
+                                        @foreach ($categories as $category)
+                                            <li class="d-flex">
+                                                <a class="cat-list-item"
+                                                    href="{{ route('category', $category['slug']) }}">
+                                                    <svg class="mr-4" width="20px" height="20px"
+                                                        viewBox="0 0 24 24" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path opacity="0.5"
+                                                            d="M4 11.25C3.58579 11.25 3.25 11.5858 3.25 12C3.25 12.4142 3.58579 12.75 4 12.75V11.25ZM4 12.75H20V11.25H4V12.75Z"
+                                                            fill="#1C274C" />
+                                                        <path d="M14 6L20 12L14 18" stroke="#1C274C" stroke-width="1.5"
+                                                            stroke-linecap="round" stroke-linejoin="round" />
+                                                    </svg>
+                                                    <span class="pl-3">{{ $category['name'] }}</span>
+                                                </a>
+                                            </li>
+                                        @endforeach
                                     </ul>
                                 </div>
                             </div>

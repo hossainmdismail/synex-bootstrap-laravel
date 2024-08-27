@@ -8,11 +8,11 @@
             <div class="container py-5 h-100 d-flex flex-column justify-content-between">
                 <div class="row py-4 py-md-5">
                     <div class="col-md-6 py-md-5 m-auto text-center">
-                        <h3 class="section-title text-white pb-2"><span class="font-main">Services</span> We Provide
-                        </h3>
-                        <p class="caption">Unlock Your Business Potential with Our Specialized Services
+                        <h1 class="section-title text-white pb-2"><span class="font-main">Services</span> We Provide
+                        </h1>
+                        <h2 class="caption">Unlock Your Business Potential with Our Specialized Services
                             and
-                            Strategic Expertise</p>
+                            Strategic Expertise</h2>
                     </div>
                 </div>
                 <div class="row">

@@ -1,7 +1,7 @@
 <div class="card card-blog rounded border-0 ">
     <div class="card-body">
         <img src="{{ $image }}" class="card-img-top w-100 rounded mb-2" alt="Blog Image">
-        <div class="d-flex justify-content-between py-2">
+        <div class="d-flex justify-content-between py-2 force-pan">
             <div class="card-pan">{{ $category }} • {{ $date }}</div>
             <small class="text-muted">
                 <svg fill="#252222c2" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
@@ -33,7 +33,7 @@
                 </svg>
                 {{ $views }} views</small>
         </div>
-        <a href="{{ route('blog.view', 'new-2024') }}" class="card-title pt-2">{{ $title }}
+        <a href="{{ route('blog.view', $slug) }}" class="card-title pt-2">{{ $title }}
         </a>
     </div>
 </div>

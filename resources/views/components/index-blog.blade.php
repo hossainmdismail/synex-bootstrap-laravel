@@ -1,9 +1,8 @@
 <article class="card-1">
     <div class="card-body">
-        <div class="card-image-2">
-            <img src="{{ asset('Frontend') }}/images/blog.png" width="100%" style="border-radius: 0.5rem;"
-                alt="Synex Digital">
-        </div>
+        <a href="{{ route('blog.view', $slug) }}" class="card-image-2">
+            <img src="{{ $image }}" width="100%" style="border-radius: 0.5rem;" alt="Synex Digital">
+        </a>
 
         <div class="pt-2">
             <div class="d-flex gap-3">
@@ -28,7 +27,7 @@
                     <a href="#" class="card-nap">Comments</a>
                 </div>
             </div>
-            <a href="#" class="card-title font-700 mb-0 pt-2">{{ $title }}</a>
+            <a href="{{ route('blog.view', $slug) }}" class="card-title font-700 mb-0 pt-2">{{ $title }}</a>
         </div>
     </div>
 </article>

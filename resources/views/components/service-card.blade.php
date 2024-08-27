@@ -1,5 +1,5 @@
 <div class="e-card playing">
-    <a href="{{ route('service.web-dev') }}">
+    <a href="{{ $url }}">
         <div class="image"></div>
         <div class="wave wave-{{ $id }}"></div>
         <div class="wave wave-{{ $id }}"></div>

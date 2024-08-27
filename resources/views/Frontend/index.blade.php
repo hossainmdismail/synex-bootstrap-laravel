@@ -6,34 +6,42 @@
             [
                 'name' => 'Web Development',
                 'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+                'url' => route('service.web-dev'),
             ],
             [
                 'name' => 'Management Software',
                 'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+                'url' => route('service.software'),
             ],
             [
                 'name' => 'UI UX Design',
                 'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+                'url' => route('service.uiux'),
             ],
             [
                 'name' => 'Digital Marketing',
                 'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+                'url' => route('service.digital-marketing'),
             ],
             [
                 'name' => 'Mobile App Development',
                 'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+                'url' => route('service.mobile-app'),
             ],
             [
                 'name' => 'Graphics Design',
                 'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+                'url' => route('service.graphics-design'),
             ],
             [
-                'name' => 'Deploy',
+                'name' => 'SaaS (Software as a Service)',
                 'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+                'url' => route('service.saas'),
             ],
             [
-                'name' => 'Custom Development',
+                'name' => 'Video Editing',
                 'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+                'url' => route('service.video-edit'),
             ],
         ];
         $testimonials = [
@@ -56,35 +64,6 @@
                 'title' => 'Synex Digital',
             ],
         ];
-        // $blogOne = [
-        //     'author' => 'Esmail Khalifa',
-        //     'title' => 'Best blog rules in 2024',
-        //     'description' =>
-        //         'Lorem ipsum dolor sit amet consectetur adipisicing elit. Et non excepturi voluptatem asperiores autem dicta facere assumenda commodi nobis minima!',
-        //     'image' => 'blog.png',
-        // ];
-        // $blogs = [
-        //     [
-        //         'author' => 'Esmail Khalifa',
-        //         'title' => 'Best blog rules in 2024',
-        //         'image' => 'blog.png',
-        //     ],
-        //     [
-        //         'author' => 'Esmail Khalifa',
-        //         'title' => 'Best blog rules in 2024',
-        //         'image' => 'blog.png',
-        //     ],
-        //     [
-        //         'author' => 'Esmail Khalifa',
-        //         'title' => 'Best blog rules in 2024',
-        //         'image' => 'blog.png',
-        //     ],
-        //     [
-        //         'author' => 'Esmail Khalifa',
-        //         'title' => 'Best blog rules in 2024',
-        //         'image' => 'blog.png',
-        //     ],
-        // ];
     @endphp
     @include('Frontend.layout.calendly')
     <!-- Hero section -->
@@ -99,7 +78,7 @@
                         We are the Synex Digital Team and are Highly Motivated to Give You The Best and effective
                         on-time Results for Your Online Presence and Traffic Growth.
                     </h2>
-                    <a href="#" class="btn btn-primary btn-default  mt-4">Explore Our Portfolio</a>
+                    <a href="{{ route('projects') }}" class="btn btn-primary btn-default  mt-4">Explore Our Portfolio</a>
                 </div>
                 <div class="col-md-6 order-1 order-md-2 d-flex justify-content-center">
                     <img src="{{ asset('Frontend') }}/images/Frame 9.png" width="100%" alt="Synex Digital">
@@ -118,8 +97,8 @@
             <div class="row py-5 g-5">
                 @foreach ($services as $key => $service)
                     <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                        <x-service-card title="{{ $service['name'] }}" description="{{ $service['description'] }}"
-                            id="{{ $key + 1 }}" />
+                        <x-service-card title="{{ $service['name'] }}" url="{{ $service['url'] }}"
+                            description="{{ $service['description'] }}" id="{{ $key + 1 }}" />
                     </div>
                 @endforeach
             </div>
@@ -220,7 +199,7 @@
                         @if ($blogs['popular'])
                             <article class="card-1">
                                 <div class="card-body">
-                                    <a href="#">
+                                    <a href="{{ route('blog.view', $blogs['popular']['slug']) }}">
                                         <img src="{{ $blogs['popular']['image'] }}" width="100%"
                                             style="border-radius: 0.5rem;" alt="Synex Digital">
                                     </a>
@@ -239,20 +218,12 @@
                                                 <a href="#" class="card-nap">{{ $blogs['popular']['author'] }}</a>
                                             </div>
                                             <!-- Comments -->
-                                            <div class="d-flex gap-1 align-items-center">
-                                                <svg width="15" height="14" viewBox="0 0 18 17" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M6.1875 8.5C6.1875 8.58288 6.15458 8.66237 6.09597 8.72097C6.03737 8.77958 5.95788 8.8125 5.875 8.8125C5.79212 8.8125 5.71263 8.77958 5.65403 8.72097C5.59542 8.66237 5.5625 8.58288 5.5625 8.5C5.5625 8.41712 5.59542 8.33763 5.65403 8.27903C5.71263 8.22042 5.79212 8.1875 5.875 8.1875C5.95788 8.1875 6.03737 8.22042 6.09597 8.27903C6.15458 8.33763 6.1875 8.41712 6.1875 8.5ZM6.1875 8.5H5.875M9.3125 8.5C9.3125 8.58288 9.27958 8.66237 9.22097 8.72097C9.16237 8.77958 9.08288 8.8125 9 8.8125C8.91712 8.8125 8.83763 8.77958 8.77903 8.72097C8.72042 8.66237 8.6875 8.58288 8.6875 8.5C8.6875 8.41712 8.72042 8.33763 8.77903 8.27903C8.83763 8.22042 8.91712 8.1875 9 8.1875C9.08288 8.1875 9.16237 8.22042 9.22097 8.27903C9.27958 8.33763 9.3125 8.41712 9.3125 8.5ZM9.3125 8.5H9M12.4375 8.5C12.4375 8.58288 12.4046 8.66237 12.346 8.72097C12.2874 8.77958 12.2079 8.8125 12.125 8.8125C12.0421 8.8125 11.9626 8.77958 11.904 8.72097C11.8454 8.66237 11.8125 8.58288 11.8125 8.5C11.8125 8.41712 11.8454 8.33763 11.904 8.27903C11.9626 8.22042 12.0421 8.1875 12.125 8.1875C12.2079 8.1875 12.2874 8.22042 12.346 8.27903C12.4046 8.33763 12.4375 8.41712 12.4375 8.5ZM12.4375 8.5H12.125M16.5 8.5C16.5 12.2967 13.1417 15.375 9 15.375C8.28099 15.3759 7.56503 15.2814 6.87083 15.0942C5.8923 15.7824 4.6986 16.0951 3.50833 15.975C3.376 15.9622 3.24422 15.9442 3.11333 15.9208C3.52406 15.4368 3.80456 14.856 3.92833 14.2333C4.00333 13.8525 3.8175 13.4825 3.53917 13.2117C2.275 11.9817 1.5 10.3242 1.5 8.5C1.5 4.70333 4.85833 1.625 9 1.625C13.1417 1.625 16.5 4.70333 16.5 8.5Z"
-                                                        stroke="black" stroke-width="1.5" stroke-linecap="round"
-                                                        stroke-linejoin="round" />
-                                                </svg>
-
-                                                <a href="#" class="card-nap">Comments</a>
+                                            <div class="d-flex gap-1 align-items-center">{{ $blogs['popular']['view'] }}<a
+                                                    href="#" class="card-nap">View</a>
                                             </div>
                                         </div>
 
-                                        <a href="#"
+                                        <a href="{{ route('blog.view', $blogs['popular']['slug']) }}"
                                             class="card-title font-700 mb-0">{{ $blogs['popular']['title'] }}</a>
                                         <p class="pt-2">{{ $blogs['popular']['description'] }}</p>
                                     </div>
@@ -264,8 +235,8 @@
                         <div class="row g-3">
                             @foreach ($blogs['blogs'] as $blog)
                                 <div class="col-md-6">
-                                    <x-index-blog author="{{ $blogs['popular']['author'] }}"
-                                        title="{{ $blog['title'] }}" image="{{ $blog['image'] }}" />
+                                    <x-index-blog author="{{ $blogs['popular']['author'] }}" title="{{ $blog['title'] }}"
+                                        image="{{ $blog['image'] }}" slug="{{ $blog['slug'] }}" />
                                 </div>
                             @endforeach
                         </div>

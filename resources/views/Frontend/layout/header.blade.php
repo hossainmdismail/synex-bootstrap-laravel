@@ -62,17 +62,25 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-menu-center">
+                    @if (url()->current() != route('home'))
+                        <li class="nav-item">
+                            <a class="nav-link fw-medium" aria-current="page" href="{{ route('home') }}">Home</a>
+                        </li>
+                    @endif
                     <li class="nav-item">
-                        <a class="nav-link fw-medium " aria-current="page" href="{{ route('services') }}">Services</a>
+                        <a class="nav-link fw-medium {{ url()->current() == route('services') ? 'active' : '' }}"
+                            aria-current="page" href="{{ route('services') }}">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link fw-medium" href="{{ route('projects') }}">Project</a>
+                        <a class="nav-link fw-medium {{ url()->current() == route('projects') ? 'active' : '' }}"
+                            href="{{ route('projects') }}">Project</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link fw-medium" href="{{ route('blogs') }}">Blogs</a>
+                        <a class="nav-link fw-medium {{ url()->current() == route('blogs') ? 'active' : '' }}"
+                            href="{{ route('blogs') }}">Blogs</a>
                     </li>
                 </ul>
-                <a class="btn btn-primary btn-default" href="#">Get in touch</a>
+                <a class="btn btn-primary btn-default" href="{{ route('contact') }}">Get in touch</a>
             </div>
         </div>
     </nav>

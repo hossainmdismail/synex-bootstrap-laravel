@@ -13,6 +13,7 @@ class blog extends Component
      */
     public function __construct(
         public $title,
+        public $slug,
         public $category,
         public $date,
         public $views,

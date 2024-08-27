@@ -20,7 +20,7 @@ class DomainNameProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        $domain = 'https://test.synexdigital.com';
+        $domain = 'https://management.synexdigital.com';
         View::share('domainName', $domain);
 
         // Optionally, make it globally accessible

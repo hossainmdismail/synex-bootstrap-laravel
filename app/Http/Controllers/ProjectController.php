@@ -23,12 +23,12 @@ class ProjectController extends Controller
         $projectResponse = Http::get($projectUrl);
 
         if ($projectResponse->successful()) {
-            $site_name = env('APP_NAME');
+            $site_name = env('APP_NAME', 'Synex Digital');
             $seo_title = 'Projects';
             $seo_description = 'description';
             $seo_tags = 'Projects';
             $img = asset('fav-low.png');
-            $url = env('APP_URL');
+            $url = env('APP_URL', 'https://synexdigital.com');
 
             SEOMeta::setCanonical($url . request()->getPathInfo());
             // Set SEO meta tags

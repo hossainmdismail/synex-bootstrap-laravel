@@ -18,20 +18,23 @@
                     About Discounts</p>
             </div>
             <div class="col-md-5 text-center mt-3">
-                <div class="email-input-container mt-4">
-                    <input type="email" placeholder="person@email.com" class="email-input">
-                    <button class="send-button">
-                        <!-- Include your SVG arrow here -->
-                        <svg width="47" height="47" viewBox="0 0 47 47" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <rect x="0.25" y="0.868164" width="46" height="46" rx="23" fill="#3B82F6" />
-                            <path
-                                d="M32.25 16.8682L13.25 24.3682L20.25 25.3682M32.25 16.8682L29.75 31.8682L20.25 25.3682M32.25 16.8682L20.25 25.3682M20.25 25.3682V30.8682L23.4988 27.591"
-                                stroke="white" stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
+                <form action="#" method="PORT">
+                    <div class="email-input-container mt-4">
+                        <input type="email" placeholder="person@email.com" class="email-input">
+                        <button name="mail" type="submit" class="send-button">
+                            <!-- Include your SVG arrow here -->
+                            <svg width="47" height="47" viewBox="0 0 47 47" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect x="0.25" y="0.868164" width="46" height="46" rx="23"
+                                    fill="#3B82F6" />
+                                <path
+                                    d="M32.25 16.8682L13.25 24.3682L20.25 25.3682M32.25 16.8682L29.75 31.8682L20.25 25.3682M32.25 16.8682L20.25 25.3682M20.25 25.3682V30.8682L23.4988 27.591"
+                                    stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
 
-                    </button>
-                </div>
+                        </button>
+                    </div>
+                </form>
             </div>
         </div>
     </div>

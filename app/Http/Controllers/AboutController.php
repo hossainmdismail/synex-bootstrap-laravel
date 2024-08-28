@@ -12,12 +12,12 @@ class AboutController extends Controller
 {
     public function index()
     {
-        $site_name = env('APP_NAME');
+        $site_name = env('APP_NAME', 'Synex Digital');
         $seo_title = 'About Us';
         $seo_description = 'description';
         $seo_tags = 'Home';
         $img = asset('fav-low.png');
-        $url = env('APP_URL');
+        $url = env('APP_URL', 'https://synexdigital.com');
 
         SEOMeta::setCanonical($url . request()->getPathInfo());
         // Set SEO meta tags

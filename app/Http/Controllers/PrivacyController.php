@@ -12,12 +12,12 @@ class PrivacyController extends Controller
 {
     public function index()
     {
-        $site_name = env('APP_NAME');
+        $site_name = env('APP_NAME', 'Synex Digital');
         $seo_title = 'Privacy Policy - SynexDigital';
         $seo_description = 'description';
         $seo_tags = 'Privacy Policy - SynexDigital';
         $img = asset('fav-low.png');
-        $url = env('APP_URL');
+        $url = env('APP_URL', 'https://synexdigital.com');
 
         SEOMeta::setCanonical($url . request()->getPathInfo());
         // Set SEO meta tags

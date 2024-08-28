@@ -13,12 +13,12 @@ class HomeController extends Controller
 {
     public function index()
     {
-        $site_name = env('APP_NAME');
+        $site_name = env('APP_NAME', 'Synex Digital');
         $seo_title = 'Home';
         $seo_description = 'description';
         $seo_tags = 'Home';
         $img = asset('fav-low.png');
-        $url = env('APP_URL');
+        $url = env('APP_URL', 'https://synexdigital.com');
 
         SEOMeta::setCanonical($url . request()->getPathInfo());
         // Set SEO meta tags
@@ -118,12 +118,12 @@ class HomeController extends Controller
 
     public function getintouch()
     {
-        $site_name = env('APP_NAME');
+        $site_name = env('APP_NAME', 'Synex Digital');
         $seo_title = 'Contact Us';
         $seo_description = 'description';
         $seo_tags = 'Contact';
         $img = asset('fav-low.png');
-        $url = env('APP_URL');
+        $url = env('APP_URL', 'https://synexdigital.com');
 
         SEOMeta::setCanonical($url . request()->getPathInfo());
         // Set SEO meta tags
@@ -200,12 +200,12 @@ class HomeController extends Controller
     }
     public function thanks()
     {
-        $site_name = env('APP_NAME');
+        $site_name = env('APP_NAME', 'Synex Digital');
         $seo_title = 'Thank you';
         $seo_description = 'description';
         $seo_tags = 'Thank you';
         $img = asset('fav-low.png');
-        $url = env('APP_URL');
+        $url = env('APP_URL', 'https://synexdigital.com');
 
         SEOMeta::setCanonical($url . request()->getPathInfo());
         // Set SEO meta tags

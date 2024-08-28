@@ -5,32 +5,32 @@
             [
                 'title' => 'Content Writing',
                 'description' =>
-                    "Enhance your online presence with well-written blogs, providing valuable information to your audience and improving your website’s search engine ranking.",
+                    'Enhance your online presence with well-written blogs, providing valuable information to your audience and improving your website’s search engine ranking.',
             ],
             [
                 'title' => 'SEO',
                 'description' =>
-                    "Increase your website’s visibility and search engine ranking with on-page and off-page techniques, boosting your authority and improving search performance.",
+                    'Increase your website’s visibility and search engine ranking with on-page and off-page techniques, boosting your authority and improving search performance.',
             ],
             [
                 'title' => 'Content Creation',
                 'description' =>
-                    "Create visually appealing and informative content across various platforms to engage your audience.",
+                    'Create visually appealing and informative content across various platforms to engage your audience.',
             ],
             [
                 'title' => 'Social Media Management',
                 'description' =>
-                    "Build brand awareness, engagement, and customer loyalty through strategic promotion and interaction on social media platforms.",
+                    'Build brand awareness, engagement, and customer loyalty through strategic promotion and interaction on social media platforms.',
             ],
             [
                 'title' => 'Social Media Advertising',
                 'description' =>
-                    "Build brand awareness, engagement, and customer loyalty through strategic promotion and interaction on social media platforms.",
+                    'Build brand awareness, engagement, and customer loyalty through strategic promotion and interaction on social media platforms.',
             ],
             [
                 'title' => 'PPC',
                 'description' =>
-                    "Drive targeted traffic to your website with strategic online ads, paying only for actual clicks to make the most of your advertising budget.",
+                    'Drive targeted traffic to your website with strategic online ads, paying only for actual clicks to make the most of your advertising budget.',
             ],
         ];
     @endphp
@@ -43,10 +43,13 @@
                     <div class="bd-top">
                         <span class="text-primary">Digital Marketing</span>
                         <h1 class="pt-2">
-                            Get Strategic  <span class="text-primary">Digital and Content marketing</span> services
+                            Get Strategic <span class="text-primary">Digital and Content marketing</span> services
                         </h1>
                         <p class="pt-2">
-                            A strong marketing strategy helps your business build trust and brand loyalty, ensuring repeat customers and long-term success. Whether it’s through a strategic Google Ads Campaign, SEO-focused content, tailored email marketing, or a combination of all three, our range of digital marketing services put you in front of the right customers.
+                            A strong marketing strategy helps your business build trust and brand loyalty, ensuring repeat
+                            customers and long-term success. Whether it’s through a strategic Google Ads Campaign,
+                            SEO-focused content, tailored email marketing, or a combination of all three, our range of
+                            digital marketing services put you in front of the right customers.
                         </p>
                         <div class="pt-4">
                             <button class="btn btn-primary btn-default">View Project</button>
@@ -93,7 +96,9 @@
             <div class="col-md-6 m-auto text-center">
                 <h3>Our <span class="text-primary">Digital Marketing</span> Services</h3>
                 <p class="pt-3">
-                    Discover How Our Comprehensive Digital Marketing Services Provide Tailored Solutions, Enhance User Experience, Boost Performance, and Help Your Business Achieve Its Online Goals Effectively and Efficiently
+                    Discover How Our Comprehensive Digital Marketing Services Provide Tailored Solutions, Enhance User
+                    Experience, Boost Performance, and Help Your Business Achieve Its Online Goals Effectively and
+                    Efficiently
                 </p>
             </div>
         </div>
@@ -111,12 +116,16 @@
             <div class="col-md-8 m-auto text-center">
                 <h3>Our Simple <span class="text-primary">Process </span></h3>
                 <p class="pt-3">
-                    We work with clients from a range of sectors and each has their unique marketing goals. This allows our team to develop creative solutions, working closely with our clients to understand their business on a deeper level. Working with a variety of businesses means we have in-depth knowledge of different industries and what it takes to achieve results. Take a look at our portfolio and the projects we've worked on!
+                    We work with clients from a range of sectors and each has their unique marketing goals. This allows our
+                    team to develop creative solutions, working closely with our clients to understand their business on a
+                    deeper level. Working with a variety of businesses means we have in-depth knowledge of different
+                    industries and what it takes to achieve results. Take a look at our portfolio and the projects we've
+                    worked on!
                 </p>
             </div>
         </div>
         <div class="row pt-2 pt-md-3">
-            <img class="d-none d-md-block" src="{{ asset('Frontend/images/svg/service1.svg') }}"
+            <img class="d-none d-md-block" src="{{ asset('Frontend/images/svg/service2.svg') }}"
                 alt="Synex Digital - Ui Ux Desgin" srcset="">
 
             {{-- Mobile menu --}}

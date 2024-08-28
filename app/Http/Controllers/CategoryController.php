@@ -27,12 +27,12 @@ class CategoryController extends Controller
                 $pagination = $blog['pagination']; // Pagination data
                 //dd($category['name']);
 
-                $site_name = env('APP_NAME');
+                $site_name = env('APP_NAME', 'Synex Digital');
                 $seo_title = $category['s_title'];
                 $seo_description = $category['s_description'];
                 $seo_tags = $category['s_tags'];
                 $img = asset('fav-low.png');
-                $url = env('APP_URL');
+                $url = env('APP_URL', 'https://synexdigital.com');
 
                 SEOMeta::setCanonical($url . request()->getPathInfo());
 

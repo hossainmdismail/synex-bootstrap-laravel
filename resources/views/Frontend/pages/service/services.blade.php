@@ -320,7 +320,8 @@
                                     Social Media Management
                                 </li>
                             </ul>
-                            <a href="{{ route('service.digital-marketing') }}" class="btn btn-primary btn-sm">Learn more</a>
+                            <a href="{{ route('service.digital-marketing') }}" class="btn btn-primary btn-sm">Learn
+                                more</a>
                         </div>
                     </div>
                 </div>
@@ -540,7 +541,7 @@
                 </div>
                 <div class="col-md-6 order-1 order-md-2">
                     <div class="w-100 position-relative serviceimg-box">
-                        <img class="service-image" src="{{ asset('Frontend') }}/images/service1.webp" width="90%"
+                        <img class="service-image" src="{{ asset('Frontend') }}/images/service9.webp" width="90%"
                             alt="" srcset="">
                     </div>
                 </div>
@@ -554,7 +555,7 @@
             <div class="row py-md-5">
                 <div class="col-md-6">
                     <div class="w-100 position-relative serviceimg-box">
-                        <img class="service-image-right" src="{{ asset('Frontend') }}/images/service7.webp"
+                        <img class="service-image-right" src="{{ asset('Frontend') }}/images/service10.webp"
                             width="90%" alt="" srcset="">
                     </div>
                 </div>

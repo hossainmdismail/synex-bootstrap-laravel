@@ -14,12 +14,12 @@ class BlogController extends Controller
 {
     public function blogs(Request $request)
     {
-        $site_name = env('APP_NAME');
+        $site_name = env('APP_NAME', 'Synex Digital');
         $seo_title = 'Blogs';
         $seo_description = 'description';
         $seo_tags = 'Home';
         $img = asset('fav-low.png');
-        $url = env('APP_URL');
+        $url = env('APP_URL', 'https://synexdigital.com');
 
         SEOMeta::setCanonical($url . request()->getPathInfo());
         // Set SEO meta tags
@@ -126,13 +126,13 @@ class BlogController extends Controller
             $popuar = $blog['popular'];
             $related = $blog['related'];
 
-            $site_name = env('APP_NAME');
+            $site_name = env('APP_NAME', 'Synex Digital');
             $seo_title = $blog['content']['s_title'];
             $seo_description = $blog['content']['s_description'];
             $seo_tags = $blog['content']['s_tags'];
             $img = $blog['content']['image'];
             $brandImg = $blog['content']['image'];
-            $url = env('APP_URL');
+            $url = env('APP_URL', 'https://synexdigital.com');
 
             SEOMeta::setCanonical($url . request()->getPathInfo());
             // Set SEO meta tags

@@ -67,6 +67,10 @@
                         <li class="nav-item">
                             <a class="nav-link fw-medium" aria-current="page" href="{{ route('home') }}">Home</a>
                         </li>
+                    @else
+                        <li class="nav-item">
+                            <a class="nav-link fw-medium" aria-current="page" href="{{ route('about') }}">About Us</a>
+                        </li>
                     @endif
                     <li class="nav-item">
                         <a class="nav-link fw-medium {{ url()->current() == route('services') ? 'active' : '' }}"

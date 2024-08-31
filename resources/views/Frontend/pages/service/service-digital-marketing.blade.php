@@ -3,34 +3,34 @@
     @php
         $items = [
             [
-                'title' => 'Content Writing',
+                'title' => 'Digital Marketing Strategy Development',
                 'description' =>
-                    'Enhance your online presence with well-written blogs, providing valuable information to your audience and improving your website’s search engine ranking.',
+                    'We create tailored strategies that align with your business goals, ensuring every campaign drives results. Leverage our expertise to navigate the digital landscape effectively.',
             ],
             [
-                'title' => 'SEO',
+                'title' => 'Social Media Marketing',
                 'description' =>
-                    'Increase your website’s visibility and search engine ranking with on-page and off-page techniques, boosting your authority and improving search performance.',
+                    'Our Digital Marketing Managers would manage your social media channels, driving engagement and building your brand effortlessly. Trust us to amplify your social media impact.',
             ],
             [
-                'title' => 'Content Creation',
+                'title' => 'SEO Optimization',
                 'description' =>
-                    'Create visually appealing and informative content across various platforms to engage your audience.',
+                    'Enhance your website’s visibility on search engines, driving organic traffic and boosting your online presence. Choose us to help your business rank higher and reach more customers.',
             ],
             [
-                'title' => 'Social Media Management',
+                'title' => 'Content Marketing',
                 'description' =>
-                    'Build brand awareness, engagement, and customer loyalty through strategic promotion and interaction on social media platforms.',
+                    'We produce compelling content that resonates with your audience, positioning your brand as a leader in your industry.',
             ],
             [
-                'title' => 'Social Media Advertising',
+                'title' => 'Pay-Per-Click Advertising (PPC)',
                 'description' =>
-                    'Build brand awareness, engagement, and customer loyalty through strategic promotion and interaction on social media platforms.',
+                    'Maximize your ROI with targeted PPC campaigns that reach your ideal audience. Partner with us to make every click count and drive more leads.',
             ],
             [
-                'title' => 'PPC',
+                'title' => 'Email Marketing',
                 'description' =>
-                    'Drive targeted traffic to your website with strategic online ads, paying only for actual clicks to make the most of your advertising budget.',
+                    'Drive digital marketing success with our personalized email campaigns that nurture leads and convert them into loyal customers. Grow your business with our email strategies.',
             ],
         ];
     @endphp
@@ -44,13 +44,10 @@
                     <div class="bd-top">
                         <span class="text-primary">Digital Marketing</span>
                         <h1 class="pt-2">
-                            Get Strategic <span class="text-primary">Digital and Content marketing</span> services
+                            Get Strategic <span class="text-primary">Digital Marketing</span> with Us
                         </h1>
                         <p class="pt-2">
-                            A strong marketing strategy helps your business build trust and brand loyalty, ensuring repeat
-                            customers and long-term success. Whether it’s through a strategic Google Ads Campaign,
-                            SEO-focused content, tailored email marketing, or a combination of all three, our range of
-                            digital marketing services put you in front of the right customers.
+                            Our all-encompassing digital marketing services can unleash the complete power of your own brand. Our tactics are made for success in digital marketing regardless of whether yours is a small business or a mature company willing to boost. The campaigns that we create will guarantee you that our team’s work is just as effective as a skilled team with certified Digital Marketing Managers from Meta.
                         </p>
                         <div class="pt-4">
                             <button class="btn btn-primary btn-default">View Project</button>
@@ -95,11 +92,9 @@
     <section class="container py-5">
         <div class="row pb-4">
             <div class="col-md-6 m-auto text-center">
-                <h3>Our <span class="text-primary">Digital Marketing</span> Services</h3>
+                <h3>Driving <span class="text-primary">Digital Success</span> with Our Digital Marketing Expertise</h3>
                 <p class="pt-3">
-                    Discover How Our Comprehensive Digital Marketing Services Provide Tailored Solutions, Enhance User
-                    Experience, Boost Performance, and Help Your Business Achieve Its Online Goals Effectively and
-                    Efficiently
+                    In today’s competitive landscape, digital marketing is the key to business growth. At Synex Digital, we offer tailored digital marketing services that elevate your brand, especially for small businesses.
                 </p>
             </div>
         </div>
@@ -117,11 +112,7 @@
             <div class="col-md-8 m-auto text-center">
                 <h3>Our Simple <span class="text-primary">Process </span></h3>
                 <p class="pt-3">
-                    We work with clients from a range of sectors and each has their unique marketing goals. This allows our
-                    team to develop creative solutions, working closely with our clients to understand their business on a
-                    deeper level. Working with a variety of businesses means we have in-depth knowledge of different
-                    industries and what it takes to achieve results. Take a look at our portfolio and the projects we've
-                    worked on!
+                    Our digital marketing services provide a seamless process from beginning to end when you use them. This promotes effective strategies that are based on data and adapted specifically to the unique objectives of your brand.
                 </p>
             </div>
         </div>
@@ -141,12 +132,11 @@
                     <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
                         data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                            <strong>This is the first item's accordion body.</strong> It is shown by default, until the
-                            collapse plugin adds the appropriate classes that we use to style each element. These classes
-                            control the overall appearance, as well as the showing and hiding via CSS transitions. You can
-                            modify any of this with custom CSS or overriding our default variables. It's also worth noting
-                            that just about any HTML can go within the <code>.accordion-body</code>, though the transition
-                            does limit overflow.
+                            <ul>
+                                <li>Market Analysis</li>
+                                <li>Audience Segmentation</li>
+                                <li>Competitor Insights</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -160,12 +150,11 @@
                     <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                         data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                            <strong>This is the second item's accordion body.</strong> It is hidden by default, until the
-                            collapse plugin adds the appropriate classes that we use to style each element. These classes
-                            control the overall appearance, as well as the showing and hiding via CSS transitions. You can
-                            modify any of this with custom CSS or overriding our default variables. It's also worth noting
-                            that just about any HTML can go within the <code>.accordion-body</code>, though the transition
-                            does limit overflow.
+                            <ul>
+                                <li>Digital Marketing Plan</li>
+                                <li>Content Strategy</li>
+                                <li>Channel Selection</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -179,12 +168,47 @@
                     <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
                         data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
-                            collapse plugin adds the appropriate classes that we use to style each element. These classes
-                            control the overall appearance, as well as the showing and hiding via CSS transitions. You can
-                            modify any of this with custom CSS or overriding our default variables. It's also worth noting
-                            that just about any HTML can go within the <code>.accordion-body</code>, though the transition
-                            does limit overflow.
+                            <ul>
+                                <li>Content Creation</li>
+                                <li>Ad Placement</li>
+                                <li>Social Media Engagement</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            Step 4
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <ul>
+                                <li>Performance Tracking</li>
+                                <li>A/B Testing</li>
+                                <li>Campaign Adjustments</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFive">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            Step 5
+                        </button>
+                    </h2>
+                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <ul>
+                                <li>Detailed Analytics</li>
+                                <li>Client Review</li>
+                                <li>Continuous Improvement</li>
+                            </ul>
                         </div>
                     </div>
                 </div>

@@ -3,34 +3,34 @@
     @php
         $items = [
             [
-                'title' => 'Designed for experience',
+                'title' => 'UX and UI Design',
                 'description' =>
-                    'We listen, learn, and create experiences that connect. Our design approach makes interfaces people enjoy, keeping them satisfied.',
+                    'We craft seamless, visually appealing interfaces that enhance the user experience, ensuring every interaction is intuitive and engaging. Partner with us for design excellence.',
             ],
             [
-                'title' => 'Sleek and modern look',
+                'title' => 'UI/UX Branding Design Services',
                 'description' =>
-                    "Create modern, future-ready designs. We stay ahead of trends to keep your application relevant.Our UX services focus on what's next, not just in new’s",
+                    "Our team integrates your brand identity with user experience, creating a cohesive and powerful digital presence that resonates with your audience. Let us help you align your brand with user expectations.",
             ],
             [
-                'title' => 'Quick and responsive interactions',
+                'title' => 'User Research & Analysis',
                 'description' =>
-                    'Prioritize speed and responsiveness. Our interaction designers craft each element for optimal performance, keeping your app fast and efficient.',
+                    'We conduct thorough research to understand user behavior and preferences, enabling us to design solutions that truly connect with your target audience. Rely on us for deep insights and strategic design.',
             ],
             [
-                'title' => 'Seamless across devices',
+                'title' => 'Prototyping & Wireframing',
                 'description' =>
-                    'Ensure adaptability across screen sizes and resolutions. On any device, we guarantee a captivating and seamless experience.',
+                    'Visualize your user flows with interactive prototypes and wireframes, bringing your ideas to life before development.',
             ],
             [
-                'title' => 'Accessible to all',
+                'title' => 'UI/UX Design Services',
                 'description' =>
-                    'Develop applications that meet everyone’s needs, including those with disabilities, ensuring broad accessibility.',
+                    'From concept to implementation, we provide end-to-end UI/UX design services that deliver exceptional user experiences. Trust us to handle every aspect of your design journey.',
             ],
             [
-                'title' => 'Optimised for scalability',
+                'title' => 'Usability Testing',
                 'description' =>
-                    'Design for scalability to lower future change costs. Our Information Architecture keeps your app simple and intuitive as features are added.',
+                    'We rigorously test designs to ensure they are intuitive and meet user expectations, driving satisfaction and engagement. ',
             ],
         ];
     @endphp
@@ -44,12 +44,10 @@
                     <div class="bd-top">
                         <span class="text-primary">UI/UX DESIGN</span>
                         <h1 class="pt-2">
-                            Intuitive <span class="text-primary">Product Designs</span> that drive customer adoption
+                            Creating <span class="text-primary">Fluid Experiences</span> Using <br class="d-none d-md-block">UI/UX Design
                         </h1>
                         <p class="pt-2">
-                            Craft applications that meet your user needs and evolve with your business. We provide UI/UX
-                            design services to help you create exceptional user experiences. Our approach is driven by
-                            current design trends and refined by real user feedback.
+                            Cutting-edge UI/UX design is our specialty in helping you elevate your digital presence. We create user-centered experiences that are intuitive and promote engagement; therefore driving brand loyalty. If you need to differentiate your brand or optimize user interactions, our team will deliver outstanding results.
                         </p>
                         <div class="pt-4">
                             <button class="btn btn-primary btn-default">View Project</button>
@@ -94,11 +92,11 @@
     <section class="container py-5">
         <div class="row pb-4">
             <div class="col-md-6 m-auto text-center">
-                <h3>With our <span class="text-primary">UI/UX design</span> services, you create products designed to <span
-                        class="text-primary">succeed</span></h3>
+                <h3>Crafting <span class="text-primary">Seamless Experiences</span>
+                          with our UI/UX Design skills
+                    </h3>
                 <p class="pt-3">
-                    Our UI/UX design efforts result in a user-friendly and visually appealing application, fostering
-                    increased user engagement and, consequently, greater revenue opportunities.
+                    In the current digital age, an amazing user experience spells victory. We at Synex Digital make designs that are easy to use and beautiful to behold; ones that strike a chord with consumers. Allow us make user-friendly interfaces able to boost customer satisfaction and hence yield more profits as it were.
                 </p>
             </div>
         </div>
@@ -115,11 +113,10 @@
         <div class="row pb-4">
             <div class="col-md-8 m-auto text-center">
                 <h3>Our Simple <span class="text-primary">Process</span></h3>
+
                 <p class="pt-3">
-                    When you outsource UI UX services to SynexDigital, you can enjoy peace of mind and focus on your
-                    business. We handle everything, from initial business analysis to ongoing post-release support. Our
-                    effective project management and highly skilled team guarantee the delivery of your requested project
-                    with the utmost quality and precision. </p>
+                    When you choose our UI/UX design services, we ensure a seamless process from start to finish. Our approach guarantees visually stunning and user-friendly designs tailored to your brand's unique needs.
+                </p>
             </div>
         </div>
         <div class="row pt-2 pt-md-3">
@@ -138,12 +135,11 @@
                     <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
                         data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                            <strong>This is the first item's accordion body.</strong> It is shown by default, until the
-                            collapse plugin adds the appropriate classes that we use to style each element. These classes
-                            control the overall appearance, as well as the showing and hiding via CSS transitions. You can
-                            modify any of this with custom CSS or overriding our default variables. It's also worth noting
-                            that just about any HTML can go within the <code>.accordion-body</code>, though the transition
-                            does limit overflow.
+                            <ul>
+                                <li>User Research</li>
+                                <li>Competitor Analysis</li>
+                                <li>Market Trends</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -157,12 +153,11 @@
                     <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                         data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                            <strong>This is the second item's accordion body.</strong> It is hidden by default, until the
-                            collapse plugin adds the appropriate classes that we use to style each element. These classes
-                            control the overall appearance, as well as the showing and hiding via CSS transitions. You can
-                            modify any of this with custom CSS or overriding our default variables. It's also worth noting
-                            that just about any HTML can go within the <code>.accordion-body</code>, though the transition
-                            does limit overflow.
+                            <ul>
+                                <li>UX Strategy</li>
+                                <li>UI Concepts</li>
+                                <li>Design Roadmap</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -176,12 +171,47 @@
                     <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
                         data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
-                            collapse plugin adds the appropriate classes that we use to style each element. These classes
-                            control the overall appearance, as well as the showing and hiding via CSS transitions. You can
-                            modify any of this with custom CSS or overriding our default variables. It's also worth noting
-                            that just about any HTML can go within the <code>.accordion-body</code>, though the transition
-                            does limit overflow.
+                            <ul>
+                                <li>Wireframing</li>
+                                <li>UI/UX Design</li>
+                                <li>Prototype Creation</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            Step 4
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <ul>
+                                <li>Usability Testing</li>
+                                <li>User Feedback</li>
+                                <li>Iteration</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFive">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            Step 5
+                        </button>
+                    </h2>
+                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <ul>
+                                <li>Final Deployment</li>
+                                <li>Brand Integration</li>
+                                <li>Continuous Improvement</li>
+                            </ul>
                         </div>
                     </div>
                 </div>

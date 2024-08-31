@@ -3,34 +3,34 @@
     @php
         $items = [
             [
-                'title' => 'High-quality solution',
+                'title' => 'Web Design and Development',
                 'description' =>
-                    'Your solution will be intuitive, secure, scalable, and fast, ensuring robust support for your business.',
+                    'We create visually appealing, easy to use websites that are unique to your enterprise needs and aims.',
             ],
             [
-                'title' => 'Full control',
+                'title' => 'Website maintenance',
                 'description' =>
-                    'Our team of outsourcing developers seamlessly integrates into your workflow. Consider our company as your remote full-time employees.',
+                    'We offer continuous backup that guarantees your site is dynamic, safe, and operates seamlessly all the time.',
             ],
             [
-                'title' => 'Predictable delivery',
+                'title' => 'Seo integrated web design',
                 'description' =>
-                    "With effective project management, you get exactly what you've requested within time and budget.",
+                    "Synex Digital provides distinct web designing and developing services tailored according to specific industry requirements along with brand policies.",
             ],
             [
-                'title' => 'skilled tech talent',
+                'title' => 'Custom Web Solutions',
                 'description' =>
-                    'Our outsourcing software development services provide you with a team of experts whose skills and experiences are matched to your project.',
+                    'Your website will look good on any device including computers or mobile phones while still working perfectly.',
             ],
             [
-                'title' => 'Agile development',
+                'title' => 'Responsive Web Design',
                 'description' =>
-                    "You'll get tangible results at the end of each sprint and will be able to refine your product based on user feedback.",
+                    "You will get tangible results at the end of each sprint and will be able to refine your product based on user feedback.",
             ],
             [
-                'title' => 'Fast development pace',
+                'title' => 'Content management system (CMS)',
                 'description' =>
-                    'Within weeks, we outpace months of work by less-experienced software development outsourcing companies.',
+                    'We build user-friendly CMSs which give you control over what goes on your site without knowing anything about web designing or programming.',
             ],
         ];
     @endphp
@@ -44,14 +44,11 @@
                     <div class="bd-top">
                         <span class="text-primary">Web Development</span>
                         <h1 class="pt-2">
-                            Create a <span class="text-primary">Powerful Online Presence</span> with Our Web Development
-                            Expertise
+                            Web Designer vs Web Developer
+                            <span class="text-primary">Why does it matter & who you need?</span>
                         </h1>
                         <p class="pt-2">
-                            We Build Custom Websites That Not Only Look Amazing but Also Deliver Outstanding Performance and
-                            User
-                            Experience, Helping Your Business Stand Out and Succeed Online. Lorem ipsum dolor sit amet
-                            consectetur. Ac eros egestas ornare volutpat cras congue
+                            Web design and development consist of creating bespoke websites, merging web design and development agency background, and differentiate such roles as web designer vs web developer for web development and design foundations with html5.
                         </p>
                         <div class="pt-4">
                             <button class="btn btn-primary btn-default">View Project</button>
@@ -96,11 +93,10 @@
     <section class="container py-5">
         <div class="row pb-4">
             <div class="col-md-6 m-auto text-center">
-                <h3>The <span class="text-primary">Advantages</span> of Partnering with Us</h3>
+                <h3> Leverage Our Web Design and Development Services<span class="text-primary"> to Boost Your Business</span> </h3>
+
                 <p class="pt-3">
-                    Discover How Our Comprehensive Web Development Services Provide Tailored Solutions, Enhance User
-                    Experience, Boost Performance, and Help Your Business Achieve Its Online Goals Effectively and
-                    Efficiently
+                    At Synex Digital we focus on building stunning yet navigable custom web design and development through our specialized web design and development services. Let us help you improve your client satisfaction rate and increase your business by using our expertise.
                 </p>
             </div>
         </div>
@@ -116,12 +112,9 @@
     <section class="container py-5">
         <div class="row pb-4">
             <div class="col-md-8 m-auto text-center">
-                <h3>The <span class="text-primary">How We </span> Work</h3>
+                <h3>How We<span class="text-primary"> Work</span></h3>
                 <p class="pt-3">
-                    When you outsource software development services to GoodCore, you can enjoy peace of mind and focus on
-                    your business. We handle everything, from initial business analysis to ongoing post-release support. Our
-                    effective project management and highly skilled team guarantee the delivery of your requested project
-                    with the utmost quality and precision.
+                    Synex Digital is a web designing company that specializes in custom website design and development solutions; it also consults its customers on the things related to web designing, building or management in order to have an attractive yet highly efficient online presence.
                 </p>
             </div>
         </div>
@@ -141,12 +134,11 @@
                     <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
                         data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                            <strong>This is the first item's accordion body.</strong> It is shown by default, until the
-                            collapse plugin adds the appropriate classes that we use to style each element. These classes
-                            control the overall appearance, as well as the showing and hiding via CSS transitions. You can
-                            modify any of this with custom CSS or overriding our default variables. It's also worth noting
-                            that just about any HTML can go within the <code>.accordion-body</code>, though the transition
-                            does limit overflow.
+                            <ul>
+                                <li>Understand goals</li>
+                                <li>Discuss roles</li>
+                                <li>Outline deliverables</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -160,12 +152,11 @@
                     <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                         data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                            <strong>This is the second item's accordion body.</strong> It is hidden by default, until the
-                            collapse plugin adds the appropriate classes that we use to style each element. These classes
-                            control the overall appearance, as well as the showing and hiding via CSS transitions. You can
-                            modify any of this with custom CSS or overriding our default variables. It's also worth noting
-                            that just about any HTML can go within the <code>.accordion-body</code>, though the transition
-                            does limit overflow.
+                            <ul>
+                                <li>Design unique</li>
+                                <li>Develop responsive</li>
+                                <li>Integrate SEO</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -179,12 +170,47 @@
                     <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
                         data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
-                            collapse plugin adds the appropriate classes that we use to style each element. These classes
-                            control the overall appearance, as well as the showing and hiding via CSS transitions. You can
-                            modify any of this with custom CSS or overriding our default variables. It's also worth noting
-                            that just about any HTML can go within the <code>.accordion-body</code>, though the transition
-                            does limit overflow.
+                            <ul>
+                                <li>Implement features</li>
+                                <li>Test performance</li>
+                                <li>Ensure compatibility</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            Step 4
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <ul>
+                                <li>Deploy securely</li>
+                                <li>Monitor feedback</li>
+                                <li>Optimize speed</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFive">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            Step 5
+                        </button>
+                    </h2>
+                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <ul>
+                                <li>Maintain regularly</li>
+                                <li>Support continuously</li>
+                                <li>Enhance security</li>
+                            </ul>
                         </div>
                     </div>
                 </div>

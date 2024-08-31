@@ -1118,6 +1118,10 @@ ul.service-list li span {
     background-position: center; /* Center the background image */
     background-repeat: no-repeat; /* Prevent the background image from repeating */
 }
+p.sr-box-desc {
+    height: 100px;
+    margin-bottom: 0;
+}
 
 /* .sp-img-1 {
     background-image: url('../images/Services/srb-1.webp');

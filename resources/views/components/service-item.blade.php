@@ -11,5 +11,5 @@
         </defs>
     </svg>
     <h5 class="pb-2">{{ $title }}</h5>
-    <p>{{ $description }}</p>
+    <p class="sr-box-desc">{{ $description }}</p>
 </div>

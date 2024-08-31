@@ -47,21 +47,21 @@
         $testimonials = [
             [
                 'message' =>
-                    'Lorem ipsum dolor sit amet consectetur. Ac eros egestas ornare volutpat cras congue auctor phasellus Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum animi quasi repudiandae rerum nulla temporibus maiores saepe nesciunt voluptatibus deleniti?',
-                'client' => 'Esmail Khalifa',
-                'title' => 'StubHub™',
+                    'I could not be happier with the website that Synex Digital created for my business. They took my ideas and turned them into a stunning, user-friendly website that exceeded my expectations.',
+                'client' => 'Mahadi Tahsan',
+                'title' => 'Instructor',
             ],
             [
                 'message' =>
-                    'Lorem ipsum dolor sit amet consectetur. Ac eros egestas ornare volutpat cras congue auctor phasellus Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum animi quasi repudiandae rerum nulla temporibus maiores saepe nesciunt voluptatibus deleniti?',
-                'client' => 'Jahirupa',
-                'title' => 'Self employed',
+                    'Working with Synex Digital has been a game-changer for our online visibility. Their SEO team’s expertise and strategies have propelled our website to the top of search engine rankings. Glad to hire them on a monthly basis',
+                'client' => 'MD Sydul Amin',
+                'title' => 'Python Developer',
             ],
             [
                 'message' =>
-                    'Lorem ipsum dolor sit amet consectetur. Ac eros egestas ornare volutpat cras congue auctor phasellus Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum animi quasi repudiandae rerum nulla temporibus maiores saepe nesciunt voluptatibus deleniti?',
-                'client' => 'Imaran',
-                'title' => 'Synex Digital',
+                    'Synex Digital’s management software completely revolutionized our school. For schools that require reliability, streamlined administration, user-friendly design, and responsive assistance redefine efficiency!',
+                'client' => 'Shawon Islam',
+                'title' => 'One Year Academy',
             ],
         ];
     @endphp
@@ -71,12 +71,12 @@
         <div class="container py-md-5">
             <div class="row py-4 d-flex align-items-center">
                 <div class="col-md-6 order-2 order-md-1">
-                    <h1 class="leading-font-main font-second">IT Solutions <br>
-                        For Your <span class="leading-pill">Business</span> <br>
-                        Online Presence</h1>
+                    <h1 class="leading-font-main font-second">Business IT Solutions <br>
+                        <span class="leading-pill">Pioneering Excellence for</span> <br>
+                        Your Technological Needs
+                    </h1>
                     <h2 class="leading-font-second pt-4">
-                        We are the Synex Digital Team and are Highly Motivated to Give You The Best and effective
-                        on-time Results for Your Online Presence and Traffic Growth.
+                        As a Digital Solutions Expert, we are excited to help you through our extensive variety of services to elevate your business in the ever-changing digital landscape. Synex Digital's commercial IT solutions reflect our dedication to excellence. We are your one-stop technological solution supplier, meeting your business's particular demands with precision and competence.
                     </h2>
                     <a href="{{ route('projects') }}" class="btn btn-primary btn-default  mt-4">Explore Our Portfolio</a>
                 </div>

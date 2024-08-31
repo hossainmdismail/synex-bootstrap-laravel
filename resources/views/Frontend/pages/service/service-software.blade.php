@@ -42,6 +42,10 @@
                 'description' => 'Data Security and Compliance For your data security, we use highly encrypted security features, coupled with meeting the regulatory requirements of the market
                         .',
             ],
+            [
+                'title' => 'Intuitive User Interface',
+                'description' => 'Intuitive interface: With this, your team is able to adapt quickly to the working of the software. This minimizes downtime and further assures high productivity.',
+            ],
         ];
     @endphp
     @include('Frontend.layout.calendly')
@@ -125,7 +129,7 @@
     <section class="container py-5">
         <div class="row pb-4">
             <div class="col-md-8 m-auto text-center">
-                <h3>The <span class="text-primary">How We </span> Work</h3>
+                <h3>How We <span class="text-primary">Work</span></h3>
                 <p class="pt-3">
                     When you outsource software development services to GoodCore, you can enjoy peace of mind and focus on
                     your business. We handle everything, from initial business analysis to ongoing post-release support. Our
@@ -150,12 +154,11 @@
                     <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
                         data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                            <strong>This is the first item's accordion body.</strong> It is shown by default, until the
-                            collapse plugin adds the appropriate classes that we use to style each element. These classes
-                            control the overall appearance, as well as the showing and hiding via CSS transitions. You can
-                            modify any of this with custom CSS or overriding our default variables. It's also worth noting
-                            that just about any HTML can go within the <code>.accordion-body</code>, though the transition
-                            does limit overflow.
+                            <ul>
+                                <li>Analysis</li>
+                                <li>Set Objectives</li>
+                                <li>Risk Management</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -169,12 +172,11 @@
                     <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                         data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                            <strong>This is the second item's accordion body.</strong> It is hidden by default, until the
-                            collapse plugin adds the appropriate classes that we use to style each element. These classes
-                            control the overall appearance, as well as the showing and hiding via CSS transitions. You can
-                            modify any of this with custom CSS or overriding our default variables. It's also worth noting
-                            that just about any HTML can go within the <code>.accordion-body</code>, though the transition
-                            does limit overflow.
+                            <ul>
+                                <li>Design Planning</li>
+                                <li>Feature Mapping</li>
+                                <li>Timeline Creation</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -188,12 +190,47 @@
                     <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
                         data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
-                            collapse plugin adds the appropriate classes that we use to style each element. These classes
-                            control the overall appearance, as well as the showing and hiding via CSS transitions. You can
-                            modify any of this with custom CSS or overriding our default variables. It's also worth noting
-                            that just about any HTML can go within the <code>.accordion-body</code>, though the transition
-                            does limit overflow.
+                            <ul>
+                                <li>Development</li>
+                                <li>Testing</li>
+                                <li>Iteration</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            Step 4
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <ul>
+                                <li>User Training</li>
+                                <li>Feedback Gathering</li>
+                                <li>System Optimization</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFive">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            Step 5
+                        </button>
+                    </h2>
+                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <ul>
+                                <li>Implementation</li>
+                                <li>Training</li>
+                                <li>Ongoing Support</li>
+                            </ul>
                         </div>
                     </div>
                 </div>

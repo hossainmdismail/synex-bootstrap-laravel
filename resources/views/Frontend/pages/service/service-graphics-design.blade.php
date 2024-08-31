@@ -3,29 +3,49 @@
     @php
         $items = [
             [
-                'title' => 'Expert consultation and advice',
+                'title' => 'Tailor-Made Design Solutions',
                 'description' =>
-                    'Our graphic design agency offers free consultations and expert advice to ensure your goals, deadlines, and budget are met.',
+                    'Unlock your brand’s ultimate potential with our custom graphic design services - unparalleled visual identities that move in time with the pulse of the audience. From motion graphics design services to graphic design and branding services, we offer a wide array of services catering to each particular need.',
             ],
             [
-                'title' => 'Complete design ownership',
+                'title' => 'Branding Made Easy',
                 'description' =>
-                    'You gain full ownership of all designs and source files, plus access to licenses, plugins, and tools at no extra cost, maximizing your investment.',
+                    'Give your enterprise a brighter edge with our range of graphic designing services and affordable graphic design services that blend creativity and strategy. We will make branding simple, clear, and effective to keep your competitive advantage in the market.',
             ],
             [
-                'title' => 'Scalable services for every stage',
+                'title' => 'Creative Support 24/7',
                 'description' =>
-                    "Our graphic design agency provides regular consultations to ensure our services match your project's progress and evolving needs.",
+                    "Our team will not rest day and night to give you graphic design services for which you will also get the required support at any time of the day. Be it custom graphic design services or graphic design and branding services, we shall be delighted to contribute toward the success of your venture.",
             ],
             [
-                'title' => 'Streamlined project management',
+                'title' => 'Flexible and Affordable Solutions',
                 'description' =>
-                    'Our agency excels in project organization with ClickUp and adapts to your communication methods for seamless collaboration.',
+                    'Get the ease of our reasonably priced graphic design services, which suffice any need for budgeting purposes without compromising the quality. Our custom graphic design services will enable you to get stunning results on your terms, anytime, and just the way you want them.',
             ],
             [
-                'title' => 'Unmatched flexibility and speed',
+                'title' => 'All-Inclusive Design Hub',
                 'description' =>
-                    'Our agency is known for flexibility and fast delivery, providing updates every 1-3 days for a quick turnaround and high design standards.',
+                    'Avail all design requirements in one place through our graphic designing services. From motion graphics design services to graphic design and branding services, we offer one platform covering everything under your visual communication strategy.',
+            ],
+            [
+                'title' => 'On-Demand Creativity',
+                'description' =>
+                    'With our customized graphic design services, you request designs tailored according to the evolution of your business. Be it graphic design and branding services or creative motion graphics design services; we adjust to your specific needs in the shortest time with the best possible outcome.',
+            ],
+            [
+                'title' => 'Seamless Integration',
+                'description' =>
+                    'Our designing services are meant to integrate into your workflow seamlessly for a smooth transition and consistency in branding. We provide solutions ranging from affordable graphic design services to comprehensive graphic design and branding services that easily fit into the operation of your business.',
+            ],
+            [
+                'title' => 'Speed and Precision',
+                'description' =>
+                    'Get quick turnarounds while not compromising on quality. We offer motion graphics design services and custom graphic design services with precision and creativity, impactful, and right in tune with your brand’s vision.',
+            ],
+            [
+                'title' => 'Scalable Design Solutions',
+                'description' =>
+                    'Our graphic design and branding services grow with your business demands. Be it an affordable range of a startup needing graphic design services or a well-established brand seeking custom graphic design services, we have solutions that grow with you.',
             ],
         ];
     @endphp
@@ -39,12 +59,10 @@
                     <div class="bd-top">
                         <span class="text-primary">Graphics Design</span>
                         <h1 class="pt-2">
-                            <span class="text-primary">Graphic Design</span> that works to enhance your company's message
+                            Expert <span class="text-primary">Graphic Design Services:</span> For Every Requirement
                         </h1>
                         <p class="pt-2">
-                            At 4D Web Design, we excel in delivering bespoke graphic design solutions. Our service includes
-                            concept development, brand identity, web design, and print materials, all crafted with a keen
-                            eye for detail and creativity.
+                            From customized designs to branding and motion graphics, our professional graphic design services aim to meet all your creative needs. Whether you need an economical solution or a specialized service, we design customized solutions that enhance your brand's visual identity.
                         </p>
                         <div class="pt-4">
                             <button class="btn btn-primary btn-default">View Project</button>
@@ -89,10 +107,9 @@
     <section class="container py-5">
         <div class="row pb-4">
             <div class="col-md-6 m-auto text-center">
-                <h3>The <span class="text-primary">Advantages</span> of Partnering with Us</h3>
+                <h3>The Benefits of <span class="text-primary">Collaborating</span>  with Us</h3>
                 <p class="pt-3">
-                    We fuse art with strategy, shaping visually compelling narratives that align with your brand’s ethos and
-                    aspirations.
+                    Enter a world where creativity and strategy meet with the finest graphic design services. Understand why companies from all walks of life trust us for creating a visually attractive brand. Here is what sets us apart to make us your go-to choice for all your design needs.
                 </p>
             </div>
         </div>
@@ -108,12 +125,9 @@
     <section class="container py-5">
         <div class="row pb-4">
             <div class="col-md-8 m-auto text-center">
-                <h3>Our Simple <span class="text-primary">Process </span></h3>
+                <h3>How We <span class="text-primary">Design </span></h3>
                 <p class="pt-3">
-                    When you outsource Graphics Design services to SynexDigital, you can enjoy peace of mind and focus on
-                    your business. We handle everything, from initial business analysis to ongoing post-release support. Our
-                    effective project management and highly skilled team guarantee the delivery of your requested project
-                    with the utmost quality and precision.
+                    While you take care of your business, let us help you translate your ideas into graphical formats by partnering with us in graphic design service. From preliminary analyses of graphic design and branding services to post-implementation support for customized graphic design services, we take care of everything. Our highly experienced designers and project managers ensure every design project is executed precisely, creatively, and on time.
                 </p>
             </div>
         </div>
@@ -133,12 +147,11 @@
                     <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
                         data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                            <strong>This is the first item's accordion body.</strong> It is shown by default, until the
-                            collapse plugin adds the appropriate classes that we use to style each element. These classes
-                            control the overall appearance, as well as the showing and hiding via CSS transitions. You can
-                            modify any of this with custom CSS or overriding our default variables. It's also worth noting
-                            that just about any HTML can go within the <code>.accordion-body</code>, though the transition
-                            does limit overflow.
+                            <ul>
+                                <li>Brand Analysis</li>
+                                <li>Target Audience Analysis</li>
+                                <li>Analysis of Designs Required</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -152,12 +165,11 @@
                     <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                         data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                            <strong>This is the second item's accordion body.</strong> It is hidden by default, until the
-                            collapse plugin adds the appropriate classes that we use to style each element. These classes
-                            control the overall appearance, as well as the showing and hiding via CSS transitions. You can
-                            modify any of this with custom CSS or overriding our default variables. It's also worth noting
-                            that just about any HTML can go within the <code>.accordion-body</code>, though the transition
-                            does limit overflow.
+                            <ul>
+                                <li>Brand Objectives</li>
+                                <li>Outline Required Graphic Design Services</li>
+                                <li>Determine Timeline for the Project</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -171,12 +183,47 @@
                     <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
                         data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
-                            collapse plugin adds the appropriate classes that we use to style each element. These classes
-                            control the overall appearance, as well as the showing and hiding via CSS transitions. You can
-                            modify any of this with custom CSS or overriding our default variables. It's also worth noting
-                            that just about any HTML can go within the <code>.accordion-body</code>, though the transition
-                            does limit overflow.
+                            <ul>
+                                <li>Brainstorm on Visual Concept</li>
+                                <li>Develop Motion Graphics Concepts</li>
+                                <li>Sketch Initial Design Concepts</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            Step 4
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <ul>
+                                <li>Access Graphic Design Services</li>
+                                <li>Iterate on Designs, Refine, and Revise</li>
+                                <li>Integrate Pocket-Friendly Graphic Design Solution</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFive">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            Step 5
+                        </button>
+                    </h2>
+                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <ul>
+                                <li>Quality Check</li>
+                                <li>Present Final Design for Approval</li>
+                                <li>Deliver Final Files & Ongoing Support</li>
+                            </ul>
                         </div>
                     </div>
                 </div>

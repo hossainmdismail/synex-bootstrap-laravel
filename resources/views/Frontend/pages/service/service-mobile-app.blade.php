@@ -3,44 +3,49 @@
     @php
         $items = [
             [
-                'title' => 'iOS App Development',
+                'title' => 'Centralized Application Design Platform',
                 'description' =>
-                    'As a full-stack iOS development company, we build successful custom iPhone apps with a team of expert developers.',
+                    'Create your application design and development activities in one location, accessible from any device. Automate processes and collaborate in real-time for ultimate productivity and innovation',
             ],
             [
-                'title' => 'Android App Development',
+                'title' => 'Simplified Development Workflow',
                 'description' =>
-                    'Our Android development services cater to businesses of all sizes, delivering reliable custom apps by skilled developers.',
+                    'Achieve more in half the time with a platform built to be intuitive, fast, and powerful. The tools in our platform make the design and development of an application intuitive, reducing unnecessary overhead and accelerating project completion.',
             ],
             [
-                'title' => 'Cross-platform App Development',
+                'title' => '24x7 Development Support',
                 'description' =>
-                    'We build cross-platform apps and web experiences across industries, using HTML5, CSS3, JavaScript, and responsive design.',
+                    'Access to expert support at any time via our 24x7 support team. Whether you are facing any kind of technical issues or need guidance, we will always be ready to help you overcome these issues and keep your development on track.',
             ],
             [
-                'title' => 'Mobile App Strategy',
+                'title' => 'On-demand customization to meet unique needs',
                 'description' =>
-                    'Get a tailored mobile app strategy aligned with your business needs. Our developers streamline the process, reducing time to market and costs.',
+                    'Customize our application design and development tools to suit your needs. With flexible, custom solutions, we provide you with all it takes for your application to deliver outstanding user experiences.',
             ],
             [
-                'title' => 'Mobile App Design',
+                'title' => 'Freedom to develop your way',
                 'description' =>
-                    'We create custom mobile apps that showcase your brand and deliver exceptional user experiences across all platforms.',
+                    'With our flexible pricing model, you have complete freedom and are in full control when designing an app, without being locked into any commitments for the long term. Use our platform whenever you need it and stop using it whenever you want.',
             ],
             [
-                'title' => 'Mobile Support & Maintenance',
+                'title' => 'Easy onboarding of projects',
                 'description' =>
-                    'We offer post-launch support and maintenance for performance, compliance, and security, with 24/5 support for risk management.',
+                    'Make the switch to our app design and development platform without a hitch. Our easy onboarding and data migration process gets you off to a flying start, with no hassles to contend with.',
             ],
             [
-                'title' => 'iOT Apps',
+                'title' => 'The all-in-one suite for app development',
                 'description' =>
-                    'Build secure, scalable iOS apps with our expert developers, ensuring futuristic and in-demand solutions.',
+                    'Our platform provides the all-in-one suite for designing and developing apps, bringing all your tools and resources together in one place for efficiency and collaboration.',
             ],
             [
-                'title' => 'Enterprise Mobility',
+                'title' => 'Efficient, User-Friendly Tools',
                 'description' =>
-                    'We offer enterprise mobility services: MDM, app development, security solutions, and consulting for mobile strategies.',
+                    'Boost your designing and development of apps with our user-friendly platform built for efficiency and ease of use. Simplify everything from concept to deployment.',
+            ],
+            [
+                'title' => 'Seamless transition to a better platform',
+                'description' =>
+                    'Seamlessly port your application development projects onto our platform. We guarantee a seamless transition so that you can focus on creating fantastic applications instead of becoming entangled in technical problems.',
             ],
         ];
     @endphp
@@ -54,12 +59,10 @@
                     <div class="bd-top">
                         <span class="text-primary">Mobile App Development</span>
                         <h1 class="pt-2">
-                            Custom <span class="text-primary">Mobile App Development</span> Services Tailored to Your
-                            Business Needs
+                            Building a <span class="text-primary"> Customized Android/iOS Mobile App: </span>It hence follows that, design with development.
                         </h1>
                         <p class="pt-2">
-                            Build stunning mobile apps that offer sophisticated features and drive user adoption. Device
-                            compatibility, interoperability, scalability —we cover it all.
+                            We pride ourselves on the design and development of mobile applications from conceptualization to engaging and user-friendly mobile experiences. Bespoke solutions mean seamlessness and intuitiveness in design, enhancing interaction with the users for better conversion rates.
                         </p>
                         <div class="pt-4">
                             <button class="btn btn-primary btn-default">View Project</button>
@@ -104,10 +107,11 @@
     <section class="container py-5">
         <div class="row pb-4">
             <div class="col-md-6 m-auto text-center">
-                <h3>Our <span class="text-primary">Mobile App Development</span> Services</h3>
+                <h3>
+                    The Advantages of Partnering with Us for <br class="d-none d-md-block"><span class="text-primary">App Design and Development</span>
+                </h3>
                 <p class="pt-3">
-                    We offer mobile app development services for all stages of the development process, so regardless of
-                    whether you are starting from scratch or modernizing an existing app, we are here to help.
+                    Welcome to a whole new dimension in designing and developing applications with our innovative platform. Read why businesses from all over the world rely on us to develop their ideas into successful applications. Here's how we revolutionize the process of designing and developing an application to make it successful and innovative
                 </p>
             </div>
         </div>
@@ -123,7 +127,7 @@
     <section class="container py-5">
         <div class="row pb-4">
             <div class="col-md-8 m-auto text-center">
-                <h3>How We <span class="text-primary">Work</span> </h3>
+                <h3>How We <span class="text-primary">Work</span></h3>
                 <p class="pt-3">
                     When you outsource mobile app development services to SynexDigital, you can enjoy peace of mind and
                     focus on your business. We handle everything, from initial business analysis to ongoing post-release
@@ -148,12 +152,11 @@
                     <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
                         data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                            <strong>This is the first item's accordion body.</strong> It is shown by default, until the
-                            collapse plugin adds the appropriate classes that we use to style each element. These classes
-                            control the overall appearance, as well as the showing and hiding via CSS transitions. You can
-                            modify any of this with custom CSS or overriding our default variables. It's also worth noting
-                            that just about any HTML can go within the <code>.accordion-body</code>, though the transition
-                            does limit overflow.
+                            <ul>
+                                <li>Analysis</li>
+                                <li>Set Objectives</li>
+                                <li>Risk Assessment</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -167,12 +170,11 @@
                     <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                         data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                            <strong>This is the second item's accordion body.</strong> It is hidden by default, until the
-                            collapse plugin adds the appropriate classes that we use to style each element. These classes
-                            control the overall appearance, as well as the showing and hiding via CSS transitions. You can
-                            modify any of this with custom CSS or overriding our default variables. It's also worth noting
-                            that just about any HTML can go within the <code>.accordion-body</code>, though the transition
-                            does limit overflow.
+                            <ul>
+                                <li>Wireframing</li>
+                                <li>UI/UX Design</li>
+                                <li>Prototype Development</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -186,12 +188,47 @@
                     <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
                         data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
-                            collapse plugin adds the appropriate classes that we use to style each element. These classes
-                            control the overall appearance, as well as the showing and hiding via CSS transitions. You can
-                            modify any of this with custom CSS or overriding our default variables. It's also worth noting
-                            that just about any HTML can go within the <code>.accordion-body</code>, though the transition
-                            does limit overflow.
+                            <ul>
+                                <li>Technical Setup</li>
+                                <li>Coding</li>
+                                <li>Integration</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            Step 4
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <ul>
+                                <li>Functional Testing</li>
+                                <li>Performance Testing</li>
+                                <li>Bug Fixing</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFive">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            Step 5
+                        </button>
+                    </h2>
+                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <ul>
+                                <li>Launch Preparation</li>
+                                <li>User Training</li>
+                                <li>Ongoing Maintenance</li>
+                            </ul>
                         </div>
                     </div>
                 </div>

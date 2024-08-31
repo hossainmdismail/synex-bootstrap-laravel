@@ -36,7 +36,8 @@
     @endphp
     @include('Frontend.layout.calendly')
 
-    <section class="container-fluid py-5 service-page overflow-hidden">
+    <section class="container-fluid py-5 service-page sp-img-1 overflow-hidden"
+        style="background-image: url({{ asset('Frontend/images/Services/srb-1.webp') }})">
         <div class="container py-5">
             <div class="row py-3 py-md-5">
                 <div class="col-md-6 px-4 px-md-2 position-relative">
@@ -125,7 +126,7 @@
             </div>
         </div>
         <div class="row pt-2 pt-md-3">
-            <img class="d-none d-md-block" src="{{ asset('Frontend/images/svg/service1.svg') }}"
+            <img class="d-none d-md-block" src="{{ asset('Frontend/images/Services/sr-1.svg') }}"
                 alt="Synex Digital - Ui Ux Desgin" srcset="">
 
             {{-- Mobile menu --}}

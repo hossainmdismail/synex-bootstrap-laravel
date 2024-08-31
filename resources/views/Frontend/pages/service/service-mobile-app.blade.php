@@ -5,58 +5,61 @@
             [
                 'title' => 'iOS App Development',
                 'description' =>
-                    "As a full-stack iOS development company, we build successful custom iPhone apps with a team of expert developers.",
+                    'As a full-stack iOS development company, we build successful custom iPhone apps with a team of expert developers.',
             ],
             [
                 'title' => 'Android App Development',
                 'description' =>
-                    "Our Android development services cater to businesses of all sizes, delivering reliable custom apps by skilled developers.",
+                    'Our Android development services cater to businesses of all sizes, delivering reliable custom apps by skilled developers.',
             ],
             [
                 'title' => 'Cross-platform App Development',
                 'description' =>
-                    "We build cross-platform apps and web experiences across industries, using HTML5, CSS3, JavaScript, and responsive design.",
+                    'We build cross-platform apps and web experiences across industries, using HTML5, CSS3, JavaScript, and responsive design.',
             ],
             [
                 'title' => 'Mobile App Strategy',
                 'description' =>
-                    "Get a tailored mobile app strategy aligned with your business needs. Our developers streamline the process, reducing time to market and costs.",
+                    'Get a tailored mobile app strategy aligned with your business needs. Our developers streamline the process, reducing time to market and costs.',
             ],
             [
                 'title' => 'Mobile App Design',
                 'description' =>
-                    "We create custom mobile apps that showcase your brand and deliver exceptional user experiences across all platforms.",
+                    'We create custom mobile apps that showcase your brand and deliver exceptional user experiences across all platforms.',
             ],
             [
                 'title' => 'Mobile Support & Maintenance',
                 'description' =>
-                    "We offer post-launch support and maintenance for performance, compliance, and security, with 24/5 support for risk management.",
+                    'We offer post-launch support and maintenance for performance, compliance, and security, with 24/5 support for risk management.',
             ],
             [
                 'title' => 'iOT Apps',
                 'description' =>
-                    "Build secure, scalable iOS apps with our expert developers, ensuring futuristic and in-demand solutions.",
+                    'Build secure, scalable iOS apps with our expert developers, ensuring futuristic and in-demand solutions.',
             ],
             [
                 'title' => 'Enterprise Mobility',
                 'description' =>
-                    "We offer enterprise mobility services: MDM, app development, security solutions, and consulting for mobile strategies.",
+                    'We offer enterprise mobility services: MDM, app development, security solutions, and consulting for mobile strategies.',
             ],
         ];
     @endphp
     @include('Frontend.layout.calendly')
 
-    <section class="container-fluid py-5 service-page overflow-hidden">
+    <section class="container-fluid py-5 service-page overflow-hidden"
+        style="background-image: url({{ asset('Frontend/images/Services/srb-3.webp') }})">
         <div class="container py-5">
             <div class="row py-3 py-md-5">
                 <div class="col-md-6 px-4 px-md-2 position-relative">
                     <div class="bd-top">
                         <span class="text-primary">Mobile App Development</span>
                         <h1 class="pt-2">
-                            Custom <span class="text-primary">Mobile App Development</span> Services Tailored to Your Business Needs
+                            Custom <span class="text-primary">Mobile App Development</span> Services Tailored to Your
+                            Business Needs
                         </h1>
                         <p class="pt-2">
-                            Build stunning mobile apps that offer sophisticated features and drive user adoption. Device compatibility, interoperability, scalability —we cover it all.
+                            Build stunning mobile apps that offer sophisticated features and drive user adoption. Device
+                            compatibility, interoperability, scalability —we cover it all.
                         </p>
                         <div class="pt-4">
                             <button class="btn btn-primary btn-default">View Project</button>
@@ -103,7 +106,8 @@
             <div class="col-md-6 m-auto text-center">
                 <h3>Our <span class="text-primary">Mobile App Development</span> Services</h3>
                 <p class="pt-3">
-                    We offer mobile app development services for all stages of the development process, so regardless of whether you are starting from scratch or modernizing an existing app, we are here to help.
+                    We offer mobile app development services for all stages of the development process, so regardless of
+                    whether you are starting from scratch or modernizing an existing app, we are here to help.
                 </p>
             </div>
         </div>
@@ -121,12 +125,15 @@
             <div class="col-md-8 m-auto text-center">
                 <h3>How We <span class="text-primary">Work</span> </h3>
                 <p class="pt-3">
-                    When you outsource mobile app development services to SynexDigital, you can enjoy peace of mind and focus on your business. We handle everything, from initial business analysis to ongoing post-release support. Our effective project management and highly skilled team guarantee the delivery of your requested project with the utmost quality and precision.
+                    When you outsource mobile app development services to SynexDigital, you can enjoy peace of mind and
+                    focus on your business. We handle everything, from initial business analysis to ongoing post-release
+                    support. Our effective project management and highly skilled team guarantee the delivery of your
+                    requested project with the utmost quality and precision.
                 </p>
             </div>
         </div>
         <div class="row pt-2 pt-md-3">
-            <img class="d-none d-md-block" src="{{ asset('Frontend/images/svg/service1.svg') }}"
+            <img class="d-none d-md-block" src="{{ asset('Frontend/images/Services/sr-3.svg') }}"
                 alt="Synex Digital - Ui Ux Desgin" srcset="">
 
             {{-- Mobile menu --}}

@@ -15,7 +15,7 @@
             [
                 'title' => '24/7 global support',
                 'description' =>
-                    "Our support is available 24/7, ensuring prompt responses and visual solutions to address your queries from anywhere in the world.",
+                    'Our support is available 24/7, ensuring prompt responses and visual solutions to address your queries from anywhere in the world.',
             ],
             [
                 'title' => 'Custom features on demand',
@@ -25,7 +25,7 @@
             [
                 'title' => 'Flexible usage with no contracts',
                 'description' =>
-                    "Enjoy flexibility with our pay-as-you-go model. No contracts or long-term commitments—use our software on your terms and cancel anytime.",
+                    'Enjoy flexibility with our pay-as-you-go model. No contracts or long-term commitments—use our software on your terms and cancel anytime.',
             ],
             [
                 'title' => 'Effortless data migration',
@@ -41,7 +41,8 @@
     @endphp
     @include('Frontend.layout.calendly')
 
-    <section class="container-fluid py-5 service-page overflow-hidden">
+    <section class="container-fluid py-5 service-page overflow-hidden"
+        style="background-image: url({{ asset('Frontend/images/Services/srb-7.webp') }})">
         <div class="container py-5">
             <div class="row py-3 py-md-5">
                 <div class="col-md-6 px-4 px-md-2 position-relative">
@@ -52,7 +53,9 @@
                             Expertise
                         </h1>
                         <p class="pt-2">
-                            We create remarkable designs that convert into tangible results. Our bespoke graphic design agency services can help you build a consistent brand image across all touchpoints, increase brand engagement and improve conversion rates.
+                            We create remarkable designs that convert into tangible results. Our bespoke graphic design
+                            agency services can help you build a consistent brand image across all touchpoints, increase
+                            brand engagement and improve conversion rates.
                         </p>
                         <div class="pt-4">
                             <button class="btn btn-primary btn-default">View Project</button>
@@ -99,7 +102,9 @@
             <div class="col-md-6 m-auto text-center">
                 <h3>The <span class="text-primary">Advantages</span> of Partnering with Us</h3>
                 <p class="pt-3">
-                   Welcome to a new era of efficiency and convenience with our innovative software. Discover why clients around the globe are choosing our platform to transform their agency operations. Here's what sets us apart.
+                    Welcome to a new era of efficiency and convenience with our innovative software. Discover why clients
+                    around the globe are choosing our platform to transform their agency operations. Here's what sets us
+                    apart.
                 </p>
             </div>
         </div>
@@ -117,12 +122,15 @@
             <div class="col-md-8 m-auto text-center">
                 <h3>The <span class="text-primary">How We </span> Work</h3>
                 <p class="pt-3">
-                    When you outsource software development services to GoodCore, you can enjoy peace of mind and focus on your business. We handle everything, from initial business analysis to ongoing post-release support. Our effective project management and highly skilled team guarantee the delivery of your requested project with the utmost quality and precision.
+                    When you outsource software development services to GoodCore, you can enjoy peace of mind and focus on
+                    your business. We handle everything, from initial business analysis to ongoing post-release support. Our
+                    effective project management and highly skilled team guarantee the delivery of your requested project
+                    with the utmost quality and precision.
                 </p>
             </div>
         </div>
         <div class="row pt-2 pt-md-3">
-            <img class="d-none d-md-block" src="{{ asset('Frontend/images/svg/service1.svg') }}"
+            <img class="d-none d-md-block" src="{{ asset('Frontend/images/Services/sr-7.svg') }}"
                 alt="Synex Digital - Ui Ux Desgin" srcset="">
 
             {{-- Mobile menu --}}

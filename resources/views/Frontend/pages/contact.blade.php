@@ -72,7 +72,7 @@
             <!-- Right Side Contact Form -->
             <div class="col-md-6 pb-5 pb-md-0">
                 <div class="section-title mb-4">
-                    <h1>Grow Your <span class="section-title1">Business</span><br /> with Us</h1>
+                    <h1>Grow Your <span class="section-title1">Business</span><br /> By <span class="section-title1">Connecting</span> with Us</h1>
                 </div>
                 <p>Contact us as you are comfortable.</p>
                 <form>
@@ -87,9 +87,14 @@
                     <div class="mb-3">
                         <select id="category" name="category" class="form-select" required>
                             <option value="">Select a Category*</option>
+                            <option value="management-software">Management Software</option>
+                            <option value="saas">SaaS (Software as a Service)</option>
                             <option value="web-development">Web Development</option>
-                            <option value="design">Design</option>
-                            <option value="marketing">Marketing</option>
+                            <option value="app-development">Mobile App Development</option>
+                            <option value="digital-marketing">Digital Marketing</option>
+                            <option value="ui-design">UI UX Design</option>
+                            <option value="graphics-design">Graphics Design</option>
+                            <option value="video-editing">Video Editing</option>
                         </select>
                     </div>
                     <div class="mb-3">

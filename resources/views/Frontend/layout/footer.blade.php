@@ -49,10 +49,7 @@
                             d="M126.968 43.0552C126.407 43.0552 125.931 42.8575 125.531 42.4565C125.134 42.0583 124.934 41.5754 124.934 41.0163C124.934 40.4627 125.134 39.9855 125.531 39.5901C125.931 39.1948 126.41 38.9971 126.968 38.9971C127.508 38.9971 127.985 39.1948 128.39 39.5901C128.796 39.9883 128.999 40.4627 128.999 41.0163C128.999 41.389 128.906 41.7307 128.714 42.0414C128.525 42.352 128.278 42.5949 127.973 42.7813C127.672 42.9648 127.337 43.0552 126.968 43.0552Z"
                             fill="#3B82F6" />
                     </svg>
-                    <p class="mt-3 footer-para">Synex Digital is a Professional Software Agency
-                        Platform. Here we will provide you only interesting
-                        content, which you will like very Lorem ipsum dolor
-                        sit amet consectetur</p>
+                    <p class="mt-3 footer-para">Embark on a transformative journey with Synex Digital. Experience the power of Business IT Solutions that redefine service businesses. Activate now and let's build a future where technology meets innovation in the most SEO-optimized way possible. Contact us today to unlock success for your business.</p>
                 </div>
                 <div class="col-md-7">
                     <div class="row">

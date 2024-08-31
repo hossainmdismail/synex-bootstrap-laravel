@@ -4,8 +4,7 @@
         $items = [
             [
                 'title' => 'Range of Voiceovers',
-                'description' =>
-                    'We offer a wide selection of voiceover artists to suit your brand and message',
+                'description' => 'We offer a wide selection of voiceover artists to suit your brand and message',
             ],
             [
                 'title' => 'Priority Scheduling',
@@ -15,7 +14,7 @@
             [
                 'title' => 'Money-Back Guarantee',
                 'description' =>
-                    "Our triple protection money-back guarantee gives you the reassurance that your marketing budget is safe and sound",
+                    'Our triple protection money-back guarantee gives you the reassurance that your marketing budget is safe and sound',
             ],
             [
                 'title' => 'Licensed Footage Styles',
@@ -25,23 +24,26 @@
             [
                 'title' => 'Any Language Support',
                 'description' =>
-                    "We produce translated videos in any language from Polish, Arabic, Chinese, Urdu and many, many more! Full translation, includes native voiceover artist, text, or subtitles only.",
+                    'We produce translated videos in any language from Polish, Arabic, Chinese, Urdu and many, many more! Full translation, includes native voiceover artist, text, or subtitles only.',
             ],
         ];
     @endphp
     @include('Frontend.layout.calendly')
 
-    <section class="container-fluid py-5 service-page overflow-hidden">
+    <section class="container-fluid py-5 service-page overflow-hidden"
+        style="background-image: url({{ asset('Frontend/images/Services/srb-5.webp') }})">
         <div class="container py-5">
             <div class="row py-3 py-md-5">
                 <div class="col-md-6 px-4 px-md-2 position-relative">
                     <div class="bd-top">
                         <span class="text-primary">Video Editing</span>
                         <h1 class="pt-2">
-                            Get Incredible Results with Our   <span class="text-primary">Video Editing </span> Service
+                            Get Incredible Results with Our <span class="text-primary">Video Editing </span> Service
                         </h1>
                         <p class="pt-2">
-                            We create professional, goal-orientated, and impactful animated product explainer videos, which engage, inspire, and attract your target audience. Catch your audiences’ attention today with Squideo!
+                            We create professional, goal-orientated, and impactful animated product explainer videos, which
+                            engage, inspire, and attract your target audience. Catch your audiences’ attention today with
+                            Squideo!
                         </p>
                         <div class="pt-4">
                             <button class="btn btn-primary btn-default">View Project</button>
@@ -88,7 +90,9 @@
             <div class="col-md-6 m-auto text-center">
                 <h3>Our <span class="text-primary">Video Editing</span> Services</h3>
                 <p class="pt-3">
-                    We handle everything, from initial business analysis to ongoing post-release support. Our effective project management and highly skilled team guarantee the delivery of your requested project with the utmost quality and precision.
+                    We handle everything, from initial business analysis to ongoing post-release support. Our effective
+                    project management and highly skilled team guarantee the delivery of your requested project with the
+                    utmost quality and precision.
                 </p>
             </div>
         </div>
@@ -106,12 +110,15 @@
             <div class="col-md-8 m-auto text-center">
                 <h3>How We <span class="text-primary">Work </span></h3>
                 <p class="pt-3">
-                    When you outsource video editing services to SynexDigital, you can enjoy peace of mind and focus on your business. We handle everything, from initial business analysis to ongoing post-release support. Our effective project management and highly skilled team guarantee the delivery of your requested project with the utmost quality and precision.
+                    When you outsource video editing services to SynexDigital, you can enjoy peace of mind and focus on your
+                    business. We handle everything, from initial business analysis to ongoing post-release support. Our
+                    effective project management and highly skilled team guarantee the delivery of your requested project
+                    with the utmost quality and precision.
                 </p>
             </div>
         </div>
         <div class="row pt-2 pt-md-3">
-            <img class="d-none d-md-block" src="{{ asset('Frontend/images/svg/service1.svg') }}"
+            <img class="d-none d-md-block" src="{{ asset('Frontend/images/Services/sr-5.svg') }}"
                 alt="Synex Digital - Ui Ux Desgin" srcset="">
 
             {{-- Mobile menu --}}

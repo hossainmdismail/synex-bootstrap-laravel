@@ -25,13 +25,14 @@
             [
                 'title' => 'Unmatched flexibility and speed',
                 'description' =>
-                    "Our agency is known for flexibility and fast delivery, providing updates every 1-3 days for a quick turnaround and high design standards.",
+                    'Our agency is known for flexibility and fast delivery, providing updates every 1-3 days for a quick turnaround and high design standards.',
             ],
         ];
     @endphp
     @include('Frontend.layout.calendly')
 
-    <section class="container-fluid py-5 service-page overflow-hidden">
+    <section class="container-fluid py-5 service-page sp-img-7 overflow-hidden"
+        style="background-image: url({{ asset('Frontend/images/Services/srb-8.webp') }})">
         <div class="container py-5">
             <div class="row py-3 py-md-5">
                 <div class="col-md-6 px-4 px-md-2 position-relative">
@@ -41,7 +42,9 @@
                             <span class="text-primary">Graphic Design</span> that works to enhance your company's message
                         </h1>
                         <p class="pt-2">
-                            At 4D Web Design, we excel in delivering bespoke graphic design solutions. Our service includes concept development, brand identity, web design, and print materials, all crafted with a keen eye for detail and creativity.
+                            At 4D Web Design, we excel in delivering bespoke graphic design solutions. Our service includes
+                            concept development, brand identity, web design, and print materials, all crafted with a keen
+                            eye for detail and creativity.
                         </p>
                         <div class="pt-4">
                             <button class="btn btn-primary btn-default">View Project</button>
@@ -88,7 +91,8 @@
             <div class="col-md-6 m-auto text-center">
                 <h3>The <span class="text-primary">Advantages</span> of Partnering with Us</h3>
                 <p class="pt-3">
-                    We fuse art with strategy, shaping visually compelling narratives that align with your brand’s ethos and aspirations.
+                    We fuse art with strategy, shaping visually compelling narratives that align with your brand’s ethos and
+                    aspirations.
                 </p>
             </div>
         </div>
@@ -106,12 +110,15 @@
             <div class="col-md-8 m-auto text-center">
                 <h3>Our Simple <span class="text-primary">Process </span></h3>
                 <p class="pt-3">
-                    When you outsource Graphics Design services to SynexDigital, you can enjoy peace of mind and focus on your business. We handle everything, from initial business analysis to ongoing post-release support. Our effective project management and highly skilled team guarantee the delivery of your requested project with the utmost quality and precision.
+                    When you outsource Graphics Design services to SynexDigital, you can enjoy peace of mind and focus on
+                    your business. We handle everything, from initial business analysis to ongoing post-release support. Our
+                    effective project management and highly skilled team guarantee the delivery of your requested project
+                    with the utmost quality and precision.
                 </p>
             </div>
         </div>
         <div class="row pt-2 pt-md-3">
-            <img class="d-none d-md-block" src="{{ asset('Frontend/images/svg/service1.svg') }}"
+            <img class="d-none d-md-block" src="{{ asset('Frontend/images/Services/sr-8.svg') }}"
                 alt="Synex Digital - Ui Ux Desgin" srcset="">
 
             {{-- Mobile menu --}}

@@ -1113,12 +1113,38 @@ ul.service-list li {
 ul.service-list li span {
   padding-right: 5px;
 }
-.service-page {
-    background-image: url('../images/banner-pc.webp'); /* Specify the path to your image */
+.service-page  {
     background-size: cover; /* Ensure the background image covers the entire section */
     background-position: center; /* Center the background image */
     background-repeat: no-repeat; /* Prevent the background image from repeating */
 }
+
+/* .sp-img-1 {
+    background-image: url('../images/Services/srb-1.webp');
+}
+.sp-img-2 {
+    background-image: url('../images/Services/srb-2.webp');
+}
+.sp-img-2 {
+    background-image: url('../images/Services/srb-3.webp');
+}
+.sp-img-2 {
+    background-image: url('../images/Services/srb-4.webp');
+}
+.sp-img-2 {
+    background-image: url('../images/Services/srb-5.webp');
+}
+.sp-img-2 {
+    background-image: url('../images/Services/srb-6.webp');
+}
+.sp-img-2 {
+    background-image: url('../images/Services/srb-7.webp');
+}
+.sp-img-2 {
+    background-image: url('../images/Services/srb-8.webp');
+} */
+
+
 
 /* service page */
 .bd-top {

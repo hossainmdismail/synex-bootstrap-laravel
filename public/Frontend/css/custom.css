@@ -1039,6 +1039,7 @@ a.page-link {
     border: 0.03rem solid #b7b7b7;
     border-radius: 1rem;
     padding: 1.8rem;
+    height: 100%;
 }
 div#mind-step {
     width: 0px !important;

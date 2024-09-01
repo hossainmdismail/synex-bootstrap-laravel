@@ -2,7 +2,7 @@
     <section class="container-fluid  footer">
         <div class="container">
             <div class="row  py-4 g-5 text-center text-md-start">
-                <div class="col-lg-5">
+                <div class="col-lg-4">
                     <svg width="129" height="48" viewBox="0 0 129 48" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -49,11 +49,14 @@
                             d="M126.968 43.0552C126.407 43.0552 125.931 42.8575 125.531 42.4565C125.134 42.0583 124.934 41.5754 124.934 41.0163C124.934 40.4627 125.134 39.9855 125.531 39.5901C125.931 39.1948 126.41 38.9971 126.968 38.9971C127.508 38.9971 127.985 39.1948 128.39 39.5901C128.796 39.9883 128.999 40.4627 128.999 41.0163C128.999 41.389 128.906 41.7307 128.714 42.0414C128.525 42.352 128.278 42.5949 127.973 42.7813C127.672 42.9648 127.337 43.0552 126.968 43.0552Z"
                             fill="#3B82F6" />
                     </svg>
-                    <p class="mt-3 footer-para">Embark on a transformative journey with Synex Digital. Experience the power of Business IT Solutions that redefine service businesses. Activate now and let's build a future where technology meets innovation in the most SEO-optimized way possible. Contact us today to unlock success for your business.</p>
+                    <p class="mt-3 footer-para">Embark on a transformative journey with Synex Digital. Experience the
+                        power of Business IT Solutions that redefine service businesses. Activate now and let's build a
+                        future where technology meets innovation in the most SEO-optimized way possible. Contact us
+                        today to unlock success for your business.</p>
                 </div>
-                <div class="col-md-7">
+                <div class="col-md-8">
                     <div class="row">
-                        <div class="col-lg-4">
+                        <div class="col-lg-2">
                             <h5 class="footer-ul-title">Navigation</h5>
                             <ul class="footer-ul">
                                 <li class="footer-ul-item">
@@ -71,7 +74,7 @@
                             </ul>
                         </div>
 
-                        <div class="col-lg-4">
+                        <div class="col-lg-3">
                             <h5 class="footer-ul-title">Supports</h5>
                             <ul class="footer-ul">
                                 <li class="footer-ul-item">
@@ -87,7 +90,7 @@
                             </ul>
                         </div>
 
-                        <div class="col-lg-4 col-md-5 col-sm-4">
+                        <div class="col-lg-4">
                             <h5 class="footer-ul-title">Contact us</h5>
                             <ul class="footer-ul">
                                 <li class="footer-ul-item footer-phone">
@@ -156,6 +159,47 @@
                                     </a>
                                 </li>
 
+                            </ul>
+                        </div>
+
+                        <div class="col-lg-3">
+                            <h5 class="footer-ul-title">Address</h5>
+                            <ul class="footer-ul">
+                                <li class="footer-ul-item footer-phone mb-2">
+                                    <a href="https://maps.app.goo.gl/Pff9tTbkHS15Kuts5" rel="nofollow"
+                                        class="font-second">
+                                        <svg width="20px" height="20px" viewBox="0 0 36 36"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"
+                                            role="img" class="iconify iconify--twemoji"
+                                            preserveAspectRatio="xMidYMid meet">
+                                            <path fill="#D52B1E"
+                                                d="M4 5a4 4 0 0 0-4 4v18a4 4 0 0 0 4 4h6V5H4zm28 0h-6v26h6a4 4 0 0 0 4-4V9a4 4 0 0 0-4-4z">
+                                            </path>
+                                            <path fill="#EEE" d="M10 5h16v26H10z"></path>
+                                            <path fill="#D52B1E"
+                                                d="M18.615 22.113c1.198.139 2.272.264 3.469.401l-.305-1.002a.46.46 0 0 1 .159-.476l3.479-2.834l-.72-.339c-.317-.113-.23-.292-.115-.722l.531-1.936l-2.021.427c-.197.03-.328-.095-.358-.215l-.261-.911l-1.598 1.794c-.227.288-.687.288-.544-.376l.683-3.634l-.917.475c-.257.144-.514.168-.657-.089l-1.265-2.366v.059v-.059l-1.265 2.366c-.144.257-.401.233-.658.089l-.916-.475l.683 3.634c.144.664-.317.664-.544.376l-1.598-1.793l-.26.911c-.03.12-.162.245-.359.215l-2.021-.427l.531 1.936c.113.43.201.609-.116.722l-.72.339l3.479 2.834c.138.107.208.3.158.476l-.305 1.002l3.47-.401c.106 0 .176.059.175.181l-.214 3.704h.956l-.213-3.704c.002-.123.071-.182.177-.182z">
+                                            </path>
+                                        </svg>
+                                        379 Lawthorn Way SE, AB, Canada
+                                    </a>
+                                </li>
+                                <li class="footer-ul-item footer-phone mb-2">
+                                    <a href="https://maps.app.goo.gl/6CAuNYffyudMMC7LA" rel="nofollow"
+                                        class="font-second">
+                                        <svg width="20px" height="20px" viewBox="0 0 36 36"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"
+                                            role="img" class="iconify iconify--twemoji"
+                                            preserveAspectRatio="xMidYMid meet">
+                                            <path fill="#006A4D"
+                                                d="M36 27a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V9a4 4 0 0 1 4-4h28a4 4 0 0 1 4 4v18z">
+                                            </path>
+                                            <circle fill="#F42A41" cx="16" cy="17.5" r="7"></circle>
+                                        </svg>
+                                        87, west dhanmondi, shankar, Dhaka 1207
+                                    </a>
+                                </li>
                             </ul>
                         </div>
                     </div>

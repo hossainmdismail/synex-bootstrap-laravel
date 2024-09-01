@@ -19,10 +19,11 @@
                 </p>
             </div>
             <div class="col-md-5 text-center mt-3">
-                <form action="#" method="PORT">
+                <form action="{{ route('subscribe') }}" method="POST">
+                    @csrf
                     <div class="email-input-container mt-4">
-                        <input type="email" placeholder="person@email.com" class="email-input">
-                        <button name="mail" type="submit" class="send-button">
+                        <input type="email" placeholder="person@email.com" name="email" class="email-input">
+                        <button name="btn" type="submit" class="send-button">
                             <!-- Include your SVG arrow here -->
                             <svg width="47" height="47" viewBox="0 0 47 47" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">

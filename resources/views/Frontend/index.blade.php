@@ -4,43 +4,43 @@
     @php
         $services = [
             [
-                'name' => 'Web Development',
-                'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-                'url' => route('service.web-dev'),
-            ],
-            [
                 'name' => 'Management Software',
-                'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+                'description' => 'ERP Development, CRM Development, Project Management Software, Business Intelligence Software',
                 'url' => route('service.software'),
             ],
             [
-                'name' => 'UI UX Design',
-                'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-                'url' => route('service.uiux'),
-            ],
-            [
-                'name' => 'Digital Marketing',
-                'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-                'url' => route('service.digital-marketing'),
-            ],
-            [
-                'name' => 'Mobile App Development',
-                'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-                'url' => route('service.mobile-app'),
-            ],
-            [
-                'name' => 'Graphics Design',
-                'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-                'url' => route('service.graphics-design'),
-            ],
-            [
                 'name' => 'SaaS (Software as a Service)',
-                'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+                'description' => 'SaaS Application Development, Product Design, Maintenance and Support',
                 'url' => route('service.saas'),
             ],
             [
+                'name' => 'Web Development',
+                'description' => 'Frontend/Backend, Full Stack/CMS, E-commerce Development, Maintenance and Support',
+                'url' => route('service.web-dev'),
+            ],
+            [
+                'name' => 'Mobile App Development',
+                'description' => 'iOS/Android, Custom Development, Maintenance and Support',
+                'url' => route('service.mobile-app'),
+            ],
+            [
+                'name' => 'Digital Marketing',
+                'description' => 'SEO, Google Ads, Meta Ads,  Social Media Management, LinkedIn Ads',
+                'url' => route('service.digital-marketing'),
+            ],
+            [
+                'name' => 'UI UX Design',
+                'description' => 'User Interface/Experience Design,  Visual Design, User Testing',
+                'url' => route('service.uiux'),
+            ],
+            [
+                'name' => 'Graphics Design',
+                'description' => 'Branding and Identity, Print Design, Digital Design,  Illustration,  3D Design',
+                'url' => route('service.graphics-design'),
+            ],
+            [
                 'name' => 'Video Editing',
-                'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+                'description' => 'Post-Production,  Motion Graphics,  Video Production, Editing for Social Media',
                 'url' => route('service.video-edit'),
             ],
         ];

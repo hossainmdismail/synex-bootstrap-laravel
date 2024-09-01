@@ -197,7 +197,7 @@
                                             </path>
                                             <circle fill="#F42A41" cx="16" cy="17.5" r="7"></circle>
                                         </svg>
-                                        87, west dhanmondi, shankar, Dhaka 1207
+                                        87/3, West Dhanmondi, Shankar, Dhaka-1207, Bangladesh
                                     </a>
                                 </li>
                             </ul>

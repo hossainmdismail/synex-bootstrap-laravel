@@ -172,7 +172,7 @@
         <div class="container">
             <div class="row mb-4 text-center">
                 <p class="section-name text-white">Testimonials</p>
-                <h3 class="section-title font-second">The opinions and comments of <br> our clients</h3>
+                <h3 class="section-title font-second">The Opinions and Comments of <br> Our Clients</h3>
             </div>
 
             <div class="row g-3">

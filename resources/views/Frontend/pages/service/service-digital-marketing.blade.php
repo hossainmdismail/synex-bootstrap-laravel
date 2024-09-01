@@ -47,7 +47,11 @@
                             Get Strategic <span class="text-primary">Digital Marketing</span> with Us
                         </h1>
                         <p class="pt-2">
-                            Our all-encompassing digital marketing services can unleash the complete power of your own brand. Our tactics are made for success in digital marketing regardless of whether yours is a small business or a mature company willing to boost. The campaigns that we create will guarantee you that our team’s work is just as effective as a skilled team with certified Digital Marketing Managers from Meta.
+                            Our all-encompassing digital marketing services can unleash the complete power of your own
+                            brand. Our tactics are made for success in digital marketing regardless of whether yours is a
+                            small business or a mature company willing to boost. The campaigns that we create will guarantee
+                            you that our team’s work is just as effective as a skilled team with certified Digital Marketing
+                            Managers from Meta.
                         </p>
                         <div class="pt-4">
                             <button class="btn btn-primary btn-default">View Project</button>
@@ -94,7 +98,8 @@
             <div class="col-md-6 m-auto text-center">
                 <h3>Driving <span class="text-primary">Digital Success</span> with Our Digital Marketing Expertise</h3>
                 <p class="pt-3">
-                    In today’s competitive landscape, digital marketing is the key to business growth. At Synex Digital, we offer tailored digital marketing services that elevate your brand, especially for small businesses.
+                    In today’s competitive landscape, digital marketing is the key to business growth. At Synex Digital, we
+                    offer tailored digital marketing services that elevate your brand, especially for small businesses.
                 </p>
             </div>
         </div>
@@ -112,12 +117,14 @@
             <div class="col-md-8 m-auto text-center">
                 <h3>Our Simple <span class="text-primary">Process </span></h3>
                 <p class="pt-3">
-                    Our digital marketing services provide a seamless process from beginning to end when you use them. This promotes effective strategies that are based on data and adapted specifically to the unique objectives of your brand.
+                    Our digital marketing services provide a seamless process from beginning to end when you use them. This
+                    promotes effective strategies that are based on data and adapted specifically to the unique objectives
+                    of your brand.
                 </p>
             </div>
         </div>
         <div class="row pt-2 pt-md-3">
-            <img class="d-none d-md-block" src="{{ asset('Frontend/images/Services/sr-2.svg') }}"
+            <img class="d-none d-md-block mind-map-svg" src="{{ asset('Frontend/images/Services/sr-2.svg') }}"
                 alt="Synex Digital - Ui Ux Desgin" srcset="">
 
             {{-- Mobile menu --}}

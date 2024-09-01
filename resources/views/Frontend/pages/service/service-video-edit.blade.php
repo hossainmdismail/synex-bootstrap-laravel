@@ -18,8 +18,7 @@
             ],
             [
                 'title' => 'Corporate Video Editing Service',
-                'description' =>
-                    'Creating videos of high quality for internal communication, training and promotions.',
+                'description' => 'Creating videos of high quality for internal communication, training and promotions.',
             ],
             [
                 'title' => 'Monthly Video Editing Service ',
@@ -43,10 +42,13 @@
                     <div class="bd-top">
                         <span class="text-primary">Video Editing</span>
                         <h1 class="pt-2">
-                            Video Editing Services that turn <span class="text-primary"><br class="d-none d-md-block">Your Content </span> into Achieving Fame
+                            Video Editing Services that turn <span class="text-primary"><br class="d-none d-md-block">Your
+                                Content </span> into Achieving Fame
                         </h1>
                         <p class="pt-2">
-                            Video editing refers to rearranging video segments so that they appear in a way that is completely different from their initial arrangement. It incorporates cutting (trimming), transitioning and adding effects, among others, to finish with an appealing final version.
+                            Video editing refers to rearranging video segments so that they appear in a way that is
+                            completely different from their initial arrangement. It incorporates cutting (trimming),
+                            transitioning and adding effects, among others, to finish with an appealing final version.
                         </p>
                         <div class="pt-4">
                             <button class="btn btn-primary btn-default">View Project</button>
@@ -91,9 +93,12 @@
     <section class="container py-5">
         <div class="row pb-4">
             <div class="col-md-6 m-auto text-center">
-                <h3>Let Our <span class="text-primary">Professional Video Editing Service</span> Realise Your Brand’s Full Potential</h3>
+                <h3>Let Our <span class="text-primary">Professional Video Editing Service</span> Realise Your Brand’s Full
+                    Potential</h3>
                 <p class="pt-3">
-                    In this digital era where people are primarily influenced by impressive visuals, good quality videos play a great role in captivating attention of potential viewers. We deliver high quality professional video editing services suited for YouTube commercials and also any type of social media platform.
+                    In this digital era where people are primarily influenced by impressive visuals, good quality videos
+                    play a great role in captivating attention of potential viewers. We deliver high quality professional
+                    video editing services suited for YouTube commercials and also any type of social media platform.
                 </p>
             </div>
         </div>
@@ -111,12 +116,14 @@
             <div class="col-md-8 m-auto text-center">
                 <h3>How We <span class="text-primary">Work </span></h3>
                 <p class="pt-3">
-                    We deal with the transformation of raw footage into good videos meant for social media sites where they meet the set objectives by ensuring the finished product speaks volumes about its target audience thus driving up their interest at all costs and also video editing services for commercial advertisements.
+                    We deal with the transformation of raw footage into good videos meant for social media sites where they
+                    meet the set objectives by ensuring the finished product speaks volumes about its target audience thus
+                    driving up their interest at all costs and also video editing services for commercial advertisements.
                 </p>
             </div>
         </div>
         <div class="row pt-2 pt-md-3">
-            <img class="d-none d-md-block" src="{{ asset('Frontend/images/Services/sr-5.svg') }}"
+            <img class="d-none d-md-block mind-map-svg" src="{{ asset('Frontend/images/Services/sr-5.svg') }}"
                 alt="Synex Digital - Ui Ux Desgin" srcset="">
 
             {{-- Mobile menu --}}

@@ -1041,6 +1041,9 @@ a.page-link {
     padding: 1.8rem;
     height: 100%;
 }
+.mind-map-svg {
+    padding: 0 120px;
+}
 div#mind-step {
     width: 0px !important;
     display: flex;

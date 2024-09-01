@@ -59,10 +59,13 @@
                     <div class="bd-top">
                         <span class="text-primary">Mobile App Development</span>
                         <h1 class="pt-2">
-                            Building a <span class="text-primary"> Customized Android/iOS Mobile App: </span>It hence follows that, design with development.
+                            Building a <span class="text-primary"> Customized Android/iOS Mobile App: </span>It hence follows
+                            that, design with development.
                         </h1>
                         <p class="pt-2">
-                            We pride ourselves on the design and development of mobile applications from conceptualization to engaging and user-friendly mobile experiences. Bespoke solutions mean seamlessness and intuitiveness in design, enhancing interaction with the users for better conversion rates.
+                            We pride ourselves on the design and development of mobile applications from conceptualization
+                            to engaging and user-friendly mobile experiences. Bespoke solutions mean seamlessness and
+                            intuitiveness in design, enhancing interaction with the users for better conversion rates.
                         </p>
                         <div class="pt-4">
                             <button class="btn btn-primary btn-default">View Project</button>
@@ -108,10 +111,14 @@
         <div class="row pb-4">
             <div class="col-md-6 m-auto text-center">
                 <h3>
-                    The Advantages of Partnering with Us for <br class="d-none d-md-block"><span class="text-primary">App Design and Development</span>
+                    The Advantages of Partnering with Us for <br class="d-none d-md-block"><span class="text-primary">App
+                        Design and Development</span>
                 </h3>
                 <p class="pt-3">
-                    Welcome to a whole new dimension in designing and developing applications with our innovative platform. Read why businesses from all over the world rely on us to develop their ideas into successful applications. Here's how we revolutionize the process of designing and developing an application to make it successful and innovative
+                    Welcome to a whole new dimension in designing and developing applications with our innovative platform.
+                    Read why businesses from all over the world rely on us to develop their ideas into successful
+                    applications. Here's how we revolutionize the process of designing and developing an application to make
+                    it successful and innovative
                 </p>
             </div>
         </div>
@@ -137,7 +144,7 @@
             </div>
         </div>
         <div class="row pt-2 pt-md-3">
-            <img class="d-none d-md-block" src="{{ asset('Frontend/images/Services/sr-3.svg') }}"
+            <img class="d-none d-md-block mind-map-svg" src="{{ asset('Frontend/images/Services/sr-3.svg') }}"
                 alt="Synex Digital - Ui Ux Desgin" srcset="">
 
             {{-- Mobile menu --}}

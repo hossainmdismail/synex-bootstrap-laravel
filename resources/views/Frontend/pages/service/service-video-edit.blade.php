@@ -3,28 +3,33 @@
     @php
         $items = [
             [
-                'title' => 'Range of Voiceovers',
-                'description' => 'We offer a wide selection of voiceover artists to suit your brand and message',
+                'title' => 'Commercial Video Editing Services',
+                'description' => 'Creating neat, eye-catching and appealing video ads to improve brand visibility ',
             ],
             [
-                'title' => 'Priority Scheduling',
+                'title' => 'YouTube Video Editing Services',
                 'description' =>
-                    'Need a faster production turnaround time? Select our priority scheduling option (subject to availability)',
+                    'Editing your YouTube videos professionally to make them more engaging and attract more subscribers.',
             ],
             [
-                'title' => 'Money-Back Guarantee',
+                'title' => 'Social Media Video Editing Service',
                 'description' =>
-                    'Our triple protection money-back guarantee gives you the reassurance that your marketing budget is safe and sound',
+                    'Making videos for social networks that are dynamic and appealing capturing audience attention.',
             ],
             [
-                'title' => 'Licensed Footage Styles',
+                'title' => 'Corporate Video Editing Service',
                 'description' =>
-                    'With access to licensed clips, we create videos blending animation with stock footage, no filming needed. We also use your provided digital assets.',
+                    'Creating videos of high quality for internal communication, training and promotions.',
             ],
             [
-                'title' => 'Any Language Support',
+                'title' => 'Monthly Video Editing Service ',
                 'description' =>
-                    'We produce translated videos in any language from Polish, Arabic, Chinese, Urdu and many, many more! Full translation, includes native voiceover artist, text, or subtitles only.',
+                    'Giving constant video editing support to ensure that content from your brand is always new and updated.',
+            ],
+            [
+                'title' => 'Custom Animation and Visual Effects',
+                'description' =>
+                    'Putting in place different types of animation together with visual effects in order to give an edge over similar content available online.',
             ],
         ];
     @endphp
@@ -38,12 +43,10 @@
                     <div class="bd-top">
                         <span class="text-primary">Video Editing</span>
                         <h1 class="pt-2">
-                            Get Incredible Results with Our <span class="text-primary">Video Editing </span> Service
+                            Video Editing Services that turn <span class="text-primary"><br class="d-none d-md-block">Your Content </span> into Achieving Fame
                         </h1>
                         <p class="pt-2">
-                            We create professional, goal-orientated, and impactful animated product explainer videos, which
-                            engage, inspire, and attract your target audience. Catch your audiences’ attention today with
-                            Squideo!
+                            Video editing refers to rearranging video segments so that they appear in a way that is completely different from their initial arrangement. It incorporates cutting (trimming), transitioning and adding effects, among others, to finish with an appealing final version.
                         </p>
                         <div class="pt-4">
                             <button class="btn btn-primary btn-default">View Project</button>
@@ -88,11 +91,9 @@
     <section class="container py-5">
         <div class="row pb-4">
             <div class="col-md-6 m-auto text-center">
-                <h3>Our <span class="text-primary">Video Editing</span> Services</h3>
+                <h3>Let Our <span class="text-primary">Professional Video Editing Service</span> Realise Your Brand’s Full Potential</h3>
                 <p class="pt-3">
-                    We handle everything, from initial business analysis to ongoing post-release support. Our effective
-                    project management and highly skilled team guarantee the delivery of your requested project with the
-                    utmost quality and precision.
+                    In this digital era where people are primarily influenced by impressive visuals, good quality videos play a great role in captivating attention of potential viewers. We deliver high quality professional video editing services suited for YouTube commercials and also any type of social media platform.
                 </p>
             </div>
         </div>
@@ -110,10 +111,7 @@
             <div class="col-md-8 m-auto text-center">
                 <h3>How We <span class="text-primary">Work </span></h3>
                 <p class="pt-3">
-                    When you outsource video editing services to SynexDigital, you can enjoy peace of mind and focus on your
-                    business. We handle everything, from initial business analysis to ongoing post-release support. Our
-                    effective project management and highly skilled team guarantee the delivery of your requested project
-                    with the utmost quality and precision.
+                    We deal with the transformation of raw footage into good videos meant for social media sites where they meet the set objectives by ensuring the finished product speaks volumes about its target audience thus driving up their interest at all costs and also video editing services for commercial advertisements.
                 </p>
             </div>
         </div>
@@ -133,12 +131,11 @@
                     <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
                         data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                            <strong>This is the first item's accordion body.</strong> It is shown by default, until the
-                            collapse plugin adds the appropriate classes that we use to style each element. These classes
-                            control the overall appearance, as well as the showing and hiding via CSS transitions. You can
-                            modify any of this with custom CSS or overriding our default variables. It's also worth noting
-                            that just about any HTML can go within the <code>.accordion-body</code>, though the transition
-                            does limit overflow.
+                            <ul>
+                                <li>Concept Planning</li>
+                                <li>Scripting</li>
+                                <li>Storyboarding</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -152,12 +149,11 @@
                     <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                         data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                            <strong>This is the second item's accordion body.</strong> It is hidden by default, until the
-                            collapse plugin adds the appropriate classes that we use to style each element. These classes
-                            control the overall appearance, as well as the showing and hiding via CSS transitions. You can
-                            modify any of this with custom CSS or overriding our default variables. It's also worth noting
-                            that just about any HTML can go within the <code>.accordion-body</code>, though the transition
-                            does limit overflow.
+                            <ul>
+                                <li>Footage Importing</li>
+                                <li>Audio Importing</li>
+                                <li>Assets Importing</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -171,12 +167,47 @@
                     <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
                         data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
-                            collapse plugin adds the appropriate classes that we use to style each element. These classes
-                            control the overall appearance, as well as the showing and hiding via CSS transitions. You can
-                            modify any of this with custom CSS or overriding our default variables. It's also worth noting
-                            that just about any HTML can go within the <code>.accordion-body</code>, though the transition
-                            does limit overflow.
+                            <ul>
+                                <li>Cutting/Trimming</li>
+                                <li>Transitioning</li>
+                                <li>Visual Effects</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            Step 4
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <ul>
+                                <li>Feedback</li>
+                                <li>Adjustment</li>
+                                <li>Refinement</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFive">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            Step 5
+                        </button>
+                    </h2>
+                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <ul>
+                                <li>Formatting</li>
+                                <li>Quality Checking</li>
+                                <li>Distribution</li>
+                            </ul>
                         </div>
                     </div>
                 </div>

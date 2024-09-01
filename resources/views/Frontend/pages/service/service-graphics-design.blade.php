@@ -15,7 +15,7 @@
             [
                 'title' => 'Creative Support 24/7',
                 'description' =>
-                   'The team provides round-the-clock service in graphic design custom designs down to branding that at any given time you are covered for success.',
+                    'The team provides round-the-clock service in graphic design custom designs down to branding that at any given time you are covered for success.',
             ],
             [
                 'title' => 'Flexible and Affordable Solutions',
@@ -25,7 +25,7 @@
             [
                 'title' => 'All-Inclusive Design Hub',
                 'description' =>
-                   'Get all your design requirements under one roof. From motion graphics to branding, our services encompass every aspect of your visual communication strategy.',
+                    'Get all your design requirements under one roof. From motion graphics to branding, our services encompass every aspect of your visual communication strategy.',
             ],
             [
                 'title' => 'On-Demand Creativity',
@@ -62,7 +62,9 @@
                             Expert <span class="text-primary">Graphic Design Services:</span> For Every Requirement
                         </h1>
                         <p class="pt-2">
-                            From customized designs to branding and motion graphics, our professional graphic design services aim to meet all your creative needs. Whether you need an economical solution or a specialized service, we design customized solutions that enhance your brand's visual identity.
+                            From customized designs to branding and motion graphics, our professional graphic design
+                            services aim to meet all your creative needs. Whether you need an economical solution or a
+                            specialized service, we design customized solutions that enhance your brand's visual identity.
                         </p>
                         <div class="pt-4">
                             <button class="btn btn-primary btn-default">View Project</button>
@@ -107,9 +109,11 @@
     <section class="container py-5">
         <div class="row pb-4">
             <div class="col-md-6 m-auto text-center">
-                <h3>The Benefits of <span class="text-primary">Collaborating</span>  with Us</h3>
+                <h3>The Benefits of <span class="text-primary">Collaborating</span> with Us</h3>
                 <p class="pt-3">
-                    Enter a world where creativity and strategy meet with the finest graphic design services. Understand why companies from all walks of life trust us for creating a visually attractive brand. Here is what sets us apart to make us your go-to choice for all your design needs.
+                    Enter a world where creativity and strategy meet with the finest graphic design services. Understand why
+                    companies from all walks of life trust us for creating a visually attractive brand. Here is what sets us
+                    apart to make us your go-to choice for all your design needs.
                 </p>
             </div>
         </div>
@@ -127,12 +131,16 @@
             <div class="col-md-8 m-auto text-center">
                 <h3>How We <span class="text-primary">Design </span></h3>
                 <p class="pt-3">
-                    While you take care of your business, let us help you translate your ideas into graphical formats by partnering with us in graphic design service. From preliminary analyses of graphic design and branding services to post-implementation support for customized graphic design services, we take care of everything. Our highly experienced designers and project managers ensure every design project is executed precisely, creatively, and on time.
+                    While you take care of your business, let us help you translate your ideas into graphical formats by
+                    partnering with us in graphic design service. From preliminary analyses of graphic design and branding
+                    services to post-implementation support for customized graphic design services, we take care of
+                    everything. Our highly experienced designers and project managers ensure every design project is
+                    executed precisely, creatively, and on time.
                 </p>
             </div>
         </div>
         <div class="row pt-2 pt-md-3">
-            <img class="d-none d-md-block" src="{{ asset('Frontend/images/Services/sr-8.svg') }}"
+            <img class="d-none d-md-block mind-map-svg" src="{{ asset('Frontend/images/Services/sr-8.svg') }}"
                 alt="Synex Digital - Ui Ux Desgin" srcset="">
 
             {{-- Mobile menu --}}

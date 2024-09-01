@@ -15,7 +15,7 @@
             [
                 'title' => 'Seo integrated web design',
                 'description' =>
-                    "Synex Digital provides distinct web designing and developing services tailored according to specific industry requirements along with brand policies.",
+                    'Synex Digital provides distinct web designing and developing services tailored according to specific industry requirements along with brand policies.',
             ],
             [
                 'title' => 'Custom Web Solutions',
@@ -25,7 +25,7 @@
             [
                 'title' => 'Responsive Web Design',
                 'description' =>
-                    "You will get tangible results at the end of each sprint and will be able to refine your product based on user feedback.",
+                    'You will get tangible results at the end of each sprint and will be able to refine your product based on user feedback.',
             ],
             [
                 'title' => 'Content management system (CMS)',
@@ -48,7 +48,9 @@
                             <span class="text-primary">Why does it matter & who you need?</span>
                         </h1>
                         <p class="pt-2">
-                            Web design and development consist of creating bespoke websites, merging web design and development agency background, and differentiate such roles as web designer vs web developer for web development and design foundations with html5.
+                            Web design and development consist of creating bespoke websites, merging web design and
+                            development agency background, and differentiate such roles as web designer vs web developer for
+                            web development and design foundations with html5.
                         </p>
                         <div class="pt-4">
                             <button class="btn btn-primary btn-default">View Project</button>
@@ -93,10 +95,13 @@
     <section class="container py-5">
         <div class="row pb-4">
             <div class="col-md-6 m-auto text-center">
-                <h3> Leverage Our Web Design and Development Services<span class="text-primary"> to Boost Your Business</span> </h3>
+                <h3> Leverage Our Web Design and Development Services<span class="text-primary"> to Boost Your
+                        Business</span> </h3>
 
                 <p class="pt-3">
-                    At Synex Digital we focus on building stunning yet navigable custom web design and development through our specialized web design and development services. Let us help you improve your client satisfaction rate and increase your business by using our expertise.
+                    At Synex Digital we focus on building stunning yet navigable custom web design and development through
+                    our specialized web design and development services. Let us help you improve your client satisfaction
+                    rate and increase your business by using our expertise.
                 </p>
             </div>
         </div>
@@ -114,12 +119,14 @@
             <div class="col-md-8 m-auto text-center">
                 <h3>How We<span class="text-primary"> Work</span></h3>
                 <p class="pt-3">
-                    Synex Digital is a web designing company that specializes in custom website design and development solutions; it also consults its customers on the things related to web designing, building or management in order to have an attractive yet highly efficient online presence.
+                    Synex Digital is a web designing company that specializes in custom website design and development
+                    solutions; it also consults its customers on the things related to web designing, building or management
+                    in order to have an attractive yet highly efficient online presence.
                 </p>
             </div>
         </div>
         <div class="row pt-2 pt-md-3">
-            <img class="d-none d-md-block" src="{{ asset('Frontend/images/Services/sr-1.svg') }}"
+            <img class="d-none d-md-block mind-map-svg" src="{{ asset('Frontend/images/Services/sr-1.svg') }}"
                 alt="Synex Digital - Ui Ux Desgin" srcset="">
 
             {{-- Mobile menu --}}

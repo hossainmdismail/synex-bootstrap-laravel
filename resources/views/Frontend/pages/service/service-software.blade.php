@@ -44,7 +44,8 @@
             ],
             [
                 'title' => 'Intuitive User Interface',
-                'description' => 'Intuitive interface: With this, your team is able to adapt quickly to the working of the software. This minimizes downtime and further assures high productivity.',
+                'description' =>
+                    'Intuitive interface: With this, your team is able to adapt quickly to the working of the software. This minimizes downtime and further assures high productivity.',
             ],
         ];
     @endphp
@@ -139,7 +140,7 @@
             </div>
         </div>
         <div class="row pt-2 pt-md-3">
-            <img class="d-none d-md-block" src="{{ asset('Frontend/images/Services/sr-7.svg') }}"
+            <img class="d-none d-md-block mind-map-svg" src="{{ asset('Frontend/images/Services/sr-7.svg') }}"
                 alt="Synex Digital - Ui Ux Desgin" srcset="">
 
             {{-- Mobile menu --}}

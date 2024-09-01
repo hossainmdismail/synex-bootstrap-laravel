@@ -10,7 +10,7 @@
             [
                 'title' => 'UI/UX Branding Design Services',
                 'description' =>
-                    "Our team integrates your brand identity with user experience, creating a cohesive and powerful digital presence that resonates with your audience. Let us help you align your brand with user expectations.",
+                    'Our team integrates your brand identity with user experience, creating a cohesive and powerful digital presence that resonates with your audience. Let us help you align your brand with user expectations.',
             ],
             [
                 'title' => 'User Research & Analysis',
@@ -44,10 +44,14 @@
                     <div class="bd-top">
                         <span class="text-primary">UI/UX DESIGN</span>
                         <h1 class="pt-2">
-                            Creating <span class="text-primary">Fluid Experiences</span> Using <br class="d-none d-md-block">UI/UX Design
+                            Creating <span class="text-primary">Fluid Experiences</span> Using <br
+                                class="d-none d-md-block">UI/UX Design
                         </h1>
                         <p class="pt-2">
-                            Cutting-edge UI/UX design is our specialty in helping you elevate your digital presence. We create user-centered experiences that are intuitive and promote engagement; therefore driving brand loyalty. If you need to differentiate your brand or optimize user interactions, our team will deliver outstanding results.
+                            Cutting-edge UI/UX design is our specialty in helping you elevate your digital presence. We
+                            create user-centered experiences that are intuitive and promote engagement; therefore driving
+                            brand loyalty. If you need to differentiate your brand or optimize user interactions, our team
+                            will deliver outstanding results.
                         </p>
                         <div class="pt-4">
                             <button class="btn btn-primary btn-default">View Project</button>
@@ -93,10 +97,12 @@
         <div class="row pb-4">
             <div class="col-md-6 m-auto text-center">
                 <h3>Crafting <span class="text-primary">Seamless Experiences</span>
-                          with our UI/UX Design skills
-                    </h3>
+                    with our UI/UX Design skills
+                </h3>
                 <p class="pt-3">
-                    In the current digital age, an amazing user experience spells victory. We at Synex Digital make designs that are easy to use and beautiful to behold; ones that strike a chord with consumers. Allow us make user-friendly interfaces able to boost customer satisfaction and hence yield more profits as it were.
+                    In the current digital age, an amazing user experience spells victory. We at Synex Digital make designs
+                    that are easy to use and beautiful to behold; ones that strike a chord with consumers. Allow us make
+                    user-friendly interfaces able to boost customer satisfaction and hence yield more profits as it were.
                 </p>
             </div>
         </div>
@@ -115,12 +121,13 @@
                 <h3>Our Simple <span class="text-primary">Process</span></h3>
 
                 <p class="pt-3">
-                    When you choose our UI/UX design services, we ensure a seamless process from start to finish. Our approach guarantees visually stunning and user-friendly designs tailored to your brand's unique needs.
+                    When you choose our UI/UX design services, we ensure a seamless process from start to finish. Our
+                    approach guarantees visually stunning and user-friendly designs tailored to your brand's unique needs.
                 </p>
             </div>
         </div>
         <div class="row pt-2 pt-md-3">
-            <img class="d-none d-md-block" src="{{ asset('Frontend/images/Services/sr-4.svg') }}"
+            <img class="d-none d-md-block mind-map-svg" src="{{ asset('Frontend/images/Services/sr-4.svg') }}"
                 alt="Synex Digital - Ui Ux Desgin" srcset="">
 
             {{-- Mobile menu --}}

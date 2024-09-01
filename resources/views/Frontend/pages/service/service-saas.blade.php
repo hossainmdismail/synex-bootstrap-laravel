@@ -47,7 +47,10 @@
                             Unleash Growth with Scalable <span class="text-primary">SaaS Solutions </span>
                         </h1>
                         <p class="pt-2">
-                            Our SaaS (Software as a Service) solutions allow your business to access and use cutting-edge applications without the hassle of installation, maintenance, or infrastructure management. Join hands with us to explore cheap but effective tools for growing instead of expanding business operations.
+                            Our SaaS (Software as a Service) solutions allow your business to access and use cutting-edge
+                            applications without the hassle of installation, maintenance, or infrastructure management. Join
+                            hands with us to explore cheap but effective tools for growing instead of expanding business
+                            operations.
                         </p>
                         <div class="pt-4">
                             <button class="btn btn-primary btn-default">View Project</button>
@@ -92,10 +95,14 @@
     <section class="container py-5">
         <div class="row pb-4">
             <div class="col-md-6 m-auto text-center">
-                <h3>Utilize Our <span class="text-primary">SaaS Application Development Services</span> to Boost Your Company
+                <h3>Utilize Our <span class="text-primary">SaaS Application Development Services</span> to Boost Your
+                    Company
                 </h3>
                 <p class="pt-3">
-                    SaaS could be the answer in today’s technological landscape. At Synex Digital, we improve service provision from Software as a Service point of view, simplistically reducing complexity and risk while ensuring predictability. We would assist you with creating an amazing product that will drive growth for your scalable software business.
+                    SaaS could be the answer in today’s technological landscape. At Synex Digital, we improve service
+                    provision from Software as a Service point of view, simplistically reducing complexity and risk while
+                    ensuring predictability. We would assist you with creating an amazing product that will drive growth for
+                    your scalable software business.
                 </p>
             </div>
         </div>
@@ -113,12 +120,13 @@
             <div class="col-md-8 m-auto text-center">
                 <h3>How We <span class="text-primary">Work </span></h3>
                 <p class="pt-3">
-                    When you choose our SaaS services, we ensure a seamless process from start to finish. Our approach guarantees high-quality outcomes tailored to your business needs.
+                    When you choose our SaaS services, we ensure a seamless process from start to finish. Our approach
+                    guarantees high-quality outcomes tailored to your business needs.
                 </p>
             </div>
         </div>
         <div class="row pt-2 pt-md-3">
-            <img class="d-none d-md-block" src="{{ asset('Frontend/images/Services/sr-6.svg') }}"
+            <img class="d-none d-md-block mind-map-svg" src="{{ asset('Frontend/images/Services/sr-6.svg') }}"
                 alt="Synex Digital - Ui Ux Desgin" srcset="">
 
             {{-- Mobile menu --}}

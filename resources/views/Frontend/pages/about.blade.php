@@ -57,6 +57,17 @@
                     'facebook' => 'https://synexdigital.com',
                 ],
             ],
+            [
+                'name' => 'Shuvo',
+                'path' => 'SEO Expert',
+                'bio' => 'Expertise in web and app development, digital marketing. With 6+ years of experience',
+                'profile' => asset('Frontend/images/member/Shuvo.png'),
+                'link' => [
+                    'github' => 'https://synexdigital.com',
+                    'linkedin' => 'https://synexdigital.com',
+                    'facebook' => 'https://synexdigital.com',
+                ],
+            ],
         ];
     @endphp
     @include('Frontend.layout.calendly')

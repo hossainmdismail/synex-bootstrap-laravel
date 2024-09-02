@@ -46,6 +46,17 @@
                     'facebook' => 'https://synexdigital.com',
                 ],
             ],
+            [
+                'name' => 'Jubayer Shikder',
+                'path' => 'PHP Expert',
+                'bio' => 'Expertise in web and app development, digital marketing. With 6+ years of experience',
+                'profile' => asset('Frontend/images/member/jubayer.webp'),
+                'link' => [
+                    'github' => 'https://synexdigital.com',
+                    'linkedin' => 'https://synexdigital.com',
+                    'facebook' => 'https://synexdigital.com',
+                ],
+            ],
         ];
     @endphp
     @include('Frontend.layout.calendly')

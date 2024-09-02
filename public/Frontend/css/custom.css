@@ -127,6 +127,80 @@ header {
   padding: 0 !important;
   height: 90vh;
 }
+.member-profile img {
+    width: 100%;
+    border-radius: 22px;
+    z-index: 7;
+    position: relative;
+}
+.member-overlay {
+    background: linear-gradient(351deg, #00000061, transparent);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 21px;
+    transition: 1.8s ease-in-out;
+    z-index: 1;
+}
+
+.member-des {
+    position: absolute;
+    bottom: 0;
+    z-index: 7;
+    width: 100%;
+    border-radius: 1px 0px 20px 20px;
+    padding: 1rem;
+    background: linear-gradient(6deg, black, #00000000);
+    color: white;
+    height: 0;
+    opacity: 0;
+    transition: height .4s ease-in-out, opacity 0.5s ease-in-out;
+    overflow: hidden; /* To prevent content overflow during transition */
+}
+
+.member-des ul {
+    list-style: none;
+    display: flex;
+    column-gap: 12px;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.member-des p {
+    font-size: 13px;
+}
+
+.member-profile {
+    position: relative;
+    transition-delay: .5s;
+}
+
+/* .member-profile:hover .member-overlay {
+    width: 80%;
+} */
+
+.member-profile:hover .member-des {
+    height: 54%;
+    opacity: 1;
+}
+li.mem-social {
+    width: 26px;
+    border-radius: 5px;
+    border: 1px solid #575757;
+}
+li.mem-social:hover {
+    background: #ffffff8a;
+}
+
+.member-img-box {
+    width: 80%;
+    margin: auto;
+    position: relative;
+}
 .shadow{
   width: 100%;
   height: 90vh;
@@ -1254,6 +1328,10 @@ p.sr-box-desc {
         height: 100%;
         backdrop-filter: blur(3px);
       }
+      .member-profile:hover .member-des {
+        height: 40%;
+        opacity: 1;
+    }
 }
 
 /* responsive */

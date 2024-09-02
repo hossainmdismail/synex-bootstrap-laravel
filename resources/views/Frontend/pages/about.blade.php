@@ -1,5 +1,53 @@
 @extends('Frontend.layout.app')
 @section('content')
+    @php
+        $member = [
+            [
+                'name' => 'Ali Imran',
+                'path' => 'Web Developer',
+                'bio' => 'Expertise in web and app development, digital marketing. With 6+ years of experience',
+                'profile' => asset('Frontend/images/member/imran.webp'),
+                'link' => [
+                    'github' => 'https://synexdigital.com',
+                    'linkedin' => 'https://synexdigital.com',
+                    'facebook' => 'https://synexdigital.com',
+                ],
+            ],
+            [
+                'name' => 'Esmail Khalifa',
+                'path' => 'Web Developer',
+                'bio' => 'Expertise in web and app development, digital marketing. With 6+ years of experience',
+                'profile' => asset('Frontend/images/member/esmail-1.webp'),
+                'link' => [
+                    'github' => 'https://synexdigital.com',
+                    'linkedin' => 'https://synexdigital.com',
+                    'facebook' => 'https://synexdigital.com',
+                ],
+            ],
+            [
+                'name' => 'MD Jahirul Islam',
+                'path' => 'Web Developer',
+                'bio' => 'Expertise in web and app development, digital marketing. With 6+ years of experience',
+                'profile' => asset('Frontend/images/member/Jahir.webp'),
+                'link' => [
+                    'github' => 'https://synexdigital.com',
+                    'linkedin' => 'https://synexdigital.com',
+                    'facebook' => 'https://synexdigital.com',
+                ],
+            ],
+            [
+                'name' => 'Yousuf Sayem',
+                'path' => 'PHP Expert',
+                'bio' => 'Expertise in web and app development, digital marketing. With 6+ years of experience',
+                'profile' => asset('Frontend/images/member/yousuf.webp'),
+                'link' => [
+                    'github' => 'https://synexdigital.com',
+                    'linkedin' => 'https://synexdigital.com',
+                    'facebook' => 'https://synexdigital.com',
+                ],
+            ],
+        ];
+    @endphp
     @include('Frontend.layout.calendly')
     <!-- about us -->
     <section class="container-fluid">
@@ -153,96 +201,12 @@
                 </div>
             </div>
             <div class="row py-5">
-
-                <div class="col-md-3 member text-center">
-                    <div class="arrow">
-                        <img class="arrow-image" src="{{ asset('Frontend') }}/images/member.png" alt="">
+                @foreach ($member as $person)
+                    <div class="col-md-3 text-center">
+                        <x-team-profile name="{{ $person['name'] }}" path="{{ $person['path'] }}"
+                            bio="{{ $person['bio'] }}" profile="{{ $person['profile'] }}" :links="$person['link']" />
                     </div>
-                    <div class="member-card m-auto ">
-                        <h4 class="member-name ">Imran Mehedi</h4>
-                        <p class="memeber-position ">Founder & CEO</p>
-                        <p class="memeber-expertise ">Expertise in web and app development, digital marketing. With
-                            6+ years of experience</p>
-                        <a class="me-4" href=""><img src="{{ asset('Frontend') }}/images/Github.svg"
-                                alt=""></a>
-                        <a href=""><img src="{{ asset('Frontend') }}/images/linkedin.svg" alt=""></a>
-                    </div>
-                </div>
-
-                <div class="col-md-3 member text-center">
-                    <div class="arrow">
-                        <img class="arrow-image" src="{{ asset('Frontend') }}/images/member.png" alt="">
-                    </div>
-                    <div class="member-card m-auto ">
-                        <h4 class="member-name ">Imran Mehedi</h4>
-                        <p class="memeber-position ">Founder & CEO</p>
-                        <p class="memeber-expertise ">Expertise in web and app development, digital marketing. With
-                            6+ years of experience</p>
-                        <a class="me-4" href=""><img src="{{ asset('Frontend') }}/images/Github.svg"
-                                alt=""></a>
-                        <a href=""><img src="{{ asset('Frontend') }}/images/linkedin.svg" alt=""></a>
-                    </div>
-                </div>
-
-                <div class="col-md-3 member text-center">
-                    <div class="arrow">
-                        <img class="arrow-image" src="{{ asset('Frontend') }}/images/member.png" alt="">
-                    </div>
-                    <div class="member-card m-auto ">
-                        <h4 class="member-name ">Imran Mehedi</h4>
-                        <p class="memeber-position ">Founder & CEO</p>
-                        <p class="memeber-expertise ">Expertise in web and app development, digital marketing. With
-                            6+ years of experience</p>
-                        <a class="me-4" href=""><img src="{{ asset('Frontend') }}/images/Github.svg"
-                                alt=""></a>
-                        <a href=""><img src="{{ asset('Frontend') }}/images/linkedin.svg" alt=""></a>
-                    </div>
-                </div>
-
-                <div class="col-md-3 member text-center">
-                    <div class="arrow">
-                        <img class="arrow-image" src="{{ asset('Frontend') }}/images/member.png" alt="">
-                    </div>
-                    <div class="member-card m-auto ">
-                        <h4 class="member-name ">Imran Mehedi</h4>
-                        <p class="memeber-position ">Founder & CEO</p>
-                        <p class="memeber-expertise ">Expertise in web and app development, digital marketing. With
-                            6+ years of experience</p>
-                        <a class="me-4" href=""><img src="{{ asset('Frontend') }}/images/Github.svg"
-                                alt=""></a>
-                        <a href=""><img src="{{ asset('Frontend') }}/images/linkedin.svg" alt=""></a>
-                    </div>
-                </div>
-
-                <div class="col-md-3 member text-center">
-                    <div class="arrow">
-                        <img class="arrow-image" src="{{ asset('Frontend') }}/images/member.png" alt="">
-                    </div>
-                    <div class="member-card m-auto ">
-                        <h4 class="member-name ">Imran Mehedi</h4>
-                        <p class="memeber-position ">Founder & CEO</p>
-                        <p class="memeber-expertise ">Expertise in web and app development, digital marketing. With
-                            6+ years of experience</p>
-                        <a class="me-4" href=""><img src="{{ asset('Frontend') }}/images/Github.svg"
-                                alt=""></a>
-                        <a href=""><img src="{{ asset('Frontend') }}/images/linkedin.svg" alt=""></a>
-                    </div>
-                </div>
-
-                <div class="col-md-3 member text-center">
-                    <div class="arrow">
-                        <img class="arrow-image" src="{{ asset('Frontend') }}/images/member.png" alt="">
-                    </div>
-                    <div class="member-card m-auto ">
-                        <h4 class="member-name ">Imran Mehedi</h4>
-                        <p class="memeber-position ">Founder & CEO</p>
-                        <p class="memeber-expertise ">Expertise in web and app development, digital marketing. With
-                            6+ years of experience</p>
-                        <a class="me-4" href=""><img src="{{ asset('Frontend') }}/images/Github.svg"
-                                alt=""></a>
-                        <a href=""><img src="{{ asset('Frontend') }}/images/linkedin.svg" alt=""></a>
-                    </div>
-                </div>
+                @endforeach
             </div>
         </div>
     </section>

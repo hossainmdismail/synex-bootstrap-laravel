@@ -120,7 +120,7 @@ class HomeController extends Controller
     {
         $site_name = env('APP_NAME', 'Synex Digital');
         $seo_title = 'Contact Us';
-        $seo_description = 'description';
+        $seo_description = 'Get in touch with SynexDigital for IT services and inquiries.';
         $seo_tags = 'Contact';
         $img = asset('fav-low.png');
         $url = env('APP_URL', 'https://synexdigital.com');
@@ -132,7 +132,7 @@ class HomeController extends Controller
         SEOTools::metatags()->setKeywords($seo_tags); // Set keywords
         SEOTools::opengraph()->setUrl(url()->current());
 
-        //Open graph
+        // Open Graph
         OpenGraph::addImage($img);
         OpenGraph::setTitle($seo_title);
         OpenGraph::setDescription($seo_description);
@@ -140,44 +140,37 @@ class HomeController extends Controller
         OpenGraph::setUrl(url()->current());
         OpenGraph::setSiteName($site_name);
 
-        //twitter
+        // Twitter
         TwitterCard::setUrl(url()->current());
         TwitterCard::setImage($img);
 
         // JsonLd for Contact Page
         JsonLd::setType('WebPage');
-        JsonLd::setTitle('Contact Us - SynexDigital');
-        JsonLd::setDescription('Get in touch with SynexDigital for IT services and inquiries.');
+        JsonLd::setTitle($seo_title . ' - ' . $site_name);
+        JsonLd::setDescription($seo_description);
         JsonLd::setUrl(url()->current());
         JsonLd::addValue('inLanguage', 'bn-BD');
 
-        // Adding Contact Information
-        JsonLd::addValue('contactPoint', [
-            "@type" => "ContactPoint",
-            "telephone" => "+8801757-647319",  // Replace with your contact number
-            "contactType" => "Customer Service",  // Type of contact
-            "areaServed" => "USA",  // Area served, e.g., Bangladesh
-            "availableLanguage" => "bn-BD"  // Language available
-        ]);
-
-        // Adding Publisher Information
+        // Adding Publisher Information with Contact Information inside
         JsonLd::addValue('publisher', [
             "@type" => "Organization",
-            "name" => "SynexDigital",  // Publisher name
+            "name" => $site_name,  // Publisher name
             "url" => $url,  // URL of the organization
             "logo" => [
                 "@type" => "ImageObject",
                 "url" => $img,  // URL of the organization's logo
                 "caption" => "SynexDigital Logo"
             ],
+            "contactPoint" => [
+                "@type" => "ContactPoint",
+                "telephone" => "+8801757-647319",  // Replace with your contact number
+                "contactType" => "Customer Service",  // Type of contact
+                "areaServed" => "USA",  // Area served, e.g., Bangladesh
+                "availableLanguage" => "bn-BD"  // Language available
+            ]
         ]);
 
         // Adding Breadcrumb
-        JsonLd::addValue('mainEntityOfPage', [
-            "@type" => "WebPage",
-            "@id" => url()->current(),  // URL of the contact page
-        ]);
-
         JsonLd::addValue('breadcrumb', [
             "@type" => "BreadcrumbList",
             "itemListElement" => [
@@ -185,7 +178,7 @@ class HomeController extends Controller
                     "@type" => "ListItem",
                     "position" => 1,
                     "name" => "Home",
-                    "item" => env('APP_URL')
+                    "item" => $url
                 ],
                 [
                     "@type" => "ListItem",
@@ -195,6 +188,13 @@ class HomeController extends Controller
                 ]
             ]
         ]);
+
+        // Adding mainEntityOfPage
+        JsonLd::addValue('mainEntityOfPage', [
+            "@type" => "WebPage",
+            "@id" => url()->current(),  // URL of the contact page
+        ]);
+
 
         return view('Frontend.pages.contact');
     }

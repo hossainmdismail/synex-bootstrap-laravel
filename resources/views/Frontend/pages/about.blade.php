@@ -58,7 +58,7 @@
                 ],
             ],
             [
-                'name' => 'Shuvo',
+                'name' => 'Ayeubur Rahman',
                 'path' => 'SEO Expert',
                 'bio' => 'Expertise in web and app development, digital marketing. With 6+ years of experience',
                 'profile' => asset('Frontend/images/member/Shuvo.png'),
@@ -138,7 +138,6 @@
         <img class="leftsvgend" src="{{ asset('Frontend') }}/images/leftsvgend.svg" alt="">
         <img class="rightsvgend" src="{{ asset('Frontend') }}/images/rightsvgend.svg" alt="">
     </section>
-
     <!-- choose us -->
     <section class="container-fluid choose-us">
         <div class="container py-5">
@@ -184,7 +183,6 @@
         </div>
 
     </section>
-
     <!-- employee -->
     <section class="container-fluid">
         <div class="container py-5">
@@ -210,7 +208,6 @@
             </div>
         </div>
     </section>
-
     <!-- out team -->
     <section class="container-fluid team ">
 
@@ -232,7 +229,6 @@
             </div>
         </div>
     </section>
-
     <div class="container-fluid my-4">
         <div class="container ">
             <div class="line"></div>

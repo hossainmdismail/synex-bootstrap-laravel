@@ -6,7 +6,7 @@
         <div class="row py-2 py-md-5">
             <div class="col-md-6 px-md-5 pb-5 pb-md-0">
                 <div id="carouselExampleCaptions" class="px-md-5 carousel slide" data-bs-ride="carousel"
-                    data-bs-interval="3000">
+                    data-bs-interval="2500">
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
                             aria-current="true" aria-label="Slide 1"></button>
@@ -118,7 +118,7 @@
                     <h1>Grow Your <span class="section-title1">Business</span><br /> By <span
                             class="section-title1">Connecting</span> with Us</h1>
                 </div>
-                <p>Contact us as you are comfortable.</p>
+                <p>Get in touch for personalized support and expert solutions tailored to your needs.</p>
                 <form action="{{ route('contact.submit') }}" method="POST">
                     @csrf
                     <div class="mb-3">

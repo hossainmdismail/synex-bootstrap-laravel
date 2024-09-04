@@ -123,7 +123,7 @@
                                 <li class="footer-ul-item pt-2">
                                     <a class="text-decoration-none social-footer me-2" style="padding: 5px"
                                         target="_blank" rel="nofollow" href="https://www.facebook.com/synexdigital">
-                                        <svg fill="#3B82F6" width="16px" height="17px" viewBox="0 0 1920 1920"
+                                        <svg fill="#000000" width="16px" viewBox="0 0 1920 1920"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <path
                                                 d="M1168.737 487.897c44.672-41.401 113.824-36.889 118.9-36.663l289.354-.113 6.317-417.504L1539.65 22.9C1511.675 16.02 1426.053 0 1237.324 0 901.268 0 675.425 235.206 675.425 585.137v93.97H337v451.234h338.425V1920h451.234v-789.66h356.7l62.045-451.233H1126.66v-69.152c0-54.937 14.214-96.112 42.078-122.058"
@@ -133,7 +133,7 @@
                                     <a class="text-decoration-none social-footer me-2" style="padding: 5px"
                                         target="_blank" rel="nofollow"
                                         href="https://www.linkedin.com/company/synex-digital">
-                                        <svg fill="#0A66C2" width="18px" version="1.1" id="Layer_1"
+                                        <svg fill="#000000" width="18px" version="1.1" id="Layer_1"
                                             xmlns="http://www.w3.org/2000/svg"
                                             xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-271 283.9 256 235.1"
                                             xml:space="preserve">
@@ -150,7 +150,7 @@
                                     <a class="text-decoration-none social-footer me-2" style="padding: 5px"
                                         target="_blank" rel="nofollow"
                                         href="https://www.upwork.com/agencies/1705648766983696384/">
-                                        <svg fill="#14A800" width="20px" height="20px" viewBox="0 0 32 32"
+                                        <svg fill="#000000" width="20px" height="20px" viewBox="0 0 32 32"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <path
                                                 d="M24.75 17.542c-1.469 0-2.849-0.62-4.099-1.635l0.302-1.432 0.010-0.057c0.276-1.521 1.13-4.078 3.786-4.078 1.99 0 3.604 1.615 3.604 3.604 0 1.984-1.615 3.599-3.604 3.599zM24.75 6.693c-3.385 0-6.016 2.198-7.083 5.818-1.625-2.443-2.865-5.38-3.583-7.854h-3.646v9.484c-0.005 1.875-1.521 3.391-3.396 3.396-1.875-0.005-3.391-1.526-3.396-3.396v-9.484h-3.646v9.484c0 3.885 3.161 7.068 7.042 7.068 3.885 0 7.042-3.182 7.042-7.068v-1.589c0.708 1.474 1.578 2.974 2.635 4.297l-2.234 10.495h3.729l1.62-7.615c1.417 0.906 3.047 1.479 4.917 1.479 4 0 7.25-3.271 7.25-7.266 0-4-3.25-7.25-7.25-7.25z" />

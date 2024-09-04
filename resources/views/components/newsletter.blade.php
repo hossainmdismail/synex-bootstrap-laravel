@@ -15,7 +15,7 @@
             </div>
             <div class="col-lg-12 col-md-12 col-sm-12 text-center mt-3">
                 <p class="footer-title ">
-                    Subscribe To Your Newsletter and get exciting offers and discounts
+                    Subscribe To Your Newsletter and Get Exciting Offers and Discounts
                 </p>
             </div>
             <div class="col-md-5 text-center mt-3">

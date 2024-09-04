@@ -86,11 +86,11 @@
                     <div class="experience-card shadow mt-4">
                         <div class="row px-3 px-md-5 py-4">
                             <div class="col-6 px-5">
-                                <h5 class="font-2rem">5.5+</h5>
+                                <h5 class="font-2rem">8+</h5>
                                 <p>Years of Experience</p>
                             </div>
                             <div class="col-6 px-5">
-                                <h5 class="font-2rem">25+</h5>
+                                <h5 class="font-2rem">200+</h5>
                                 <p>Project Challanges</p>
                             </div>
                             <div class="col-6 px-5">
@@ -98,8 +98,8 @@
                                 <p>Positive Reviews</p>
                             </div>
                             <div class="col-6 px-5">
-                                <h5 class="font-2rem">30+</h5>
-                                <p>Employee</p>
+                                <h5 class="font-2rem">11-50</h5>
+                                <p>Employees</p>
                             </div>
                         </div>
                     </div>
@@ -109,22 +109,12 @@
                         <h5 class="font-2rem">Going further than just a cowering space, Synex Digital <span
                                 class="font-main"> Offers More</span></h5>
                         <!-- <h5 class="font-2rem"></h5> -->
-                        <p class="mt-4 mb-4 caption-black">Lorem ipsum dolor sit amet consectetur. Ac eros egestas
-                            ornare
-                            volutpat cras congue auctor phasellus. Lorem ipsum dolor sit
-                            amet consectetur. Ac eros egestas ornare volutpat cras congue
-                            auctor phasellus. Lorem ipsum dolor sit amet consectetur. </p>
-                        <p class="mb-3 caption-black">Lorem ipsum dolor sit amet consectetur. Ac eros egestas ornare
-                            volutpat cras congue auctor phasellus. Lorem ipsum dolor sit
-                            amet consectetur. Ac eros egestas ornare volutpat cras congue
-                            auctor phasellus. Lorem ipsum dolor sit amet consectetur. Ac
-                            eros egestas ornare volutpat cras congue auctor phasellus.
-                            Lorem ipsum dolor sit amet consectetur. Ac eros egestas ornare
-                            volutpat cras congue auctor phasellus. Lorem ipsum dolor sit
-                            amet consectetur. Lorem ipsum dolor sit amet consectetur. Ac
-                            eros egestas ornare volutpat cras congue auctor phasellus.
-                            Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit
-                            amet consectetur. </p>
+                        <p class="mt-4 mb-4 caption-black">
+                            At Synex Digital, we go beyond being a digital solutions provider. We are your trusted partner in driving technology and business growth. With over 8 years of experience, we specialize in delivering innovative Web and App development, Custom Software Solutions, and comprehensive Digital Marketing services tailored to your business needs.
+                        </p>
+                        <p class="mb-3 caption-black">
+                            We’re dedicated to helping businesses thrive in the digital landscape by providing high-quality, scalable solutions that enhance user experience, boost online visibility, and drive engagement. Whether you're a startup aiming to make an impact or an established brand seeking to innovate, Synex Digital is here to guide you every step of the way. Partner with us to transform your vision into reality and stay ahead in the competitive market.
+                        </p>
                         <button class="btn  btn-default btn-outline-primary  rounded-sm">Get in touch</button>
                     </div>
                 </div>
@@ -187,16 +177,16 @@
                 </div>
                 <div class="col-md-6 d-flex align-items-center py-md-3">
                     <div class="employee-card">
-                        <h5 class="employee-title">High skilled employees from worldwide<span class="font-main">.</span>
+                        <h5 class="employee-title">High <span class="font-main">Skilled Employees</span> from Worldwide<span class="font-main">.</span>
                         </h5>
                         <div class="employee-body ">
-                            <p>Lorem ipsum dolor sit amet consectetur. Ac eros egestas ornare volutpat cras congue
-                                auctor phasellus</p>
-                            <p class="mt-4"> Lorem ipsum dolor sit amet consectetur. Ac eros egestas ornare volutpat
-                                cras congue auctor phasellusLorem ipsum dolor sit amet consectetur. Ac eros egestas
-                                ornare volutpat cras congue auctor phasellusLorem ipsum dolor sit amet consectetur.
-                                Ac
-                                eros egestas ornare volutpat cras congue auctor phasellus</p>
+                            <p>
+                                At Synex Digital, our strength lies in our diverse team of highly skilled professionals from around the globe. We bring together a wealth of expertise and innovative thinking to tackle complex challenges and deliver exceptional results.
+                            </p>
+                            <p class="mt-4">
+                                Our talented workforce is dedicated to providing world-class digital solutions, tailored to meet the unique needs of each client. By leveraging the skills and insights of our global team, we ensure that every project benefits from a broad perspective, cutting-edge technologies, and best-in-class practices. Trust Synex Digital to connect you with top talent that drives your success in the digital landscape.
+                            </p>
+
                         </div>
                     </div>
                 </div>

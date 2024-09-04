@@ -154,7 +154,7 @@ header {
     padding: 1rem;
     background: linear-gradient(6deg, black, #00000000);
     color: white;
-    height: 0;
+    height: auto;
     opacity: 0;
     transition: height .4s ease-in-out, opacity 0.5s ease-in-out;
     overflow: hidden; /* To prevent content overflow during transition */
@@ -184,7 +184,7 @@ header {
 } */
 
 .member-profile:hover .member-des {
-    height: 54%;
+    height: auto;
     opacity: 1;
 }
 li.mem-social {
@@ -1329,7 +1329,7 @@ p.sr-box-desc {
         backdrop-filter: blur(3px);
       }
       .member-profile:hover .member-des {
-        height: 40%;
+        height: auto;
         opacity: 1;
     }
 }

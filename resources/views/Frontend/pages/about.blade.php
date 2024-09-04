@@ -5,7 +5,8 @@
             [
                 'name' => 'Ali Imran Mehedi',
                 'path' => 'Chief Executive Officer',
-                'bio' => 'Specialized in IT innovation and excellence, committed to top-tier service and client satisfaction.',
+                'bio' =>
+                    'Specialized in IT innovation and excellence, committed to top-tier service and client satisfaction.',
                 'profile' => asset('Frontend/images/member/imran.webp'),
                 'link' => [
                     'github' => 'https://github.com/imehedi007',
@@ -55,7 +56,8 @@
             [
                 'name' => 'Ayeubur Rahman',
                 'path' => 'Digital Marketing Expert',
-                'bio' => 'Data Analyst and Full Stack Digital Marketer. Growing with 3+ Years of Experience in International Stages.',
+                'bio' =>
+                    'Data Analyst and Full Stack Digital Marketer. Growing with 3+ Years of Experience in International Stages.',
                 'profile' => asset('Frontend/images/member/Shuvo.png'),
                 'link' => [
                     'linkedin' => 'https://linkedin.com/in/ayeuburrahman/',
@@ -212,7 +214,7 @@
                         congue auctor phasellus..</p>
                 </div>
             </div>
-            <div class="row py-5">
+            <div class="row py-5 g-3">
                 @foreach ($member as $person)
                     <div class="col-md-3 text-center">
                         <x-team-profile name="{{ $person['name'] }}" path="{{ $person['path'] }}"

@@ -9,7 +9,7 @@
                 'profile' => asset('Frontend/images/member/imran.webp'),
                 'link' => [
                     'github' => 'https://github.com/imehedi007',
-                    'linkedin' => 'https://www.linkedin.com/in/ali-imran-mehedi/',
+                    'linkedin' => 'https://linkedin.com/in/ali-imran-mehedi/',
                 ],
             ],
             [
@@ -19,7 +19,7 @@
                 'profile' => asset('Frontend/images/member/esmail-1.webp'),
                 'link' => [
                     'github' => 'https://github.com/hossainmdismail',
-                    'linkedin' => 'https://www.linkedin.com/in/mdismailhossain2385/',
+                    'linkedin' => 'https://linkedin.com/in/mdismailhossain2385/',
                 ],
             ],
             [
@@ -29,7 +29,7 @@
                 'profile' => asset('Frontend/images/member/Jahir.webp'),
                 'link' => [
                     'github' => 'https://github.com/jahir002201',
-                    'linkedin' => 'https://www.linkedin.com/in/jahirul12/',
+                    'linkedin' => 'https://linkedin.com/in/jahirul12/',
                 ],
             ],
             [
@@ -39,7 +39,7 @@
                 'profile' => asset('Frontend/images/member/yousuf.webp'),
                 'link' => [
                     'github' => 'https://github.com/Say00em',
-                    'linkedin' => 'https://www.linkedin.com/in/say00em/',
+                    'linkedin' => 'https://linkedin.com/in/say00em/',
                 ],
             ],
             [
@@ -49,7 +49,7 @@
                 'profile' => asset('Frontend/images/member/jubayer.webp'),
                 'link' => [
                     'github' => 'https://github.com/Jobayer53',
-                    'linkedin' => 'https://www.linkedin.com/in/jobayershikder535/',
+                    'linkedin' => 'https://linkedin.com/in/jobayershikder535/',
                 ],
             ],
             [
@@ -58,7 +58,7 @@
                 'bio' => 'Data Analyst and Full Stack Digital Marketer. Growing with 3+ Years of Experience in International Stages.',
                 'profile' => asset('Frontend/images/member/Shuvo.png'),
                 'link' => [
-                    'linkedin' => 'https://www.linkedin.com/in/ayeuburrahman/',
+                    'linkedin' => 'https://linkedin.com/in/ayeuburrahman/',
                 ],
             ],
         ];

@@ -120,10 +120,10 @@
                                         office@synexdigital.com
                                     </a>
                                 </li>
-                                <li class="footer-ul-item pt-2">
+                                <li class="footer-ul-item pt-3">
                                     <a class="text-decoration-none social-footer me-2" style="padding: 5px"
                                         target="_blank" rel="nofollow" href="https://www.facebook.com/synexdigital">
-                                        <svg fill="#000000" width="16px" viewBox="0 0 1920 1920"
+                                        <svg fill="#000000" width="18px" height="18px" viewBox="0 0 1920 1920"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <path
                                                 d="M1168.737 487.897c44.672-41.401 113.824-36.889 118.9-36.663l289.354-.113 6.317-417.504L1539.65 22.9C1511.675 16.02 1426.053 0 1237.324 0 901.268 0 675.425 235.206 675.425 585.137v93.97H337v451.234h338.425V1920h451.234v-789.66h356.7l62.045-451.233H1126.66v-69.152c0-54.937 14.214-96.112 42.078-122.058"
@@ -133,7 +133,7 @@
                                     <a class="text-decoration-none social-footer me-2" style="padding: 5px"
                                         target="_blank" rel="nofollow"
                                         href="https://www.linkedin.com/company/synex-digital">
-                                        <svg fill="#000000" width="18px" version="1.1" id="Layer_1"
+                                        <svg fill="#000000" width="18px" height="18px" version="1.1" id="Layer_1"
                                             xmlns="http://www.w3.org/2000/svg"
                                             xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-271 283.9 256 235.1"
                                             xml:space="preserve">

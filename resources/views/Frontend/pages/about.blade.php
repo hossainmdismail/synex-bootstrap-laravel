@@ -268,6 +268,7 @@
                         </div>
                         <div class="slide"><img src="{{ asset('Frontend') }}/images/linkedin (2).svg" alt="Logo 1">
                         </div>
+                        <div class="slide"><img src="{{ asset('Frontend') }}/images/metallb.svg" alt="Logo 1"></div>
                         {{-- <div class="slide"><img src="{{ asset('Frontend') }}/images/metallb.svg" alt="Logo 1"></div> --}}
 
                         <!-- Duplicate slides for seamless animation -->

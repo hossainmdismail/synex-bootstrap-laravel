@@ -85,7 +85,7 @@
                             href="{{ route('blogs') }}">Blogs</a>
                     </li>
                 </ul>
-                <a class="btn btn-primary btn-default" href="{{ route('contact') }}">Get in touch</a>
+                <a class="btn btn-primary btn-default" href="{{ route('contact') }}">Get in Touch</a>
             </div>
         </div>
     </nav>

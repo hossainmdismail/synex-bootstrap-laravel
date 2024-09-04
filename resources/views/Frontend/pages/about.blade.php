@@ -91,10 +91,10 @@
                             </div>
                             <div class="col-6 px-5">
                                 <h5 class="font-2rem">200+</h5>
-                                <p>Project Challanges</p>
+                                <p>Project Completion</p>
                             </div>
                             <div class="col-6 px-5">
-                                <h5 class="font-2rem">230+</h5>
+                                <h5 class="font-2rem">130+</h5>
                                 <p>Positive Reviews</p>
                             </div>
                             <div class="col-6 px-5">
@@ -115,7 +115,8 @@
                         <p class="mb-3 caption-black">
                             We’re dedicated to helping businesses thrive in the digital landscape by providing high-quality, scalable solutions that enhance user experience, boost online visibility, and drive engagement. Whether you're a startup aiming to make an impact or an established brand seeking to innovate, Synex Digital is here to guide you every step of the way. Partner with us to transform your vision into reality and stay ahead in the competitive market.
                         </p>
-                        <button class="btn  btn-default btn-outline-primary  rounded-sm">Get in touch</button>
+                        <a href="{{ route('contact') }}" class="btn  btn-default btn-outline-primary  rounded-sm">
+                            Get in Touch</a>
                     </div>
                 </div>
             </div>
@@ -128,11 +129,10 @@
         <div class="container py-5">
             <div class="row">
                 <div class="col-md-8 m-auto text-center">
-                    <h3 class="choose-us-title">Why <span class="font-dark"> Choose </h3>
-                    <p class="text-white mb-4 mb-md-5">An exclusive offering tailored for emerging startups and
-                        established
-                        enterprises.Lorem ipsum dolor sit amet consectetur. Ac eros egestas ornare volutpat cras
-                        congue auctor phasellus..</p>
+                    <h3 class="choose-us-title">Why <span class="font-dark"> Choose</span> Us </h3>
+                    <p class="text-white mb-4 mb-md-5">
+                        Choose Synex Digital for unmatched expertise, innovative solutions, and dedicated support. Our commitment to excellence and tailored strategies ensure your success in a competitive market. Experience the difference with our results-driven approach.
+                    </p>
                 </div>
             </div>
 
@@ -141,24 +141,27 @@
                     <div class="choose-us-card ">
                         <img src="{{ asset('Frontend') }}/images/ellipse1.svg" alt="">
                         <p class="choose-us-card-title">Experience and Expertise</p>
-                        <p class="choose-us-card-para">Lorem ipsum dolor sit amet consectetur. Eget justo vulputate
-                            eget venenatis morbi in tempus.</p>
+                        <p class="choose-us-card-para">
+                            With years of experience and specialized skills, Synex Digital delivers top-notch solutions and innovative strategies to drive your business forward.
+                        </p>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="choose-us-card">
                         <img src="{{ asset('Frontend') }}/images/ellipse2.svg" alt="">
                         <p class="choose-us-card-title">Customized Solutions</p>
-                        <p class="choose-us-card-para">Lorem ipsum dolor sit amet consectetur. Eget justo vulputate
-                            eget venenatis morbi in tempus.</p>
+                        <p class="choose-us-card-para">
+                            We craft tailored solutions to meet your unique needs, ensuring personalized strategies and exceptional results that align perfectly with your business goals.
+                        </p>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="choose-us-card">
                         <img src="{{ asset('Frontend') }}/images/ellipse3.svg" alt="">
                         <p class="choose-us-card-title">Trust and Reliability</p>
-                        <p class="choose-us-card-para">Lorem ipsum dolor sit amet consectetur. Eget justo vulputate
-                            eget venenatis morbi in tempus.</p>
+                        <p class="choose-us-card-para">
+                            Count on us for dependable, trustworthy service. Our commitment to integrity and consistent performance ensures you can rely on us for all your digital needs.
+                        </p>
                     </div>
                 </div>
 
@@ -198,10 +201,11 @@
 
         <div class="container">
             <div class="row mt-5">
-                <div class="col-lg-12 text-center">
+                <div class="col-md-7 m-auto text-center">
                     <h5 class="font-3rem">Meet Our <span class="font-main"> Team</span></h5>
-                    <p class="mt-4">Lorem ipsum dolor sit amet consectetur. Ac eros egestas ornare volutpat cras
-                        congue auctor phasellus..</p>
+                    <p class="mt-4">
+                        Our expert team transforms your vision into reality. With skilled developers and creative designers, we bring passion and experience to every project. Discover the talent driving our success and how they contribute to your growth.
+                    </p>
                 </div>
             </div>
             <div class="row py-5 g-3">
@@ -224,10 +228,11 @@
 
         <div class="container">
             <div class="row mt-5">
-                <div class="col-lg-12 text-center mt-5">
+                <div class="col-md-7 m-auto text-center mt-5">
                     <h5 class="font-3rem"> Our <span class="font-main"> Partners</span></h5>
-                    <p class="mt-4">Lorem ipsum dolor sit amet consectetur. Ac eros egestas ornare volutpat cras
-                        congue auctor phasellus..</p>
+                    <p class="mt-4">
+                        We team up with top industry leaders and tech innovators to deliver exceptional solutions. Discover the key alliances that enhance our ability to serve you with excellence.
+                    </p>
                 </div>
             </div>
 

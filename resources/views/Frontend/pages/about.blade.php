@@ -5,7 +5,7 @@
             [
                 'name' => 'Ali Imran Mehedi',
                 'path' => 'Chief Executive Officer',
-                'bio' => 'Expertise in web and app development, digital marketing. With 6+ years of experience',
+                'bio' => 'Specialized in IT innovation and excellence, committed to top-tier service and client satisfaction.',
                 'profile' => asset('Frontend/images/member/imran.webp'),
                 'link' => [
                     'github' => 'https://github.com/imehedi007',
@@ -13,9 +13,9 @@
                 ],
             ],
             [
-                'name' => 'Esmail Khalifa',
+                'name' => 'MD Esmail Hossain',
                 'path' => 'Chief Technology Officer',
-                'bio' => 'Expertise in web and app development, digital marketing. With 6+ years of experience',
+                'bio' => 'Ensuring our tech solutions consistently exceed client expectations.',
                 'profile' => asset('Frontend/images/member/esmail-1.webp'),
                 'link' => [
                     'github' => 'https://github.com/hossainmdismail',
@@ -25,7 +25,7 @@
             [
                 'name' => 'MD Jahirul Islam',
                 'path' => 'Software Engineer',
-                'bio' => 'Expertise in Software Development, Artificial Intelligence & Machine Learning with 6+ years of experience',
+                'bio' => 'Expertise in Software Development, AI and Machine Learning with 6+ years of experience',
                 'profile' => asset('Frontend/images/member/Jahir.webp'),
                 'link' => [
                     'github' => 'https://github.com/jahir002201',

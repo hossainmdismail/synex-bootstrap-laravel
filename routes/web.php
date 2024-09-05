@@ -11,6 +11,7 @@ use App\Http\Controllers\ScheduleController;
 use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\SiteMapController;
 use App\Http\Controllers\SubscribeController;
+use App\Http\Controllers\TermsController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', [HomeController::class, 'index'])->name('home'); //Done
@@ -22,6 +23,7 @@ Route::get('/contact', [HomeController::class, 'getintouch'])->name('contact'); 
 Route::get('/thankyou', [HomeController::class, 'thanks'])->name('thanks'); //Done
 Route::get('/projects', [ProjectController::class, 'index'])->name('projects'); //Done
 Route::get('/privacy-policy', [PrivacyController::class, 'index'])->name('privacy'); //done
+Route::get('/terms-conditions', [TermsController::class, 'index'])->name('terms'); //done
 Route::get('/category/{slug}', [CategoryController::class, 'index'])->name('category'); //Done
 Route::get('/generate/sitemap', [SiteMapController::class, 'sitemap'])->name('sitemap');
 Route::get('/schedule', [ScheduleController::class, 'index'])->name('schedule'); //Done

@@ -84,7 +84,7 @@
                                     <a href="{{ route('contact') }}" class="footer-item">Help & Support</a>
                                 </li>
                                 <li class="footer-ul-item">
-                                    <a href="#" class="footer-item">Terms & Conditions</a>
+                                    <a href="{{ route('terms') }}" class="footer-item">Terms & Conditions</a>
                                 </li>
 
                             </ul>

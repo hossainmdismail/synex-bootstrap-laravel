@@ -39,7 +39,7 @@ header {
 
 /* Font */
 .leading-font-main {
-    font-size: 48px;
+    font-size: 46px;
     font-weight: 600;
 }
 .leading-font-second {
@@ -1376,7 +1376,7 @@ p.sr-box-desc {
     font-size: 30px;
   }
   .leading-font-main {
-    font-size: 32px;
+    font-size: 29px;
   }
   .image-record {
       height: 51vh;

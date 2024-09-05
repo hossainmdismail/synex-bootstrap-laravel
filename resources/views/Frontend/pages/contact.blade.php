@@ -57,7 +57,7 @@
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img src="{{ asset('Frontend/images/cf/cf-6.jpg') }}" class="d-block w-100" alt="...">
+                            <img src="{{ asset('Frontend/images/cf/cf-6.png') }}" class="d-block w-100" alt="...">
                             <div class="carousel-caption d-none d-md-block">
                                 <h5>SAAS</h5>
                             </div>
@@ -161,7 +161,7 @@
                         <p class="pb-3 text-white">Let's unite and craft something truly remarkable. We're excited
                             to collaborate and bring visionary ideas to life.</p>
                         <a href="{{ route('schedule') }}" class="btn-default btn btn-white font-main"
-                            id="calendly-btn">Schedule Metting
+                            id="calendly-btn">Schedule A Meeting
                             <svg class="ms-3" width="15" height="14" viewBox="0 0 16 15" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path d="M1.5 14L14.5 1M14.5 1L14.5 13.48M14.5 1L2.02 1" class="icon-path"

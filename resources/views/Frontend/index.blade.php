@@ -74,7 +74,7 @@
         <div class="container py-md-5">
             <div class="row py-4 d-flex align-items-center">
                 <div class="col-md-6 order-2 order-md-1">
-                    <h1 class="leading-font-main font-second">Business IT Solutions <br>
+                    <h1 class="leading-font-main">Business IT Solutions <br>
                         <span class="leading-pill">Pioneering Excellence for</span> <br>
                         Your Technological Needs
                     </h1>

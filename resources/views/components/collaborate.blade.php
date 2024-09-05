@@ -4,8 +4,8 @@
             <div class="col-12 text-center">
                 <h5 class="section-title text-light pb-3">Ready to Collaborate with us?</h5>
                 <p class="text-light pb-3">
-                    Let's unite and craft something truly remarkable. We're excited to collaborate and bring
-                    visionary ideas to life.
+                    Partner with Synex Digital for innovative solutions and dedicated support tailored to your needs. <br class="d-none d-md-block">
+                    Reach out today and start your journey with us.
                 </p>
             </div>
             <div class="col-md-6 m-auto text-center">

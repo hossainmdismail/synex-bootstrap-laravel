@@ -15,6 +15,7 @@ class testimonial extends Component
         public $message,
         public $client,
         public $title,
+        public $image,
     ) {}
 
     /**

@@ -48,19 +48,22 @@
             [
                 'message' =>
                     'I could not be happier with the website that Synex Digital created for my business. They took my ideas and turned them into a stunning, user-friendly website that exceeded my expectations.',
+                'image' => asset('Frontend/images/tahsan.webp'),
                 'client' => 'Mahadi Tahsan',
                 'title' => 'Instructor',
             ],
             [
                 'message' =>
-                    'Working with Synex Digital has been a game-changer for our online visibility. Their SEO team’s expertise and strategies have propelled our website to the top of search engine rankings. Glad to hire them on a monthly basis',
+                    'Working with Synex Digital has been a game-changer for our online visibility. Their SEO team’s expertise and strategies have propelled our website to the top of search engine rankings. Glad to hire them on a monthly basis.',
+                'image' => asset('Frontend/images/sydul.webp'),
                 'client' => 'MD Sydul Amin',
                 'title' => 'Python Developer',
             ],
             [
                 'message' =>
                     'Synex Digital’s management software completely revolutionized our school. For schools that require reliability, streamlined administration, user-friendly design, and responsive assistance redefine efficiency!',
-                'client' => 'Shawon Islam',
+                'image' => asset('Frontend/images/shawon.webp'),
+                    'client' => 'Shawon Islam',
                 'title' => 'One Year Academy',
             ],
         ];
@@ -119,24 +122,18 @@
                 </div>
                 <div class="col-md-6">
                     <div class="text-record">
-                        <p>Synex Digital's outstanding records reflect our commitment
-                            to excellence. With a proven track record in Web and App
-                            Development, transformative UI/UX design, and impactful
-                            Digital Marketing, we consistently surpass expectations. In
-                            the dynamic world of IT, simplicity meets sophistication in our
-                            approach. Our services encompass the entire spectrum,
-                            from basic IT definitions to complex technology solutions.</p>
-                        <p>We redefine the very essence of service businesses,
-                            delivering not just solutions but an experience that goes
-                            beyond expectations. Our portfolio of successful projects
-                            stands as a testament to our dedication, delivering top notch
-                            solutions that propel businesses forward.</p>
-                        <p>Our history of exceeding milestones, ensuring timely delivery,
-                            and surpassing quality benchmarks underscores why Synex
-                            Digital is the trusted choice for unparalleled digital success.</p>
-                        <p>Our history of exceeding milestones, ensuring timely delivery,
-                            and surpassing quality benchmarks underscores why Synex
-                            Digital is the trusted choice for unparalleled digital success.</p>
+                        <p>
+                            At Synex Digital, our track record speaks for itself. We’ve successfully navigated the complex IT landscape, delivering innovative solutions that drive measurable results. From bespoke software development to advanced digital marketing strategies, our team’s expertise and commitment to excellence have earned us a reputation for reliability and success in the industry.
+                        </p>
+                        <p>
+                            Our portfolio showcases a diverse range of projects, reflecting our ability to adapt to various business needs and industry demands. Whether it's optimizing web performance, enhancing user experiences, or implementing cutting-edge technologies, our projects consistently exceed client expectations. This proven track record not only highlights our technical prowess but also our ability to deliver on time and within budget.
+                        </p>
+                        <p>
+                            We believe in the power of data-driven decisions and meticulous project management. Our precise approach ensures that every solution is tailored to our clients' specific goals, fostering long-term partnerships built on trust and results. Our success is measured not just by completed projects, but by the growth and satisfaction of our clients who repeatedly choose us as their IT partner.
+                        </p>
+                        <p>
+                            Synex Digital’s commitment to precision and excellence has positioned us as a leader in the IT services sector. By continuously evolving and embracing the latest technological advancements, we ensure that our clients stay ahead of the competition. Trust in our proven expertise to guide your business through the ever-changing digital landscape with confidence and clarity.
+                        </p>
                     </div>
                 </div>
 
@@ -172,14 +169,17 @@
         <div class="container">
             <div class="row mb-4 text-center">
                 <p class="section-name text-white">Testimonials</p>
-                <h3 class="section-title font-second">The Opinions and Comments of <br> Our Clients</h3>
+                <h3 class="section-title font-second">Opinions of Our Clients</h3>
             </div>
 
             <div class="row g-3">
                 @foreach ($testimonials as $testimonial)
                     <div class="col-md-4">
-                        <x-testimonial message="{{ $testimonial['message'] }}" client="{{ $testimonial['client'] }}"
-                            title="{{ $testimonial['title'] }}" />
+                        <x-testimonial
+                        message="{{ $testimonial['message'] }}"
+                        image="{{ $testimonial['image'] }}"
+                        client="{{ $testimonial['client'] }}"
+                        title="{{ $testimonial['title'] }}" />
                     </div>
                 @endforeach
             </div>

@@ -149,7 +149,7 @@
                     <div class="mb-3">
                         <div class="row gx-2">
                             <div class="col-8">
-                                <input type="text" id="email" name="email" class="form-control"
+                                <input type="number" id="email" name="number" class="form-control"
                                     placeholder="WhatsApp Number*">
                             </div>
                             <div class="col-4 d-flex align-items-center">

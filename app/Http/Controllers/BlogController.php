@@ -15,7 +15,7 @@ class BlogController extends Controller
     public function blogs(Request $request)
     {
         $site_name = env('APP_NAME', 'Synex Digital');
-        $seo_title = 'Synex Digital Blog | Insights on Our Latest Updates!';
+        $seo_title = 'Synex Digital Blogs | Insights on Our Latest Updates!';
         $seo_description = "Explore the Synex Digital blog for the latest insights and trends in web development, digital marketing, UI/UX design, and more. Our blog features expert advice, industry updates, and practical tips for businesses in the USA, Canada, Australia, UK, and Dubai. Stay informed and ahead of the curve with our expert content.";
         $seo_tags =
             'Synex Digital Blog,

@@ -13,9 +13,19 @@ class PrivacyController extends Controller
     public function index()
     {
         $site_name = env('APP_NAME', 'Synex Digital');
-        $seo_title = 'Privacy Policy - SynexDigital';
-        $seo_description = 'description';
-        $seo_tags = 'Privacy Policy - SynexDigital';
+        $seo_title = 'Privacy Policy | Synex Digital - Privacy Practices';
+        $seo_description = "Read Synex Digital's Privacy Policy to understand how we protect your personal data and ensure privacy. Our policy outlines data collection, usage, and security practices for clients in the USA, Canada, Australia, UK, and Dubai. Learn more about our commitment to data protection.";
+        $seo_tags =
+            'Privacy Policy USA Canada Australia UK Dubai,
+            Data Protection Practices,
+            Privacy and Security Policy,
+            Personal Data Usage,
+            GDPR Compliance,
+            CCPA Compliance,
+            Privacy Rights,
+            Synex Digital Privacy Policy,
+            Data Collection and Security,
+            Legal Information for Privacy';
         $img = asset('fav-low.png');
         $url = env('APP_URL', 'https://synexdigital.com');
 
@@ -40,8 +50,8 @@ class PrivacyController extends Controller
 
         // JsonLd for Privacy Policy Page
         JsonLd::setType('WebPage');  // Indicates that this is a webpage
-        JsonLd::setTitle('Privacy Policy - SynexDigital');  // Title of the privacy policy page
-        JsonLd::setDescription('Learn about how SynexDigital collects, uses, and protects your personal information.');  // Description of the privacy policy page
+        JsonLd::setTitle($seo_title);  // Title of the privacy policy page
+        JsonLd::setDescription("Synex Digital's Privacy Policy outlines how we protect and manage your personal data, including data collection, usage, and security practices. Learn about our commitment to privacy and compliance with data protection laws.");  // Description of the privacy policy page
         JsonLd::setUrl(url()->current());  // URL of the privacy policy page
         JsonLd::addValue('inLanguage', 'en-US');  // Set the language of the page
 

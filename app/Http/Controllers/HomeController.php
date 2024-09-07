@@ -132,7 +132,7 @@ class HomeController extends Controller
     public function getintouch()
     {
         $site_name = env('APP_NAME', 'Synex Digital');
-        $seo_title = 'Contact Synex Digital | Top IT Agency in USA, Canada, Australia, UK & Dubai - Get a Quote';
+        $seo_title = 'Contact Synex Digital | Top IT Agency | Get a Quote';
         $seo_description = 'Get in touch with Synex Digital, a leading IT agency offering web development, app development, digital marketing, and more. Contact us today for a free quote and take advantage of up to 20% off on our services. Serving USA, Canada, Australia, UK, and Dubai.';
         $seo_tags =
             'Contact Synex Digital,

@@ -13,9 +13,19 @@ class AboutController extends Controller
     public function index()
     {
         $site_name = env('APP_NAME', 'Synex Digital');
-        $seo_title = 'About Us';
-        $seo_description = 'description';
-        $seo_tags = 'Home';
+        $seo_title = 'About Synex Digital | Leading IT Agency';
+        $seo_description = 'Learn about Synex Digital, a top IT agency with a young and dynamic team specializing in web development, app development, digital marketing, UI/UX design, and more. Serving businesses in the USA, Canada, Australia, UK, and Dubai. Discover how we transform your vision into online success.';
+        $seo_tags =
+            'About Synex Digital,
+            IT Agency in USA Canada Australia UK Dubai,
+            Web Development Company Overview,
+            App Development Agency Profile,
+            Digital Marketing Experts,
+            Meet Our Team,
+            Best IT Company,
+            Leading IT Agency,
+            Synex Digital Story,
+            Trusted IT Services Provider';
         $img = asset('fav-low.png');
         $url = env('APP_URL', 'https://synexdigital.com');
 
@@ -43,13 +53,13 @@ class AboutController extends Controller
         JsonLd::setTitle($seo_title);
         JsonLd::setDescription($seo_description);
         JsonLd::setUrl(url()->current());
-        JsonLd::addValue('inLanguage', 'bn-BD');
+        JsonLd::addValue('inLanguage', 'en-US');
         JsonLd::addValue('mainEntityOfPage', [
             "@type" => "WebPage",
             "@id" => url()->current(),
             "url" => url()->current(),
             "name" => $seo_title,
-            "description" => $seo_description,
+            "description" => "Synex Digital is a dynamic IT agency offering a wide range of services, including web development, app development, digital marketing, and more. We serve clients in USA, Canada, Australia, UK, and Dubai with a team of talented professionals dedicated to transforming your vision into reality.",
         ]);
         JsonLd::addValue('isPartOf', [
             "@type" => "WebSite",
@@ -63,8 +73,8 @@ class AboutController extends Controller
                 "logo" => [
                     "@type" => "ImageObject",
                     "url" => $img,
-                    "caption" => $seo_description,
-                    "inLanguage" => 'bn-BD',
+                    "caption" => $seo_title,
+                    "inLanguage" => 'en-US',
                     "contentUrl" => url()->current(),
                 ],
             ]
@@ -78,7 +88,7 @@ class AboutController extends Controller
                 '@type' => 'ImageObject',
                 'url' => $img,
                 'caption' => $seo_description,
-                'inLanguage' => 'bn-BD',
+                'inLanguage' => 'en-US',
                 'contentUrl' => url()->current(),
             ],
         ]);

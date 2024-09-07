@@ -48,9 +48,21 @@
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5ZSKZ4FP" height="0" width="0"
             style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
-    <!-- Event snippet for Lead Submit - Shuvo conversion page -->
+    <!-- Event snippet for Lead Submit - Shuvo conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
     <script>
-        gtag('event', 'conversion', {'send_to': 'AW-16659065389/sThcCM2S1NAZEK3U1Ic-'});
+        function gtag_report_conversion(url) {
+        var callback = function () {
+            if (typeof(url) != 'undefined') {
+            window.location = url;
+            }
+        };
+        gtag('event', 'conversion', {
+            'send_to': 'AW-16659065389/sThcCM2S1NAZEK3U1Ic-',
+            'event_callback': callback
+        });
+        return false;
+        }
     </script>
     @include('Frontend.layout.header')
     <div class="nav-gap"></div>

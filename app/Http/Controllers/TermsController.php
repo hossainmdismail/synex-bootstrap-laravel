@@ -12,9 +12,18 @@ class TermsController extends Controller
     public function index()
     {
         $site_name = env('APP_NAME', 'Synex Digital');
-        $seo_title = 'Terms and Conditions - SynexDigital';
-        $seo_description = 'description';
-        $seo_tags = 'Terms and Conditions - SynexDigital';
+        $seo_title = 'Terms & Conditions | Synex Digital - Terms and Legal Information';
+        $seo_description = "Review Synex Digital's Terms & Conditions to understand the usage terms and legal obligations associated with our services. This page covers user responsibilities, service limitations, and legal rights for clients in the USA, Canada, Australia, UK, and Dubai.";
+        $seo_tags =
+            'Terms and Conditions USA Canada Australia UK Dubai,
+            Service Usage Terms,
+            Legal Information and Agreements,
+            User Responsibilities,
+            Service Limitations,
+            Synex Digital Terms and Conditions,
+            Contractual Obligations,
+            Legal Terms and Policies,
+            Service Agreement';
         $img = asset('fav-low.png');
         $url = env('APP_URL', 'https://synexdigital.com');
 
@@ -39,10 +48,10 @@ class TermsController extends Controller
 
         // JsonLd for Privacy Policy Page
         JsonLd::setType('WebPage');  // Indicates that this is a webpage
-        JsonLd::setTitle('Terms and Conditions - SynexDigital');  // Title of the privacy policy page
-        JsonLd::setDescription('Review the terms and conditions of Synex Digital outlining your rights, responsibilities, and the guidelines for using our services.');  // Description of the terms and conditions page
+        JsonLd::setTitle($seo_title);  // Title of the privacy policy page
+        JsonLd::setDescription("Synex Digital's Terms & Conditions outline the usage terms, user responsibilities, and legal information associated with our services. Understand your rights and obligations while using our services in the USA, Canada, Australia, UK, and Dubai.");  // Description of the terms and conditions page
         JsonLd::setUrl(url()->current());  // URL of the privacy policy page
-        JsonLd::addValue('inLanguage', 'bn-BD');  // Set the language of the page
+        JsonLd::addValue('inLanguage', 'en-US');  // Set the language of the page
 
         // Adding Main Entity of the Page
         JsonLd::addValue('mainEntityOfPage', [

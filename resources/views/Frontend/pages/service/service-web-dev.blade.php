@@ -45,7 +45,7 @@
                         <span class="text-primary">Web Development</span>
                         <h1 class="pt-2">
                             Web Designer vs Web Developer
-                            <span class="text-primary">Why does it matter & who you need?</span>
+                            <span class="text-primary">Why does it matter & Who you need?</span>
                         </h1>
                         <p class="pt-2">
                             Web design and development consist of creating bespoke websites, merging web design and

@@ -15,9 +15,19 @@ class BlogController extends Controller
     public function blogs(Request $request)
     {
         $site_name = env('APP_NAME', 'Synex Digital');
-        $seo_title = 'Blogs';
-        $seo_description = 'description';
-        $seo_tags = 'Home';
+        $seo_title = 'Synex Digital Blogs | Insights on Our Latest Updates!';
+        $seo_description = "Explore the Synex Digital blog for the latest insights and trends in web development, digital marketing, UI/UX design, and more. Our blog features expert advice, industry updates, and practical tips for businesses in the USA, Canada, Australia, UK, and Dubai. Stay informed and ahead of the curve with our expert content.";
+        $seo_tags =
+            'Synex Digital Blog,
+            Web Development Insights,
+            Digital Marketing Tips,
+            UI/UX Design Trends,
+            SaaS Development News,
+            Graphics Design Updates,
+            Mobile App Development Advice,
+            Video Editing Techniques,
+            IT Industry News,
+            Blog for USA Canada Australia UK Dubai';
         $img = asset('fav-low.png');
         $url = env('APP_URL', 'https://synexdigital.com');
 
@@ -43,9 +53,9 @@ class BlogController extends Controller
         // JsonLd for Blogs Page
         JsonLd::setType('WebPage');  // Indicating this is a standard webpage
         JsonLd::setTitle($seo_title);
-        JsonLd::setDescription($seo_description);
+        JsonLd::setDescription("The Synex Digital blog provides expert insights and updates on web development, digital marketing, UI/UX design, and more. Stay informed with our latest articles and industry news.");
         JsonLd::setUrl(url()->current());
-        JsonLd::addValue('inLanguage', 'bn-BD');  // Set the language of the page
+        JsonLd::addValue('inLanguage', 'en-US');  // Set the language of the page
 
         JsonLd::addValue('mainEntity', [
             "@type" => "Blog",  // Using Blog as the main entity type
@@ -87,8 +97,8 @@ class BlogController extends Controller
             'logo' => [
                 '@type' => 'ImageObject',
                 'url' => $img,
-                'caption' => $seo_description,
-                'inLanguage' => 'bn-BD',
+                'caption' => $seo_title,
+                'inLanguage' => 'en-US',
             ],
         ]);
 
@@ -158,7 +168,7 @@ class BlogController extends Controller
             JsonLd::setTitle($seo_title);  // Title of the blog post
             JsonLd::setDescription($seo_description);  // Description of the blog post
             JsonLd::setUrl(url()->current());  // URL of the blog post
-            JsonLd::addValue('inLanguage', 'bn-BD');  // Set the language of the post
+            JsonLd::addValue('inLanguage', 'en-US');  // Set the language of the post
 
             JsonLd::addValue('author', [
                 "@type" => "Person",

@@ -54,7 +54,7 @@
     <script src="{{ asset('Frontend') }}/js/custom.js"></script>
 
 
-    <script>
+    {{-- <script>
         document.getElementById('calendly-btn').addEventListener('click', function() {
             const calendlyBox = document.querySelector('.calendly-box');
             calendlyBox.style.display = 'block';
@@ -64,7 +64,7 @@
             const calendlyBox = document.querySelector('.calendly-box');
             calendlyBox.style.display = 'none';
         });
-    </script>
+    </script> --}}
 
 </body>
 

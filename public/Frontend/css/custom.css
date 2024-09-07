@@ -1033,7 +1033,42 @@ a.page-link {
   width: 100%;
   overflow: hidden;
 }
-
+.contact-btn {
+    color: black;
+    border: .001rem solid #e1e1e1de;
+    border-radius: 0.3rem;
+    transition: .2s ease-in-out;
+}
+.ser-box {
+    width: 100px;
+    height: 100px;
+    background: url(../images/svg/offer-box.webp);
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    z-index: 12;
+}
+span.ser-box.sl {
+    top: -62px;
+    left: 85px;
+    transform: rotate(326deg);
+}
+span.ser-box.sr {
+    top: -62px;
+    left: 327px;
+    transform: rotate(-326deg);
+}
+.contact-btn:hover {
+    background: #adc9ed;
+}
+.contact-btn.active {
+    background: #adc9ed;
+}
 .slider {
   width: 100%;
   height: auto;
@@ -1043,6 +1078,23 @@ a.page-link {
 
 .carousel-inner img {
   border-radius: 8px;
+}
+.offer-box {
+    width: 100px;
+    height: 100px;
+    background: url(../images/svg/offer-box.webp);
+    position: absolute;
+    top: -36px;
+    left: 10px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(326deg);
+    color: white;
+    z-index: 12;
 }
 
 /* Carousel adjustments */
@@ -1070,7 +1122,6 @@ a.page-link {
   bottom: -60px;
 }
 .carousel-item {
-  overflow: hidden;
   border-radius: 1rem;
 }
 
@@ -1344,6 +1395,13 @@ p.sr-box-desc {
       .member-profile:hover .member-des {
         height: auto;
         opacity: 1;
+    }
+    span.ser-box.sr {
+        top: -21px;
+    }
+    span.ser-box.sl {
+        top: -21px;
+        left: -20px;
     }
 }
 

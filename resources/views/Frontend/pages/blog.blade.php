@@ -101,8 +101,8 @@
                     <div class="blog-info">
                         <h1>{{ $content['title'] }}</h1>
                         <p class="pt-2">
-                            by <a href="#">{{ $content['author'] }}</a> | {{ $content['date'] }} | <a href="#"
-                                class="badge-default">{{ $content['category'] }}</a>
+                            by <a href="{{ route('about') }}#member">{{ $content['author'] }}</a> | {{ $content['date'] }} |
+                            <a href="#" class="badge-default">{{ $content['category'] }}</a>
                         </p>
                         <div class="share-on d-none d-md-flex">
                             Share :
@@ -164,7 +164,7 @@
             {{-- Content --}}
             <div class="col-md-8 px-3 px-md-2">
                 <div class="blog-content py-4">
-                    {{ $content['content'] }}
+                    {!! $content['content'] !!}
                 </div>
 
                 {{-- Share button --}}

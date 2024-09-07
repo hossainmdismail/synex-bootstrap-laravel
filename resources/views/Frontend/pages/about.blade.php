@@ -14,7 +14,7 @@
                 ],
             ],
             [
-                'name' => 'MD Esmail Hossain',
+                'name' => 'MD Ismail Hossain',
                 'path' => 'Chief Technology Officer',
                 'bio' => 'Ensuring our tech solutions consistently exceed client expectations.',
                 'profile' => asset('Frontend/images/member/esmail-1.webp'),
@@ -63,9 +63,30 @@
                     'linkedin' => 'https://linkedin.com/in/ayeuburrahman/',
                 ],
             ],
+            [
+                'name' => 'Shihab Sarar',
+                'path' => 'MERN Developer',
+                'bio' =>
+                    'Passionate problem solver,dedicated to delivering intelligence systems using ML, AI and MERN stack',
+                'profile' => asset('Frontend/images/member/shihab.webp'),
+                'link' => [
+                    'github' => 'https://github.com/ShihabSarar12',
+                    'linkedin' => 'https://linkedin.com/in/shihab-sarar-15a587230/',
+                ],
+            ],
+            [
+                'name' => 'Puspita Anjum',
+                'path' => 'Content Writer',
+                'bio' =>
+                    'Expert in writing informative, SEO-friendly blog posts that drive traffic and boost engagement with 2+ years of experience',
+                'profile' => asset('Frontend/images/member/puspita.webp'),
+                'link' => [
+                    'github' => 'https://github.com/ShihabSarar12',
+                    'linkedin' => 'https://linkedin.com/in/shihab-sarar-15a587230/',
+                ],
+            ],
         ];
     @endphp
-    @include('Frontend.layout.calendly')
     <!-- about us -->
     <section class="container-fluid">
         <img class="leftsvg" src="{{ asset('Frontend') }}/images/aboutus-left.svg" loading="lazy" alt="">
@@ -231,7 +252,7 @@
             </div>
             <div class="row py-5 g-3">
                 @foreach ($member as $person)
-                    <div class="col-md-3 text-center">
+                    <div class="col-md-3 text-center" id="member">
                         <x-team-profile name="{{ $person['name'] }}" path="{{ $person['path'] }}"
                             bio="{{ $person['bio'] }}" profile="{{ $person['profile'] }}" :links="$person['link']" />
                     </div>

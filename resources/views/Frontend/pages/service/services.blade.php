@@ -101,6 +101,10 @@
                     <div class="w-100 position-relative serviceimg-box">
                         <img class="service-image" src="{{ asset('Frontend') }}/images/service2.webp" width="90%"
                             alt="" srcset="">
+                        <span class="ser-box sr">
+                            <p class="mb-0" style="font-size: 12px">Special Offer</p>
+                            <strong>20% <span style="font-size: 12px">Off</span></strong>
+                        </span>
                     </div>
                 </div>
             </div>
@@ -113,6 +117,10 @@
             <div class="row py-md-5">
                 <div class="col-md-6">
                     <div class="w-100 position-relative serviceimg-box">
+                        <span class="ser-box sl">
+                            <p class="mb-0" style="font-size: 12px">Special Offer</p>
+                            <strong>20% <span style="font-size: 12px">Off</span></strong>
+                        </span>
                         <img class="service-image-right" src="{{ asset('Frontend') }}/images/service3.webp" width="90%"
                             alt="" srcset="">
                     </div>
@@ -246,6 +254,10 @@
                 </div>
                 <div class="col-md-6 order-1 order-md-2">
                     <div class="w-100 position-relative serviceimg-box">
+                        <span class="ser-box sr">
+                            <p class="mb-0" style="font-size: 12px">Special Offer</p>
+                            <strong>20% <span style="font-size: 12px">Off</span></strong>
+                        </span>
                         <img class="service-image" src="{{ asset('Frontend') }}/images/service4.webp" width="90%"
                             alt="" srcset="">
                     </div>
@@ -260,6 +272,10 @@
             <div class="row py-md-5">
                 <div class="col-md-6">
                     <div class="w-100 position-relative serviceimg-box">
+                        <span class="ser-box sl">
+                            <p class="mb-0" style="font-size: 12px">Special Offer</p>
+                            <strong>20% <span style="font-size: 12px">Off</span></strong>
+                        </span>
                         <img class="service-image-right" src="{{ asset('Frontend') }}/images/service5.webp"
                             width="90%" alt="" srcset="">
                     </div>
@@ -394,6 +410,10 @@
                 </div>
                 <div class="col-md-6 order-1 order-md-2">
                     <div class="w-100 position-relative serviceimg-box">
+                        <span class="ser-box sr">
+                            <p class="mb-0" style="font-size: 12px">Special Offer</p>
+                            <strong>20% <span style="font-size: 12px">Off</span></strong>
+                        </span>
                         <img class="service-image" src="{{ asset('Frontend') }}/images/service1.webp" width="90%"
                             alt="" srcset="">
                     </div>
@@ -408,6 +428,10 @@
             <div class="row py-md-5">
                 <div class="col-md-6">
                     <div class="w-100 position-relative serviceimg-box">
+                        <span class="ser-box sl">
+                            <p class="mb-0" style="font-size: 12px">Special Offer</p>
+                            <strong>20% <span style="font-size: 12px">Off</span></strong>
+                        </span>
                         <img class="service-image-right" src="{{ asset('Frontend') }}/images/service7.webp"
                             width="90%" alt="" srcset="">
                     </div>
@@ -541,6 +565,10 @@
                 </div>
                 <div class="col-md-6 order-1 order-md-2">
                     <div class="w-100 position-relative serviceimg-box">
+                        <span class="ser-box sr">
+                            <p class="mb-0" style="font-size: 12px">Special Offer</p>
+                            <strong>20% <span style="font-size: 12px">Off</span></strong>
+                        </span>
                         <img class="service-image" src="{{ asset('Frontend') }}/images/service9.webp" width="90%"
                             alt="" srcset="">
                     </div>
@@ -555,6 +583,10 @@
             <div class="row py-md-5">
                 <div class="col-md-6">
                     <div class="w-100 position-relative serviceimg-box">
+                        <span class="ser-box sl">
+                            <p class="mb-0" style="font-size: 12px">Special Offer</p>
+                            <strong>20% <span style="font-size: 12px">Off</span></strong>
+                        </span>
                         <img class="service-image-right" src="{{ asset('Frontend') }}/images/service10.webp"
                             width="90%" alt="" srcset="">
                     </div>

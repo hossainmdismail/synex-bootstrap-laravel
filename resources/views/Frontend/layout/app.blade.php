@@ -9,7 +9,7 @@
     <link rel="stylesheet" rel="preconnect" href="{{ asset('Frontend') }}/css/bootstrap.min.css">
     <link rel="stylesheet" rel="preconnect" href="{{ asset('Frontend') }}/css/custom.css">
     <!-- Google Tag Manager -->
-    <script>
+    {{-- <script>
         (function(w, d, s, l, i) {
             w[l] = w[l] || [];
             w[l].push({
@@ -24,7 +24,7 @@
                 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
             f.parentNode.insertBefore(j, f);
         })(window, document, 'script', 'dataLayer', 'GTM-5ZSKZ4FP');
-    </script>
+    </script> --}}
     {!! SEOMeta::generate() !!}
     {!! OpenGraph::generate() !!}
     {!! Twitter::generate() !!}
@@ -45,12 +45,15 @@
 
 <body>
     <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5ZSKZ4FP" height="0" width="0"
-            style="display:none;visibility:hidden"></iframe></noscript>
+
+    {{-- <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5ZSKZ4FP" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript> --}}
+
     <!-- End Google Tag Manager (noscript) -->
     <!-- Event snippet for Lead Submit - Shuvo conversion page
 In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
-    <script>
+
+<script>
         function gtag_report_conversion(url) {
         var callback = function () {
             if (typeof(url) != 'undefined') {

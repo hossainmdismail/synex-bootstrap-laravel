@@ -14,9 +14,22 @@ class HomeController extends Controller
     public function index()
     {
         $site_name = env('APP_NAME', 'Synex Digital');
-        $seo_title = 'Home';
-        $seo_description = 'description';
-        $seo_tags = 'Home';
+        $seo_title = 'Top IT Agency for Web Development, App Development|Synex Digital';
+        $seo_description = 'Get up to 20% off on web development, app development, digital marketing, UI/UX design, SaaS, custom software, and more at Synex Digital. We serve clients in the USA, Canada, Australia, UK, and Dubai with tailor-made digital solutions to elevate your business online. Contact us for a free quote today!';
+        $seo_tags =
+            'IT Agency USA Canada Australia UK Dubai,
+            Web Development Services,
+            App Development Experts,
+            Digital Marketing Agency,
+            UI/UX Design Company,
+            SaaS Development,
+            Custom Management Software,
+            E-commerce Solutions,
+            Graphic Design Services,
+            Video Editing Services,
+            Top IT Company,
+            Synex Digital Services,
+            20% Off IT Services';
         $img = asset('fav-low.png');
         $url = env('APP_URL', 'https://synexdigital.com');
 
@@ -42,11 +55,11 @@ class HomeController extends Controller
         // JsonLd
         JsonLd::setType('WebPage');
         JsonLd::setTitle($seo_title);
-        JsonLd::setDescription($seo_description);
+        JsonLd::setDescription('Synex Digital offers a full range of IT services including web and app development, digital marketing, UI/UX design, SaaS development, and more, with up to 20% off on all services. We serve clients in the USA, Canada, Australia, UK, and Dubai.');
         JsonLd::setUrl(url()->current());
-        JsonLd::addValue('inLanguage', 'bn-BD');
+        JsonLd::addValue('inLanguage', 'en-US');
         JsonLd::addValue('isPartOf', [
-            "@type" => "WebSite",
+            "@type" => "Organization",
             "@id" => $url,
             "url" => $url,
             "name" => $site_name,
@@ -58,7 +71,7 @@ class HomeController extends Controller
                     "@type" => "ImageObject",
                     "url" => $img,
                     "caption" => $seo_description,
-                    "inLanguage" => 'bn-BD',
+                    "inLanguage" => 'en-US',
                     "contentUrl" => url()->current(),
                 ],
             ]

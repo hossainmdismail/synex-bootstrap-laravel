@@ -290,9 +290,9 @@ li.mem-social:hover {
     font-weight: 100;
     position: relative;
     top: 1em;
-    text-transform: lowercase;
-    padding: 15px;
-  }
+    text-transform: capitalize;
+    padding: 5px 15px;
+}
 
   .wave:nth-child(2),
   .wave:nth-child(3) {

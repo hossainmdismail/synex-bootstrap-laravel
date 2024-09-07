@@ -9,7 +9,7 @@
                 'url' => route('service.software'),
             ],
             [
-                'name' => 'SaaS (Software as a Service)',
+                'name' => 'Software as a Service (SaaS)',
                 'description' => 'SaaS Application Development, Product Design, Maintenance and Support',
                 'url' => route('service.saas'),
             ],

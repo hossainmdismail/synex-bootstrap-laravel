@@ -29,6 +29,15 @@
     {!! OpenGraph::generate() !!}
     {!! Twitter::generate() !!}
     {!! JsonLd::generate() !!}
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16659065389"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'AW-16659065389');
+    </script>
     @yield('style')
 
     <!-- End Google Tag Manager -->
@@ -39,6 +48,10 @@
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5ZSKZ4FP" height="0" width="0"
             style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
+    <!-- Event snippet for Lead Submit - Shuvo conversion page -->
+    <script>
+        gtag('event', 'conversion', {'send_to': 'AW-16659065389/sThcCM2S1NAZEK3U1Ic-'});
+    </script>
     @include('Frontend.layout.header')
     <div class="nav-gap"></div>
     <main>

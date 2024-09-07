@@ -15,9 +15,22 @@ class ServiceController extends Controller
     {
         // return view('Frontend.pages.service.services');
         $site_name = env('APP_NAME', 'Synex Digital');
-        $seo_title = 'Services';
-        $seo_description = 'description';
-        $seo_tags = 'Service';
+        $seo_title = 'Comprehensive IT Services | Synex Digital';
+        $seo_description = "Explore Synex Digital's wide range of IT services, including web and app development, digital marketing, UI/UX design, SaaS development, custom management software, video editing, and more. Serving clients in the USA, Canada, Australia, UK, and Dubai with tailored digital solutions to grow your business online.";
+        $seo_tags =
+            'IT Services USA Canada Australia UK Dubai,
+            Web Development Services,
+            App Development Company,
+            Digital Marketing Agency,
+            UI/UX Design Services,
+            SaaS Development Experts,
+            Custom Software Solutions,
+            E-commerce Development,
+            Video Editing Services,
+            Synex Digital Services,
+            Professional IT Solutions,
+            Top IT Agency,
+            IT Services for Business Growth';
         $img = asset('fav-low.png');
         $url = env('APP_URL', 'https://synexdigital.com');
 
@@ -43,9 +56,9 @@ class ServiceController extends Controller
         // JsonLd for Services Page
         JsonLd::setType('WebPage');  // Changed from 'Service' to 'WebPage'
         JsonLd::setTitle($seo_title);
-        JsonLd::setDescription($seo_description);
+        JsonLd::setDescription("Synex Digital offers a comprehensive range of IT services including web development, app development, digital marketing, UI/UX design, SaaS development, custom software, and video editing. We serve clients in the USA, Canada, Australia, UK, and Dubai with innovative digital solutions.");
         JsonLd::setUrl(url()->current());
-        JsonLd::addValue('inLanguage', 'bn-BD');  // 'inLanguage' is appropriate here
+        JsonLd::addValue('inLanguage', 'en-US');  // 'inLanguage' is appropriate here
 
         JsonLd::addValue('mainEntity', [
             "@type" => "Service",
@@ -83,7 +96,7 @@ class ServiceController extends Controller
                 ],
                 [
                     "@type" => "Place",
-                    "name" => "Germany"
+                    "name" => "Dubai"
                 ],
                 [
                     "@type" => "Place",
@@ -118,8 +131,8 @@ class ServiceController extends Controller
             'logo' => [
                 '@type' => 'ImageObject',
                 'url' => $img,
-                'caption' => $seo_description,
-                'inLanguage' => 'bn-BD',
+                'caption' => $seo_title,
+                'inLanguage' => 'en-US',
             ],
         ]);
 
@@ -129,9 +142,20 @@ class ServiceController extends Controller
     {
         // return view('Frontend.pages.service.services');
         $site_name = env('APP_NAME', 'Synex Digital');
-        $seo_title = 'Management Software';
-        $seo_description = 'We create remarkable designs that convert into tangible results. Our bespoke graphic design agency services can help you build a consistent brand image across all touchpoints, increase brand engagement and improve conversion rates.';
-        $seo_tags = 'Service';
+        $seo_title = 'Custom Management Software Development | Synex Digital';
+        $seo_description = 'Boost your business efficiency with custom management software solutions from Synex Digital. Specializing in ERP, CRM, project management, and business intelligence software, we serve clients in the USA, Canada, Australia, UK, and Dubai. Get a tailored solution to streamline your operations. Contact us for a free quote today!';
+        $seo_tags =
+        'Custom Management Software,
+        ERP Software Development,
+        CRM Development Services,
+        Project Management Software,
+        Business Intelligence Tools,
+        IT Services USA Canada Australia UK Dubai,
+        Management Software Solutions,
+        Synex Digital Management Software,
+        Custom Workflow Solutions,
+        Enterprise Management Software,
+        Best IT Company for Management Software';
         $img = asset('fav-low.png');
         $url = env('APP_URL', 'https://synexdigital.com');
 
@@ -157,9 +181,9 @@ class ServiceController extends Controller
         // JsonLd for Services Page
         JsonLd::setType('WebPage');  // Changed from 'Service' to 'WebPage'
         JsonLd::setTitle($seo_title);
-        JsonLd::setDescription($seo_description);
+        JsonLd::setDescription("Synex Digital offers custom management software development, including ERP, CRM, project management, and business intelligence solutions for clients in USA, Canada, Australia, UK, and Dubai.");
         JsonLd::setUrl(url()->current());
-        JsonLd::addValue('inLanguage', 'bn-BD');  // 'inLanguage' is appropriate here
+        JsonLd::addValue('inLanguage', 'en-US');  // 'inLanguage' is appropriate here
 
         JsonLd::addValue('mainEntity', [
             "@type" => "Service",
@@ -197,7 +221,7 @@ class ServiceController extends Controller
                 ],
                 [
                     "@type" => "Place",
-                    "name" => "Germany"
+                    "name" => "Dubai"
                 ],
                 [
                     "@type" => "Place",
@@ -233,7 +257,7 @@ class ServiceController extends Controller
                 '@type' => 'ImageObject',
                 'url' => $img,
                 'caption' => $seo_description,
-                'inLanguage' => 'bn-BD',
+                'inLanguage' => 'en-US',
             ],
         ]);
 
@@ -243,9 +267,20 @@ class ServiceController extends Controller
     {
         // return view('Frontend.pages.service.services');
         $site_name = env('APP_NAME', 'Synex Digital');
-        $seo_title = 'Web Development';
-        $seo_description = 'We Build Custom Websites That Not Only Look Amazing but Also Deliver Outstanding Performance and User Experience, Helping Your Business Stand Out and Succeed Online. Lorem ipsum dolor sit amet consectetur. Ac eros egestas ornare volutpat cras congue';
-        $seo_tags = 'Service';
+        $seo_title = 'Professional Web Development Services | Synex Digital';
+        $seo_description = 'Transform your online presence with professional web development services from Synex Digital. We offer full-stack development, e-commerce solutions, CMS development, and more. Serving clients in the USA, Canada, Australia, UK, and Dubai. Contact us for a custom website that drives results!';
+        $seo_tags =
+            'Web Development Services USA Canada Australia UK Dubai,
+            Full-Stack Development,
+            Frontend and Backend Development,
+            E-commerce Development,
+            Custom CMS Development,
+            WordPress Development Services,
+            Responsive Website Design,
+            Web Design and Development,
+            Professional Website Development,
+            Synex Digital Web Development,
+            SEO-Optimized Websites';
         $img = asset('fav-low.png');
         $url = env('APP_URL', 'https://synexdigital.com');
 
@@ -271,9 +306,9 @@ class ServiceController extends Controller
         // JsonLd for Services Page
         JsonLd::setType('WebPage');  // Changed from 'Service' to 'WebPage'
         JsonLd::setTitle($seo_title);
-        JsonLd::setDescription($seo_description);
+        JsonLd::setDescription("Synex Digital offers professional web development services, including frontend, backend, full-stack development, e-commerce, and CMS solutions for clients in USA, Canada, Australia, UK, and Dubai.");
         JsonLd::setUrl(url()->current());
-        JsonLd::addValue('inLanguage', 'bn-BD');  // 'inLanguage' is appropriate here
+        JsonLd::addValue('inLanguage', 'en-US');  // 'inLanguage' is appropriate here
 
         JsonLd::addValue('mainEntity', [
             "@type" => "Service",
@@ -311,7 +346,7 @@ class ServiceController extends Controller
                 ],
                 [
                     "@type" => "Place",
-                    "name" => "Germany"
+                    "name" => "Dubai"
                 ],
                 [
                     "@type" => "Place",
@@ -346,8 +381,8 @@ class ServiceController extends Controller
             'logo' => [
                 '@type' => 'ImageObject',
                 'url' => $img,
-                'caption' => $seo_description,
-                'inLanguage' => 'bn-BD',
+                'caption' => $seo_title,
+                'inLanguage' => 'en-US',
             ],
         ]);
         return view('Frontend.pages.service.service-web-dev');
@@ -356,9 +391,20 @@ class ServiceController extends Controller
     {
         // return view('Frontend.pages.service.services');
         $site_name = env('APP_NAME', 'Synex Digital');
-        $seo_title = 'UI/UX DESIGN';
-        $seo_description = 'Craft applications that meet your user needs and evolve with your business. We provide UI/UX design services to help you create exceptional user experiences. Our approach is driven by current design trends and refined by real user feedback';
-        $seo_tags = 'Service';
+        $seo_title = 'Expert UI/UX Design Services | Synex Digital';
+        $seo_description = "Enhance your digital products with expert UI/UX design services from Synex Digital. Our team creates intuitive, user-centric interfaces and engaging experiences tailored to your audience. Serving businesses in the USA, Canada, Australia, UK, and Dubai. Contact us for a design consultation!";
+        $seo_tags =
+            'UI/UX Design Services USA Canada Australia UK Dubai,
+            User Interface Design,
+            User Experience Design,
+            UX Research and Testing,
+            Wireframing and Prototyping,
+            Interaction Design,
+            Visual Design Services,
+            Professional UX Design,
+            Synex Digital UI/UX,
+            Responsive Web Design,
+            Mobile App UI/UX Design';
         $img = asset('fav-low.png');
         $url = env('APP_URL', 'https://synexdigital.com');
 
@@ -384,9 +430,9 @@ class ServiceController extends Controller
         // JsonLd for Services Page
         JsonLd::setType('WebPage');  // Changed from 'Service' to 'WebPage'
         JsonLd::setTitle($seo_title);
-        JsonLd::setDescription($seo_description);
+        JsonLd::setDescription("Synex Digital offers comprehensive UI/UX design services, including user research, wireframing, prototyping, interaction design, and visual design for clients in USA, Canada, Australia, UK, and Dubai.");
         JsonLd::setUrl(url()->current());
-        JsonLd::addValue('inLanguage', 'bn-BD');  // 'inLanguage' is appropriate here
+        JsonLd::addValue('inLanguage', 'en-US');  // 'inLanguage' is appropriate here
 
         JsonLd::addValue('mainEntity', [
             "@type" => "Service",
@@ -424,7 +470,7 @@ class ServiceController extends Controller
                 ],
                 [
                     "@type" => "Place",
-                    "name" => "Germany"
+                    "name" => "Dubai"
                 ],
                 [
                     "@type" => "Place",
@@ -460,7 +506,7 @@ class ServiceController extends Controller
                 '@type' => 'ImageObject',
                 'url' => $img,
                 'caption' => $seo_description,
-                'inLanguage' => 'bn-BD',
+                'inLanguage' => 'en-US',
             ],
         ]);
         return view('Frontend.pages.service.service-uiux');
@@ -469,9 +515,20 @@ class ServiceController extends Controller
     {
         // return view('Frontend.pages.service.services');
         $site_name = env('APP_NAME', 'Synex Digital');
-        $seo_title = 'Digital Marketing';
-        $seo_description = 'A strong marketing strategy helps your business build trust and brand loyalty, ensuring repeat customers and long-term success. Whether it’s through a strategic Google Ads Campaign, SEO-focused content, tailored email marketing, or a combination of all three, our range of digital marketing services put you in front of the right customers.';
-        $seo_tags = 'Service';
+        $seo_title = 'Comprehensive Digital Marketing Services | Synex Digital';
+        $seo_description = "Boost your online presence with Synex Digital's expert digital marketing services, including SEO, PPC, social media marketing, content marketing, and more. Serving clients in the USA, Canada, Australia, UK, and Dubai with tailored strategies to grow your business. Contact us for a free consultation!";
+        $seo_tags =
+            'Digital Marketing Services USA Canada Australia UK Dubai,
+            SEO Services,
+            PPC Campaign Management,
+            Social Media Marketing,
+            Content Marketing Strategy,
+            Google Ads Management,
+            Facebook and Instagram Ads,
+            YouTube Marketing,
+            E-commerce SEO,
+            Synex Digital Digital Marketing,
+            Online Marketing Experts';
         $img = asset('fav-low.png');
         $url = env('APP_URL', 'https://synexdigital.com');
 
@@ -497,9 +554,9 @@ class ServiceController extends Controller
         // JsonLd for Services Page
         JsonLd::setType('WebPage');  // Changed from 'Service' to 'WebPage'
         JsonLd::setTitle($seo_title);
-        JsonLd::setDescription($seo_description);
+        JsonLd::setDescription("Synex Digital provides comprehensive digital marketing services, including SEO, PPC, social media marketing, content marketing, and more, tailored for clients in USA, Canada, Australia, UK, and Dubai.");
         JsonLd::setUrl(url()->current());
-        JsonLd::addValue('inLanguage', 'bn-BD');  // 'inLanguage' is appropriate here
+        JsonLd::addValue('inLanguage', 'en-US');  // 'inLanguage' is appropriate here
 
         JsonLd::addValue('mainEntity', [
             "@type" => "Service",
@@ -537,7 +594,7 @@ class ServiceController extends Controller
                 ],
                 [
                     "@type" => "Place",
-                    "name" => "Germany"
+                    "name" => "Dubai"
                 ],
                 [
                     "@type" => "Place",
@@ -573,7 +630,7 @@ class ServiceController extends Controller
                 '@type' => 'ImageObject',
                 'url' => $img,
                 'caption' => $seo_description,
-                'inLanguage' => 'bn-BD',
+                'inLanguage' => 'en-US',
             ],
         ]);
         return view('Frontend.pages.service.service-digital-marketing');
@@ -582,9 +639,20 @@ class ServiceController extends Controller
     {
         // return view('Frontend.pages.service.services');
         $site_name = env('APP_NAME', 'Synex Digital');
-        $seo_title = 'Graphics Design';
-        $seo_description = 'At 4D Web Design, we excel in delivering bespoke graphic design solutions. Our service includes concept development, brand identity, web design, and print materials, all crafted with a keen eye for detail and creativity.';
-        $seo_tags = 'Service';
+        $seo_title = 'Professional Graphics Design Services | Synex Digital';
+        $seo_description = "Enhance your brand with Synex Digital's expert graphics design services. We offer comprehensive solutions including branding, print design, digital design, and custom illustrations. Serving clients in the USA, Canada, Australia, UK, and Dubai. Contact us for a free design consultation!";
+        $seo_tags =
+            'Graphics Design Services USA Canada Australia UK Dubai,
+            Branding and Identity Design,
+            Print Design Services,
+            Digital Graphics Design,
+            Custom Illustrations,
+            3D Design and Modeling,
+            Logo Design,
+            Brochure and Flyer Design,
+            Social Media Graphics,
+            Synex Digital Graphics Design,
+            Professional Graphic Designers';
         $img = asset('fav-low.png');
         $url = env('APP_URL', 'https://synexdigital.com');
 
@@ -610,9 +678,9 @@ class ServiceController extends Controller
         // JsonLd for Services Page
         JsonLd::setType('WebPage');  // Changed from 'Service' to 'WebPage'
         JsonLd::setTitle($seo_title);
-        JsonLd::setDescription($seo_description);
+        JsonLd::setDescription("Synex Digital provides top-notch graphics design services, including branding, print design, digital design, custom illustrations, and more. We serve clients in the USA, Canada, Australia, UK, and Dubai with creative solutions to elevate your brand.");
         JsonLd::setUrl(url()->current());
-        JsonLd::addValue('inLanguage', 'bn-BD');  // 'inLanguage' is appropriate here
+        JsonLd::addValue('inLanguage', 'en-US');  // 'inLanguage' is appropriate here
 
         JsonLd::addValue('mainEntity', [
             "@type" => "Service",
@@ -650,7 +718,7 @@ class ServiceController extends Controller
                 ],
                 [
                     "@type" => "Place",
-                    "name" => "Germany"
+                    "name" => "Dubai"
                 ],
                 [
                     "@type" => "Place",
@@ -685,8 +753,8 @@ class ServiceController extends Controller
             'logo' => [
                 '@type' => 'ImageObject',
                 'url' => $img,
-                'caption' => $seo_description,
-                'inLanguage' => 'bn-BD',
+                'caption' => $seo_title,
+                'inLanguage' => 'en-US',
             ],
         ]);
         return view('Frontend.pages.service.service-graphics-design');
@@ -695,9 +763,20 @@ class ServiceController extends Controller
     {
         // return view('Frontend.pages.service.services');
         $site_name = env('APP_NAME', 'Synex Digital');
-        $seo_title = 'Mobile App Development';
-        $seo_description = 'Build stunning mobile apps that offer sophisticated features and drive user adoption. Device compatibility, interoperability, scalability —we cover it all';
-        $seo_tags = 'Service';
+        $seo_title = 'Top Mobile App Development Services | iOS,Android | Synex Digital';
+        $seo_description = "Elevate your business with Synex Digital’s mobile app development services. We specialize in iOS, Android, and cross-platform apps, providing custom solutions for clients in the USA, Canada, Australia, UK, and Dubai. Contact us to create a powerful mobile app tailored to your needs!";
+        $seo_tags =
+            'Mobile App Development Services USA Canada Australia UK Dubai,
+            iOS App Development,
+            Android App Development,
+            Cross-Platform App Development,
+            Custom Mobile Apps,
+            Flutter and React Native Development,
+            Mobile App Design and Development,
+            App Integration Services,
+            Mobile App Maintenance,
+            Synex Digital Mobile Apps,
+            Professional App Development';
         $img = asset('fav-low.png');
         $url = env('APP_URL', 'https://synexdigital.com');
 
@@ -723,9 +802,9 @@ class ServiceController extends Controller
         // JsonLd for Services Page
         JsonLd::setType('WebPage');  // Changed from 'Service' to 'WebPage'
         JsonLd::setTitle($seo_title);
-        JsonLd::setDescription($seo_description);
+        JsonLd::setDescription( "Synex Digital offers expert mobile app development services, including iOS, Android, and cross-platform solutions. We provide custom app development for clients in USA, Canada, Australia, UK, and Dubai. Contact us for a tailored mobile app that meets your business needs.");
         JsonLd::setUrl(url()->current());
-        JsonLd::addValue('inLanguage', 'bn-BD');  // 'inLanguage' is appropriate here
+        JsonLd::addValue('inLanguage', 'en-US');  // 'inLanguage' is appropriate here
 
         JsonLd::addValue('mainEntity', [
             "@type" => "Service",
@@ -763,7 +842,7 @@ class ServiceController extends Controller
                 ],
                 [
                     "@type" => "Place",
-                    "name" => "Germany"
+                    "name" => "Dubai"
                 ],
                 [
                     "@type" => "Place",
@@ -798,8 +877,8 @@ class ServiceController extends Controller
             'logo' => [
                 '@type' => 'ImageObject',
                 'url' => $img,
-                'caption' => $seo_description,
-                'inLanguage' => 'bn-BD',
+                'caption' => $seo_title,
+                'inLanguage' => 'en-US',
             ],
         ]);
         return view('Frontend.pages.service.service-mobile-app');
@@ -808,9 +887,19 @@ class ServiceController extends Controller
     {
         // return view('Frontend.pages.service.services');
         $site_name = env('APP_NAME', 'Synex Digital');
-        $seo_title = 'SaaS Development';
-        $seo_description = "Whether you're starting from square one or transitioning to a software-as-a-service model, our SaaS application development company brings decades of hands-on experience developing bespoke SaaS solutions end-to-end and sustaining them through our dedicated team approach.";
-        $seo_tags = 'Service';
+        $seo_title = 'Custom SaaS Development Services | Synex Digital';
+        $seo_description = "Transform your business with Synex Digital’s custom SaaS development services. We offer scalable SaaS solutions, including multi-tenant architecture, subscription management, and cloud infrastructure management. Serving clients in the USA, Canada, Australia, UK, and Dubai. Contact us to build your next SaaS product!";
+        $seo_tags =
+            'SaaS Development Services USA Canada Australia UK Dubai,
+            Custom SaaS Solutions,
+            Scalable SaaS Development,
+            Multi-Tenant SaaS Architecture,
+            SaaS Product Design,
+            Cloud Infrastructure Management,
+            SaaS Subscription Management,
+            SaaS Integration Services,
+            Synex Digital SaaS Development,
+            Professional SaaS Development';
         $img = asset('fav-low.png');
         $url = env('APP_URL', 'https://synexdigital.com');
 
@@ -836,9 +925,9 @@ class ServiceController extends Controller
         // JsonLd for Services Page
         JsonLd::setType('WebPage');  // Changed from 'Service' to 'WebPage'
         JsonLd::setTitle($seo_title);
-        JsonLd::setDescription($seo_description);
+        JsonLd::setDescription("Synex Digital offers expert SaaS development services including custom SaaS solutions, multi-tenant architecture, subscription management, and cloud infrastructure management. We provide scalable and tailored SaaS products for clients in USA, Canada, Australia, UK, and Dubai.");
         JsonLd::setUrl(url()->current());
-        JsonLd::addValue('inLanguage', 'bn-BD');  // 'inLanguage' is appropriate here
+        JsonLd::addValue('inLanguage', 'en-US');  // 'inLanguage' is appropriate here
 
         JsonLd::addValue('mainEntity', [
             "@type" => "Service",
@@ -876,7 +965,7 @@ class ServiceController extends Controller
                 ],
                 [
                     "@type" => "Place",
-                    "name" => "Germany"
+                    "name" => "Dubai"
                 ],
                 [
                     "@type" => "Place",
@@ -911,8 +1000,8 @@ class ServiceController extends Controller
             'logo' => [
                 '@type' => 'ImageObject',
                 'url' => $img,
-                'caption' => $seo_description,
-                'inLanguage' => 'bn-BD',
+                'caption' => $seo_title,
+                'inLanguage' => 'en-US',
             ],
         ]);
         return view('Frontend.pages.service.service-saas');
@@ -921,9 +1010,20 @@ class ServiceController extends Controller
     {
         // return view('Frontend.pages.service.services');
         $site_name = env('APP_NAME', 'Synex Digital');
-        $seo_title = 'Video Editing';
-        $seo_description = 'We create professional, goal-orientated, and impactful animated product explainer videos, which engage, inspire, and attract your target audience. Catch your audiences’ attention today with Squideo!';
-        $seo_tags = 'Service';
+        $seo_title = 'Professional Video Editing Services | Synex Digital';
+        $seo_description = "Enhance your video content with Synex Digital’s expert video editing services. We specialize in post-production, motion graphics, and social media video editing. Serving clients in the USA, Canada, Australia, UK, and Dubai. Contact us to get high-quality video edits that captivate your audience!";
+        $seo_tags =
+            'Video Editing Services USA Canada Australia UK Dubai,
+            Post-Production Video Editing,
+            Motion Graphics and Animation,
+            Social Media Video Editing,
+            Professional Video Editing,
+            Video Production Services,
+            Custom Video Editing,
+            Synex Digital Video Editing,
+            High-Quality Video Edits,
+            Corporate Video Editing,
+            Video Editing for Social Media';
         $img = asset('fav-low.png');
         $url = env('APP_URL', 'https://synexdigital.com');
 
@@ -949,9 +1049,9 @@ class ServiceController extends Controller
         // JsonLd for Services Page
         JsonLd::setType('WebPage');  // Changed from 'Service' to 'WebPage'
         JsonLd::setTitle($seo_title);
-        JsonLd::setDescription($seo_description);
+        JsonLd::setDescription("Synex Digital provides professional video editing services, including post-production, motion graphics, and social media video editing. We deliver high-quality video content for clients in the USA, Canada, Australia, UK, and Dubai. Contact us for exceptional video editing solutions.");
         JsonLd::setUrl(url()->current());
-        JsonLd::addValue('inLanguage', 'bn-BD');  // 'inLanguage' is appropriate here
+        JsonLd::addValue('inLanguage', 'en-US');  // 'inLanguage' is appropriate here
 
         JsonLd::addValue('mainEntity', [
             "@type" => "Service",
@@ -989,7 +1089,7 @@ class ServiceController extends Controller
                 ],
                 [
                     "@type" => "Place",
-                    "name" => "Germany"
+                    "name" => "Dubai"
                 ],
                 [
                     "@type" => "Place",
@@ -1024,8 +1124,8 @@ class ServiceController extends Controller
             'logo' => [
                 '@type' => 'ImageObject',
                 'url' => $img,
-                'caption' => $seo_description,
-                'inLanguage' => 'bn-BD',
+                'caption' => $seo_title,
+                'inLanguage' => 'en-US',
             ],
         ]);
         return view('Frontend.pages.service.service-video-edit');

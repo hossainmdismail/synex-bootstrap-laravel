@@ -5,6 +5,59 @@
         .force-pan {
             font-size: 13px;
         }
+
+        #summernote>ul {
+            display: block !important;
+            margin-block-start: 1em !important;
+            margin-block-end: 1em !important;
+            margin-inline-start: 0px !important;
+            margin-inline-end: 0px !important;
+            padding-inline-start: 40px !important;
+            unicode-bidi: isolate !important
+        }
+
+        #summernote>ul li {
+            color: #000;
+            display: list-item !important;
+            text-align: -webkit-match-parent !important;
+            list-style-type: disc !important;
+
+        }
+
+        #summernote>ul li::marker {
+            color: #3B82F6 !important;
+        }
+
+        #summernote>ol {
+            display: block !important;
+            margin-block-start: 1em !important;
+            margin-block-end: 1em !important;
+            margin-inline-start: 0px !important;
+            margin-inline-end: 0px !important;
+            padding-inline-start: 40px !important;
+            unicode-bidi: isolate !important
+        }
+
+        #summernote>ol li {
+            color: #000;
+            display: list-item !important;
+            text-align: -webkit-match-parent !important;
+            list-style-type: decimal !important;
+        }
+
+        #summernote>ol li::marker {
+            color: #3B82F6 !important;
+        }
+
+        #summernote>blockquote {
+            background: #3b82f61c;
+            color: #000;
+            padding-left: 1rem;
+            padding-top: 14px;
+            padding-bottom: 1px;
+            border-left: 6px solid #3b82f6;
+            border-radius: 5px 0px 0px 5px;
+        }
     </style>
 @endsection
 
@@ -163,7 +216,7 @@
         <div class="row g-3">
             {{-- Content --}}
             <div class="col-md-8 px-3 px-md-2">
-                <div class="blog-content py-4">
+                <div class="blog-content py-4" id="summernote">
                     {!! $content['content'] !!}
                 </div>
 

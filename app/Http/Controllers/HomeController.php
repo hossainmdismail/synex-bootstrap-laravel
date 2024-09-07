@@ -59,7 +59,7 @@ class HomeController extends Controller
         JsonLd::setUrl(url()->current());
         JsonLd::addValue('inLanguage', 'en-US');
         JsonLd::addValue('isPartOf', [
-            "@type" => "Organization",
+            "@type" => "Website",
             "@id" => $url,
             "url" => $url,
             "name" => $site_name,
@@ -132,9 +132,19 @@ class HomeController extends Controller
     public function getintouch()
     {
         $site_name = env('APP_NAME', 'Synex Digital');
-        $seo_title = 'Contact Us';
-        $seo_description = 'Get in touch with SynexDigital for IT services and inquiries.';
-        $seo_tags = 'Contact';
+        $seo_title = 'Contact Synex Digital | Top IT Agency in USA, Canada, Australia, UK & Dubai - Get a Quote';
+        $seo_description = 'Get in touch with Synex Digital, a leading IT agency offering web development, app development, digital marketing, and more. Contact us today for a free quote and take advantage of up to 20% off on our services. Serving USA, Canada, Australia, UK, and Dubai.';
+        $seo_tags =
+            'Contact Synex Digital,
+            IT Agency Contact,
+            Get a Quote for IT Services,
+            Web Development Consultation,
+            App Development Experts Contact,
+            Digital Marketing Services Inquiry,
+            USA IT Agency Contact,
+            IT Services USA Canada Australia UK Dubai,
+            Get a Free Quote,
+            Best IT Company Contact Page';
         $img = asset('fav-low.png');
         $url = env('APP_URL', 'https://synexdigital.com');
 
@@ -160,7 +170,7 @@ class HomeController extends Controller
         // JsonLd for Contact Page
         JsonLd::setType('WebPage');
         JsonLd::setTitle($seo_title . ' - ' . $site_name);
-        JsonLd::setDescription($seo_description);
+        JsonLd::setDescription("Contact Synex Digital for a free quote and consultation on web development, app development, digital marketing, UI/UX design, and more. Serving clients in USA, Canada, Australia, UK, and Dubai.");
         JsonLd::setUrl(url()->current());
         JsonLd::addValue('inLanguage', 'bn-BD');
 
@@ -178,8 +188,9 @@ class HomeController extends Controller
                 "@type" => "ContactPoint",
                 "telephone" => "+8801757-647319",  // Replace with your contact number
                 "contactType" => "Customer Service",  // Type of contact
-                "areaServed" => "USA",  // Area served, e.g., Bangladesh
-                "availableLanguage" => "bn-BD"  // Language available
+                "areaServed" => ["US", "CA", "AU", "GB", "AE"],  // Area served, e.g., Bangladesh
+                "availableLanguage" => "en-US",  // Language available
+                 "email" => "office@synexdigital.com"
             ]
         ]);
 

@@ -32,12 +32,12 @@ Route::post('/form-submit', [ContactFormController::class, 'index'])->name('cont
 
 Route::get('/services', [ServiceController::class, 'services'])->name('services'); //Done
 Route::prefix('service')->group(function () {
-    Route::get('/web-dev', [ServiceController::class, 'service_web_dev'])->name('service.web-dev');
-    Route::get('/software', [ServiceController::class, 'service_software'])->name('service.software');
-    Route::get('/uiux', [ServiceController::class, 'service_uiux'])->name('service.uiux');
+    Route::get('/web-development', [ServiceController::class, 'service_web_dev'])->name('service.web-dev');
+    Route::get('/management-software', [ServiceController::class, 'service_software'])->name('service.software');
+    Route::get('/ui-ux', [ServiceController::class, 'service_uiux'])->name('service.uiux');
     Route::get('/digital-marketing', [ServiceController::class, 'service_digital_marketing'])->name('service.digital-marketing');
     Route::get('/graphics-design', [ServiceController::class, 'service_graphics_design'])->name('service.graphics-design');
-    Route::get('/mobile-app', [ServiceController::class, 'service_mobile_app'])->name('service.mobile-app');
-    Route::get('/video-edit', [ServiceController::class, 'service_video_edit'])->name('service.video-edit');
+    Route::get('/mobile-app-development', [ServiceController::class, 'service_mobile_app'])->name('service.mobile-app');
+    Route::get('/video-editing', [ServiceController::class, 'service_video_edit'])->name('service.video-edit');
     Route::get('/saas', [ServiceController::class, 'service_saas'])->name('service.saas');
 });

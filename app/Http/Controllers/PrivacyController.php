@@ -43,7 +43,7 @@ class PrivacyController extends Controller
         JsonLd::setTitle('Privacy Policy - SynexDigital');  // Title of the privacy policy page
         JsonLd::setDescription('Learn about how SynexDigital collects, uses, and protects your personal information.');  // Description of the privacy policy page
         JsonLd::setUrl(url()->current());  // URL of the privacy policy page
-        JsonLd::addValue('inLanguage', 'bn-BD');  // Set the language of the page
+        JsonLd::addValue('inLanguage', 'en-US');  // Set the language of the page
 
         // Adding Main Entity of the Page
         JsonLd::addValue('mainEntityOfPage', [

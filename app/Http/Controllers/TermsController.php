@@ -42,7 +42,7 @@ class TermsController extends Controller
         JsonLd::setTitle('Terms and Conditions - SynexDigital');  // Title of the privacy policy page
         JsonLd::setDescription('Review the terms and conditions of Synex Digital outlining your rights, responsibilities, and the guidelines for using our services.');  // Description of the terms and conditions page
         JsonLd::setUrl(url()->current());  // URL of the privacy policy page
-        JsonLd::addValue('inLanguage', 'bn-BD');  // Set the language of the page
+        JsonLd::addValue('inLanguage', 'en-US');  // Set the language of the page
 
         // Adding Main Entity of the Page
         JsonLd::addValue('mainEntityOfPage', [

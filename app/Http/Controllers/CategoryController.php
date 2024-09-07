@@ -59,7 +59,7 @@ class CategoryController extends Controller
                 JsonLd::setTitle($seo_title);
                 JsonLd::setDescription($seo_description);
                 JsonLd::setUrl(url()->current());
-                JsonLd::addValue('inLanguage', 'bn-BD');
+                JsonLd::addValue('inLanguage', 'en-US');
 
                 // Adding Main Entity of the Page
                 JsonLd::addValue('mainEntityOfPage', [

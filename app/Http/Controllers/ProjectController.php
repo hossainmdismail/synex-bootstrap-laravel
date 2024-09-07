@@ -54,7 +54,7 @@ class ProjectController extends Controller
             JsonLd::setTitle('Our Projects - SynexDigital');  // Title of the projects page
             JsonLd::setDescription($seo_description);  // Description of the projects page
             JsonLd::setUrl(url()->current());  // URL of the projects page
-            JsonLd::addValue('inLanguage', 'bn-BD');  // Set the language of the page
+            JsonLd::addValue('inLanguage', 'en-US');  // Set the language of the page
 
             // Adding Main Entity of the Page
             JsonLd::addValue('mainEntityOfPage', [

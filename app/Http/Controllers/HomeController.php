@@ -85,7 +85,7 @@ class HomeController extends Controller
                 '@type' => 'ImageObject',
                 'url' => $img,
                 'caption' => $seo_description,
-                'inLanguage' => 'bn-BD',
+                'inLanguage' => 'en-US',
                 'contentUrl' => url()->current(),
             ],
         ]);
@@ -172,7 +172,7 @@ class HomeController extends Controller
         JsonLd::setTitle($seo_title . ' - ' . $site_name);
         JsonLd::setDescription("Contact Synex Digital for a free quote and consultation on web development, app development, digital marketing, UI/UX design, and more. Serving clients in USA, Canada, Australia, UK, and Dubai.");
         JsonLd::setUrl(url()->current());
-        JsonLd::addValue('inLanguage', 'bn-BD');
+        JsonLd::addValue('inLanguage', 'en-US');
 
         // Adding Publisher Information with Contact Information inside
         JsonLd::addValue('publisher', [
@@ -255,7 +255,7 @@ class HomeController extends Controller
         JsonLd::setTitle('Thank You - SynexDigital');  // Title of the thank you page
         JsonLd::setDescription('Thank you for your submission! We appreciate your interest in SynexDigital.');  // Description of the thank you page
         JsonLd::setUrl(url()->current());  // URL of the thank you page
-        JsonLd::addValue('inLanguage', 'bn-BD');  // Set the language of the page
+        JsonLd::addValue('inLanguage', 'en-US');  // Set the language of the page
 
         // Adding Main Entity of the Page
         JsonLd::addValue('mainEntityOfPage', [

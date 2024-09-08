@@ -9,6 +9,7 @@ class ContactFormController extends Controller
 {
     public function index(Request $request)
     {
+
         $request->validate([
             'name'      => 'required',
             'category'  => 'required',
@@ -28,13 +29,13 @@ class ContactFormController extends Controller
 
         $data = [
             'name'          => $request->name,
-            'number'        => $request->number,
+            'number'        => '+'.$request->country_code.$request->number,
             'email'         => $request->email,
             'category'      => $request->category,
             'description'   => $request->message,
             'type'          => 'web-support',
         ];
-
+        dd($data['number']);
         try {
             $url = app('domainName') . '/api/customer/store';
 

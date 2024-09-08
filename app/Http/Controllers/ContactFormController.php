@@ -29,7 +29,7 @@ class ContactFormController extends Controller
 
         $data = [
             'name'          => $request->name,
-            'number'        => '+'.$request->country_code.$request->number,
+            'number'        => $request->country_code.$request->number,
             'email'         => $request->email,
             'category'      => $request->category,
             'description'   => $request->message,

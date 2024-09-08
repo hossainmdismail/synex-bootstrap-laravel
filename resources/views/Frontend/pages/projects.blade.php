@@ -11,7 +11,7 @@
 @section('content')
     <section class="container-fluid service-hero" style="background-image: url({{ asset('Frontend') }}/images/hero.webp);">
         <div class="shadow">
-            <div class="container py-5 h-100 d-flex flex-column justify-content-between">
+            <div class="container py-5 h-100 d-flex flex-column justify-content-center">
                 <div class="row py-4 py-md-5">
                     <div class="col-md-6 py-md-5 m-auto text-center">
                         <h1 class="section-title text-white pb-2">Our <span class="font-main">Project</span></h1>

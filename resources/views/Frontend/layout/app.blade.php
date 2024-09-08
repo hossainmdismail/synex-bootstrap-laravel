@@ -32,11 +32,14 @@
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16659065389"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
 
-    gtag('config', 'AW-16659065389');
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'AW-16659065389');
     </script>
     @yield('style')
 
@@ -53,18 +56,18 @@
     <!-- Event snippet for Lead Submit - Shuvo conversion page
 In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
 
-<script>
+    <script>
         function gtag_report_conversion(url) {
-        var callback = function () {
-            if (typeof(url) != 'undefined') {
-            window.location = url;
-            }
-        };
-        gtag('event', 'conversion', {
-            'send_to': 'AW-16659065389/sThcCM2S1NAZEK3U1Ic-',
-            'event_callback': callback
-        });
-        return false;
+            var callback = function() {
+                if (typeof(url) != 'undefined') {
+                    window.location = url;
+                }
+            };
+            gtag('event', 'conversion', {
+                'send_to': 'AW-16659065389/sThcCM2S1NAZEK3U1Ic-',
+                'event_callback': callback
+            });
+            return false;
         }
     </script>
     @include('Frontend.layout.header')

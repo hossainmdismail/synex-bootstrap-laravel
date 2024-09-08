@@ -37,7 +37,7 @@
     <!-- Section 1 -->
     <section class="container-fluid bg-testimonial" id="content">
         <div class="container py-4 p-md-5">
-            <div class="row py-md-5">
+            <div class=" row py-md-5 mx-0">
                 <div class="col-md-6 d-flex z-3 justify-content-center justify-content-md-end order-2 order-md-1">
                     <div class="card rounded-sm p-3 service-card">
                         <div class="card-body">
@@ -114,7 +114,7 @@
     <!-- Section 2 -->
     <section class="container-fluid">
         <div class="container py-4 p-md-5">
-            <div class="row py-md-5">
+            <div class=" row py-md-5 mx-0">
                 <div class="col-md-6">
                     <div class="w-100 position-relative serviceimg-box">
                         <span class="ser-box sl">
@@ -192,7 +192,7 @@
     <!-- Section 3 -->
     <section class="container-fluid bg-testimonial">
         <div class="container py-4 p-md-5">
-            <div class="row py-md-5">
+            <div class=" row py-md-5 mx-0">
                 <div class="col-md-6 d-flex z-3 justify-content-center justify-content-md-end order-2 order-md-1">
                     <div class="card rounded-sm p-3 service-card">
                         <div class="card-body">
@@ -269,7 +269,7 @@
     <!-- Section 4 -->
     <section class="container-fluid">
         <div class="container py-4 p-md-5">
-            <div class="row py-md-5">
+            <div class=" row py-md-5 mx-0">
                 <div class="col-md-6">
                     <div class="w-100 position-relative serviceimg-box">
                         <span class="ser-box sl">
@@ -348,7 +348,7 @@
     <!-- Section 5 -->
     <section class="container-fluid bg-testimonial">
         <div class="container py-4 p-md-5">
-            <div class="row py-md-5">
+            <div class=" row py-md-5 mx-0">
                 <div class="col-md-6 d-flex z-3 justify-content-center justify-content-md-end order-2 order-md-1">
                     <div class="card rounded-sm p-3 service-card">
                         <div class="card-body">
@@ -425,7 +425,7 @@
     <!-- Section 6 -->
     <section class="container-fluid">
         <div class="container py-4 p-md-5">
-            <div class="row py-md-5">
+            <div class=" row py-md-5 mx-0">
                 <div class="col-md-6">
                     <div class="w-100 position-relative serviceimg-box">
                         <span class="ser-box sl">
@@ -503,7 +503,7 @@
     <!-- Section 7 -->
     <section class="container-fluid bg-testimonial">
         <div class="container py-4 p-md-5">
-            <div class="row py-md-5">
+            <div class=" row py-md-5 mx-0">
                 <div class="col-md-6 d-flex z-3 justify-content-center justify-content-md-end order-2 order-md-1">
                     <div class="card rounded-sm p-3 service-card">
                         <div class="card-body">
@@ -580,7 +580,7 @@
     <!-- Section 8 -->
     <section class="container-fluid">
         <div class="container py-4 p-md-5">
-            <div class="row py-md-5">
+            <div class=" row py-md-5 mx-0">
                 <div class="col-md-6">
                     <div class="w-100 position-relative serviceimg-box">
                         <span class="ser-box sl">

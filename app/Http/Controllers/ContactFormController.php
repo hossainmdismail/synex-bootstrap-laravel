@@ -11,48 +11,44 @@ class ContactFormController extends Controller
     {
         $request->validate([
             'name'      => 'required',
-            'number'   => $request->number ? 'required' : '',
-            'email'    => $request->email ? 'required|email' : '',
             'category'  => 'required',
             'message'   => 'required',
         ]);
 
-        // $data = [
-        //     'name'          => $request->name,
-        //     'number'        => $request->number,
-        //     'email'         => $request->email,
-        //     'category'      => $request->category,
-        //     'description'   => $request->message,
-        //     'type'          => 'web-support',
-        // ];
-
-        // try {
-        //     $url = app('domainName') . '/api/customer/store';
-
-        //     // Send the POST request with the $data
-        //     $response = Http::post($url, $data);
-
-        //     // Check if the response was successful
-        //     if ($response->successful()) {
-        //         // Dump and die (for debugging purposes) with the response as JSON
-        //         dd($response->json());
-        //     } else {
-        //         // Handle the case where the response was not successful (e.g., 4xx or 5xx status code)
-        //         return response()->json([
-        //             'error' => 'Failed to send data',
-        //             'status' => $response->status(),
-        //             'body' => $response->body(),
-        //         ], $response->status());
-        //     }
-        // } catch (\Exception $e) {
-        //     // Catch any exceptions (e.g., network issues, invalid URL) and return the error message
-        //     return response()->json([
-        //         'error' => 'An error occurred',
-        //         'message' => $e->getMessage()
-        //     ], 500);
-        // }
+        if ($request->has('email')) {
+            $request->validate([
+                'email' => 'required|email'
+            ]);
+        } else if ($request->has('number')) {
+            $request->validate([
+                'number' => 'required|numeric'
+            ]);
+        }
 
 
-        return redirect()->route('thanks');
+        $data = [
+            'name'          => $request->name,
+            'number'        => $request->number,
+            'email'         => $request->email,
+            'category'      => $request->category,
+            'description'   => $request->message,
+            'type'          => 'web-support',
+        ];
+
+        try {
+            $url = app('domainName') . '/api/customer/store';
+
+            $response = Http::asForm()->post($url, $data);
+
+            if ($response->successful()) {
+                return redirect()->route('thanks');
+            } else {
+                if (!$response->successful()) {
+                    return back()->with('error', 'Message sent faild, try again laters');
+                }
+            }
+        } catch (\Exception $e) {
+            return back()->with('error', 'Server error');
+        }
     }
 }

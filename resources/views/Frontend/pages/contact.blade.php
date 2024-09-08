@@ -207,7 +207,7 @@
                     <div class="mb-3">
                         <textarea id="message" name="message" class="form-control" rows="4" placeholder="Send a Message*" required> {{ old('message') }}</textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary">Send nude</button>
+                    <button type="submit" class="btn btn-primary">Send</button>
                 </form>
             </div>
         </div>

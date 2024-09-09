@@ -11,11 +11,14 @@
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-0D02Y90D7E"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
 
-    gtag('config', 'G-0D02Y90D7E');
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-0D02Y90D7E');
     </script>
     {!! SEOMeta::generate() !!}
     {!! OpenGraph::generate() !!}
@@ -34,20 +37,9 @@
         gtag('config', 'AW-16659065389');
     </script>
     @yield('style')
-
-    <!-- End Google Tag Manager -->
 </head>
 
 <body>
-    <!-- Google Tag Manager (noscript) -->
-
-    {{-- <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5ZSKZ4FP" height="0" width="0"
-            style="display:none;visibility:hidden"></iframe></noscript> --}}
-
-    <!-- End Google Tag Manager (noscript) -->
-    <!-- Event snippet for Lead Submit - Shuvo conversion page
-In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
-
     <script>
         function gtag_report_conversion(url) {
             var callback = function() {

@@ -1,6 +1,6 @@
 @extends('Frontend.layout.app')
 @section('style')
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.13/js/intlTelInput-jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.13/js/intlTelInput-jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
 
@@ -23,7 +23,7 @@
 
 
             transition: transform 0.5s cubic-bezier(0.18, 0.89, 0.32, 1.28);
-    transform: translateX(100%);
+            transform: translateX(100%);
 
         }
 
@@ -34,9 +34,11 @@
         .hidden {
             transform: translateX(-100%);
         }
+
         .iti.iti--allow-dropdown.iti--separate-dial-code {
             width: 100%;
         }
+
         .toggle-button {
 
 
@@ -67,7 +69,8 @@
     <section class="container pb-md-5 pt-4 pt-md-0">
         <div class="row py-2 py-md-5">
             <div class="col-md-6 px-md-5 pb-5 pb-md-0">
-                <div id="carouselExampleCaptions" class="px-md-5 carousel slide">
+                <div id="carouselExampleCaptions" class="px-md-5 carousel slide" data-bs-ride="carousel"
+                    data-bs-interval="2000">
                     <span class="offer-box">
                         <p class="mb-0" style="font-size: 12px">Special Offer</p>
                         <strong>20% <span style="font-size: 12px">Off</span></strong>
@@ -160,8 +163,8 @@
                                     <g>
                                         <path
                                             d="M388.419,475.59L168.834,256.005L388.418,36.421c8.341-8.341,8.341-21.824,0-30.165s-21.824-8.341-30.165,0
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                L123.586,240.923c-8.341,8.341-8.341,21.824,0,30.165l234.667,234.667c4.16,4.16,9.621,6.251,15.083,6.251
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                c5.461,0,10.923-2.091,15.083-6.251C396.76,497.414,396.76,483.931,388.419,475.59z" />
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    L123.586,240.923c-8.341,8.341-8.341,21.824,0,30.165l234.667,234.667c4.16,4.16,9.621,6.251,15.083,6.251
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    c5.461,0,10.923-2.091,15.083-6.251C396.76,497.414,396.76,483.931,388.419,475.59z" />
                                     </g>
                                 </g>
                             </svg>
@@ -176,9 +179,9 @@
                                 viewBox="0 0 330 330" xml:space="preserve">
                                 <path id="XMLID_222_"
                                     d="M250.606,154.389l-150-149.996c-5.857-5.858-15.355-5.858-21.213,0.001
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        c-5.857,5.858-5.857,15.355,0.001,21.213l139.393,139.39L79.393,304.394c-5.857,5.858-5.857,15.355,0.001,21.213
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        C82.322,328.536,86.161,330,90,330s7.678-1.464,10.607-4.394l149.999-150.004c2.814-2.813,4.394-6.628,4.394-10.606
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        C255,161.018,253.42,157.202,250.606,154.389z" />
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            c-5.857,5.858-5.857,15.355,0.001,21.213l139.393,139.39L79.393,304.394c-5.857,5.858-5.857,15.355,0.001,21.213
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            C82.322,328.536,86.161,330,90,330s7.678-1.464,10.607-4.394l149.999-150.004c2.814-2.813,4.394-6.628,4.394-10.606
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            C255,161.018,253.42,157.202,250.606,154.389z" />
                             </svg>
                         </span>
                         <span class="visually-hidden">Next</span>
@@ -214,7 +217,8 @@
                             <div class="col-lg-12">
                                 <div class="input-container">
                                     <div id="email-input" class="input-wrapper hidden">
-                                        <input id="number" pattern="[0-9]*" name="number" type="number" placeholder="Whatsapp Number" class="form-control" disabled />
+                                        <input id="number" pattern="[0-9]*" name="number" type="number"
+                                            placeholder="Whatsapp Number" class="form-control" disabled />
                                         <span class="or ">Or</span>
 
                                         <button type="button" class="toggle-button" onclick="toggleInput()">
@@ -246,7 +250,8 @@
                                         </button>
                                     </div>
                                     <div id="whatsapp-input" class="input-wrapper visible">
-                                        <input name="email" id="email" class="form-control"  type="email" placeholder="Example@example.com" required="true" />
+                                        <input name="email" id="email" class="form-control" type="email"
+                                            placeholder="Example@example.com" required="true" />
                                         <span class="or">Or</span>
                                         <button type="button" class="toggle-button" onclick="toggleInput()">
                                             <svg width="32px" height="32px" viewBox="0 0 32 32" fill="none"
@@ -335,79 +340,78 @@
 @endsection
 
 @section('script')
+    {{-- <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script> --}}
+    <script>
+        function toggleInput() {
+            const emailInput = document.getElementById('email-input');
+            const whatsappInput = document.getElementById('whatsapp-input');
+            const emailField = emailInput.querySelector('input');
+            const whatsappField = whatsappInput.querySelector('input');
 
-{{-- <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script> --}}
-<script>
-    function toggleInput() {
-    const emailInput = document.getElementById('email-input');
-    const whatsappInput = document.getElementById('whatsapp-input');
-    const emailField = emailInput.querySelector('input');
-    const whatsappField = whatsappInput.querySelector('input');
+            if (emailInput.classList.contains('visible')) {
+                emailInput.classList.remove('visible');
+                emailInput.classList.add('hidden');
 
-    if (emailInput.classList.contains('visible')) {
-        emailInput.classList.remove('visible');
-        emailInput.classList.add('hidden');
+                whatsappInput.classList.remove('hidden');
+                whatsappInput.classList.add('visible');
 
-        whatsappInput.classList.remove('hidden');
-        whatsappInput.classList.add('visible');
+                whatsappField.setAttribute('required', 'true');
+                emailField.setAttribute('required', 'false');
+                // Set disabled attribute
+                whatsappField.removeAttribute('disabled');
+                emailField.setAttribute('disabled', 'disabled');
+            } else {
+                whatsappInput.classList.remove('visible');
+                whatsappInput.classList.add('hidden');
 
-        whatsappField.setAttribute('required', 'true');
-        emailField.setAttribute('required','false');
-        // Set disabled attribute
-        whatsappField.removeAttribute('disabled');
-        emailField.setAttribute('disabled', 'disabled');
-    } else {
-        whatsappInput.classList.remove('visible');
-        whatsappInput.classList.add('hidden');
-
-        emailInput.classList.remove('hidden');
-        emailInput.classList.add('visible');
+                emailInput.classList.remove('hidden');
+                emailInput.classList.add('visible');
 
 
-        whatsappField.removeAttribute('required');
-        emailField.setAttribute('required', 'true');
-        // Set disabled attribute
-        emailField.removeAttribute('disabled');
-        whatsappField.setAttribute('disabled', 'disabled');
+                whatsappField.removeAttribute('required');
+                emailField.setAttribute('required', 'true');
+                // Set disabled attribute
+                emailField.removeAttribute('disabled');
+                whatsappField.setAttribute('disabled', 'disabled');
 
-    }
+            }
 
-}
-document.addEventListener("DOMContentLoaded", function() {
-        const input = document.querySelector("#number");
-
-        // Function to initialize intl-tel-input
-        function initializeIntlTelInput(initialCountry) {
-            return window.intlTelInput(input, {
-                initialCountry: initialCountry,
-                separateDialCode: true,
-                // Uncomment the line below to use the utils script if needed
-                // utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/11.0.4/js/utils.js"
-            });
         }
+        document.addEventListener("DOMContentLoaded", function() {
+            const input = document.querySelector("#number");
 
-        // Function to get the selected country code
-        function getCountryCode() {
-            const countryData = iti.getSelectedCountryData();
-            $('#countryCode').val(countryData.dialCode);
-        }
+            // Function to initialize intl-tel-input
+            function initializeIntlTelInput(initialCountry) {
+                return window.intlTelInput(input, {
+                    initialCountry: initialCountry,
+                    separateDialCode: true,
+                    // Uncomment the line below to use the utils script if needed
+                    // utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/11.0.4/js/utils.js"
+                });
+            }
 
-        // Fetch the user's country code
-        fetch('https://ipinfo.io?token=d54f029935345c')  // Replace 'YOUR_ACCESS_TOKEN' with your IPinfo token
-            .then(response => response.json())
-            .then(data => {
-                const countryCode = data.country ? data.country.toLowerCase() : 'us';  // Default to 'us' if no country code is found
-                iti = initializeIntlTelInput(countryCode); // Initialize intl-tel-input with the detected country code
-            })
-            .catch(error => {
-                console.error('Error fetching country code:', error);
-                iti = initializeIntlTelInput('us'); // Fallback to default country if there's an error
-            });
+            // Function to get the selected country code
+            function getCountryCode() {
+                const countryData = iti.getSelectedCountryData();
+                $('#countryCode').val(countryData.dialCode);
+            }
 
-        // Add event listener to the button
-        document.querySelector("#send").addEventListener("click", getCountryCode);
-    });
-</script>
+            // Fetch the user's country code
+            fetch('https://ipinfo.io?token=d54f029935345c') // Replace 'YOUR_ACCESS_TOKEN' with your IPinfo token
+                .then(response => response.json())
+                .then(data => {
+                    const countryCode = data.country ? data.country.toLowerCase() :
+                    'us'; // Default to 'us' if no country code is found
+                    iti = initializeIntlTelInput(
+                    countryCode); // Initialize intl-tel-input with the detected country code
+                })
+                .catch(error => {
+                    console.error('Error fetching country code:', error);
+                    iti = initializeIntlTelInput('us'); // Fallback to default country if there's an error
+                });
 
-
+            // Add event listener to the button
+            document.querySelector("#send").addEventListener("click", getCountryCode);
+        });
+    </script>
 @endsection

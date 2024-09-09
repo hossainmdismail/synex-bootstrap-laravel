@@ -5,43 +5,52 @@
         $services = [
             [
                 'name' => 'Management Software',
-                'description' => 'ERP Development, CRM Development, Project Management Software, Business Intelligence Software',
+                'description' =>
+                    'ERP Development, CRM Development, Project Management Software, Business Intelligence Software',
                 'url' => route('service.software'),
+                'icon' => asset('Frontend/images/Services/management-software.svg'),
             ],
             [
                 'name' => 'Software as a Service (SaaS)',
                 'description' => 'SaaS Application Development, Product Design, Maintenance and Support',
                 'url' => route('service.saas'),
+                'icon' => asset('Frontend/images/Services/saas.svg'),
             ],
             [
                 'name' => 'Web Development',
                 'description' => 'Frontend/Backend, Full Stack/CMS, E-commerce Development, Maintenance and Support',
                 'url' => route('service.web-dev'),
+                'icon' => asset('Frontend/images/Services/web-developmnet.svg'),
             ],
             [
                 'name' => 'Mobile App Development',
                 'description' => 'iOS/Android, Custom Development, Maintenance and Support',
                 'url' => route('service.mobile-app'),
+                'icon' => asset('Frontend/images/Services/mobile-ap.svg'),
             ],
             [
                 'name' => 'Digital Marketing',
                 'description' => 'SEO, Google Ads, Meta Ads,  Social Media Management, LinkedIn Ads',
                 'url' => route('service.digital-marketing'),
+                'icon' => asset('Frontend/images/Services/digital-marketing.svg'),
             ],
             [
                 'name' => 'UI UX Design',
                 'description' => 'User Interface/Experience Design,  Visual Design, User Testing',
                 'url' => route('service.uiux'),
+                'icon' => asset('Frontend/images/Services/ui-ux.svg'),
             ],
             [
                 'name' => 'Graphics Design',
                 'description' => 'Branding and Identity, Print Design, Digital Design,  Illustration,  3D Design',
                 'url' => route('service.graphics-design'),
+                'icon' => asset('Frontend/images/Services/graphic.svg'),
             ],
             [
                 'name' => 'Video Editing',
                 'description' => 'Post-Production,  Motion Graphics,  Video Production, Editing for Social Media',
                 'url' => route('service.video-edit'),
+                'icon' => asset('Frontend/images/Services/video.svg'),
             ],
         ];
         $testimonials = [
@@ -63,7 +72,7 @@
                 'message' =>
                     'Synex Digital’s management software completely revolutionized our school. For schools that require reliability, streamlined administration, user-friendly design, and responsive assistance redefine efficiency!',
                 'image' => asset('Frontend/images/shawon.webp'),
-                    'client' => 'Shawon Islam',
+                'client' => 'Shawon Islam',
                 'title' => 'One Year Academy',
             ],
         ];
@@ -79,7 +88,10 @@
                         Your Technological Needs
                     </h1>
                     <h2 class="leading-font-second pt-4">
-                        As a Digital Solutions Expert, we are excited to help you through our extensive variety of services to elevate your business in the ever-changing digital landscape. Synex Digital's commercial IT solutions reflect our dedication to excellence. We are your one-stop technological solution supplier, meeting your business's particular demands with precision and competence.
+                        As a Digital Solutions Expert, we are excited to help you through our extensive variety of services
+                        to elevate your business in the ever-changing digital landscape. Synex Digital's commercial IT
+                        solutions reflect our dedication to excellence. We are your one-stop technological solution
+                        supplier, meeting your business's particular demands with precision and competence.
                     </h2>
                     <a href="{{ route('projects') }}" class="btn btn-primary btn-default  mt-4">Explore Our Portfolio</a>
                 </div>
@@ -101,7 +113,8 @@
                 @foreach ($services as $key => $service)
                     <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                         <x-service-card title="{{ $service['name'] }}" url="{{ $service['url'] }}"
-                            description="{{ $service['description'] }}" id="{{ $key + 1 }}" />
+                            description="{{ $service['description'] }}" id="{{ $key + 1 }}"
+                            icon="{{ $service['icon'] }}" />
                     </div>
                 @endforeach
             </div>
@@ -113,26 +126,41 @@
         <div class="container py-md-5">
             <div class="row mb-4 text-center">
                 <p class="section-name font-main">Our Records</p>
-                <h3 class="section-title font-second m-auto w-505">Navigating the IT Landscape with Precision</h3>
+                <h3 class="section-title font-second m-auto w-50">Navigating the IT Landscape with Precision</h3>
             </div>
             <div class="row py-5 g-5">
-                <div class="col-md-6  px-md-5">
+                <div class="col-md-6 px-md-5 d-flex align-items-center">
                     <!-- <div class="image-record"> </div> -->
                     <img class="image-record" src="{{ asset('Frontend') }}/images/Frame10.webp" alt="Synex digital Record">
                 </div>
                 <div class="col-md-6">
                     <div class="text-record">
                         <p>
-                            At Synex Digital, our track record speaks for itself. We’ve successfully navigated the complex IT landscape, delivering innovative solutions that drive measurable results. From bespoke software development to advanced digital marketing strategies, our team’s expertise and commitment to excellence have earned us a reputation for reliability and success in the industry.
+                            At Synex Digital, our track record speaks for itself. We’ve successfully navigated the complex
+                            IT landscape, delivering innovative solutions that drive measurable results. From bespoke
+                            software development to advanced digital marketing strategies, our team’s expertise and
+                            commitment to excellence have earned us a reputation for reliability and success in the
+                            industry.
                         </p>
                         <p>
-                            Our portfolio showcases a diverse range of projects, reflecting our ability to adapt to various business needs and industry demands. Whether it's optimizing web performance, enhancing user experiences, or implementing cutting-edge technologies, our projects consistently exceed client expectations. This proven track record not only highlights our technical prowess but also our ability to deliver on time and within budget.
+                            Our portfolio showcases a diverse range of projects, reflecting our ability to adapt to various
+                            business needs and industry demands. Whether it's optimizing web performance, enhancing user
+                            experiences, or implementing cutting-edge technologies, our projects consistently exceed client
+                            expectations. This proven track record not only highlights our technical prowess but also our
+                            ability to deliver on time and within budget.
                         </p>
                         <p>
-                            We believe in the power of data-driven decisions and meticulous project management. Our precise approach ensures that every solution is tailored to our clients' specific goals, fostering long-term partnerships built on trust and results. Our success is measured not just by completed projects, but by the growth and satisfaction of our clients who repeatedly choose us as their IT partner.
+                            We believe in the power of data-driven decisions and meticulous project management. Our precise
+                            approach ensures that every solution is tailored to our clients' specific goals, fostering
+                            long-term partnerships built on trust and results. Our success is measured not just by completed
+                            projects, but by the growth and satisfaction of our clients who repeatedly choose us as their IT
+                            partner.
                         </p>
                         <p>
-                            Synex Digital’s commitment to precision and excellence has positioned us as a leader in the IT services sector. By continuously evolving and embracing the latest technological advancements, we ensure that our clients stay ahead of the competition. Trust in our proven expertise to guide your business through the ever-changing digital landscape with confidence and clarity.
+                            Synex Digital’s commitment to precision and excellence has positioned us as a leader in the IT
+                            services sector. By continuously evolving and embracing the latest technological advancements,
+                            we ensure that our clients stay ahead of the competition. Trust in our proven expertise to guide
+                            your business through the ever-changing digital landscape with confidence and clarity.
                         </p>
                     </div>
                 </div>
@@ -175,11 +203,8 @@
             <div class="row g-3">
                 @foreach ($testimonials as $testimonial)
                     <div class="col-md-4">
-                        <x-testimonial
-                        message="{{ $testimonial['message'] }}"
-                        image="{{ $testimonial['image'] }}"
-                        client="{{ $testimonial['client'] }}"
-                        title="{{ $testimonial['title'] }}" />
+                        <x-testimonial message="{{ $testimonial['message'] }}" image="{{ $testimonial['image'] }}"
+                            client="{{ $testimonial['client'] }}" title="{{ $testimonial['title'] }}" />
                     </div>
                 @endforeach
             </div>

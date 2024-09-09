@@ -15,13 +15,15 @@ class serviceCard extends Component
     public $title;
     public $description;
     public $url;
+    public $icon;
 
-    public function __construct($id, $title, $description, $url)
+    public function __construct($id, $title, $description, $url, $icon)
     {
         $this->id = $id;
         $this->title = $title;
         $this->description = $description;
         $this->url = $url;
+        $this->icon = $icon;
     }
 
     /**

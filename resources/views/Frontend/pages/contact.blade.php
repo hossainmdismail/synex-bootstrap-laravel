@@ -214,7 +214,7 @@
                             <div class="col-lg-12">
                                 <div class="input-container">
                                     <div id="email-input" class="input-wrapper hidden">
-                                        <input id="number" name="number" type="number" placeholder="Whatsapp Number" class="form-control" disabled />
+                                        <input id="number" pattern="[0-9]*" name="number" type="number" placeholder="Whatsapp Number" class="form-control" disabled />
                                         <span class="or ">Or</span>
 
                                         <button type="button" class="toggle-button" onclick="toggleInput()">

@@ -93,7 +93,7 @@
                         <div class="col-lg-4">
                             <h5 class="footer-ul-title">Important Links</h5>
                             <ul class="footer-ul">
-                                <li class="footer-ul-item footer-phone">
+                                {{-- <li class="footer-ul-item footer-phone">
                                     <a href="tel:+8801757-647319" class="font-second">
                                         <svg class="me-2 footer-phone-svg " width="24" height="24"
                                             viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -104,7 +104,7 @@
                                         </svg>
                                         +8801757-647319
                                     </a>
-                                </li>
+                                </li> --}}
                                 <li class="footer-ul-item footer-mail">
                                     <a href="mailto:office@synexdigital.com" class="font-second">
                                         <svg class="me-2 footer-mail-svg" width="24" height="24"

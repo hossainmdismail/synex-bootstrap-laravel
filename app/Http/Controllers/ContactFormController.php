@@ -35,7 +35,7 @@ class ContactFormController extends Controller
             'description'   => $request->message,
             'type'          => 'web-support',
         ];
-        dd($data['number']);
+
         try {
             $url = app('domainName') . '/api/customer/store';
 

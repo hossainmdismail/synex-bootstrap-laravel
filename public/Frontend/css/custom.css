@@ -1085,7 +1085,7 @@ span.ser-box.sr {
     background: url(../images/svg/offer-box.webp);
     position: absolute;
     top: -30px;
-    left: -12px;
+    left: 20px;
     background-size: cover;
     background-position: center;
     display: flex;
@@ -1449,5 +1449,11 @@ p.sr-box-desc {
   .caption {
     font-size: 16px;
   }
+  .offer-box {
+    left: -11px;
+}
+  .offer-box p{
+    font-size: 10px !important;
+}
 }
 

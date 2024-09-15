@@ -61,7 +61,7 @@
                 aria-label="Toggle navigation">
                 <img src="{{ asset('Frontend') }}/images/menu.svg" alt="Synex digital menu" srcset="">
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse mt-2" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-menu-center">
                     @if (url()->current() != route('home'))
                         <li class="nav-item">

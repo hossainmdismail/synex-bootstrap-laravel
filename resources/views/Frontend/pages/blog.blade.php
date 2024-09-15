@@ -62,63 +62,7 @@
 @endsection
 
 @section('content')
-    @php
-        $blogs = [
-            [
-                'title' => 'What is a blog? Definition, types',
-                'image' => 'url',
-                'date' => '17 Feb 2024',
-                'slug' => 'new-blog-2024',
-            ],
-            [
-                'title' => 'Mauris id ipsum et ante varius iaculis.',
-                'image' => 'url',
-                'date' => '17 Feb 2023',
-                'slug' => 'new-blog-2024',
-            ],
-            [
-                'title' => 'Aenean auctor sollicitudin est',
-                'image' => 'url',
-                'date' => '16 Dec 2022',
-                'slug' => 'new-blog-2024',
-            ],
-            [
-                'title' => 'What is a blog? Definition, types',
-                'image' => 'url',
-                'date' => '19 Mar 2024',
-                'slug' => 'new-blog-2024',
-            ],
-            [
-                'title' => 'Aenean auctor sollicitudin est',
-                'image' => 'url',
-                'date' => '1 Jan 20241',
-                'slug' => 'new-blog-2024',
-            ],
-        ];
-        $blogHero = [
-            [
-                'title' => 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam.',
-                'category' => 'category',
-                'date' => '18 Jan 2022',
-                'view' => '12,322',
-                'image' => '12,322',
-            ],
-            [
-                'title' => 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam.',
-                'category' => 'category',
-                'date' => '18 Jan 2022',
-                'view' => '322',
-                'image' => '12,322',
-            ],
-            [
-                'title' => 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam.',
-                'category' => 'category',
-                'date' => '18 Jan 2022',
-                'view' => '12,500',
-                'image' => '12,322',
-            ],
-        ];
-    @endphp
+
     @include('Frontend.layout.calendly')
 
     <!-- about us -->
@@ -155,7 +99,8 @@
                         <h1>{{ $content['title'] }}</h1>
                         <p class="pt-2">
                             by <a href="{{ route('about') }}#member">{{ $content['author'] }}</a> | {{ $content['date'] }} |
-                            <a href="#" class="badge-default">{{ $content['category'] }}</a>
+                            <a href="#" class="badge-default d-inline-block">{{ $content['category'] }}</a>
+                            {{-- <p class="badge-default object-fit-xl-contain">{{ $content['category'] }}</p> --}}
                         </p>
                         <div class="share-on d-none d-md-flex">
                             Share :

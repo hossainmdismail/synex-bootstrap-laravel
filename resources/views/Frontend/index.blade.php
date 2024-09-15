@@ -122,13 +122,13 @@
     </section>
 
     <!-- Our Records  -->
-    <section class="container-fluid">
+    <section id="records" class="container-fluid">
         <div class="container py-md-5">
             <div class="row mb-4 text-center">
                 <p class="section-name font-main">Our Records</p>
                 <h3 class="section-title font-second m-auto w-50">Navigating the IT Landscape with Precision</h3>
             </div>
-            <div class="row py-5 g-5">
+            <div class="row pt-5 g-5">
                 <div class="col-md-6 px-md-5 d-flex align-items-center">
                     <!-- <div class="image-record"> </div> -->
                     <img class="image-record" src="{{ asset('Frontend') }}/images/Frame10.webp" alt="Synex digital Record">
@@ -155,12 +155,6 @@
                             long-term partnerships built on trust and results. Our success is measured not just by completed
                             projects, but by the growth and satisfaction of our clients who repeatedly choose us as their IT
                             partner.
-                        </p>
-                        <p>
-                            Synex Digital’s commitment to precision and excellence has positioned us as a leader in the IT
-                            services sector. By continuously evolving and embracing the latest technological advancements,
-                            we ensure that our clients stay ahead of the competition. Trust in our proven expertise to guide
-                            your business through the ever-changing digital landscape with confidence and clarity.
                         </p>
                     </div>
                 </div>

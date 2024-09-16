@@ -57,7 +57,7 @@
                 <div class="col-md-8">
                     <div class="row">
                         <div class="col-lg-2">
-                            <h5 class="footer-ul-title">Navigation</h5>
+                            <h5 class="footer-ul-title font-main">Navigation</h5>
                             <ul class="footer-ul">
                                 <li class="footer-ul-item">
                                     <a href="{{ route('about') }}" class="footer-item">About us</a>
@@ -75,7 +75,7 @@
                         </div>
 
                         <div class="col-lg-3">
-                            <h5 class="footer-ul-title">Supports</h5>
+                            <h5 class="footer-ul-title font-main">Supports</h5>
                             <ul class="footer-ul">
                                 <li class="footer-ul-item">
                                     <a href="{{ route('privacy') }}" class="footer-item">Privacy Policy</a>
@@ -91,7 +91,7 @@
                         </div>
 
                         <div class="col-lg-4">
-                            <h5 class="footer-ul-title">Important Links</h5>
+                            <h5 class="footer-ul-title font-main">Important Links</h5>
                             <ul class="footer-ul">
                                 {{-- <li class="footer-ul-item footer-phone">
                                     <a href="tel:+8801757-647319" class="font-second">
@@ -163,7 +163,7 @@
                         </div>
 
                         <div class="col-lg-3">
-                            <h5 class="footer-ul-title">Address</h5>
+                            <h5 class="footer-ul-title font-main">Address</h5>
                             <ul class="footer-ul">
                                 <li class="footer-ul-item footer-phone mb-2">
                                     <a href="https://maps.app.goo.gl/Pff9tTbkHS15Kuts5" rel="nofollow"

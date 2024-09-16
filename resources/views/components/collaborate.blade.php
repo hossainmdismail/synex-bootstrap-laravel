@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row py-5">
             <div class="col-12 text-center">
-                <h5 class="section-title text-light pb-3">Ready to Collaborate with us?</h5>
+                <h5 class="section-title font-second pb-3">Ready to Collaborate with us?</h5>
                 <p class="text-light pb-3">
                     Partner with Synex Digital for innovative solutions and dedicated support tailored to your needs. <br class="d-none d-md-block">
                     Reach out today and start your journey with us.
@@ -21,7 +21,7 @@
                 </a>
                 <a href="{{ route('schedule') }}" class="btn-default btn btn-outline-light collaborate-btn-2 mb-3"
                     id="calendly-btn">Schedule
-                    Metting
+                    A Meeting
 
                     <svg class="ms-3 collaborate-icon" width="15" height="14" viewBox="0 0 16 15" fill="none"
                         xmlns="http://www.w3.org/2000/svg">

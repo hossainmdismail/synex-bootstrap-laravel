@@ -34,6 +34,17 @@
                 ],
             ],
             [
+                'name' => 'Shihab Sarar',
+                'path' => 'Software Engineer',
+                'bio' =>
+                    'Passionate problem solver,dedicated to delivering intelligence systems using ML, AI and MERN stack',
+                'profile' => asset('Frontend/images/member/shihab.webp'),
+                'link' => [
+                    'github' => 'https://github.com/ShihabSarar12',
+                    'linkedin' => 'https://linkedin.com/in/shihab-sarar-15a587230/',
+                ],
+            ],
+            [
                 'name' => 'Yousuf Sayem',
                 'path' => 'Web Developer',
                 'bio' => 'Expert in Full-stack Laravel Web Developer with 3+ years of experience',
@@ -54,24 +65,12 @@
                 ],
             ],
             [
-                'name' => 'Ayeubur Rahman',
-                'path' => 'Digital Marketing Expert',
-                'bio' =>
-                    'Data Analyst and Full Stack Digital Marketer. Growing with 3+ Years of Experience in International Stages.',
-                'profile' => asset('Frontend/images/member/Shuvo.png'),
+                'name' => 'Fahim Ahmed Patwary',
+                'path' => 'UI/UX designer',
+                'bio' => 'UI/UX designer creating simple, user-friendly designs with Figma for better experiences.',
+                'profile' => asset('Frontend/images/member/fahim.webp'),
                 'link' => [
-                    'linkedin' => 'https://linkedin.com/in/ayeuburrahman/',
-                ],
-            ],
-            [
-                'name' => 'Shihab Sarar',
-                'path' => 'MERN Developer',
-                'bio' =>
-                    'Passionate problem solver,dedicated to delivering intelligence systems using ML, AI and MERN stack',
-                'profile' => asset('Frontend/images/member/shihab.webp'),
-                'link' => [
-                    'github' => 'https://github.com/ShihabSarar12',
-                    'linkedin' => 'https://linkedin.com/in/shihab-sarar-15a587230/',
+                    'linkedin' => 'https://www.linkedin.com/in/fahim-ahmed-patwary-667b1a236',
                 ],
             ],
             [
@@ -81,8 +80,17 @@
                     'Expert in writing informative, SEO-friendly blog posts that drive traffic and boost engagement with 2+ years of experience',
                 'profile' => asset('Frontend/images/member/puspita.webp'),
                 'link' => [
-                    'github' => 'https://github.com/ShihabSarar12',
-                    'linkedin' => 'https://linkedin.com/in/shihab-sarar-15a587230/',
+                    'linkedin' => 'https://www.linkedin.com/in/puspita-anjum-5140b4231',
+                ],
+            ],
+            [
+                'name' => 'Maisha Alam Mim',
+                'path' => 'Content Writer',
+                'bio' =>
+                    "Expert in IT content creation, blending analysis with creativity to drive digital marketing success and elevate our agency's brand.",
+                'profile' => asset('Frontend/images/member/maisha.webp'),
+                'link' => [
+                    'linkedin' => 'https://www.linkedin.com/in/maisha-alam-mim-b70a31320',
                 ],
             ],
         ];

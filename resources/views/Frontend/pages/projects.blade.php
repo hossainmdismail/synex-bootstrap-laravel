@@ -12,14 +12,14 @@
     <section class="container-fluid service-hero" style="background-image: url({{ asset('Frontend') }}/images/hero.webp);">
         <div class="shadow">
             <div class="container py-5 h-100 d-flex flex-column justify-content-center">
-                <div class="row py-4 py-md-5">
+                <div class="row py-4 py-md-5" data-aos="fade-up">
                     <div class="col-md-6 py-md-5 m-auto text-center">
                         <h1 class="section-title text-white pb-2">Our <span class="font-main">Project</span></h1>
                         <h2 class="caption">Unlock Your Business Potential with Our Specialized Services and Strategic
                             Expertise</h2>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row" data-aos="fade-up">
                     <div class="col-md-6 m-auto text-center">
                         <p class="scroll-text">Scroll Down</p>
                         <a href="#content"><svg class="scrolldown" width="23" height="22" viewBox="0 0 23 22"
@@ -41,7 +41,7 @@
     <section class="container py-4" id="content">
         <div class="row">
             @foreach ($projects as $project)
-                <div class="col-md-4">
+                <div class="col-md-4" data-aos="fade-up">
                     <x-project-card title="{{ $project['title'] }}" name="{{ $project['name'] }}"
                         description="{{ $project['description'] }}" category="{{ $project['category'] }}"
                         image="{{ $project['image'] }}" />

@@ -82,7 +82,7 @@
     <section id="banner" class="container-fluid">
         <div class="container py-md-5">
             <div class="row py-4 d-flex align-items-center">
-                <div class="col-md-6 order-2 order-md-1">
+                <div class="col-md-6 order-2 order-md-1" data-aos="fade-up">
                     <h1 class="font-second font-title">Business IT Solutions <br>
                         <span class="font-main">Pioneering Excellence <span class="d-none d-md-inline">for</span></span> <br>
                         Your Technological Needs
@@ -95,7 +95,7 @@
                     </h2>
                     <a href="{{ route('projects') }}" class="btn btn-primary btn-default  mt-4">Explore Our Portfolio</a>
                 </div>
-                <div class="col-md-6 order-1 order-md-2 d-flex justify-content-center">
+                <div class="col-md-6 order-1 order-md-2 d-flex justify-content-center" data-aos="fade-up">
                     <img src="{{ asset('Frontend') }}/images/Frame 9.png" width="100%" alt="Synex Digital">
                 </div>
             </div>
@@ -111,7 +111,7 @@
             </div>
             <div class="row py-5 g-5">
                 @foreach ($services as $key => $service)
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3" data-aos="fade-up">
                         <x-service-card title="{{ $service['name'] }}" url="{{ $service['url'] }}"
                             description="{{ $service['description'] }}" id="{{ $key + 1 }}"
                             icon="{{ $service['icon'] }}" />
@@ -129,11 +129,11 @@
                 <h3 class="section-title font-second m-auto w-50">Navigating the IT Landscape with Precision</h3>
             </div>
             <div class="row pt-5 g-5">
-                <div class="col-md-6 px-md-5 d-flex align-items-center">
+                <div class="col-md-6 px-md-5 d-flex align-items-center" data-aos="fade-up">
                     <!-- <div class="image-record"> </div> -->
                     <img class="image-record" src="{{ asset('Frontend') }}/images/Frame10.webp" alt="Synex digital Record">
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6" data-aos="fade-up">
                     <div class="text-record font-description">
                         <p>
                             At Synex Digital, our track record speaks for itself. We’ve successfully navigated the complex
@@ -173,7 +173,7 @@
 
             <div class="row g-3">
                 @foreach ($projects as $project)
-                    <div class="col-md-4">
+                    <div class="col-md-4" data-aos="fade-up">
                         <x-project-card title="{{ $project['title'] }}" name="{{ $project['name'] }}"
                             description="{{ $project['description'] }}" category="{{ $project['category'] }}"
                             image="{{ $project['image'] }}" />
@@ -197,7 +197,7 @@
 
                 <div class="row g-3">
                     @foreach ($testimonials as $testimonial)
-                        <div class="col-md-4">
+                        <div class="col-md-4" data-aos="fade-up">
                             <x-testimonial message="{{ $testimonial['message'] }}" image="{{ $testimonial['image'] }}"
                                 client="{{ $testimonial['client'] }}" title="{{ $testimonial['title'] }}" />
                         </div>
@@ -219,7 +219,7 @@
                     <div class="row gx-3 py-3">
                         <div class="col-md-5 pb-3">
                             @if ($blogs['popular'])
-                                <article class="card-1">
+                                <article class="card-1" data-aos="fade-up">
                                     <div class="card-body">
                                         <a href="{{ route('blog.view', $blogs['popular']['slug']) }}">
                                             <img src="{{ $blogs['popular']['image'] }}" width="100%"
@@ -256,7 +256,7 @@
                         <div class="col-md-7">
                             <div class="row g-3">
                                 @foreach ($blogs['blogs'] as $blog)
-                                    <div class="col-md-6">
+                                    <div class="col-md-6" data-aos="fade-up">
                                         <x-index-blog author="{{ $blogs['popular']['author'] }}"
                                             count="{{ $blog['view'] }}" title="{{ $blog['title'] }}"
                                             image="{{ $blog['image'] }}" slug="{{ $blog['slug'] }}" />

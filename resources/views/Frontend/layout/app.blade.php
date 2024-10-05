@@ -8,6 +8,7 @@
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
     <link rel="stylesheet" rel="preconnect" href="{{ asset('Frontend') }}/css/bootstrap.min.css">
     <link rel="stylesheet" rel="preconnect" href="{{ asset('Frontend') }}/css/custom.css">
+    <link rel="stylesheet" rel="preconnect" href="{{ asset('Frontend/plugs/aos.css') }}">
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-0D02Y90D7E"></script>
     <script>
@@ -67,20 +68,11 @@
     <script src="{{ asset('Frontend') }}/js/jquery.min.js"></script>
     <script src="{{ asset('Frontend') }}/js/popper.min.js"></script>
     <script src="{{ asset('Frontend') }}/js/custom.js"></script>
+    <script src="{{ asset('Frontend/plugs/aos.js') }}"></script>
 
-
-    {{-- <script>
-        document.getElementById('calendly-btn').addEventListener('click', function() {
-            const calendlyBox = document.querySelector('.calendly-box');
-            calendlyBox.style.display = 'block';
-        });
-
-        document.getElementById('calendly-close').addEventListener('click', function() {
-            const calendlyBox = document.querySelector('.calendly-box');
-            calendlyBox.style.display = 'none';
-        });
-    </script> --}}
-
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

@@ -13,12 +13,12 @@
                 </svg>
 
             </div>
-            <div class="col-lg-12 col-md-12 col-sm-12 text-center mt-3">
+            <div class="col-lg-12 col-md-12 col-sm-12 text-center mt-3" data-aos="fade-up">
                 <p class="footer-title">
                     Subscribe To Your Newsletter and Get Exciting Offers and Discounts
                 </p>
             </div>
-            <div class="col-md-5 text-center mt-3">
+            <div class="col-md-5 text-center mt-3" data-aos="fade-up">
                 <form action="{{ route('subscribe') }}" method="POST">
                     @csrf
                     <div class="email-input-container mt-4">

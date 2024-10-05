@@ -1,5 +1,11 @@
 @extends('Frontend.layout.app')
-
+@section('style')
+    <style>
+        main {
+            overflow: hidden;
+        }
+    </style>
+@endsection
 @section('content')
     @include('Frontend.layout.calendly')
 
@@ -7,7 +13,7 @@
         <div class="shadow">
             <div class="container py-5 h-100 d-flex flex-column justify-content-center">
                 <div class="row py-4 py-md-5">
-                    <div class="col-md-6 py-md-5 m-auto text-center">
+                    <div class="col-md-6 py-md-5 m-auto text-center" data-aos="fade-up">
                         <h1 class="section-title text-white pb-2"><span class="font-main">Services</span> We Provide
                         </h1>
                         <h2 class="caption">Unlock Your Business Potential with Our Specialized Services
@@ -15,7 +21,7 @@
                             Strategic Expertise</h2>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row" data-aos="fade-up">
                     <div class="col-md-6 m-auto text-center">
                         <p class="scroll-text">Scroll Down</p>
                         <a href="#content"><svg class="scrolldown" width="23" height="22" viewBox="0 0 23 22"
@@ -38,7 +44,8 @@
     <section class="container-fluid bg-testimonial" id="content">
         <div class="container py-4 p-md-5">
             <div class=" row py-md-5 mx-0">
-                <div class="col-md-6 d-flex z-3 justify-content-center justify-content-md-end order-2 order-md-1">
+                <div class="col-md-6 d-flex z-3 justify-content-center justify-content-md-end order-2 order-md-1"
+                    data-aos="fade-right">
                     <div class="card rounded-sm p-3 service-card">
                         <div class="card-body">
                             <h3>Management Software</h3>
@@ -97,7 +104,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 order-1 order-md-2">
+                <div class="col-md-6 order-1 order-md-2" data-aos="fade-left">
                     <div class="w-100 position-relative serviceimg-box">
                         <img class="service-image" src="{{ asset('Frontend') }}/images/service2.webp" width="90%"
                             alt="" srcset="">
@@ -115,7 +122,7 @@
     <section class="container-fluid">
         <div class="container py-4 p-md-5">
             <div class=" row py-md-5 mx-0">
-                <div class="col-md-6">
+                <div class="col-md-6" data-aos="fade-right">
                     <div class="w-100 position-relative serviceimg-box">
                         <span class="ser-box sl">
                             <p class="mb-0" style="font-size: 12px">Special Offer</p>
@@ -126,7 +133,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-6 d-flex z-3 justify-content-center justify-content-md-start">
+                <div class="col-md-6 d-flex z-3 justify-content-center justify-content-md-start" data-aos="fade-left">
                     <div class="card rounded-sm p-3 service-card">
                         <div class="card-body">
                             <h3>Web Development</h3>
@@ -193,7 +200,8 @@
     <section class="container-fluid bg-testimonial">
         <div class="container py-4 p-md-5">
             <div class=" row py-md-5 mx-0">
-                <div class="col-md-6 d-flex z-3 justify-content-center justify-content-md-end order-2 order-md-1">
+                <div class="col-md-6 d-flex z-3 justify-content-center justify-content-md-end order-2 order-md-1"
+                    data-aos="fade-right">
                     <div class="card rounded-sm p-3 service-card">
                         <div class="card-body">
                             <h3>UI UX Design</h3>
@@ -252,7 +260,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 order-1 order-md-2">
+                <div class="col-md-6 order-1 order-md-2" data-aos="fade-left">
                     <div class="w-100 position-relative serviceimg-box">
                         <span class="ser-box sr">
                             <p class="mb-0" style="font-size: 12px">Special Offer</p>
@@ -267,10 +275,10 @@
     </section>
 
     <!-- Section 4 -->
-    <section class="container-fluid">
+    <section class="container-fluid" data-aos="fade-up">
         <div class="container py-4 p-md-5">
             <div class=" row py-md-5 mx-0">
-                <div class="col-md-6">
+                <div class="col-md-6" data-aos="fade-right">
                     <div class="w-100 position-relative serviceimg-box">
                         <span class="ser-box sl">
                             <p class="mb-0" style="font-size: 12px">Special Offer</p>
@@ -281,7 +289,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-6 d-flex z-3 justify-content-center justify-content-md-start">
+                <div class="col-md-6 d-flex z-3 justify-content-center justify-content-md-start" data-aos="fade-left">
                     <div class="card rounded-sm p-3 service-card">
                         <div class="card-body">
                             <h3>Digital Marketing</h3>
@@ -346,10 +354,11 @@
     </section>
 
     <!-- Section 5 -->
-    <section class="container-fluid bg-testimonial">
+    <section class="container-fluid bg-testimonial" data-aos="fade-up">
         <div class="container py-4 p-md-5">
             <div class=" row py-md-5 mx-0">
-                <div class="col-md-6 d-flex z-3 justify-content-center justify-content-md-end order-2 order-md-1">
+                <div class="col-md-6 d-flex z-3 justify-content-center justify-content-md-end order-2 order-md-1"
+                    data-aos="fade-right">
                     <div class="card rounded-sm p-3 service-card">
                         <div class="card-body">
                             <h3>Graphics Design</h3>
@@ -408,7 +417,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 order-1 order-md-2">
+                <div class="col-md-6 order-1 order-md-2" data-aos="fade-left">
                     <div class="w-100 position-relative serviceimg-box">
                         <span class="ser-box sr">
                             <p class="mb-0" style="font-size: 12px">Special Offer</p>
@@ -423,10 +432,10 @@
     </section>
 
     <!-- Section 6 -->
-    <section class="container-fluid">
+    <section class="container-fluid" data-aos="fade-up">
         <div class="container py-4 p-md-5">
             <div class=" row py-md-5 mx-0">
-                <div class="col-md-6">
+                <div class="col-md-6" data-aos="fade-right">
                     <div class="w-100 position-relative serviceimg-box">
                         <span class="ser-box sl">
                             <p class="mb-0" style="font-size: 12px">Special Offer</p>
@@ -437,7 +446,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-6 d-flex z-3 justify-content-center justify-content-md-start">
+                <div class="col-md-6 d-flex z-3 justify-content-center justify-content-md-start" data-aos="fade-left">
                     <div class="card rounded-sm p-3 service-card">
                         <div class="card-body">
                             <h3>Mobile App Development</h3>
@@ -501,10 +510,11 @@
     </section>
 
     <!-- Section 7 -->
-    <section class="container-fluid bg-testimonial">
+    <section class="container-fluid bg-testimonial" data-aos="fade-up">
         <div class="container py-4 p-md-5">
             <div class=" row py-md-5 mx-0">
-                <div class="col-md-6 d-flex z-3 justify-content-center justify-content-md-end order-2 order-md-1">
+                <div class="col-md-6 d-flex z-3 justify-content-center justify-content-md-end order-2 order-md-1"
+                    data-aos="fade-right">
                     <div class="card rounded-sm p-3 service-card">
                         <div class="card-body">
                             <h3>SaaS (Software as a Service)</h3>
@@ -563,7 +573,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 order-1 order-md-2">
+                <div class="col-md-6 order-1 order-md-2" data-aos="fade-left">
                     <div class="w-100 position-relative serviceimg-box">
                         <span class="ser-box sr">
                             <p class="mb-0" style="font-size: 12px">Special Offer</p>
@@ -578,10 +588,10 @@
     </section>
 
     <!-- Section 8 -->
-    <section class="container-fluid">
+    <section class="container-fluid" data-aos="fade-up">
         <div class="container py-4 p-md-5">
             <div class=" row py-md-5 mx-0">
-                <div class="col-md-6">
+                <div class="col-md-6" data-aos="fade-right">
                     <div class="w-100 position-relative serviceimg-box">
                         <span class="ser-box sl">
                             <p class="mb-0" style="font-size: 12px">Special Offer</p>
@@ -592,7 +602,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-6 d-flex z-3 justify-content-center justify-content-md-start">
+                <div class="col-md-6 d-flex z-3 justify-content-center justify-content-md-start" data-aos="fade-left">
                     <div class="card rounded-sm p-3 service-card">
                         <div class="card-body">
                             <h3>Video Editing</h3>

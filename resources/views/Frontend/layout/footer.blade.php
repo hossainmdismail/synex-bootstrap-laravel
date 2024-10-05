@@ -93,7 +93,7 @@
                         <div class="col-lg-4">
                             <h5 class="footer-ul-title font-main">Important Links</h5>
                             <ul class="footer-ul">
-                                {{-- <li class="footer-ul-item footer-phone">
+                                <li class="footer-ul-item footer-phone">
                                     <a href="tel:+8801757-647319" class="font-second">
                                         <svg class="me-2 footer-phone-svg " width="24" height="24"
                                             viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -102,9 +102,9 @@
                                                 d="M10 12.5C10 11.7044 10.3161 10.9413 10.8787 10.3787C11.4413 9.81607 12.2044 9.5 13 9.5H14.372C15.232 9.5 15.982 10.086 16.191 10.92L17.296 15.343C17.3855 15.701 17.3675 16.0775 17.244 16.4252C17.1206 16.773 16.8972 17.0766 16.602 17.298L15.309 18.268C15.174 18.369 15.145 18.517 15.183 18.62C15.7474 20.1549 16.6386 21.5487 17.7949 22.7051C18.9513 23.8614 20.3451 24.7526 21.88 25.317C21.983 25.355 22.13 25.326 22.232 25.191L23.202 23.898C23.4234 23.6028 23.727 23.3794 24.0748 23.256C24.4225 23.1325 24.799 23.1145 25.157 23.204L29.58 24.309C30.414 24.518 31 25.268 31 26.129V27.5C31 28.2956 30.6839 29.0587 30.1213 29.6213C29.5587 30.1839 28.7956 30.5 28 30.5H25.75C17.052 30.5 10 23.448 10 14.75V12.5Z"
                                                 fill="#111111" />
                                         </svg>
-                                        +8801757-647319
+                                        +880 1613-408101
                                     </a>
-                                </li> --}}
+                                </li>
                                 <li class="footer-ul-item footer-mail">
                                     <a href="mailto:office@synexdigital.com" class="font-second">
                                         <svg class="me-2 footer-mail-svg" width="24" height="24"

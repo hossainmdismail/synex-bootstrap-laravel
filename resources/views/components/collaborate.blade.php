@@ -1,10 +1,11 @@
-<section class="container-fluid bg-testimonial">
+<section class="container-fluid bg-testimonial" data-aos="fade-up">
     <div class="container">
         <div class="row py-5">
             <div class="col-12 text-center">
                 <h5 class="section-title font-second pb-3">Ready to Collaborate with us?</h5>
                 <p class="text-light pb-3">
-                    Partner with Synex Digital for innovative solutions and dedicated support tailored to your needs. <br class="d-none d-md-block">
+                    Partner with Synex Digital for innovative solutions and dedicated support tailored to your needs.
+                    <br class="d-none d-md-block">
                     Reach out today and start your journey with us.
                 </p>
             </div>

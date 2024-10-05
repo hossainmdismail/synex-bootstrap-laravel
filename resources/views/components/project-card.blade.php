@@ -25,12 +25,12 @@
                             d="M18 13.75C17.59 13.75 17.25 13.41 17.25 13V8C17.25 7.59 17.59 7.25 18 7.25C18.41 7.25 18.75 7.59 18.75 8V13C18.75 13.41 18.41 13.75 18 13.75Z"
                             fill="#292D32" />
                     </svg>
-                    {{ $name }}
+                    {!! $name !!}
                 </p>
                 <p style="font-size: 14px; font-weight: 500; color: #666B71">{{ $category }}</p>
             </div>
             <h3 class="card-title font-700 mb-0">{{ $title }}</h3>
-            <p class="pt-2">{{ $description }}</p>
+            <p class="pt-2">{!! $description !!}</p>
         </div>
     </div>
 </div>

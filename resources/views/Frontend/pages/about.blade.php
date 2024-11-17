@@ -11,7 +11,7 @@
                     'github' => 'https://github.com/imehedi007',
                     'linkedin' => 'https://linkedin.com/in/ali-imran-mehedi/',
                 ],
-                'class' => '"col team-style-08 border-radius-6px md-mb-30px mt-2 md-mt-0"'
+                'class' => 'col team-style-08 border-radius-6px md-mb-30px mt-2 md-mt-0'
             ],
             [
                 'name' => 'MD Ismail Hossain',
@@ -22,18 +22,18 @@
                     'github' => 'https://github.com/hossainmdismail',
                     'linkedin' => 'https://linkedin.com/in/mdismailhossain2385/',
                 ],
-                'class' => '"col team-style-08 border-radius-6px md-mb-30px"'
+                'class' => 'col team-style-08 border-radius-6px md-mb-30px'
             ],
             [
-                'name' => 'MD Jahirul Islam',
-                'path' => 'Software Engineer',
-                'bio' => 'Expertise in Software Development, AI and Machine Learning with 6+ years of experience',
-                'profile' => asset('Frontend/images/member/Jahir.webp'),
+                'name' => 'Yousuf Sayem',
+                'path' => 'Web Developer',
+                'bio' => 'Expert in Full-stack Laravel Web Developer with 3+ years of experience',
+                'profile' => asset('Frontend/images/member/yousuf.webp'),
                 'link' => [
-                    'github' => 'https://github.com/jahir002201',
-                    'linkedin' => 'https://linkedin.com/in/jahirul12/',
+                    'github' => 'https://github.com/Say00em',
+                    'linkedin' => 'https://linkedin.com/in/say00em/',
                 ],
-                'class' => '"col team-style-08 border-radius-6px xs-mb-30px mt-2 md-mt-0"'
+                'class' => 'col team-style-08 border-radius-6px xs-mb-30px mt-2 md-mt-0'
             ],
             [
                 'name' => 'Shihab Sarar',
@@ -45,18 +45,18 @@
                     'github' => 'https://github.com/ShihabSarar12',
                     'linkedin' => 'https://linkedin.com/in/shihab-sarar-15a587230/',
                 ],
-                'class' => '"col team-style-08 border-radius-6px"'
+                'class' => 'col team-style-08 border-radius-6px'
             ],
             [
-                'name' => 'Yousuf Sayem',
-                'path' => 'Web Developer',
-                'bio' => 'Expert in Full-stack Laravel Web Developer with 3+ years of experience',
-                'profile' => asset('Frontend/images/member/yousuf.webp'),
+                'name' => 'MD Jahirul Islam',
+                'path' => 'Software Engineer',
+                'bio' => 'Expertise in Software Development, AI and Machine Learning with 6+ years of experience',
+                'profile' => asset('Frontend/images/member/Jahir.webp'),
                 'link' => [
-                    'github' => 'https://github.com/Say00em',
-                    'linkedin' => 'https://linkedin.com/in/say00em/',
+                    'github' => 'https://github.com/jahir002201',
+                    'linkedin' => 'https://linkedin.com/in/jahirul12/',
                 ],
-                'class' => '"col team-style-08 border-radius-6px md-mb-30px mt-2 md-mt-0"'
+                'class' => 'col team-style-08 border-radius-6px md-mb-30px mt-2 md-mt-0'
             ],
             [
                 'name' => 'Jubayer Shikder',
@@ -67,7 +67,7 @@
                     'github' => 'https://github.com/Jobayer53',
                     'linkedin' => 'https://linkedin.com/in/jobayershikder535/',
                 ],
-                'class' => '"col team-style-08 border-radius-6px md-mb-30px"'
+                'class' => 'col team-style-08 border-radius-6px md-mb-30px'
             ],
             [
                 'name' => 'Fahim Ahmed Patwary',
@@ -77,7 +77,7 @@
                 'link' => [
                     'linkedin' => 'https://www.linkedin.com/in/fahim-ahmed-patwary-667b1a236',
                 ],
-                'class' => '"col team-style-08 border-radius-6px xs-mb-30px mt-2 md-mt-0"'
+                'class' => 'col team-style-08 border-radius-6px xs-mb-30px mt-2 md-mt-0'
             ],
             [
                 'name' => 'Puspita Anjum',
@@ -88,7 +88,7 @@
                 'link' => [
                     'linkedin' => 'https://www.linkedin.com/in/puspita-anjum-5140b4231',
                 ],
-                'class' => '"col team-style-08 border-radius-6px"'
+                'class' => 'col team-style-08 border-radius-6px'
             ],
             [
                 'name' => 'Maisha Alam Mim',
@@ -99,13 +99,13 @@
                 'link' => [
                     'linkedin' => 'https://www.linkedin.com/in/maisha-alam-mim-b70a31320',
                 ],
-                'class' => '"col team-style-08 border-radius-6px md-mb-30px mt-2 md-mt-0"'
+                'class' => 'col team-style-08 border-radius-6px md-mb-30px mt-2 md-mt-0'
             ],
         ];
     @endphp
 @section('content')
 
-        <!-- start page title --> 
+        <!-- start page title -->
         <section class="p-0 top-space-margin page-title-center-alignment">
             <div class="container">
                 <div class="row align-items-center justify-content-center extra-very-small-screen">
@@ -133,7 +133,7 @@
                                 </div>
                             </div>
                         </div>
-                        <h3 class="text-dark-gray fw-600 ls-minus-2px">We're a creative digital agency.</h3> 
+                        <h3 class="text-dark-gray fw-600 ls-minus-2px">We're a creative digital agency.</h3>
                     </div>
                     <div class="col-lg-7" data-anime='{ "el": "childs", "translateY": [15, 0], "opacity": [0,1], "duration": 300, "delay": 0, "staggervalue": 100, "easing": "easeOutQuad" }'>
                         <div class="row">
@@ -174,12 +174,12 @@
                     <!-- start client item -->
                     <div class="col client-box text-center sm-mb-40px">
                         <a href="#"><img src="images/logo-logitech-dark-gray.svg" class="h-35px" alt=""></a>
-                    </div> 
+                    </div>
                     <!-- end client item -->
                     <!-- start client item -->
                     <div class="col client-box text-center">
                         <a href="#"><img src="images/logo-amazon-dark-gray.svg" class="h-35px" alt=""></a>
-                    </div> 
+                    </div>
                     <!-- end client item -->
                 </div>
             </div>
@@ -190,15 +190,15 @@
         <section class="p-0">
             <div class="container-fluid">
                 <div class="row align-items-center justify-content-center">
-                    <div class="col-11 position-relative h-750px md-h-600px sm-h-350px border-radius-6px border border-color-transparent position-relative" data-parallax-background-ratio="0.5" style="background-image: url('images/demo-web-agency-about-01.jpg');">  
-                        <a href="https://www.youtube.com/watch?v=cfXHhfNy7tU" class="popup-youtube">
+                    <div class="col-11 position-relative h-750px md-h-600px sm-h-350px border-radius-6px border border-color-transparent position-relative" data-parallax-background-ratio="0.5" style="background-image: url({{asset('Frontend/images/demo-web-agency-about-01.jpg')}});">
+                        <a href="https://www.youtube.com/watch?v=-x1Pt-ZbC30" class="popup-youtube">
                             <div class="absolute-middle-center z-index-9">
-                                <img class="animation-rotation" alt="" data-cfsrc="images/demo-web-agency-03.png" style="display:none;visibility:hidden;"><noscript><img src="images/demo-web-agency-03.png" class="animation-rotation" alt=""></noscript>
-                                <div class="absolute-middle-center w-100 z-index-minus-1"><img alt="" data-cfsrc="images/demo-web-agency-about-02.png" style="display:none;visibility:hidden;"><noscript><img src="images/demo-web-agency-about-02.png" alt=""></noscript></div> 
+                                <img class="animation-rotation" alt="" data-cfsrc="{{asset('Frontend/images/demo-web-agency-03.png')}}" style="display:none;visibility:hidden;"><noscript><img src="{{asset('Frontend/images/demo-web-agency-03.png')}}" class="animation-rotation" alt=""></noscript>
+                                <div class="absolute-middle-center w-100 z-index-minus-1"><img alt="" data-cfsrc="{{asset('Frontend/images/demo-web-agency-about-02.png')}}" style="display:none;visibility:hidden;"><noscript><img src="{{asset('Frontend/images/demo-web-agency-about-02.png')}}" alt=""></noscript></div>
                             </div>
                         </a>
-                    </div> 
-                </div> 
+                    </div>
+                </div>
             </div>
         </section>
         <!-- end section -->
@@ -210,8 +210,8 @@
                     <div class="col-lg-5 md-mb-30px" data-anime='{ "el": "childs", "translateX": [15, 0], "opacity": [0,1], "duration": 600, "delay": 100, "staggervalue": 300, "easing": "easeOutQuad" }'>
                         <div class="bg-dark-gray border-radius-100px fs-12 text-white ps-20px pe-20px d-inline-block text-uppercase fw-500 mb-5 ls-05px">Focused area</div>
                         <h3 class="text-dark-gray fw-600 ls-minus-2px">We want to bring business and the digital world.</h3>
-                        <p class="w-90 md-w-100">We are excited for our work and how it positively impacts clients. With over 12 years of experience have been constantly providing excellent.</p>
-                        <a href="demo-web-agency-expertise.html" class="btn btn-large btn-expand-ltr text-dark-gray btn-rounded fw-700"><span class="bg-base-color"></span>See what we do</a>
+                        <p class="w-90 md-w-100">We are excited for our work and how it positively impacts clients. With over 8 years of experience have been constantly providing excellent.</p>
+                        <a href="{{ route('services') }}" class="btn btn-large btn-expand-ltr text-dark-gray btn-rounded fw-700"><span class="bg-base-color"></span>See what we do</a>
                     </div>
                     <div class="col-xl-6 col-lg-7 offset-xl-1">
                         <div class="row row-cols-auto row-cols-sm-2" data-anime='{ "el": "childs", "translateX": [50, 0], "opacity": [0,1], "duration": 600, "delay":300, "staggervalue": 150, "easing": "easeOutQuad" }'>
@@ -259,7 +259,7 @@
                             <!-- end features box item -->
                         </div>
                     </div>
-                </div> 
+                </div>
             </div>
         </section>
         <!-- end section -->
@@ -284,26 +284,26 @@
                             <div class="swiper-slide">
                                 <div class="fs-170 sm-fs-150 text-base-color fw-600 ls-minus-8px word-break-normal">thinkers</div>
                             </div>
-                            <!-- end client item --> 
+                            <!-- end client item -->
                             <!-- start client item -->
                             <div class="swiper-slide">
                                 <div class="fs-170 sm-fs-150 text-dark-gray fw-600 ls-minus-8px word-break-normal">innovators</div>
                             </div>
-                            <!-- end client item --> 
+                            <!-- end client item -->
                             <!-- start client item -->
                             <div class="swiper-slide">
                                 <div class="fs-170 sm-fs-150 text-base-color fw-600 ls-minus-8px word-break-normal">socially</div>
                             </div>
-                            <!-- end client item --> 
+                            <!-- end client item -->
                             <!-- start client item -->
                             <div class="swiper-slide">
                                 <div class="fs-170 sm-fs-150 text-dark-gray fw-600 ls-minus-8px word-break-normal">dreamers</div>
                             </div>
-                            <!-- end client item --> 
-                        </div> 
-                    </div>  
+                            <!-- end client item -->
+                        </div>
+                    </div>
                 </div>
-            </div> 
+            </div>
         </section>
         <!-- end section -->
 
@@ -316,32 +316,32 @@
                     </div>
                     <div class="col-lg-5 offset-lg-1">
                         <p class="w-95 md-w-100">Our expert team transforms your vision into reality. With skilled developers and creative designers, we bring passion and experience to every project. Discover the talent driving our success and how they contribute to your growth.</p>
-                        <a href="demo-web-agency-people.html" class="btn btn-medium btn-expand-ltr text-dark-gray btn-rounded fw-700"><span class="bg-base-color"></span>Meet the team</a>
+                        <a class="btn btn-medium btn-expand-ltr text-dark-gray btn-rounded fw-700"><span class="bg-base-color"></span>Meet the team</a>
                     </div>
                 </div>
                 <div class="row row-cols-1 row-cols-lg-4 row-cols-sm-2 transition-inner-all mb-6 lg-mb-5" data-anime='{ "el": "childs", "translateY": [-15, 0], "perspective": [1200,1200], "scale": [1.1, 1], "rotateX": [50, 0], "opacity": [0,1], "duration": 800, "delay": 200, "staggervalue": 300, "easing": "easeOutQuad" }'>
-                    <!-- start team member item --> 
+                    <!-- start team member item -->
                     @foreach ($member as $person)
-                        <div class={{$person['class']}} data-bottom-top="transform: translateY(40px)" data-top-bottom="transform: translateY(-40px)">
-                            <figure class="mb-0 position-relative overflow-hidden border-radius-6px">
-                                <img alt="" data-cfsrc="images/team-08.jpg" style="display:none;visibility:hidden;" /><noscript><img src="images/team-08.jpg" alt=""/></noscript>
+                        <div class="{{$person['class']}}" data-bottom-top="transform: translateY(40px)" data-top-bottom="transform: translateY(-40px)">
+                            <figure style="background:#e5e5e5 !important" class="mb-0 position-relative overflow-hidden border-radius-6px">
+                                <img alt="" data-cfsrc="{{$person['profile']}}" style="display:none;visibility:hidden;" /><noscript><img src="{{$person['profile']}}" alt=""/></noscript>
                                 <figcaption class="w-100 h-100 d-flex align-items-end p-13 lg-p-8 md-p-13 sm-p-10 bg-gradient-gray-light-dark-transparent border-radius-6px">
                                     <div class="w-100">
-                                        <span class="team-member-name fw-500 alt-font text-white d-block">Jeremy dupont</span>
-                                        <span class="member-designation fs-15 lh-20 text-white d-block">Director</span>
+                                        <span class="team-member-name fw-500 alt-font text-white d-block">{{$person['name']}}</span>
+                                        <span class="member-designation fs-15 lh-20 text-white d-block">{{$person['path']}}</span>
                                     </div>
-                                    <div class="social-icon d-flex flex-column flex-shrink-1">
+                                    {{-- <div class="social-icon d-flex flex-column flex-shrink-1">
                                         <a href="https://www.twitter.com/" target="_blank" class="text-dark-gray"><i class="fa-brands fa-twitter icon-small"></i></a>
-                                    </div>
+                                    </div> --}}
                                 </figcaption>
                             </figure>
                         </div>
                     @endforeach
-                    <!-- end team member item -->   
+                    <!-- end team member item -->
                 </div>
                 <div class="row mb-2">
-                    <div class="col-12 text-center"> 
-                        <div class="text-dark-gray fs-20 ls-minus-05px">Our nearly <span class="fw-700">350+</span> creative team members are ready to help now. <a href="demo-web-agency-contact.html" class="text-dark-gray text-dark-gray-hover fw-600 text-decoration-line-bottom">Contact us now</a></div>
+                    <div class="col-12 text-center">
+                        <div class="text-dark-gray fs-20 ls-minus-05px">Our nearly <span class="fw-700">50+</span> creative team members are ready to help now. <a href="{{ route('contact') }}" class="text-dark-gray text-dark-gray-hover fw-600 text-decoration-line-bottom">Contact us now</a></div>
                     </div>
                 </div>
             </div>
@@ -362,7 +362,7 @@
                             <div class="fs-350 xl-fs-250 lg-fs-200 md-fs-170 sm-fs-100 text-base-color fw-600 ls-minus-20px position-relative d-inline-block word-break-normal">together
                                 <div class="position-absolute left-minus-140px top-minus-140px z-index-9 xl-left-minus-110px top-minus-140px xl-top-minus-100px md-top-minus-90px z-index-9 xl-w-230px md-w-200px d-none d-md-block" data-anime='{ "translateY": [-15, 0], "scale": [0.5, 1], "opacity": [0,1], "duration": 800, "delay": 200, "staggervalue": 300, "easing": "easeOutQuad" }'>
                                     <img class="animation-rotation" alt="" data-cfsrc="images/demo-web-agency-05.png" style="display:none;visibility:hidden;"><noscript><img src="images/demo-web-agency-05.png" class="animation-rotation" alt=""></noscript>
-                                    <div class="absolute-middle-center w-100 z-index-minus-1"><img alt="" data-cfsrc="images/demo-web-agency-04.png" style="display:none;visibility:hidden;"><noscript><img src="images/demo-web-agency-04.png" alt=""></noscript></div> 
+                                    <div class="absolute-middle-center w-100 z-index-minus-1"><img alt="" data-cfsrc="images/demo-web-agency-04.png" style="display:none;visibility:hidden;"><noscript><img src="images/demo-web-agency-04.png" alt=""></noscript></div>
                                 </div>
                             </div>
                         </div>

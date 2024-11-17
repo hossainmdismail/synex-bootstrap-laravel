@@ -3,7 +3,7 @@
             <div class="row align-items-center mb-4 sm-mb-6">
                 <div class="col-md-10 col-sm-8 text-center text-sm-start xs-mb-25px">
                     <h5 class="mb-0 text-dark-gray fw-400 ls-minus-1px">Let's make something great <a
-                            href="demo-web-agency-contact.html"
+                            href="{{ route('schedule') }}"
                             class="text-decoration-line-bottom-medium fw-600 text-dark-gray text-dark-gray-hover">work
                             together?</a></h5>
                 </div>

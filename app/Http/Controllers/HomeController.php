@@ -11,6 +11,30 @@ use Artesaos\SEOTools\Facades\TwitterCard;
 
 class HomeController extends Controller
 {
+    public function index_new(){
+
+        $project = [];
+        $blog = [];
+
+        //Project
+        $projectUrl = app('domainName') . '/api/projects/item';
+        $projectResponse = Http::get($projectUrl);
+        if ($projectResponse->successful()) {
+            $project = $projectResponse->json()['data'];
+        }
+
+        //Blog
+        $blogUrl = app('domainName') . '/api/blogs/item';
+        $blogResponse = Http::get($blogUrl);
+        if ($blogResponse->successful()) {
+            $blog = $blogResponse->json();
+        }
+
+        return view('Frontend.new', [
+            'projects'  => $project,
+            'blogs'      => $blog,
+        ]);
+    }
     public function index()
     {
         $site_name = env('APP_NAME', 'Synex Digital');

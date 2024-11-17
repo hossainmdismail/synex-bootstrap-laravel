@@ -1,5 +1,4 @@
 @extends('Frontend.layout.app')
-@section('content')
     @php
         $member = [
             [
@@ -12,6 +11,7 @@
                     'github' => 'https://github.com/imehedi007',
                     'linkedin' => 'https://linkedin.com/in/ali-imran-mehedi/',
                 ],
+                'class' => '"col team-style-08 border-radius-6px md-mb-30px mt-2 md-mt-0"'
             ],
             [
                 'name' => 'MD Ismail Hossain',
@@ -22,6 +22,7 @@
                     'github' => 'https://github.com/hossainmdismail',
                     'linkedin' => 'https://linkedin.com/in/mdismailhossain2385/',
                 ],
+                'class' => '"col team-style-08 border-radius-6px md-mb-30px"'
             ],
             [
                 'name' => 'MD Jahirul Islam',
@@ -32,6 +33,7 @@
                     'github' => 'https://github.com/jahir002201',
                     'linkedin' => 'https://linkedin.com/in/jahirul12/',
                 ],
+                'class' => '"col team-style-08 border-radius-6px xs-mb-30px mt-2 md-mt-0"'
             ],
             [
                 'name' => 'Shihab Sarar',
@@ -43,6 +45,7 @@
                     'github' => 'https://github.com/ShihabSarar12',
                     'linkedin' => 'https://linkedin.com/in/shihab-sarar-15a587230/',
                 ],
+                'class' => '"col team-style-08 border-radius-6px"'
             ],
             [
                 'name' => 'Yousuf Sayem',
@@ -53,6 +56,7 @@
                     'github' => 'https://github.com/Say00em',
                     'linkedin' => 'https://linkedin.com/in/say00em/',
                 ],
+                'class' => '"col team-style-08 border-radius-6px md-mb-30px mt-2 md-mt-0"'
             ],
             [
                 'name' => 'Jubayer Shikder',
@@ -63,6 +67,7 @@
                     'github' => 'https://github.com/Jobayer53',
                     'linkedin' => 'https://linkedin.com/in/jobayershikder535/',
                 ],
+                'class' => '"col team-style-08 border-radius-6px md-mb-30px"'
             ],
             [
                 'name' => 'Fahim Ahmed Patwary',
@@ -72,6 +77,7 @@
                 'link' => [
                     'linkedin' => 'https://www.linkedin.com/in/fahim-ahmed-patwary-667b1a236',
                 ],
+                'class' => '"col team-style-08 border-radius-6px xs-mb-30px mt-2 md-mt-0"'
             ],
             [
                 'name' => 'Puspita Anjum',
@@ -82,6 +88,7 @@
                 'link' => [
                     'linkedin' => 'https://www.linkedin.com/in/puspita-anjum-5140b4231',
                 ],
+                'class' => '"col team-style-08 border-radius-6px"'
             ],
             [
                 'name' => 'Maisha Alam Mim',
@@ -92,232 +99,277 @@
                 'link' => [
                     'linkedin' => 'https://www.linkedin.com/in/maisha-alam-mim-b70a31320',
                 ],
+                'class' => '"col team-style-08 border-radius-6px md-mb-30px mt-2 md-mt-0"'
             ],
         ];
     @endphp
-    <!-- about us -->
-    <section class="container-fluid">
-        <img class="leftsvg" src="{{ asset('Frontend') }}/images/aboutus-left.svg" loading="lazy" alt="">
-        <img class="rightsvg" src="{{ asset('Frontend') }}/images/aboutus-right.svg" loading="lazy" alt="">
-        <div class="container py-2 py-md-5">
-            <div class="row">
-                <div class="col-lg-12  text-center">
-                    <h1 class="about-us-title">About <span class="font-main">Us</span></h1>
-                    <img class="underlinesvg" src="{{ asset('Frontend') }}/images/aboutus-underline.svg" alt="">
+@section('content')
+
+        <!-- start page title --> 
+        <section class="p-0 top-space-margin page-title-center-alignment">
+            <div class="container">
+                <div class="row align-items-center justify-content-center extra-very-small-screen">
+                    <div class="col-xl-8 col-lg-10 text-center position-relative page-title-extra-large" data-anime='{ "el": "childs", "translateY": [-15, 0], "opacity": [0,1], "duration": 300, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
+                        <h1 class="fw-700 text-dark-gray mb-20px ls-minus-2px">Agency</h1>
+                        <h2 class="fw-400 ls-0px mb-0">Digital experiences agency</h2>
+                    </div>
                 </div>
             </div>
-            <div class="row py-5">
-                <div class="col-lg-6 col-md-12 col-sm-12">
-                    <div class="teamworkjpg">
-                        <img src="{{ asset('Frontend') }}/images/Teamwork.webp" loading="lazy" width="100%"
-                            alt="">
-                    </div>
-                    <div class="experience-card shadow mt-4">
-                        <div class="row px-3 px-md-5 py-4">
-                            <div class="col-6 px-5">
-                                <h5 class="font-2rem">8+</h5>
-                                <p>Years of Experience</p>
-                            </div>
-                            <div class="col-6 px-5">
-                                <h5 class="font-2rem">200+</h5>
-                                <p>Project Completion</p>
-                            </div>
-                            <div class="col-6 px-5">
-                                <h5 class="font-2rem">130+</h5>
-                                <p>Positive Reviews</p>
-                            </div>
-                            <div class="col-6 px-5">
-                                <h5 class="font-2rem">11-50</h5>
-                                <p>Employees</p>
+        </section>
+        <!-- end page title -->
+
+        <!-- start features section -->
+        <section>
+            <div class="container">
+                <div class="row mb-7">
+                    <div class="col-lg-5 md-mb-10px" data-anime='{ "translateY": [0, 0], "opacity": [0,1], "duration": 800, "delay": 200, "staggervalue": 300, "easing": "easeOutQuad" }'>
+                        <div class="icon-with-text-style-08 mb-25px">
+                            <div class="feature-box feature-box-left-icon-middle">
+                                <div class="feature-box-icon feature-box-icon-rounded w-50px h-50px rounded-circle bg-base-color text-dark-gray me-15px">
+                                    ★
+                                </div>
+                                <div class="feature-box-content">
+                                    <span class="d-inline-block fs-15 lh-24 fw-700 text-dark-gray text-uppercase text-decoration-line-bottom">5 star rating web agency</span>
+                                </div>
                             </div>
                         </div>
+                        <h3 class="text-dark-gray fw-600 ls-minus-2px">We're a creative digital agency.</h3> 
+                    </div>
+                    <div class="col-lg-7" data-anime='{ "el": "childs", "translateY": [15, 0], "opacity": [0,1], "duration": 300, "delay": 0, "staggervalue": 100, "easing": "easeOutQuad" }'>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="fs-19 fw-600 text-dark-gray">Our vision</div>
+                            </div>
+                            <div class="col-md-9 last-paragraph-no-margin">
+                                <p>At Synex Digital, we go beyond being a digital solutions provider. We are your trusted partner in driving technology and business growth. With over 8 years of experience, we specialize in delivering innovative Web and App development, Custom Software Solutions, and comprehensive Digital Marketing services tailored to your business needs.</p>
+                            </div>
+                        </div>
+                        <div class="separator-line-2px bg-dark-gray mt-35px mb-35px"></div>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="fs-19 fw-600 text-dark-gray">Our mission</div>
+                            </div>
+                            <div class="col-md-9 last-paragraph-no-margin">
+                                <p>We’re dedicated to helping businesses thrive in the digital landscape by providing high-quality, scalable solutions that enhance user experience, boost online visibility, and drive engagement. Partner with us to transform your vision into reality and stay ahead in the competitive marke.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-6 mt-4 mt-md-0">
-                    <div class="about-us-card  p-4">
-                        <h5 class="font-2rem">Going further than just a cowering space, Synex Digital <span
-                                class="font-main"> Offers More</span></h5>
-                        <!-- <h5 class="font-2rem"></h5> -->
-                        <p class="mt-4 mb-4 caption-black">
-                            At Synex Digital, we go beyond being a digital solutions provider. We are your trusted partner
-                            in driving technology and business growth. With over 8 years of experience, we specialize in
-                            delivering innovative Web and App development, Custom Software Solutions, and comprehensive
-                            Digital Marketing services tailored to your business needs.
-                        </p>
-                        <p class="mb-3 caption-black">
-                            We’re dedicated to helping businesses thrive in the digital landscape by providing high-quality,
-                            scalable solutions that enhance user experience, boost online visibility, and drive engagement.
-                            Whether you're a startup aiming to make an impact or an established brand seeking to innovate,
-                            Synex Digital is here to guide you every step of the way. Partner with us to transform your
-                            vision into reality and stay ahead in the competitive market.
-                        </p>
-                        <a href="{{ route('contact') }}" class="btn  btn-default btn-outline-primary  rounded-sm">
-                            Get in Touch</a>
+                <div class="row row-cols-1 row-cols-lg-5 row-cols-md-3 row-cols-sm-2 clients-style-06 justify-content-center" data-anime='{ "translateY": [0, 0], "opacity": [0,1], "duration": 800, "delay": 200, "staggervalue": 300, "easing": "easeOutQuad" }'>
+                    <!-- start client item -->
+                    <div class="col client-box text-center md-mb-40px">
+                        <a href="#"><img src="{{asset('Frontend/images/logo-walmart-dark-gray.svg')}}" class="h-35px" alt=""></a>
+                    </div>
+                    <!-- end client item -->
+                    <!-- start client item -->
+                    <div class="col client-box text-center md-mb-40px">
+                        <a href="#"><img src="images/logo-invision-dark-gray.svg" class="h-40px" alt=""></a>
+                    </div>
+                    <!-- end client item -->
+                    <!-- start client item -->
+                    <div class="col client-box text-center md-mb-40px">
+                        <a href="#"><img src="images/logo-netflix-dark-gray.svg" class="h-35px" alt=""></a>
+                    </div>
+                    <!-- end client item -->
+                    <!-- start client item -->
+                    <div class="col client-box text-center sm-mb-40px">
+                        <a href="#"><img src="images/logo-logitech-dark-gray.svg" class="h-35px" alt=""></a>
+                    </div> 
+                    <!-- end client item -->
+                    <!-- start client item -->
+                    <div class="col client-box text-center">
+                        <a href="#"><img src="images/logo-amazon-dark-gray.svg" class="h-35px" alt=""></a>
+                    </div> 
+                    <!-- end client item -->
+                </div>
+            </div>
+        </section>
+        <!-- end section -->
+
+        <!-- start video section -->
+        <section class="p-0">
+            <div class="container-fluid">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-11 position-relative h-750px md-h-600px sm-h-350px border-radius-6px border border-color-transparent position-relative" data-parallax-background-ratio="0.5" style="background-image: url('images/demo-web-agency-about-01.jpg');">  
+                        <a href="https://www.youtube.com/watch?v=cfXHhfNy7tU" class="popup-youtube">
+                            <div class="absolute-middle-center z-index-9">
+                                <img class="animation-rotation" alt="" data-cfsrc="images/demo-web-agency-03.png" style="display:none;visibility:hidden;"><noscript><img src="images/demo-web-agency-03.png" class="animation-rotation" alt=""></noscript>
+                                <div class="absolute-middle-center w-100 z-index-minus-1"><img alt="" data-cfsrc="images/demo-web-agency-about-02.png" style="display:none;visibility:hidden;"><noscript><img src="images/demo-web-agency-about-02.png" alt=""></noscript></div> 
+                            </div>
+                        </a>
+                    </div> 
+                </div> 
+            </div>
+        </section>
+        <!-- end section -->
+
+        <!-- start Expert section -->
+        <section class="pb-0">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-5 md-mb-30px" data-anime='{ "el": "childs", "translateX": [15, 0], "opacity": [0,1], "duration": 600, "delay": 100, "staggervalue": 300, "easing": "easeOutQuad" }'>
+                        <div class="bg-dark-gray border-radius-100px fs-12 text-white ps-20px pe-20px d-inline-block text-uppercase fw-500 mb-5 ls-05px">Focused area</div>
+                        <h3 class="text-dark-gray fw-600 ls-minus-2px">We want to bring business and the digital world.</h3>
+                        <p class="w-90 md-w-100">We are excited for our work and how it positively impacts clients. With over 12 years of experience have been constantly providing excellent.</p>
+                        <a href="demo-web-agency-expertise.html" class="btn btn-large btn-expand-ltr text-dark-gray btn-rounded fw-700"><span class="bg-base-color"></span>See what we do</a>
+                    </div>
+                    <div class="col-xl-6 col-lg-7 offset-xl-1">
+                        <div class="row row-cols-auto row-cols-sm-2" data-anime='{ "el": "childs", "translateX": [50, 0], "opacity": [0,1], "duration": 600, "delay":300, "staggervalue": 150, "easing": "easeOutQuad" }'>
+                            <!-- start features box item -->
+                            <div class="col align-self-start">
+                                <div class="feature-box text-start ps-30px">
+                                    <div class="feature-box-icon position-absolute left-0px top-10px">
+                                        <h1 class="fs-85 text-outline text-outline-width-1px text-outline-color-dark-gray fw-700 ls-minus-1px opacity-2 mb-0">01</h1>
+                                    </div>
+                                    <div class="feature-box-content last-paragraph-no-margin pt-25 md-pt-17 sm-pt-40px">
+                                        <span class="text-dark-gray fs-19 d-inline-block fw-600 mb-5px">Experience and Expertise</span>
+                                        <p>With years of experience and specialized skills, Synex Digital delivers top-notch solutions and innovative strategies to drive your business forward.</p>
+                                        <span class="w-40px h-3px bg-base-color d-inline-block"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end features box item -->
+                            <!-- start features box item -->
+                            <div class="col align-self-end mt-20 xs-mt-15px">
+                                <div class="feature-box text-start ps-30px">
+                                    <div class="feature-box-icon position-absolute left-0px top-10px">
+                                        <h1 class="fs-85 text-outline text-outline-width-1px text-outline-color-dark-gray fw-700 ls-minus-1px opacity-2 mb-0">02</h1>
+                                    </div>
+                                    <div class="feature-box-content last-paragraph-no-margin pt-25 md-pt-17 sm-pt-40px">
+                                        <span class="text-dark-gray fs-19 d-inline-block fw-600 mb-5px">Customized Solutions</span>
+                                        <p>We craft tailored solutions to meet your unique needs, ensuring personalized strategies and exceptional results that align perfectly with your business goals.</p>
+                                        <span class="w-40px h-3px bg-base-color d-inline-block"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end features box item -->
+                            <!-- start features box item -->
+                            <div class="col align-self-start mt-minus-12 xs-mt-15px">
+                                <div class="feature-box text-start ps-30px">
+                                    <div class="feature-box-icon position-absolute left-0px top-10px">
+                                        <h1 class="fs-85 text-outline text-outline-width-1px text-outline-color-dark-gray fw-700 ls-minus-1px opacity-2 mb-0">03</h1>
+                                    </div>
+                                    <div class="feature-box-content last-paragraph-no-margin pt-25 md-pt-17 sm-pt-40px">
+                                        <span class="text-dark-gray fs-19 d-inline-block fw-600 mb-5px">Trust and Reliability</span>
+                                        <p>Count on us for dependable, trustworthy service. Our commitment to integrity and consistent performance ensures you can rely on us for all your digital needs.</p>
+                                        <span class="w-40px h-3px bg-base-color d-inline-block"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end features box item -->
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </section>
+        <!-- end section -->
+
+        <!-- start softskill section -->
+        <section class="overflow-hidden position-relative half-section">
+            <div class="container-fluid">
+                <div class="row position-relative">
+                    <div class="col swiper swiper-width-auto text-center pb-30px sm-pb-20px" data-slider-options='{ "slidesPerView": "auto", "spaceBetween":60, "speed": 10000, "loop": true, "pagination": { "el": ".slider-four-slide-pagination-2", "clickable": false }, "allowTouchMove": false, "autoplay": { "delay":0, "disableOnInteraction": false }, "navigation": { "nextEl": ".slider-four-slide-next-2", "prevEl": ".slider-four-slide-prev-2" }, "keyboard": { "enabled": true, "onlyInViewport": true }, "breakpoints": { "768": { "spaceBetween": 70 } }, "effect": "slide" }'>
+                        <div class="swiper-wrapper marquee-slide">
+                            <!-- start client item -->
+                            <div class="swiper-slide">
+                                <div class="fs-170 sm-fs-150 text-base-color fw-600 ls-minus-8px word-break-normal">developers</div>
+                            </div>
+                            <!-- end client item -->
+                            <!-- start client item -->
+                            <div class="swiper-slide">
+                                <div class="fs-170 sm-fs-150 text-dark-gray fw-600 ls-minus-8px word-break-normal">designers</div>
+                            </div>
+                            <!-- end client item -->
+                            <!-- start client item -->
+                            <div class="swiper-slide">
+                                <div class="fs-170 sm-fs-150 text-base-color fw-600 ls-minus-8px word-break-normal">thinkers</div>
+                            </div>
+                            <!-- end client item --> 
+                            <!-- start client item -->
+                            <div class="swiper-slide">
+                                <div class="fs-170 sm-fs-150 text-dark-gray fw-600 ls-minus-8px word-break-normal">innovators</div>
+                            </div>
+                            <!-- end client item --> 
+                            <!-- start client item -->
+                            <div class="swiper-slide">
+                                <div class="fs-170 sm-fs-150 text-base-color fw-600 ls-minus-8px word-break-normal">socially</div>
+                            </div>
+                            <!-- end client item --> 
+                            <!-- start client item -->
+                            <div class="swiper-slide">
+                                <div class="fs-170 sm-fs-150 text-dark-gray fw-600 ls-minus-8px word-break-normal">dreamers</div>
+                            </div>
+                            <!-- end client item --> 
+                        </div> 
+                    </div>  
+                </div>
+            </div> 
+        </section>
+        <!-- end section -->
+
+        <!-- start team section -->
+        <section class="p-0">
+            <div class="container">
+                <div class="row mb-6 sm-mb-40px" data-anime='{"translateY": [0, 0], "opacity": [0,1], "duration": 800, "delay": 200, "staggervalue": 300, "easing": "easeOutQuad" }'>
+                    <div class="col-lg-6 md-mb-25px">
+                        <h3 class="mb-0 fw-600 text-dark-gray w-85 lg-w-100 ls-minus-2px">We believe in power of unity and its impact in future.</h3>
+                    </div>
+                    <div class="col-lg-5 offset-lg-1">
+                        <p class="w-95 md-w-100">Our expert team transforms your vision into reality. With skilled developers and creative designers, we bring passion and experience to every project. Discover the talent driving our success and how they contribute to your growth.</p>
+                        <a href="demo-web-agency-people.html" class="btn btn-medium btn-expand-ltr text-dark-gray btn-rounded fw-700"><span class="bg-base-color"></span>Meet the team</a>
+                    </div>
+                </div>
+                <div class="row row-cols-1 row-cols-lg-4 row-cols-sm-2 transition-inner-all mb-6 lg-mb-5" data-anime='{ "el": "childs", "translateY": [-15, 0], "perspective": [1200,1200], "scale": [1.1, 1], "rotateX": [50, 0], "opacity": [0,1], "duration": 800, "delay": 200, "staggervalue": 300, "easing": "easeOutQuad" }'>
+                    <!-- start team member item --> 
+                    @foreach ($member as $person)
+                        <div class={{$person['class']}} data-bottom-top="transform: translateY(40px)" data-top-bottom="transform: translateY(-40px)">
+                            <figure class="mb-0 position-relative overflow-hidden border-radius-6px">
+                                <img alt="" data-cfsrc="images/team-08.jpg" style="display:none;visibility:hidden;" /><noscript><img src="images/team-08.jpg" alt=""/></noscript>
+                                <figcaption class="w-100 h-100 d-flex align-items-end p-13 lg-p-8 md-p-13 sm-p-10 bg-gradient-gray-light-dark-transparent border-radius-6px">
+                                    <div class="w-100">
+                                        <span class="team-member-name fw-500 alt-font text-white d-block">Jeremy dupont</span>
+                                        <span class="member-designation fs-15 lh-20 text-white d-block">Director</span>
+                                    </div>
+                                    <div class="social-icon d-flex flex-column flex-shrink-1">
+                                        <a href="https://www.twitter.com/" target="_blank" class="text-dark-gray"><i class="fa-brands fa-twitter icon-small"></i></a>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    @endforeach
+                    <!-- end team member item -->   
+                </div>
+                <div class="row mb-2">
+                    <div class="col-12 text-center"> 
+                        <div class="text-dark-gray fs-20 ls-minus-05px">Our nearly <span class="fw-700">350+</span> creative team members are ready to help now. <a href="demo-web-agency-contact.html" class="text-dark-gray text-dark-gray-hover fw-600 text-decoration-line-bottom">Contact us now</a></div>
                     </div>
                 </div>
             </div>
-        </div>
-        <img class="leftsvgend" src="{{ asset('Frontend') }}/images/leftsvgend.svg" alt="">
-        <img class="rightsvgend" src="{{ asset('Frontend') }}/images/rightsvgend.svg" alt="">
-    </section>
-    <!-- choose us -->
-    <section class="container-fluid choose-us">
-        <div class="container py-5">
-            <div class="row">
-                <div class="col-md-8 m-auto text-center">
-                    <h3 class="choose-us-title">Why <span class="font-dark"> Choose</span> Us </h3>
-                    <p class="text-white mb-4 mb-md-5">
-                        Choose Synex Digital for unmatched expertise, innovative solutions, and dedicated support. Our
-                        commitment to excellence and tailored strategies ensure your success in a competitive market.
-                        Experience the difference with our results-driven approach.
-                    </p>
-                </div>
-            </div>
+        </section>
+        <!-- end section -->
 
-            <div class="row g-4">
-                <div class="col-md-4">
-                    <div class="choose-us-card ">
-                        <img src="{{ asset('Frontend') }}/images/ellipse1.svg" alt="">
-                        <p class="choose-us-card-title">Experience and Expertise</p>
-                        <p class="choose-us-card-para">
-                            With years of experience and specialized skills, Synex Digital delivers top-notch solutions and
-                            innovative strategies to drive your business forward.
-                        </p>
+        <!-- start work together big section -->
+        <section class="pb-4 sm-pt-30px sm-pb-40px overflow-hidden position-relative">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-5 text-center text-sm-start">
+                        <div class="outside-box-left-25 xl-outside-box-left-10 sm-outside-box-left-0">
+                            <div class="fs-350 xl-fs-250 lg-fs-200 md-fs-170 sm-fs-100 text-dark-gray fw-600 ls-minus-20px word-break-normal">work</div>
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="choose-us-card">
-                        <img src="{{ asset('Frontend') }}/images/ellipse2.svg" alt="">
-                        <p class="choose-us-card-title">Customized Solutions</p>
-                        <p class="choose-us-card-para">
-                            We craft tailored solutions to meet your unique needs, ensuring personalized strategies and
-                            exceptional results that align perfectly with your business goals.
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="choose-us-card">
-                        <img src="{{ asset('Frontend') }}/images/ellipse3.svg" alt="">
-                        <p class="choose-us-card-title">Trust and Reliability</p>
-                        <p class="choose-us-card-para">
-                            Count on us for dependable, trustworthy service. Our commitment to integrity and consistent
-                            performance ensures you can rely on us for all your digital needs.
-                        </p>
-                    </div>
-                </div>
-
-
-            </div>
-
-        </div>
-
-    </section>
-    <!-- employee -->
-    <section class="container-fluid">
-        <div class="container py-5">
-            <div class="row g-5">
-                <div class="col-md-6 p-md-5">
-                    <img class="about-group-img" src="{{ asset('Frontend') }}/images/about-group.webp" loading="lazy">
-                </div>
-                <div class="col-md-6 d-flex align-items-center py-md-3">
-                    <div class="employee-card">
-                        <h5 class="employee-title">High <span class="font-main">Skilled Employees</span> from Worldwide<span
-                                class="font-main">.</span>
-                        </h5>
-                        <div class="employee-body ">
-                            <p>
-                                At Synex Digital, our strength lies in our diverse team of highly skilled professionals from
-                                around the globe. We bring together a wealth of expertise and innovative thinking to tackle
-                                complex challenges and deliver exceptional results.
-                            </p>
-                            <p class="mt-4">
-                                Our talented workforce is dedicated to providing world-class digital solutions, tailored to
-                                meet the unique needs of each client. By leveraging the skills and insights of our global
-                                team, we ensure that every project benefits from a broad perspective, cutting-edge
-                                technologies, and best-in-class practices. Trust Synex Digital to connect you with top
-                                talent that drives your success in the digital landscape.
-                            </p>
-
+                    <div class="col-sm-7 text-center text-sm-end">
+                        <div class="outside-box-right-5 sm-outside-box-right-0">
+                            <div class="fs-350 xl-fs-250 lg-fs-200 md-fs-170 sm-fs-100 text-base-color fw-600 ls-minus-20px position-relative d-inline-block word-break-normal">together
+                                <div class="position-absolute left-minus-140px top-minus-140px z-index-9 xl-left-minus-110px top-minus-140px xl-top-minus-100px md-top-minus-90px z-index-9 xl-w-230px md-w-200px d-none d-md-block" data-anime='{ "translateY": [-15, 0], "scale": [0.5, 1], "opacity": [0,1], "duration": 800, "delay": 200, "staggervalue": 300, "easing": "easeOutQuad" }'>
+                                    <img class="animation-rotation" alt="" data-cfsrc="images/demo-web-agency-05.png" style="display:none;visibility:hidden;"><noscript><img src="images/demo-web-agency-05.png" class="animation-rotation" alt=""></noscript>
+                                    <div class="absolute-middle-center w-100 z-index-minus-1"><img alt="" data-cfsrc="images/demo-web-agency-04.png" style="display:none;visibility:hidden;"><noscript><img src="images/demo-web-agency-04.png" alt=""></noscript></div> 
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- out team -->
-    <section class="container-fluid team ">
+        </section>
+        <!-- end section -->
 
-        <div class="container">
-            <div class="row mt-5">
-                <div class="col-md-7 m-auto text-center">
-                    <h5 class="font-3rem">Meet Our <span class="font-main"> Team</span></h5>
-                    <p class="mt-4">
-                        Our expert team transforms your vision into reality. With skilled developers and creative designers,
-                        we bring passion and experience to every project. Discover the talent driving our success and how
-                        they contribute to your growth.
-                    </p>
-                </div>
-            </div>
-            <div class="row py-5 g-3">
-                @foreach ($member as $person)
-                    <div class="col-md-3 text-center" id="member">
-                        <x-team-profile name="{{ $person['name'] }}" path="{{ $person['path'] }}"
-                            bio="{{ $person['bio'] }}" profile="{{ $person['profile'] }}" :links="$person['link']" />
-                    </div>
-                @endforeach
-            </div>
-        </div>
-    </section>
-    <div class="container-fluid my-4">
-        <div class="container ">
-            <div class="line"></div>
-        </div>
-    </div>
-    <!-- our partners -->
-    <section class="container-fluid partner">
-
-        <div class="container">
-            <div class="row mt-5">
-                <div class="col-md-7 m-auto text-center mt-5">
-                    <h5 class="font-3rem"> Our <span class="font-main"> Partners</span></h5>
-                    <p class="mt-4">
-                        We team up with top industry leaders and tech innovators to deliver exceptional solutions. Discover
-                        the key alliances that enhance our ability to serve you with excellence.
-                    </p>
-                </div>
-            </div>
-
-
-            <div class=" mt-5">
-                <div class="slider-container">
-                    <div class="slider">
-                        <div class="slide"><img src="{{ asset('Frontend') }}/images/instagram.svg" alt="Logo 1">
-                        </div>
-                        <div class="slide"><img src="{{ asset('Frontend') }}/images/microsoft.svg" alt="Logo 2">
-                        </div>
-                        <div class="slide"><img src="{{ asset('Frontend') }}/images/linkedin (2).svg" alt="Logo 1">
-                        </div>
-                        <div class="slide"><img src="{{ asset('Frontend') }}/images/metallb.svg" alt="Logo 1"></div>
-                        {{-- <div class="slide"><img src="{{ asset('Frontend') }}/images/metallb.svg" alt="Logo 1"></div> --}}
-
-                        <!-- Duplicate slides for seamless animation -->
-                        <div class="slide"><img src="{{ asset('Frontend') }}/images/instagram.svg" alt="Logo 1">
-                        </div>
-                        <div class="slide"><img src="{{ asset('Frontend') }}/images/microsoft.svg" alt="Logo 1">
-                        </div>
-                        <div class="slide"><img src="{{ asset('Frontend') }}/images/linkedin (2).svg" alt="Logo 1">
-                        </div>
-                        <div class="slide"><img src="{{ asset('Frontend') }}/images/metallb.svg" alt="Logo 1"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </section>
-
-    <!-- Collaborate -->
-    <x-collaborate />
-
-    <!-- News Letter-->
-    <x-newsletter />
 @endsection

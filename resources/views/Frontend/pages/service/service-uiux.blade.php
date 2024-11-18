@@ -122,8 +122,14 @@
                                 class="btn btn-link btn-hover-animation-switch btn-large text-dark-gray fw-700 section-link">
                                 <span>
                                     <span class="btn-text">Get a quote</span>
-                                    <span class="btn-icon"><i class="fa-solid fa-arrow-right"></i></span>
-                                    <span class="btn-icon"><i class="fa-solid fa-arrow-right"></i></span>
+                                    <img src="{{ asset('Frontend/images/svg/arrow-right.svg') }}"
+                                        alt="Onboarding
+                                        conversions growth increased."
+                                        class="btn-icon">
+                                    <img src="{{ asset('Frontend/images/svg/arrow-right.svg') }}"
+                                        alt="Onboarding
+                                        conversions growth increased."
+                                        class="btn-icon">
                                 </span>
                             </a>
                         </div>
@@ -218,7 +224,7 @@
         </section>
         <!-- end section -->
         <!-- start section -->
-        <section class="pb-0">
+        {{-- <section class="pb-0">
             <div class="container">
                 <div class="row align-items-center row-cols-1 row-cols-lg-3 row-cols-md-2 justify-content-center mb-2"
                     data-anime='{ "el": "childs", "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
@@ -272,151 +278,384 @@
                     <!-- end process step item -->
                 </div>
             </div>
-        </section>
+        </section> --}}
         <!-- end section -->
         <!-- start section -->
-        <section class="big-section threeD-letter-menu d-flex align-items-center">
+        <section class="pb-0">
             <div class="container">
-                <div class="row align-items-center position-relative z-index-9">
-                    <div class="col-auto menu-item pe-50px position-relative">
-                        <div class="fs-14 fw-500 opacity-6 text-dark-gray position-absolute top-15px left-minus-5px">01
-                        </div>
-                        <a href="demo-design-agency-single-project-simple.html"
-                            class="menu-item-text fs-150 md-fs-120 lh-100 text-dark-gray alt-font ls-minus-3px">
-                            <span class="title">cropo</span>
-                        </a>
-                        <div class="hover-reveal d-none d-xl-block">
-                            <div class="hover-reveal__inner">
-                                <div class="hover-reveal__img"
-                                    style="background-image: url(images/demo-horizontal-portfolio-01.jpg);">
-                                </div>
+                <div class="row row-cols-1 row-cols-lg-3 row-cols-md-2 justify-content-center g-0"
+                    data-anime='{ "opacity": [0,1], "duration": 600, "delay":0, "staggervalue": 300, "easing": "easeOutQuad" }'>
+                    <!-- start features box item -->
+                    <div class="col icon-with-text-style-07">
+                        <div
+                            class="h-100 hover-box dark-hover will-change-inherit feature-box pt-55px pb-55px ps-60px pe-60px overflow-hidden border-top border-color-dark-gray text-start xl-p-50px lg-p-30px sm-p-50px sm-border-start sm-border-end xs-p-30px">
+                            <div class="feature-box-icon min-h-150px mb-20 sm-min-h-100px">
+                                <img src="{{ asset('Frontend/images/Services/uiux/1.svg') }}" alt="Design Research">
                             </div>
+                            <div class="feature-box-title fs-200 fw-600 text-black opacity-1 ls-minus-10px">design
+                            </div>
+                            <div class="feature-box-content last-paragraph-no-margin">
+                                <span class="d-inline-block text-dark-gray fw-600 mb-5px fs-20">Design Research</span>
+                                <p class="text-light-opacity">We conduct in-depth research to understand user
+                                    behaviours, preferences, and pain points to create user-centric solutions.</p>
+                            </div>
+                            <div class="feature-box-overlay bg-dark-gray"></div>
                         </div>
                     </div>
-                    <div class="col-auto menu-item pe-50px position-relative">
-                        <div class="fs-14 fw-500 opacity-6 text-dark-gray position-absolute top-15px left-minus-5px">02
-                        </div>
-                        <a href="demo-design-agency-single-project-simple.html"
-                            class="menu-item-text fs-150 md-fs-120 lh-100 text-dark-gray alt-font ls-minus-3px">
-                            <span>grino</span>
-                        </a>
-                        <div class="hover-reveal d-none d-xl-block">
-                            <div class="hover-reveal__inner">
-                                <div class="hover-reveal__img"
-                                    style="background-image: url(images/demo-horizontal-portfolio-02.jpg);">
-                                </div>
+                    <!-- end features box item -->
+                    <!-- start features box item -->
+                    <div class="col icon-with-text-style-07">
+                        <div
+                            class="h-100 hover-box dark-hover will-change-inherit feature-box pt-55px pb-55px ps-60px pe-60px overflow-hidden border-top border-start border-color-dark-gray text-start xl-p-50px lg-p-30px sm-p-50px sm-border-start sm-border-end xs-p-30px">
+                            <div class="feature-box-icon min-h-150px mb-20 sm-min-h-100px">
+                                <img src="{{ asset('Frontend/images/Services/uiux/2.svg') }}" alt="Brand strategy">
                             </div>
+                            <div class="feature-box-title fs-200 fw-600 text-black opacity-1 ls-minus-10px">strategy
+                            </div>
+                            <div class="feature-box-content last-paragraph-no-margin">
+                                <span class="d-inline-block text-dark-gray fw-600 mb-5px fs-20">Brand strategy</span>
+                                <p class="text-light-opacity">We align your brand with impactful and intuitive design,
+                                    ensuring every interface resonates with your brand identity.</p>
+                            </div>
+                            <div class="feature-box-overlay bg-dark-gray"></div>
                         </div>
                     </div>
-                    <div class="col-auto menu-item pe-50px position-relative">
-                        <div class="fs-14 fw-500 opacity-6 text-dark-gray position-absolute top-15px left-minus-5px">03
-                        </div>
-                        <a href="demo-design-agency-single-project-simple.html"
-                            class="menu-item-text fs-150 md-fs-120 lh-100 text-dark-gray alt-font ls-minus-3px">
-                            <span>adidas</span>
-                        </a>
-                        <div class="hover-reveal d-none d-xl-block">
-                            <div class="hover-reveal__inner">
-                                <div class="hover-reveal__img"
-                                    style="background-image: url(images/demo-horizontal-portfolio-03.jpg);">
-                                </div>
+                    <!-- end features box item -->
+                    <!-- start features box item -->
+                    <div class="col icon-with-text-style-07">
+                        <div
+                            class="h-100 hover-box dark-hover will-change-inherit feature-box pt-55px pb-55px ps-60px pe-60px overflow-hidden border-top border-start border-color-dark-gray text-start xl-p-50px lg-p-30px md-border-start-0 sm-p-50px sm-border-start sm-border-end xs-p-30px">
+                            <div class="feature-box-icon min-h-150px mb-20 sm-min-h-100px">
+                                <img src="{{ asset('Frontend/images/Services/uiux/3.svg') }}"
+                                    alt="User Experience
+                                    Solutions">
                             </div>
+                            <div class="feature-box-title fs-200 fw-600 text-black opacity-1 ls-minus-10px">experience
+                            </div>
+                            <div class="feature-box-content last-paragraph-no-margin">
+                                <span class="d-inline-block text-dark-gray fw-600 mb-5px fs-20">User Experience
+                                    Solutions</span>
+                                <p class="text-light-opacity">We design seamless and accessible experiences that
+                                    enhance user satisfaction and engagement across platforms.</p>
+                            </div>
+                            <div class="feature-box-overlay bg-dark-gray"></div>
                         </div>
                     </div>
-                    <div class="col-auto menu-item pe-50px position-relative">
-                        <div class="fs-14 fw-500 opacity-6 text-dark-gray position-absolute top-15px left-minus-5px">04
-                        </div>
-                        <a href="demo-design-agency-single-project-simple.html"
-                            class="menu-item-text fs-150 md-fs-120 lh-100 text-dark-gray alt-font ls-minus-3px">
-                            <span>squaredo</span>
-                        </a>
-                        <div class="hover-reveal d-none d-xl-block">
-                            <div class="hover-reveal__inner">
-                                <div class="hover-reveal__img"
-                                    style="background-image: url(images/demo-horizontal-portfolio-04.jpg);">
-                                </div>
+                    <!-- end features box item -->
+                    <!-- start features box item -->
+                    <div class="col icon-with-text-style-07">
+                        <div
+                            class="h-100 hover-box dark-hover will-change-inherit feature-box pt-55px pb-55px ps-60px pe-60px overflow-hidden border-top border-bottom border-color-dark-gray text-start xl-p-50px lg-p-30px md-border-start md-border-bottom-0 sm-p-50px sm-border-start sm-border-end xs-p-30px">
+                            <div class="feature-box-icon min-h-150px mb-20 sm-min-h-100px">
+                                <img src="{{ asset('Frontend/images/Services/uiux/4.svg') }}"
+                                    alt="Website Development for
+                                    UX">
                             </div>
+                            <div class="feature-box-title fs-200 fw-600 text-black opacity-1 ls-minus-10px">website
+                            </div>
+                            <div class="feature-box-content last-paragraph-no-margin">
+                                <span class="d-inline-block text-dark-gray fw-600 mb-5px fs-20">Website Development for
+                                    UX</span>
+                                <p class="text-light-opacity">We build websites that not only look great but also
+                                    deliver exceptional user experiences through smooth interactions.</p>
+                            </div>
+                            <div class="feature-box-overlay bg-dark-gray"></div>
                         </div>
                     </div>
-                    <div class="col-auto menu-item pe-50px position-relative">
-                        <div class="fs-14 fw-500 opacity-6 text-dark-gray position-absolute top-15px left-minus-5px">05
-                        </div>
-                        <a href="demo-design-agency-single-project-simple.html"
-                            class="menu-item-text fs-150 md-fs-120 lh-100 text-dark-gray alt-font ls-minus-3px">
-                            <span>curo</span>
-                        </a>
-                        <div class="hover-reveal d-none d-xl-block">
-                            <div class="hover-reveal__inner">
-                                <div class="hover-reveal__img"
-                                    style="background-image: url(images/demo-horizontal-portfolio-05.jpg);">
-                                </div>
+                    <!-- end features box item -->
+                    <!-- start features box item -->
+                    <div class="col icon-with-text-style-07">
+                        <div
+                            class="h-100 hover-box dark-hover will-change-inherit feature-box pt-55px pb-55px ps-60px pe-60px overflow-hidden border-start border-top border-bottom border-color-dark-gray text-start xl-p-50px lg-p-30px md-border-start-0 sm-p-50px sm-border-start sm-border-end xs-p-30px">
+                            <div class="feature-box-icon min-h-150px mb-20 sm-min-h-100px">
+                                <img src="{{ asset('Frontend/images/Services/uiux/5.svg') }}"
+                                    alt="Visual Identity for
+                                    Interfaces">
                             </div>
+                            <div class="feature-box-title fs-200 fw-600 text-black opacity-1 ls-minus-10px">identity
+                            </div>
+                            <div class="feature-box-content last-paragraph-no-margin">
+                                <span class="d-inline-block text-dark-gray fw-600 mb-5px fs-20">Visual Identity for
+                                    Interfaces</span>
+                                <p class="text-light-opacity">We create visually stunning designs that improve
+                                    usability and reflect your brand’s unique identity.</p>
+                            </div>
+                            <div class="feature-box-overlay bg-dark-gray"></div>
                         </div>
                     </div>
-                    <div class="col-auto menu-item pe-50px position-relative">
-                        <div class="fs-14 fw-500 opacity-6 text-dark-gray position-absolute top-15px left-minus-5px">06
-                        </div>
-                        <a href="demo-design-agency-single-project-simple.html"
-                            class="menu-item-text fs-150 md-fs-120 lh-100 text-dark-gray alt-font ls-minus-3px">
-                            <span>okios</span>
-                        </a>
-                        <div class="hover-reveal d-none d-xl-block">
-                            <div class="hover-reveal__inner">
-                                <div class="hover-reveal__img"
-                                    style="background-image: url(images/demo-horizontal-portfolio-06.jpg);">
-                                </div>
+                    <!-- end features box item -->
+                    <!-- start features box item -->
+                    <div class="col icon-with-text-style-07">
+                        <div
+                            class="h-100 hover-box dark-hover will-change-inherit feature-box pt-55px pb-55px ps-60px pe-60px overflow-hidden border-start border-top border-bottom border-color-dark-gray text-start xl-p-50px lg-p-30px sm-p-50px sm-border-start sm-border-end sm-border-top-0 xs-p-30px">
+                            <div class="feature-box-icon min-h-150px mb-20 sm-min-h-100px">
+                                <img src="{{ asset('Frontend/images/Services/uiux/6.svg') }}"
+                                    alt="Content Strategy for
+                                    UX">
                             </div>
+                            <div class="feature-box-title fs-200 fw-600 text-black opacity-1 ls-minus-10px">content
+                            </div>
+                            <div class="feature-box-content last-paragraph-no-margin">
+                                <span class="d-inline-block text-dark-gray fw-600 mb-5px fs-20">Content Strategy for
+                                    UX</span>
+                                <p class="text-light-opacity">We optimise content structures and flows to ensure
+                                    clarity, usability, and enhanced user interactions.</p>
+                            </div>
+                            <div class="feature-box-overlay bg-dark-gray"></div>
                         </div>
                     </div>
-                    <div class="col-auto menu-item pe-50px position-relative">
-                        <div class="fs-14 fw-500 opacity-6 text-dark-gray position-absolute top-15px left-minus-5px">07
-                        </div>
-                        <a href="demo-design-agency-single-project-simple.html"
-                            class="menu-item-text fs-150 md-fs-120 lh-100 text-dark-gray alt-font ls-minus-3px">
-                            <span>supo</span>
-                        </a>
-                        <div class="hover-reveal d-none d-xl-block">
-                            <div class="hover-reveal__inner">
-                                <div class="hover-reveal__img"
-                                    style="background-image: url(images/demo-horizontal-portfolio-10.jpg);">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-auto menu-item pe-50px position-relative">
-                        <div class="fs-14 fw-500 opacity-6 text-dark-gray position-absolute top-15px left-minus-5px">08
-                        </div>
-                        <a href="demo-design-agency-single-project-simple.html"
-                            class="menu-item-text fs-150 md-fs-120 lh-100 text-dark-gray alt-font ls-minus-3px">
-                            <span>overload</span>
-                        </a>
-                        <div class="hover-reveal d-none d-xl-block">
-                            <div class="hover-reveal__inner">
-                                <div class="hover-reveal__img"
-                                    style="background-image: url(images/demo-horizontal-portfolio-11.jpg);">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-auto menu-item pe-50px position-relative">
-                        <div class="fs-14 fw-500 opacity-6 text-dark-gray position-absolute top-15px left-minus-5px">09
-                        </div>
-                        <a href="demo-design-agency-single-project-simple.html"
-                            class="menu-item-text fs-150 md-fs-120 lh-100 text-dark-gray alt-font ls-minus-3px">
-                            <span>Reebok</span>
-                        </a>
-                        <div class="hover-reveal d-none d-xl-block">
-                            <div class="hover-reveal__inner">
-                                <div class="hover-reveal__img"
-                                    style="background-image: url(images/demo-horizontal-portfolio-12.jpg);">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <!-- end features box item -->
                 </div>
             </div>
         </section>
         <!-- end section -->
+
+        <!-- start page title -->
+        <section
+            class="page-title-separate-breadcrumbs big-section position-relative ipad-top-space-margin overflow-hidden">
+            <div id="particles-style-01" class="position-absolute h-100 top-0 left-0 w-100 z-index-minus-1"
+                data-particle="true"
+                data-particle-options='{"particles":{"number":{"value":15,"density":{"enable":true,"value_area":1843.9238699953512}},"color":{"value":"#ffffff"},"shape":{"type":"circle","stroke":{"width":0,"color":"#000000"},"polygon":{"nb_sides":5},"image":{"src":"img/github.svg","width":100,"height":100}},"opacity":{"value":0,"random":false,"anim":{"enable":false,"speed":0.8932849335314796,"opacity_min":0.1,"sync":false}},"size":{"value":4.008530152163807,"random":true,"anim":{"enable":false,"speed":40,"size_min":0.1,"sync":false}},"line_linked":{"enable":false,"distance":2000,"color":"#ffffff","opacity":0.9620472365193137,"width":4.489553770423464},"move":{"enable":true,"speed":6,"direction":"none","random":false,"straight":false,"out_mode":"out","bounce":false,"attract":{"enable":false,"rotateX":600,"rotateY":1200}}},"interactivity":{"detect_on":"window","events":{"onhover":{"enable":true,"mode":"bubble"},"onclick":{"enable":true,"mode":"push"},"resize":true},"modes":{"grab":{"distance":400,"line_linked":{"opacity":1}},"bubble":{"distance":400,"size":40,"duration":2,"opacity":8,"speed":3},"repulse":{"distance":200,"duration":0.4},"push":{"particles_nb":4},"remove":{"particles_nb":2}}},"retina_detect":true}'>
+            </div>
+            <div class="container">
+                <div class="row align-items-end justify-content-center mt-8 md-mt-0">
+                    <div class="col-12 col-xxl-3 col-xl-3 col-lg-4 col-md-12 position-relative page-title-large md-mb-30px"
+                        data-anime='{ "el": "childs", "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay":0, "staggervalue": 300, "easing": "easeOutQuad" }'>
+                        <h1 class="text-dark-gray alt-font fw-400 ls-minus-1px mb-0"><span
+                                class="text-base-color">//</span> Work</h1>
+                    </div>
+                    <div class="col-12 col-xxl-8 col-xl-8 col-lg-8 offset-xl-1 last-paragraph-no-margin">
+                        <h2 class="fs-55 lh-65 text-dark-gray fw-600 ls-minus-2px mb-0"
+                            data-anime='{ "el": "lines", "translateY": [30, 0], "translateX": [0, 0], "opacity": [0,1], "duration": 600, "delay":0, "staggervalue": 250, "easing": "easeOutQuad" }'>
+                            Our skilled developers and designers make sure to deliver tried-tested efficient, scalable,
+                            and robust designs.</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="position-absolute bottom-0px right-minus-100px"
+                data-bottom-top="transform: rotate(0deg) translateY(50px)"
+                data-top-bottom="transform:rotate(10deg) translateY(-50px)">
+                <img class="" alt="" data-cfsrc="images/demo-design-agency-02.png"
+                    style="display:none;visibility:hidden;"><noscript><img src="images/demo-design-agency-02.png"
+                        class="" alt=""></noscript>
+            </div>
+        </section>
+        <!-- end page title -->
+        <!-- start section -->
+        <section class="pt-0 md-pb-0">
+            <div class="container-fluid">
+                <div class="row g-0">
+                    <div class="col-12 filter-content"
+                        data-anime='{ "opacity": [0,1], "duration": 600, "delay":0, "staggervalue": 300, "easing": "easeOutQuad" }'>
+                        <ul
+                            class="portfolio-clean portfolio-wrapper grid-loading grid grid-4col xxl-grid-4col xl-grid-4col lg-grid-4col md-grid-2col sm-grid-2col xs-grid-1col gutter-large">
+                            <li class="grid-sizer"></li>
+                            <!-- start portfolio item -->
+                            <li class="grid-item grid-item-double selected digital transition-inner-all">
+                                <div>
+                                    <div class="portfolio-box">
+                                        <div class="portfolio-image">
+                                            <img alt=""
+                                                data-cfsrc="{{ asset('Frontend/demo') }}/portfolio-241.jpg"
+                                                style="display:none;visibility:hidden;" /><noscript><img
+                                                    src="{{ asset('Frontend/demo') }}/portfolio-241.jpg"
+                                                    alt="" /></noscript>
+                                        </div>
+                                        <div
+                                            class="portfolio-hover d-flex justify-content-end align-items-end flex-column ps-35px pe-35px pt-5px pb-5px lg-ps-15px lg-pe-15px">
+                                            <div
+                                                class="d-flex align-items-center justify-content-start flex-wrap text-left w-100">
+                                                <div class="fs-20 fw-600 text-dark-gray portfolio-title ls-minus-05px">
+                                                    Pixflow</div>
+                                                <i
+                                                    class="line-icon-Arrow-OutRight icon-large align-middle text-dark-gray"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- end portfolio item -->
+                            <!-- start portfolio item -->
+                            <li class="grid-item grid-item-double web digital transition-inner-all">
+                                <div>
+                                    <div class="portfolio-box">
+                                        <div class="portfolio-image">
+                                            <img alt=""
+                                                data-cfsrc="{{ asset('Frontend/demo') }}/portfolio-242.jpg"
+                                                style="display:none;visibility:hidden;" /><noscript><img
+                                                    src="{{ asset('Frontend/demo') }}/portfolio-242.jpg"
+                                                    alt="" /></noscript>
+                                        </div>
+                                        <div
+                                            class="portfolio-hover d-flex justify-content-end align-items-end flex-column ps-35px pe-35px pt-5px pb-5px lg-ps-15px lg-pe-15px">
+                                            <div
+                                                class="d-flex align-items-center justify-content-start flex-wrap text-left w-100">
+                                                <div class="fs-20 fw-600 text-dark-gray portfolio-title ls-minus-05px">
+                                                    Skoda</div>
+                                                <i
+                                                    class="line-icon-Arrow-OutRight icon-large align-middle text-dark-gray"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- end portfolio item -->
+                            <!-- start portfolio item -->
+                            <li class="grid-item selected branding transition-inner-all">
+                                <div>
+                                    <div class="portfolio-box">
+                                        <div class="portfolio-image">
+                                            <img alt=""
+                                                data-cfsrc="{{ asset('Frontend/demo') }}/portfolio-243.jpg"
+                                                style="display:none;visibility:hidden;" /><noscript><img
+                                                    src="{{ asset('Frontend/demo') }}/portfolio-243.jpg"
+                                                    alt="" /></noscript>
+                                        </div>
+                                        <div
+                                            class="portfolio-hover d-flex justify-content-end align-items-end flex-column ps-35px pe-35px pt-5px pb-5px lg-ps-15px lg-pe-15px">
+                                            <div
+                                                class="d-flex align-items-center justify-content-start flex-wrap text-left w-100">
+                                                <div class="fs-20 fw-600 text-dark-gray portfolio-title ls-minus-05px">
+                                                    Tailoring</div>
+                                                <i
+                                                    class="line-icon-Arrow-OutRight icon-large align-middle text-dark-gray"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- end portfolio item -->
+                            <!-- start portfolio item -->
+                            <li class="grid-item selected digital transition-inner-all">
+                                <div>
+                                    <div class="portfolio-box">
+                                        <div class="portfolio-image">
+                                            <img alt=""
+                                                data-cfsrc="{{ asset('Frontend/demo') }}/portfolio-244.jpg"
+                                                style="display:none;visibility:hidden;" /><noscript><img
+                                                    src="{{ asset('Frontend/demo') }}/portfolio-244.jpg"
+                                                    alt="" /></noscript>
+                                        </div>
+                                        <div
+                                            class="portfolio-hover d-flex justify-content-end align-items-end flex-column ps-35px pe-35px pt-5px pb-5px lg-ps-15px lg-pe-15px">
+                                            <div
+                                                class="d-flex align-items-center justify-content-start flex-wrap text-left w-100">
+                                                <div class="fs-20 fw-600 text-dark-gray portfolio-title ls-minus-05px">
+                                                    Daimler</div>
+                                                <i
+                                                    class="line-icon-Arrow-OutRight icon-large align-middle text-dark-gray"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- end portfolio item -->
+                            <!-- start portfolio item -->
+                            <li class="grid-item grid-item-double web branding transition-inner-all">
+                                <div>
+                                    <div class="portfolio-box">
+                                        <div class="portfolio-image">
+                                            <img alt=""
+                                                data-cfsrc="{{ asset('Frontend/demo') }}/portfolio-247.jpg"
+                                                style="display:none;visibility:hidden;" /><noscript><img
+                                                    src="{{ asset('Frontend/demo') }}/portfolio-247.jpg"
+                                                    alt="" /></noscript>
+                                        </div>
+                                        <div
+                                            class="portfolio-hover d-flex justify-content-end align-items-end flex-column ps-35px pe-35px pt-5px pb-5px lg-ps-15px lg-pe-15px">
+                                            <div
+                                                class="d-flex align-items-center justify-content-start flex-wrap text-left w-100">
+                                                <div class="fs-20 fw-600 text-dark-gray portfolio-title ls-minus-05px">
+                                                    Potato</div>
+                                                <i
+                                                    class="line-icon-Arrow-OutRight icon-large align-middle text-dark-gray"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- end portfolio item -->
+                            <!-- start portfolio item -->
+                            <li class="grid-item grid-item-double web branding transition-inner-all">
+                                <div>
+                                    <div class="portfolio-box">
+                                        <div class="portfolio-image">
+                                            <img alt=""
+                                                data-cfsrc="{{ asset('Frontend/demo') }}/portfolio-248.jpg"
+                                                style="display:none;visibility:hidden;" /><noscript><img
+                                                    src="{{ asset('Frontend/demo') }}/portfolio-248.jpg"
+                                                    alt="" /></noscript>
+                                        </div>
+                                        <div
+                                            class="portfolio-hover d-flex justify-content-end align-items-end flex-column ps-35px pe-35px pt-5px pb-5px lg-ps-15px lg-pe-15px">
+                                            <div
+                                                class="d-flex align-items-center justify-content-start flex-wrap text-left w-100">
+                                                <div class="fs-20 fw-600 text-dark-gray portfolio-title ls-minus-05px">
+                                                    Harddot</div>
+                                                <i
+                                                    class="line-icon-Arrow-OutRight icon-large align-middle text-dark-gray"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- end portfolio item -->
+                            <!-- start portfolio item -->
+                            <li class="grid-item grid-item-double web branding transition-inner-all">
+                                <div>
+                                    <div class="portfolio-box">
+                                        <div class="portfolio-image">
+                                            <img alt=""
+                                                data-cfsrc="{{ asset('Frontend/demo') }}/portfolio-246.jpg"
+                                                style="display:none;visibility:hidden;" /><noscript><img
+                                                    src="{{ asset('Frontend/demo') }}/portfolio-246.jpg"
+                                                    alt="" /></noscript>
+                                        </div>
+                                        <div
+                                            class="portfolio-hover d-flex justify-content-end align-items-end flex-column ps-35px pe-35px pt-5px pb-5px lg-ps-15px lg-pe-15px">
+                                            <div
+                                                class="d-flex align-items-center justify-content-start flex-wrap text-left w-100">
+                                                <div class="fs-20 fw-600 text-dark-gray portfolio-title ls-minus-05px">
+                                                    Cortifiel</div>
+                                                <i
+                                                    class="line-icon-Arrow-OutRight icon-large align-middle text-dark-gray"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- end portfolio item -->
+                            <!-- start portfolio item -->
+                            <li class="grid-item grid-item-double web branding transition-inner-all">
+                                <div>
+                                    <div class="portfolio-box">
+                                        <div class="portfolio-image">
+                                            <img alt=""
+                                                data-cfsrc="{{ asset('Frontend/demo') }}/portfolio-245.jpg"
+                                                style="display:none;visibility:hidden;" /><noscript><img
+                                                    src="{{ asset('Frontend/demo') }}/portfolio-245.jpg"
+                                                    alt="" /></noscript>
+                                        </div>
+                                        <div
+                                            class="portfolio-hover d-flex justify-content-end align-items-end flex-column ps-35px pe-35px pt-5px pb-5px lg-ps-15px lg-pe-15px">
+                                            <div
+                                                class="d-flex align-items-center justify-content-start flex-wrap text-left w-100">
+                                                <div class="fs-20 fw-600 text-dark-gray portfolio-title ls-minus-05px">
+                                                    Violator</div>
+                                                <i
+                                                    class="line-icon-Arrow-OutRight icon-large align-middle text-dark-gray"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- end portfolio item -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- start section -->
         <section class="pt-0 overflow-hidden">
             <div class="container">
@@ -511,7 +750,7 @@
         <section class="position-relative overflow-hidden lg-bg-black">
             <div id="particles-style-02" class="position-absolute h-100 top-0 left-0 w-100 z-index-1"
                 data-particle="true"
-                data-particle-options='{"particles":{"number":{"value":10,"density":{"enable":true,"value_area":1843.9238699953512}},"color":{"value":"#ff9857"},"shape":{"type":"circle","stroke":{"width":0,"color":"#000000"},"polygon":{"nb_sides":5},"image":{"src":"img/github.svg","width":100,"height":100}},"opacity":{"value":0,"random":false,"anim":{"enable":false,"speed":0.8932849335314796,"opacity_min":0.1,"sync":false}},"size":{"value":4.008530152163807,"random":true,"anim":{"enable":false,"speed":40,"size_min":0.1,"sync":false}},"line_linked":{"enable":false,"distance":2000,"color":"#ffffff","opacity":0.9620472365193137,"width":4.489553770423464},"move":{"enable":true,"speed":6,"direction":"none","random":false,"straight":false,"out_mode":"out","bounce":false,"attract":{"enable":false,"rotateX":600,"rotateY":1200}}},"interactivity":{"detect_on":"window","events":{"onhover":{"enable":true,"mode":"bubble"},"onclick":{"enable":true,"mode":"push"},"resize":true},"modes":{"grab":{"distance":400,"line_linked":{"opacity":1}},"bubble":{"distance":400,"size":40,"duration":2,"opacity":8,"speed":3},"repulse":{"distance":200,"duration":0.4},"push":{"particles_nb":4},"remove":{"particles_nb":2}}},"retina_detect":true}'>
+                data-particle-options='{"particles":{"number":{"value":10,"density":{"enable":true,"value_area":1843.9238699953512}},"color":{"value":"#4880F3"},"shape":{"type":"circle","stroke":{"width":0,"color":"#000000"},"polygon":{"nb_sides":5},"image":{"src":"img/github.svg","width":100,"height":100}},"opacity":{"value":0,"random":false,"anim":{"enable":false,"speed":0.8932849335314796,"opacity_min":0.1,"sync":false}},"size":{"value":4.008530152163807,"random":true,"anim":{"enable":false,"speed":40,"size_min":0.1,"sync":false}},"line_linked":{"enable":false,"distance":2000,"color":"#ffffff","opacity":0.9620472365193137,"width":4.489553770423464},"move":{"enable":true,"speed":6,"direction":"none","random":false,"straight":false,"out_mode":"out","bounce":false,"attract":{"enable":false,"rotateX":600,"rotateY":1200}}},"interactivity":{"detect_on":"window","events":{"onhover":{"enable":true,"mode":"bubble"},"onclick":{"enable":true,"mode":"push"},"resize":true},"modes":{"grab":{"distance":400,"line_linked":{"opacity":1}},"bubble":{"distance":400,"size":40,"duration":2,"opacity":8,"speed":3},"repulse":{"distance":200,"duration":0.4},"push":{"particles_nb":4},"remove":{"particles_nb":2}}},"retina_detect":true}'>
             </div>
             <div class="bg-maire-yellow h-100 position-absolute top-0 left-0" data-bottom-top="width:10%"
                 data-center-top="width:100%;"></div>
@@ -543,7 +782,9 @@
                         <a href="#" class="btn btn-medium btn-switch-text btn-base-color btn-box-shadow fw-700">
                             <span>
                                 <span class="btn-double-text" data-text="Let's talk now">Let's talk now</span>
-                                <span><i class="fa-regular fa-envelope"></i></span>
+                                <span><img src="{{ asset('Frontend/images/svg/arrow-right.svg') }}"
+                                        alt="Onboarding
+                            conversions growth increased."></span>
                             </span>
                         </a>
                     </div>
@@ -555,8 +796,11 @@
                                     <p class="fs-19 text-white mb-30 w-85 xl-w-100 text-light-opacity">Users on
                                         marketplaces we've created in 2023.</p>
                                     <h3 class="vertical-counter d-inline-flex text-white fw-700 ls-minus-2px mt-25"
-                                        data-text="+" data-to="8500"><sup class="text-base-color top-0"><i
-                                                class="bi bi-arrow-up icon-extra-medium"></i></sup></h3>
+                                        data-text="+" data-to="8500"><sup class="text-base-color top-0">
+                                            <img src="{{ asset('Frontend/images/svg/arrow-up.svg') }}"
+                                                alt="Onboarding
+                                        conversions growth increased."></sup>
+                                    </h3>
                                 </div>
                                 <div class="feature-box-overlay bg-gradient-dark-transparent"></div>
                             </div>
@@ -566,8 +810,11 @@
                                     <p class="fs-19 text-white mb-30 w-85 xl-w-100 text-light-opacity">Successfully
                                         finished projects with creativity.</p>
                                     <h3 class="vertical-counter d-inline-flex text-white fw-700 ls-minus-2px mt-25"
-                                        data-text="+" data-to="660"><sup class="text-base-color top-0"><i
-                                                class="bi bi-arrow-up icon-extra-medium"></i></sup></h3>
+                                        data-text="+" data-to="660"><sup class="text-base-color top-0">
+                                            <img src="{{ asset('Frontend/images/svg/arrow-up.svg') }}"
+                                                alt="Onboarding
+                                        conversions growth increased."></sup>
+                                    </h3>
                                 </div>
                                 <div class="feature-box-overlay bg-gradient-dark-transparent"></div>
                             </div>
@@ -577,8 +824,11 @@
                                     <p class="fs-19 text-white mb-30 w-85 xl-w-100 text-light-opacity">Monthly visitors
                                         on our e-Commerce platform.</p>
                                     <h3 class="vertical-counter d-inline-flex text-white fw-700 ls-minus-2px mt-25"
-                                        data-text="+" data-to="6834"><sup class="text-base-color top-0"><i
-                                                class="bi bi-arrow-up icon-extra-medium"></i></sup></h3>
+                                        data-text="+" data-to="6834"><sup class="text-base-color top-0">
+                                            <img src="{{ asset('Frontend/images/svg/arrow-up.svg') }}"
+                                                alt="Onboarding
+                                        conversions growth increased."></sup>
+                                    </h3>
                                 </div>
                                 <div class="feature-box-overlay bg-gradient-dark-transparent"></div>
                             </div>
@@ -588,8 +838,11 @@
                                     <p class="fs-19 text-white mb-30 w-85 xl-w-100 text-light-opacity">Onboarding
                                         conversions growth increased.</p>
                                     <h3 class="vertical-counter d-inline-flex text-white fw-700 ls-minus-2px mt-25"
-                                        data-text="%" data-to="300"><sup class="text-base-color top-0"><i
-                                                class="bi bi-arrow-up icon-extra-medium"></i></sup></h3>
+                                        data-text="%" data-to="300"><sup class="text-base-color top-0">
+                                            <img src="{{ asset('Frontend/images/svg/arrow-up.svg') }}"
+                                                alt="Onboarding
+                                        conversions growth increased.">
+                                        </sup></h3>
                                 </div>
                                 <div class="feature-box-overlay bg-gradient-dark-transparent"></div>
                             </div>

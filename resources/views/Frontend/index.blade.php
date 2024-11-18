@@ -22,7 +22,7 @@
         </div>
     </section>
     <!-- end banner -->
-    
+
     <!-- start features section -->
     <section class="p-0">
         <div class="container">
@@ -420,11 +420,11 @@
     <!-- end section -->
 
     <!-- start Reviews section -->
-    <section class="pb-4 lg-pb-6 sm-pb-50px position-relative bg-dark-gray section-dark"> 
+    <section class="pb-4 lg-pb-6 sm-pb-50px position-relative bg-dark-gray section-dark">
         <div class="cover-background position-absolute h-100 w-100 left-0px top-0px" style="background-image: url({{asset('Frontend')}}/images/demo-web-agency-bg-01.png)"></div>
         <div class="container position-relative">
             <div class="row justify-content-center align-items-center mb-9 xl-mb-5 sm-mb-30px" data-anime='{ "el": "childs", "translateX": [15, 0], "opacity": [0,1], "duration": 800, "delay": 200, "staggervalue": 300, "easing": "easeOutQuad" }'>
-                <div class="col-lg-5"> 
+                <div class="col-lg-5">
                     <div class="mb-15 d-flex align-items-center md-mb-30px">
                         <div class="fw-700 fs-80 text-white me-10px">4.96</div>
                         <div class="text-center">
@@ -436,8 +436,8 @@
                                 ★
                             </div>
                             <span class="text-white fs-13 fw-500 text-uppercase">Clutch review</span>
-                        </div> 
-                    </div> 
+                        </div>
+                    </div>
                     <div class="d-flex md-mb-25px">
                         <!-- start slider navigation -->
                         <div class="slider-one-slide-prev-1 bg-sherpa-blue text-white swiper-button-prev slider-navigation-style-04 w-60px h-60px"><</div>
@@ -445,29 +445,29 @@
                         <!-- end slider navigation -->
                     </div>
                 </div>
-                <div class="col-xl-6 col-lg-7 overflow-hidden offset-xl-1"> 
+                <div class="col-xl-6 col-lg-7 overflow-hidden offset-xl-1">
                     <div class="swiper magic-cursor light" data-slider-options='{ "slidesPerView": 1, "spaceBetween": 40, "loop": true, "autoplay": { "delay": 3000, "disableOnInteraction": false }, "navigation": { "nextEl": ".slider-one-slide-next-1", "prevEl": ".slider-one-slide-prev-1" }, "keyboard": { "enabled": true, "onlyInViewport": true }, "breakpoints": { "992": { "slidesPerView": 1 }, "768": { "slidesPerView":1 }, "320": { "slidesPerView": 1 } }, "effect": "slide" }'>
-                        <div class="swiper-wrapper"> 
+                        <div class="swiper-wrapper">
                             <!-- start review item -->
                             <div class="swiper-slide">
                                 <h5 class="text-white mb-20px w-90 xl-w-100 lh-42 fw-400">I could not be happier with the website that Synex Digital created for my business. They took my ideas and turned them into a stunning, user-friendly website that exceeded my expectations.</h5>
-                                <span class="text-base-color fw-600 d-block fs-15 text-uppercase lh-22 ls-2px">@Mahadi Tahsan</span> 
+                                <span class="text-base-color fw-600 d-block fs-15 text-uppercase lh-22 ls-2px">@Mahadi Tahsan</span>
                             </div>
                             <!-- end review item -->
                             <!-- start review item -->
                             <div class="swiper-slide">
                                 <h5 class="text-white mb-20px w-90 xl-w-100 lh-42 fw-400">Working with Synex Digital has been a game-changer for our online visibility. Their SEO team’s expertise and strategies have propelled our website to the top of search engine rankings. Glad to hire them on a monthly basis.</h5>
-                                <span class="text-base-color fw-600 d-block fs-15 text-uppercase lh-22 ls-2px">@MD Sydul Amin</span> 
+                                <span class="text-base-color fw-600 d-block fs-15 text-uppercase lh-22 ls-2px">@MD Sydul Amin</span>
                             </div>
                             <!-- end review item -->
                             <!-- start review item -->
                             <div class="swiper-slide">
                                 <h5 class="text-white mb-20px w-90 xl-w-100 lh-42 fw-400">Synex Digital’s management software completely revolutionized our school. For schools that require reliability, streamlined administration, user-friendly design, and responsive assistance redefine efficiency!</h5>
-                                <span class="text-base-color fw-600 d-block fs-15 text-uppercase lh-22 ls-2px">@Shawon Islam</span> 
+                                <span class="text-base-color fw-600 d-block fs-15 text-uppercase lh-22 ls-2px">@Shawon Islam</span>
                             </div>
                             <!-- end review item -->
-                        </div>  
-                    </div> 
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="row">
@@ -494,12 +494,12 @@
                 <!-- start client item -->
                 <div class="col client-box text-center sm-mb-40px">
                     <a href="#"><img src="{{ asset('Frontend') }}/images/logo-yahoo-white.svg" class="h-35px" alt=""></a>
-                </div> 
+                </div>
                 <!-- end client item -->
                 <!-- start client item -->
                 <div class="col client-box text-center">
                     <a href="#"><img src="{{ asset('Frontend') }}/images/logo-amazon-white.svg" class="h-35px" alt=""></a>
-                </div> 
+                </div>
                 <!-- end client item -->
             </div>
         </div>
@@ -530,18 +530,18 @@
                                 <li class="grid-item">
                                     <div class="card bg-transparent border-0 h-100">
                                         <div class="blog-image position-relative overflow-hidden border-radius-4px">
-                                            <a href="demo-web-agency-blog-single-creative.html"><img alt=""
+                                            <a href="{{route('blog.view', $blog['slug'])}}"><img alt=""
                                                     data-cfsrc="{{ $blog['image'] }}"
                                                     style="display:none;visibility:hidden;"><noscript><img
                                                         src="{{ $blog['image'] }}" alt=""></noscript></a>
                                         </div>
                                         <div class="card-body p-0 pt-30px sm-pt-20px lg-pb-20px">
                                             <span class="fs-14 text-uppercase d-block mb-5px fw-500"><a
-                                                    href="demo-web-agency-blog.html"
+                                                    href="{{route('blog.view', $blog['slug'])}}"
                                                     class="text-dark-gray text-dark-gray-hover fw-700 categories-text">{{ $blog['author'] }}</a>👁<a
                                                     href="#"
                                                     class="blog-date text-medium-gray-hover">{{ $blog['view'] }}</a></span>
-                                            <a href="demo-web-agency-blog-single-creative.html"
+                                            <a href="{{route('blog.view', $blog['slug'])}}"
                                                 class="card-title fw-600 fs-17 lh-28 text-dark-gray text-dark-gray-hover d-inline-block w-95 sm-w-100">{{ $blog['title'] }}</a>
                                         </div>
                                     </div>

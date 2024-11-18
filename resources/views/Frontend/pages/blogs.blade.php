@@ -1,125 +1,136 @@
 @extends('Frontend.layout.app')
+
 @section('content')
 
-    @include('Frontend.layout.calendly')
-
-    <!-- Featured Blogs Section -->
-    <div class="container my-5" data-aos="fade-up">
-        <h2 class="text-center mb-4">Our Featured <span class="text-primary">Blogs</span></h2>
-        @if ($bestBlog)
-            @if ($bestBlog['bestOne'])
-                <div class="row mb-4 align-items-center">
-                    <div class="col-lg-6 p-4">
-                        <a href="blog-details.html" class="text-decoration-none">
-                            <div class="card border-0 bg-light">
-                                <img src="{{ $bestBlog['bestOne']['image'] }}" class="card-img-top rounded"
-                                    alt="Featured Image">
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-6 p-md-4 px-4 px-md-0">
-                        <a href="{{ route('blog.view', $bestBlog['bestOne']['slug']) }}" class="text-decoration-none">
-                            <h3 class="card-title text-dark py-md-4 pb-0 pb-md-2" style="font-size: 22px !important">
-                                {{ $bestBlog['bestOne']['title'] }}</h3>
-                        </a>
-                        <p class="card-text mt-3">{{ $bestBlog['bestOne']['description'] }}</p>
-                        <div class="d-flex justify-content-between py-2">
-                            <div class="card-pan">{{ $bestBlog['bestOne']['author'] }} • {{ $bestBlog['bestOne']['date'] }}
-                            </div>
-                            <small class="text-muted">
-                                <svg fill="#252222c2" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
-                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="18px" height="18px"
-                                    viewBox="0 0 442.04 442.04" xml:space="preserve">
-                                    <g>
-                                        <g>
-                                            <path
-                                                d="M221.02,341.304c-49.708,0-103.206-19.44-154.71-56.22C27.808,257.59,4.044,230.351,3.051,229.203
-                                                                                                                                                                                           c-4.068-4.697-4.068-11.669,0-16.367c0.993-1.146,24.756-28.387,63.259-55.881c51.505-36.777,105.003-56.219,154.71-56.219
-                                                                                                                                                                                           c49.708,0,103.207,19.441,154.71,56.219c38.502,27.494,62.266,54.734,63.259,55.881c4.068,4.697,4.068,11.669,0,16.367
-                                                                                                                                                                                           c-0.993,1.146-24.756,28.387-63.259,55.881C324.227,321.863,270.729,341.304,221.02,341.304z M29.638,221.021
-                                                                                                                                                                                           c9.61,9.799,27.747,27.03,51.694,44.071c32.83,23.361,83.714,51.212,139.688,51.212s106.859-27.851,139.688-51.212
-                                                                                                                                                                                           c23.944-17.038,42.082-34.271,51.694-44.071c-9.609-9.799-27.747-27.03-51.694-44.071
-                                                                                                                                                                                           c-32.829-23.362-83.714-51.212-139.688-51.212s-106.858,27.85-139.688,51.212C57.388,193.988,39.25,211.219,29.638,221.021z" />
-                                        </g>
-                                        <g>
-                                            <path
-                                                d="M221.02,298.521c-42.734,0-77.5-34.767-77.5-77.5c0-42.733,34.766-77.5,77.5-77.5c18.794,0,36.924,6.814,51.048,19.188
-                                                                                                                                                                                           c5.193,4.549,5.715,12.446,1.166,17.639c-4.549,5.193-12.447,5.714-17.639,1.166c-9.564-8.379-21.844-12.993-34.576-12.993
-                                                                                                                                                                                           c-28.949,0-52.5,23.552-52.5,52.5s23.551,52.5,52.5,52.5c28.95,0,52.5-23.552,52.5-52.5c0-6.903,5.597-12.5,12.5-12.5
-                                                                                                                                                                                           s12.5,5.597,12.5,12.5C298.521,263.754,263.754,298.521,221.02,298.521z" />
-                                        </g>
-                                        <g>
-                                            <path
-                                                d="M221.02,246.021c-13.785,0-25-11.215-25-25s11.215-25,25-25c13.786,0,25,11.215,25,25S234.806,246.021,221.02,246.021z" />
-                                        </g>
-                                    </g>
-                                </svg>
-                                {{ $bestBlog['bestOne']['view'] }} views</small>
-                        </div>
+        <!-- start page title -->
+        <section class="p-0 top-space-margin page-title-center-alignment">
+            <div class="container">
+                <div class="row align-items-center justify-content-center extra-very-small-screen">
+                    <div class="col-xl-8 col-lg-10 text-center position-relative page-title-extra-large" data-anime='{ "el": "childs", "translateY": [-15, 0], "opacity": [0,1], "duration": 300, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
+                        <h1 class="fw-700 text-dark-gray mb-20px ls-minus-2px">Latest Blog</h1>
+                        <h2 class="fw-400 ls-0px mb-0">News from the digital web agency</h2>
                     </div>
                 </div>
-            @endif
-
-            <div class="row">
-                @if ($bestBlog['bestThree'])
-                    @foreach ($bestBlog['bestThree'] as $blog)
-                        <div class="col-md-4 mb-4">
-                            <x-blog title="{{ $blog['title'] }}" slug="{{ $blog['slug'] }}"
-                                category="{{ $blog['category'] }}" date="{{ $blog['date'] }}" views="{{ $blog['view'] }}"
-                                image="{{ $blog['image'] }}" />
-                        </div>
-                    @endforeach
-                @endif
             </div>
-        @endif
-    </div>
+        </section>
+        <!-- end page title -->
 
-    <!-- Latest Blogs Section -->
-    <div class="container my-5" id="content" data-aos="fade-up">
-        <h2 class="text-center mb-4">Latest <span class="text-primary">Blogs</span></h2>
-        <div class="row">
-            <!-- Repeated Blog Cards -->
-            @foreach ($latestBlog as $blog)
-                <div class="col-md-4 mb-4" data-aos="fade-up">
-                    <x-blog title="{{ $blog['title'] }}" slug="{{ $blog['slug'] }}" category="{{ $blog['category'] }}"
-                        date="{{ $blog['date'] }}" views="{{ $blog['view'] }}" image="{{ $blog['image'] }}" />
-                </div>
-            @endforeach
-        </div>
-        <div class="text-center mt-4" data-aos="fade-up">
-            @if (!empty($pagination) && $pagination['total_pages'] > 1)
-                <nav class="py-3">
-                    <ul class="pagination">
-                        <li class="page-item">
-                            <a class="page-link {{ $pagination['current_page'] == 1 ? 'disabled' : '' }}"
-                                href="{{ url()->current() }}?page={{ $pagination['current_page'] - 1 }}#content"
-                                rel="prev">&laquo;
-                                Previous</a>
-                        </li>
-                        @for ($page = 1; $page <= $pagination['total_pages']; $page++)
-                            @if ($page == $pagination['current_page'])
-                                <li class="page-item active"><span class="page-link">{{ $page }}</span></li>
-                            @else
-                                <li class="page-item"><a class="page-link"
-                                        href="{{ url()->current() }}?page={{ $page }}#content">{{ $page }}</a>
-                                </li>
+        <!-- start latest section -->
+        <section class="p-0">
+            <div class="container">
+                <div class="row mt-7">
+                    <div class="col-lg-5 md-mb-35px">
+                        <h2 class="text-dark-gray fw-600 mb-10 ls-minus-2px md-mb-0">Most popular agency articles.</h2>
+                        <div class="outside-box-left-25 d-none d-lg-inline-block">
+                            <div class="fs-350 xl-fs-300 lg-fs-250 text-base-color fw-600 ls-minus-20px word-break-normal" data-bottom-top="transform:scale(1, 1) translate3d(0px, 0px, 0px);" data-top-bottom="transform:scale(1, 1) translate3d(-50px, 0px, 0px);" >article</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 offset-lg-1">
+                        <ul class="popular-post-sidebar position-relative" data-anime='{ "el": "childs", "translateY": [15, 0], "opacity": [0,1], "duration": 800, "delay": 200, "staggervalue": 300, "easing": "easeOutQuad" }'>
+                            @if ($bestBlog['bestThree'])
+                                @foreach ($bestBlog['bestThree'] as $blog)
+                                    <li class="d-sm-flex align-items-center mb-35px">
+                                        <figure>
+                                            <a href="{{route('blog.view', $blog['slug'])}}"><img class="border-radius-4px" alt="" data-cfsrc="{{$blog['image']}}" style="display:none;visibility:hidden;"><noscript><img src="{{$blog['image']}}" class="border-radius-4px" alt=""></noscript></a>
+                                        </figure>
+                                        <div class="col media-body">
+                                            <a href="{{route('blog.view', $blog['slug'])}}" class="fw-600 fs-22 lh-30 ls-minus-05px text-dark-gray text-dark-gray-hover d-inline-block mb-15px w-85 xl-w-100">{{$blog['title']}}</a>
+                                            <div>
+                                                <a href="{{route('blog.view', $blog['slug'])}}" class="d-inline-block fs-14 fw-700 text-uppercase text-dark-gray text-dark-gray-hover">{{$blog['category']}}</a>
+                                                <span class="d-inline-block fs-10 alt-font align-middle opacity-7 ms-5px me-5px">•</span>
+                                                <a href="#" class="d-inline-block fs-14 text-uppercase fw-500 text-medium-gray-hover">{{$blog['date']}}</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                @endforeach
                             @endif
-                        @endfor
-                        <li class="page-item">
-                            <a class="page-link {{ $pagination['current_page'] == $pagination['total_pages'] ? 'disabled' : '' }}"
-                                href="{{ url()->current() }}?page={{ $pagination['current_page'] + 1 }}#content"
-                                rel="next">Next
-                                &raquo;</a>
-                        </li>
-                    </ul>
-                </nav>
-            @endif
-        </div>
-    </div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end section -->
 
-    <!-- Collaborate -->
-    <x-collaborate />
+        <!-- start category wise blogs section -->
+        <section class="half-section pb-0">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 filter-content p-md-0">
+                        <ul class="blog-classic portfolio-wrapper grid-loading grid grid-4col xxl-grid-4col xl-grid-4col lg-grid-3col md-grid-2col sm-grid-1col xs-grid-1col gutter-extra-large">
+                            <li class="grid-sizer"></li>
+                            <!-- start blog item -->
+                            @foreach ($latestBlog as $blog)
+                                <li class="grid-item development other">
+                                    <div class="card bg-transparent border-0 h-100">
+                                        <div class="blog-image position-relative overflow-hidden border-radius-4px">
+                                            <a href="{{route('blog.view', $blog['slug'])}}"><img alt="" data-cfsrc="{{$blog['image']}}" style="display:none;visibility:hidden;"><noscript><img src="{{$blog['image']}}" alt=""></noscript></a>
+                                        </div>
+                                        <div class="card-body px-0 pt-30px pb-30px xs-pb-15px">
+                                            <span class="fs-14 text-uppercase d-block mb-5px fw-500"><a href="demo-web-agency-blog.html" class="text-dark-gray text-dark-gray-hover fw-700 categories-text">{{$blog['category']}}</a><a href="#" class="blog-date text-medium-gray-hover">{{$blog['date']}}</a></span>
+                                            <a href="{{route('blog.view', $blog['slug'])}}" class="card-title fw-600 fs-17 lh-28 text-dark-gray text-dark-gray-hover d-inline-block w-95 sm-w-100">{{$blog['title']}}</a>
+                                        </div>
+                                    </div>
+                                </li>
+                            @endforeach
+                            <!-- end blog item -->
+                        </ul>
+                    </div>
+                    <div class="text-center mt-4" data-aos="fade-up">
+                        @if (!empty($pagination) && $pagination['total_pages'] > 1)
+                            <nav class="py-3">
+                                <ul class="pagination">
+                                    <li class="page-item">
+                                        <a class="page-link {{ $pagination['current_page'] == 1 ? 'disabled' : '' }}"
+                                            href="{{ url()->current() }}?page={{ $pagination['current_page'] - 1 }}#content"
+                                            rel="prev">&laquo;
+                                            Previous</a>
+                                    </li>
+                                    @for ($page = 1; $page <= $pagination['total_pages']; $page++)
+                                        @if ($page == $pagination['current_page'])
+                                            <li class="page-item active"><span class="page-link">{{ $page }}</span></li>
+                                        @else
+                                            <li class="page-item"><a class="page-link"
+                                                    href="{{ url()->current() }}?page={{ $page }}#content">{{ $page }}</a>
+                                            </li>
+                                        @endif
+                                    @endfor
+                                    <li class="page-item">
+                                        <a class="page-link {{ $pagination['current_page'] == $pagination['total_pages'] ? 'disabled' : '' }}"
+                                            href="{{ url()->current() }}?page={{ $pagination['current_page'] + 1 }}#content"
+                                            rel="next">Next
+                                            &raquo;</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        @endif
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end section -->
 
-    <!-- News Letter-->
-    <x-newsletter />
+        <!-- start section -->
+        <section class="pb-4 sm-pt-30px sm-pb-40px overflow-hidden position-relative">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-5 text-center text-sm-start">
+                        <div class="outside-box-left-25 xl-outside-box-left-10 sm-outside-box-left-0">
+                            <div class="fs-350 xl-fs-250 lg-fs-200 md-fs-170 sm-fs-100 text-dark-gray fw-600 ls-minus-20px word-break-normal">work</div>
+                        </div>
+                    </div>
+                    <div class="col-sm-7 text-center text-sm-end">
+                        <div class="outside-box-right-5 sm-outside-box-right-0">
+                            <div class="fs-350 xl-fs-250 lg-fs-200 md-fs-170 sm-fs-100 text-base-color fw-600 ls-minus-20px position-relative d-inline-block word-break-normal">together
+                                <div class="position-absolute left-minus-140px top-minus-140px z-index-9 xl-left-minus-110px top-minus-140px xl-top-minus-100px md-top-minus-90px z-index-9 xl-w-230px md-w-200px d-none d-md-block" data-anime='{ "translateY": [-15, 0], "scale": [0.5, 1], "opacity": [0,1], "duration": 800, "delay": 200, "staggervalue": 300, "easing": "easeOutQuad" }'>
+                                    <img class="animation-rotation" alt="" data-cfsrc="images/demo-web-agency-05.png" style="display:none;visibility:hidden;"><noscript><img src="images/demo-web-agency-05.png" class="animation-rotation" alt=""></noscript>
+                                    <div class="absolute-middle-center w-100 z-index-minus-1"><img alt="" data-cfsrc="images/demo-web-agency-04.png" style="display:none;visibility:hidden;"><noscript><img src="images/demo-web-agency-04.png" alt=""></noscript></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end section -->
+
 @endsection

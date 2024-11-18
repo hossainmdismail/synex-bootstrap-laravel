@@ -1,673 +1,446 @@
 @extends('Frontend.layout.app')
-@section('style')
-    <style>
-        main {
-            overflow: hidden;
-        }
-    </style>
-@endsection
+
 @section('content')
-    @include('Frontend.layout.calendly')
 
-    <section class="container-fluid service-hero" style="background-image: url({{ asset('Frontend') }}/images/hero.webp);">
-        <div class="shadow">
-            <div class="container py-5 h-100 d-flex flex-column justify-content-center">
-                <div class="row py-4 py-md-5">
-                    <div class="col-md-6 py-md-5 m-auto text-center" data-aos="fade-up">
-                        <h1 class="section-title text-white pb-2"><span class="font-main">Services</span> We Provide
-                        </h1>
-                        <h2 class="caption">Unlock Your Business Potential with Our Specialized Services
-                            and
-                            Strategic Expertise</h2>
-                    </div>
-                </div>
-                <div class="row" data-aos="fade-up">
-                    <div class="col-md-6 m-auto text-center">
-                        <p class="scroll-text">Scroll Down</p>
-                        <a href="#content"><svg class="scrolldown" width="23" height="22" viewBox="0 0 23 22"
-                                fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M11.5 7V15M11.5 15L15 11.5M11.5 15L8 11.5" stroke="white" stroke-width="1.5"
-                                    stroke-linecap="round" stroke-linejoin="round" />
-                                <path
-                                    d="M1.5 11C1.5 16.5228 5.97715 21 11.5 21C17.0228 21 21.5 16.5228 21.5 11C21.5 5.47715 17.0228 1 11.5 1C5.97715 1 1.5 5.47715 1.5 11Z"
-                                    stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
-                        </a>
+        <!-- start page title -->
+        <section class="p-0 top-space-margin page-title-center-alignment">
+            <div class="container">
+                <div class="row align-items-center justify-content-center extra-very-small-screen">
+                    <div class="col-xl-8 col-lg-10 text-center position-relative page-title-extra-large" data-anime='{ "el": "childs", "translateY": [-15, 0], "opacity": [0,1], "duration": 300, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
+                        <h1 class="fw-700 text-dark-gray mb-20px ls-minus-2px">Service</h1>
+                        <h2 class="fw-400 ls-0px mb-0">Perfect solutions for your business</h2>
                     </div>
                 </div>
             </div>
+        </section>
+        <!-- end page title -->
 
-        </div>
-    </section>
-
-    <!-- Section 1 -->
-    <section class="container-fluid bg-testimonial" id="content">
-        <div class="container py-4 p-md-5">
-            <div class=" row py-md-5 mx-0">
-                <div class="col-md-6 d-flex z-3 justify-content-center justify-content-md-end order-2 order-md-1"
-                    data-aos="fade-right">
-                    <div class="card rounded-sm p-3 service-card">
-                        <div class="card-body">
-                            <h3>Management Software</h3>
-                            <p class="text-black">Streamline Your Operations with Cutting-Edge Solutions</p>
-                            <ul class="service-list">
-                                <li>
-                                    <span>
-                                        <svg width="18" height="18" viewBox="0 0 21 21" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M10.7181 0.400757C5.10389 0.400757 0.536377 4.88676 0.536377 10.4008C0.536377 15.9148 5.10389 20.4008 10.7181 20.4008C16.3323 20.4008 20.8998 15.9148 20.8998 10.4008C20.8998 4.88676 16.3323 0.400757 10.7181 0.400757ZM8.68276 14.8138L5.63554 11.8274C5.23269 11.4326 5.23188 10.7841 5.63375 10.3883C6.02575 10.0022 6.65485 10.0015 7.04774 10.3867L8.68072 11.9878L13.364 7.38803C13.7565 7.00259 14.3854 7.00259 14.7778 7.38803C15.1804 7.78341 15.1804 8.43211 14.7778 8.82749L8.68276 14.8138Z"
-                                                fill="#3B82F6" />
-                                        </svg>
-
-                                    </span>
-                                    Centralized Dashboard
-                                </li>
-                                <li>
-                                    <span>
-                                        <svg width="18" height="18" viewBox="0 0 21 21" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M10.7181 0.400757C5.10389 0.400757 0.536377 4.88676 0.536377 10.4008C0.536377 15.9148 5.10389 20.4008 10.7181 20.4008C16.3323 20.4008 20.8998 15.9148 20.8998 10.4008C20.8998 4.88676 16.3323 0.400757 10.7181 0.400757ZM8.68276 14.8138L5.63554 11.8274C5.23269 11.4326 5.23188 10.7841 5.63375 10.3883C6.02575 10.0022 6.65485 10.0015 7.04774 10.3867L8.68072 11.9878L13.364 7.38803C13.7565 7.00259 14.3854 7.00259 14.7778 7.38803C15.1804 7.78341 15.1804 8.43211 14.7778 8.82749L8.68276 14.8138Z"
-                                                fill="#3B82F6" />
-                                        </svg>
-
-                                    </span>
-                                    Real-Time Analytics
-                                </li>
-                                <li>
-                                    <span>
-                                        <svg width="18" height="18" viewBox="0 0 21 21" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M10.7181 0.400757C5.10389 0.400757 0.536377 4.88676 0.536377 10.4008C0.536377 15.9148 5.10389 20.4008 10.7181 20.4008C16.3323 20.4008 20.8998 15.9148 20.8998 10.4008C20.8998 4.88676 16.3323 0.400757 10.7181 0.400757ZM8.68276 14.8138L5.63554 11.8274C5.23269 11.4326 5.23188 10.7841 5.63375 10.3883C6.02575 10.0022 6.65485 10.0015 7.04774 10.3867L8.68072 11.9878L13.364 7.38803C13.7565 7.00259 14.3854 7.00259 14.7778 7.38803C15.1804 7.78341 15.1804 8.43211 14.7778 8.82749L8.68276 14.8138Z"
-                                                fill="#3B82F6" />
-                                        </svg>
-
-                                    </span>
-                                    Automated Workflows
-                                </li>
-                                <li>
-                                    <span>
-                                        <svg width="18" height="18" viewBox="0 0 21 21" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M10.7181 0.400757C5.10389 0.400757 0.536377 4.88676 0.536377 10.4008C0.536377 15.9148 5.10389 20.4008 10.7181 20.4008C16.3323 20.4008 20.8998 15.9148 20.8998 10.4008C20.8998 4.88676 16.3323 0.400757 10.7181 0.400757ZM8.68276 14.8138L5.63554 11.8274C5.23269 11.4326 5.23188 10.7841 5.63375 10.3883C6.02575 10.0022 6.65485 10.0015 7.04774 10.3867L8.68072 11.9878L13.364 7.38803C13.7565 7.00259 14.3854 7.00259 14.7778 7.38803C15.1804 7.78341 15.1804 8.43211 14.7778 8.82749L8.68276 14.8138Z"
-                                                fill="#3B82F6" />
-                                        </svg>
-
-                                    </span>
-                                    Collaborative Tools
-                                </li>
-                            </ul>
-                            <a href="{{ route('service.software') }}" class="btn btn-primary btn-sm">Learn more</a>
+        <!-- start title feature section -->
+        <section class="p-0">
+            <div class="container">
+                <div class="row mb-6 mt-7 md-mb-50px">
+                    <div class="col-xl-5 col-lg-6" data-anime='{ "el": "childs", "translateY": [0, 0], "opacity": [0,1], "duration": 800, "delay": 200, "staggervalue": 300, "easing": "easeOutQuad" }'>
+                        <h3 class="text-dark-gray fw-600 ls-minus-2px w-95 xl-w-100">Services We Provide</h3>
+                        <p class="w-95 md-w-100">Unlock Your Business Potential with Our Specialized Services and Strategic Expertise.</p>
+                    </div>
+                    <div class="col-lg-6 offset-xl-1 progress-bar-style-01 mt-50px" data-anime='{ "el": "childs", "translateY": [15, 0], "translateX": [15, 0], "opacity": [0,1], "duration": 800, "delay": 200, "staggervalue": 300, "easing": "easeOutQuad" }'>
+                        <!-- start progress bar item -->
+                        <div class="progress mb-12 sm-mb-60px bg-extra-medium-gray">
+                            <div class="progress-bar-title d-inline-block text-dark-gray fs-17 fw-500">Management & SaaS Solutions</div>
+                            <div class="progress-bar bg-dark-gray" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" aria-label="app-development">
+                                <span class="progress-bar-percent text-center bg-dark-gray fs-11 fw-600 lh-12 text-white">85%</span>
+                            </div>
+                        </div>
+                        <!-- end progress bar item -->
+                        <!-- start progress bar item -->
+                        <div class="progress mb-12 sm-mb-60px bg-extra-medium-gray">
+                            <div class="progress-bar-title d-inline-block text-dark-gray fs-17 fw-500">Branding & Marketing</div>
+                            <div class="progress-bar bg-dark-gray" role="progressbar" aria-valuenow="87" aria-valuemin="0" aria-valuemax="100" aria-label="branding">
+                                <span class="progress-bar-percent text-center bg-dark-gray fs-11 fw-600 lh-12 text-white">87%</span>
+                            </div>
+                        </div>
+                        <!-- end progress bar item -->
+                        <!-- start progress bar item -->
+                        <div class="progress mb-12 sm-mb-60px bg-extra-medium-gray">
+                            <div class="progress-bar-title d-inline-block text-dark-gray fs-17 fw-500">AWS Cloud Solutions</div>
+                            <div class="progress-bar bg-dark-gray" role="progressbar" aria-valuenow="93" aria-valuemin="0" aria-valuemax="100" aria-label="web-development">
+                                <span class="progress-bar-percent text-center bg-dark-gray fs-11 fw-600 lh-12 text-white">93%</span>
+                            </div>
+                        </div>
+                        <!-- end progress bar item -->
+                        <!-- start progress bar item -->
+                        <div class="progress sm-mb-0 bg-extra-medium-gray">
+                            <div class="progress-bar-title d-inline-block text-dark-gray fs-17 fw-500">Web & App Development</div>
+                            <div class="progress-bar bg-dark-gray" role="progressbar" aria-valuenow="96" aria-valuemin="0" aria-valuemax="100" aria-label="web-development">
+                                <span class="progress-bar-percent text-center bg-dark-gray fs-11 fw-600 lh-12 text-white">96%</span>
+                            </div>
+                        </div>
+                        <!-- end progress bar item -->
+                    </div>
+                </div>
+                <div class="row row-cols-1 row-cols-lg-4 row-cols-sm-2 justify-content-center text-center" data-anime='{ "el": "childs", "translateY": [15, 0], "opacity": [0,1], "duration": 800, "delay": 200, "staggervalue": 300, "easing": "easeOutQuad" }'>
+                    <!-- start features box item -->
+                    <div class="col icon-with-text-style-11 border-0 overflow-visible">
+                        <div class="text-box-wrapper align-items-center d-flex position-relative overflow-hidden border-radius-6px">
+                            <div class="text-center w-100">
+                                <div class="text-box last-paragraph-no-margin p-20">
+                                    <img class="w-110px mb-20px d-block mx-auto" alt="" data-cfsrc="{{asset('Frontend/images')}}/demo-web-agency-expertise-01.png" style="display:none;visibility:hidden;" /><noscript><img src="{{asset('Frontend/images')}}/demo-web-agency-expertise-01.png" class="w-110px mb-20px d-block mx-auto" alt=""/></noscript>
+                                    <span class="alt-font text-dark-gray fw-600 fs-20">Discussion</span>
+                                </div>
+                                <div class="text-box-hover bg-dark-gray h-100 d-flex align-items-center justify-content-center flex-column">
+                                    <h1 class="text-outline text-outline-color-base-color mb-10px ls-minus-2px fw-600 position-absolute bottom-minus-40px">01</h1>
+                                    <p class="d-inline-block w-70 mb-10px text-white opacity-5 lg-w-90">Analysis, Set Objectives and Risk Management.</p>
+                                    <span class="alt-font fw-500 fs-20 text-white mb-20px">Discussion</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-6 order-1 order-md-2" data-aos="fade-left">
-                    <div class="w-100 position-relative serviceimg-box">
-                        <img class="service-image" src="{{ asset('Frontend') }}/images/service2.webp" width="90%"
-                            alt="" srcset="">
-                        <span class="ser-box sr">
-                            <p class="mb-0" style="font-size: 12px">Special Offer</p>
-                            <strong>20% <span style="font-size: 12px">Off</span></strong>
-                        </span>
+                    <!-- end features box item -->
+                    <!-- start features box item -->
+                    <div class="col icon-with-text-style-11 border-0 overflow-visible">
+                        <div class="text-box-wrapper align-items-center d-flex position-relative overflow-hidden border-radius-6px">
+                            <div class="text-center w-100">
+                                <div class="text-box last-paragraph-no-margin p-20">
+                                    <img class="w-110px mb-20px d-block mx-auto" alt="" data-cfsrc="{{asset('Frontend/images')}}/demo-web-agency-expertise-02.png" style="display:none;visibility:hidden;" /><noscript><img src="{{asset('Frontend/images')}}/demo-web-agency-expertise-02.png" class="w-110px mb-20px d-block mx-auto" alt=""/></noscript>
+                                    <span class="alt-font text-dark-gray fw-600 fs-20">Strategy</span>
+                                </div>
+                                <div class="text-box-hover bg-dark-gray h-100 d-flex align-items-center justify-content-center flex-column">
+                                    <h1 class="text-outline text-outline-color-base-color mb-10px ls-minus-2px fw-600 position-absolute bottom-minus-40px">02</h1>
+                                    <p class="d-inline-block w-70 mb-10px text-white opacity-5 lg-w-90">Design Planning, Feature Mapping and Timeline Creation.</p>
+                                    <span class="alt-font fw-500 fs-20 text-white mb-20px">Strategy</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+                    <!-- end features box item -->
+                    <!-- start features box item -->
+                    <div class="col icon-with-text-style-11 border-0 overflow-visible">
+                        <div class="text-box-wrapper align-items-center d-flex position-relative overflow-hidden border-radius-6px">
+                            <div class="text-center w-100">
+                                <div class="text-box last-paragraph-no-margin p-20">
+                                    <img class="w-110px mb-20px d-block mx-auto" alt="" data-cfsrc="{{asset('Frontend/images')}}/demo-web-agency-expertise-03.png" style="display:none;visibility:hidden;" /><noscript><img src="{{asset('Frontend/images')}}/demo-web-agency-expertise-03.png" class="w-110px mb-20px d-block mx-auto" alt=""/></noscript>
+                                    <span class="alt-font text-dark-gray fw-600 fs-20">Execute</span>
+                                </div>
+                                <div class="text-box-hover bg-dark-gray h-100 d-flex align-items-center justify-content-center flex-column">
+                                    <h1 class="text-outline text-outline-color-base-color mb-10px ls-minus-2px fw-600 position-absolute bottom-minus-40px">03</h1>
+                                    <p class="d-inline-block w-70 mb-10px text-white opacity-5 lg-w-90">Development, Testing and Iteration.</p>
+                                    <span class="alt-font fw-500 fs-20 text-white mb-20px">Execute</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end features box item -->
+                    <!-- start features box item -->
+                    <div class="col icon-with-text-style-11 border-0 overflow-visible">
+                        <div class="text-box-wrapper align-items-center d-flex position-relative overflow-hidden border-radius-6px">
+                            <div class="text-center w-100">
+                                <div class="text-box last-paragraph-no-margin p-20">
+                                    <img class="w-110px mb-20px d-block mx-auto" alt="" data-cfsrc="{{asset('Frontend/images')}}/demo-web-agency-expertise-04.png" style="display:none;visibility:hidden;" /><noscript><img src="{{asset('Frontend/images')}}/demo-web-agency-expertise-04.png" class="w-110px mb-20px d-block mx-auto" alt=""/></noscript>
+                                    <span class="alt-font text-dark-gray fw-600 fs-20">Launch</span>
+                                </div>
+                                <div class="text-box-hover bg-dark-gray h-100 d-flex align-items-center justify-content-center flex-column">
+                                    <h1 class="text-outline text-outline-color-base-color mb-10px ls-minus-2px fw-600 position-absolute bottom-minus-40px">04</h1>
+                                    <p class="d-inline-block w-70 mb-10px text-white opacity-5 lg-w-90">Implementation, User Training and Ongoing Support.</p>
+                                    <span class="alt-font fw-500 fs-20 text-white mb-20px">Launch</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end features box item -->
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+        <!-- end section -->
 
-    <!-- Section 2 -->
-    <section class="container-fluid">
-        <div class="container py-4 p-md-5">
-            <div class=" row py-md-5 mx-0">
-                <div class="col-md-6" data-aos="fade-right">
-                    <div class="w-100 position-relative serviceimg-box">
-                        <span class="ser-box sl">
-                            <p class="mb-0" style="font-size: 12px">Special Offer</p>
-                            <strong>20% <span style="font-size: 12px">Off</span></strong>
-                        </span>
-                        <img class="service-image-right" src="{{ asset('Frontend') }}/images/service3.webp" width="90%"
-                            alt="" srcset="">
+        <!-- start section -->
+        <section class="overflow-hidden position-relative pt-2 pb-0 xl-pt-5 lg-pt-8 md-pt-11 d-none d-md-block">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xxl-6 col-lg-5 col-md-6">
+                        <div class="fs-300 xl-fs-250 lg-fs-200 text-dark-gray fw-600 ls-minus-20px word-break-normal position-relative">best
+                            <div class="position-absolute left-minus-100px top-minus-80px xl-w-230px md-w-200px xl-left-minus-50px xl-top-minus-100px d-none d-md-block z-index-9">
+                                <img class="animation-rotation" alt="" data-cfsrc="images/demo-web-agency-05.png" style="display:none;visibility:hidden;"><noscript><img src="images/demo-web-agency-05.png" class="animation-rotation" alt=""></noscript>
+                                <div class="absolute-middle-center w-100 z-index-minus-1"><img alt="" data-cfsrc="images/demo-web-agency-04.png" style="display:none;visibility:hidden;"><noscript><img src="images/demo-web-agency-04.png" alt=""></noscript></div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-
-                <div class="col-md-6 d-flex z-3 justify-content-center justify-content-md-start" data-aos="fade-left">
-                    <div class="card rounded-sm p-3 service-card">
-                        <div class="card-body">
-                            <h3>Web Development</h3>
-                            <p class="text-black">Expert Solutions for Your Online Presence</p>
-                            <ul class="service-list">
-                                <li>
-                                    <span>
-                                        <svg width="18" height="18" viewBox="0 0 21 21" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M10.7181 0.400757C5.10389 0.400757 0.536377 4.88676 0.536377 10.4008C0.536377 15.9148 5.10389 20.4008 10.7181 20.4008C16.3323 20.4008 20.8998 15.9148 20.8998 10.4008C20.8998 4.88676 16.3323 0.400757 10.7181 0.400757ZM8.68276 14.8138L5.63554 11.8274C5.23269 11.4326 5.23188 10.7841 5.63375 10.3883C6.02575 10.0022 6.65485 10.0015 7.04774 10.3867L8.68072 11.9878L13.364 7.38803C13.7565 7.00259 14.3854 7.00259 14.7778 7.38803C15.1804 7.78341 15.1804 8.43211 14.7778 8.82749L8.68276 14.8138Z"
-                                                fill="#3B82F6" />
-                                        </svg>
-
-                                    </span>
-                                    Custom Website Design
-                                </li>
-                                <li>
-                                    <span>
-                                        <svg width="18" height="18" viewBox="0 0 21 21" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M10.7181 0.400757C5.10389 0.400757 0.536377 4.88676 0.536377 10.4008C0.536377 15.9148 5.10389 20.4008 10.7181 20.4008C16.3323 20.4008 20.8998 15.9148 20.8998 10.4008C20.8998 4.88676 16.3323 0.400757 10.7181 0.400757ZM8.68276 14.8138L5.63554 11.8274C5.23269 11.4326 5.23188 10.7841 5.63375 10.3883C6.02575 10.0022 6.65485 10.0015 7.04774 10.3867L8.68072 11.9878L13.364 7.38803C13.7565 7.00259 14.3854 7.00259 14.7778 7.38803C15.1804 7.78341 15.1804 8.43211 14.7778 8.82749L8.68276 14.8138Z"
-                                                fill="#3B82F6" />
-                                        </svg>
-
-                                    </span>
-                                    Mobile-Friendly Development
-                                </li>
-                                <li>
-                                    <span>
-                                        <svg width="18" height="18" viewBox="0 0 21 21" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M10.7181 0.400757C5.10389 0.400757 0.536377 4.88676 0.536377 10.4008C0.536377 15.9148 5.10389 20.4008 10.7181 20.4008C16.3323 20.4008 20.8998 15.9148 20.8998 10.4008C20.8998 4.88676 16.3323 0.400757 10.7181 0.400757ZM8.68276 14.8138L5.63554 11.8274C5.23269 11.4326 5.23188 10.7841 5.63375 10.3883C6.02575 10.0022 6.65485 10.0015 7.04774 10.3867L8.68072 11.9878L13.364 7.38803C13.7565 7.00259 14.3854 7.00259 14.7778 7.38803C15.1804 7.78341 15.1804 8.43211 14.7778 8.82749L8.68276 14.8138Z"
-                                                fill="#3B82F6" />
-                                        </svg>
-
-                                    </span>
-                                    E-Commerce Solutions
-                                </li>
-                                <li>
-                                    <span>
-                                        <svg width="18" height="18" viewBox="0 0 21 21" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M10.7181 0.400757C5.10389 0.400757 0.536377 4.88676 0.536377 10.4008C0.536377 15.9148 5.10389 20.4008 10.7181 20.4008C16.3323 20.4008 20.8998 15.9148 20.8998 10.4008C20.8998 4.88676 16.3323 0.400757 10.7181 0.400757ZM8.68276 14.8138L5.63554 11.8274C5.23269 11.4326 5.23188 10.7841 5.63375 10.3883C6.02575 10.0022 6.65485 10.0015 7.04774 10.3867L8.68072 11.9878L13.364 7.38803C13.7565 7.00259 14.3854 7.00259 14.7778 7.38803C15.1804 7.78341 15.1804 8.43211 14.7778 8.82749L8.68276 14.8138Z"
-                                                fill="#3B82F6" />
-                                        </svg>
-
-                                    </span>
-                                    SEO Optimization
-                                </li>
-                            </ul>
-                            <a href="{{ route('service.web-dev') }}" class="btn btn-primary btn-sm">Learn more</a>
+                    <div class="col-xxl-6 col-lg-7 col-md-6">
+                        <div class="outside-box-right-10 xl-outside-box-right-10 text-end">
+                            <div class="fs-300 xl-fs-250 lg-fs-200 text-base-color fw-600 ls-minus-20px d-inline-block word-break-normal">service</div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+        <!-- end section -->
 
-    <!-- Section 3 -->
-    <section class="container-fluid bg-testimonial">
-        <div class="container py-4 p-md-5">
-            <div class=" row py-md-5 mx-0">
-                <div class="col-md-6 d-flex z-3 justify-content-center justify-content-md-end order-2 order-md-1"
-                    data-aos="fade-right">
-                    <div class="card rounded-sm p-3 service-card">
-                        <div class="card-body">
-                            <h3>UI UX Design</h3>
-                            <p class="text-black">Create Intuitive and Engaging User Experiences</p>
-                            <ul class="service-list">
-                                <li>
-                                    <span>
-                                        <svg width="18" height="18" viewBox="0 0 21 21" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M10.7181 0.400757C5.10389 0.400757 0.536377 4.88676 0.536377 10.4008C0.536377 15.9148 5.10389 20.4008 10.7181 20.4008C16.3323 20.4008 20.8998 15.9148 20.8998 10.4008C20.8998 4.88676 16.3323 0.400757 10.7181 0.400757ZM8.68276 14.8138L5.63554 11.8274C5.23269 11.4326 5.23188 10.7841 5.63375 10.3883C6.02575 10.0022 6.65485 10.0015 7.04774 10.3867L8.68072 11.9878L13.364 7.38803C13.7565 7.00259 14.3854 7.00259 14.7778 7.38803C15.1804 7.78341 15.1804 8.43211 14.7778 8.82749L8.68276 14.8138Z"
-                                                fill="#3B82F6" />
-                                        </svg>
+        <!-- start types section -->
+        <section class="pb-0 half-section">
+            <div class="container">
+                <div class="row justify-content-center mb-7 sm-mb-40px">
+                    <div class="col-xl-10" data-anime='{ "el": "childs", "translateY": [15, 0], "opacity": [0,1], "duration": 800, "delay": 200, "staggervalue": 300, "easing": "easeOutQuad" }'>
 
-                                    </span>
-                                    User-Centered Design
-                                </li>
-                                <li>
-                                    <span>
-                                        <svg width="18" height="18" viewBox="0 0 21 21" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M10.7181 0.400757C5.10389 0.400757 0.536377 4.88676 0.536377 10.4008C0.536377 15.9148 5.10389 20.4008 10.7181 20.4008C16.3323 20.4008 20.8998 15.9148 20.8998 10.4008C20.8998 4.88676 16.3323 0.400757 10.7181 0.400757ZM8.68276 14.8138L5.63554 11.8274C5.23269 11.4326 5.23188 10.7841 5.63375 10.3883C6.02575 10.0022 6.65485 10.0015 7.04774 10.3867L8.68072 11.9878L13.364 7.38803C13.7565 7.00259 14.3854 7.00259 14.7778 7.38803C15.1804 7.78341 15.1804 8.43211 14.7778 8.82749L8.68276 14.8138Z"
-                                                fill="#3B82F6" />
-                                        </svg>
-
-                                    </span>
-                                    Interactive Prototypes
-                                </li>
-                                <li>
-                                    <span>
-                                        <svg width="18" height="18" viewBox="0 0 21 21" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M10.7181 0.400757C5.10389 0.400757 0.536377 4.88676 0.536377 10.4008C0.536377 15.9148 5.10389 20.4008 10.7181 20.4008C16.3323 20.4008 20.8998 15.9148 20.8998 10.4008C20.8998 4.88676 16.3323 0.400757 10.7181 0.400757ZM8.68276 14.8138L5.63554 11.8274C5.23269 11.4326 5.23188 10.7841 5.63375 10.3883C6.02575 10.0022 6.65485 10.0015 7.04774 10.3867L8.68072 11.9878L13.364 7.38803C13.7565 7.00259 14.3854 7.00259 14.7778 7.38803C15.1804 7.78341 15.1804 8.43211 14.7778 8.82749L8.68276 14.8138Z"
-                                                fill="#3B82F6" />
-                                        </svg>
-
-                                    </span>
-                                    Responsive Design
-                                </li>
-                                <li>
-                                    <span>
-                                        <svg width="18" height="18" viewBox="0 0 21 21" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M10.7181 0.400757C5.10389 0.400757 0.536377 4.88676 0.536377 10.4008C0.536377 15.9148 5.10389 20.4008 10.7181 20.4008C16.3323 20.4008 20.8998 15.9148 20.8998 10.4008C20.8998 4.88676 16.3323 0.400757 10.7181 0.400757ZM8.68276 14.8138L5.63554 11.8274C5.23269 11.4326 5.23188 10.7841 5.63375 10.3883C6.02575 10.0022 6.65485 10.0015 7.04774 10.3867L8.68072 11.9878L13.364 7.38803C13.7565 7.00259 14.3854 7.00259 14.7778 7.38803C15.1804 7.78341 15.1804 8.43211 14.7778 8.82749L8.68276 14.8138Z"
-                                                fill="#3B82F6" />
-                                        </svg>
-
-                                    </span>
-                                    Usability Testing
-                                </li>
-                            </ul>
-                            <a href="{{ route('service.uiux') }}" class="btn btn-primary btn-sm">Learn more</a>
+                        <div class="row border-bottom border-2 border-color-dark-gray pb-50px mb-50px sm-pb-35px sm-mb-35px align-items-center">
+                            <div class="col-md-1 text-center text-md-end md-mb-15px">
+                                <div class="fs-16 fw-600 text-dark-gray">01</div>
+                            </div>
+                            <div class="col-md-7 offset-lg-1 icon-with-text-style-01 md-mb-25px">
+                                <div class="feature-box feature-box-left-icon-middle last-paragraph-no-margin">
+                                    <div class="feature-box-icon me-50px md-me-35px">
+                                        <img class="w-75px" alt="" data-cfsrc="{{asset('Frontend/images/Services/management-software.svg')}}" style="display:none;visibility:hidden;" /><noscript><img src="{{asset('Frontend/images/Services/management-software.svg')}}" class="w-75px" alt=""/></noscript>
+                                    </div>
+                                    <div class="feature-box-content">
+                                        <span class="d-inline-block text-dark-gray mb-5px fs-20 ls-minus-05px">Best <span class="fw-700">Management Software</span></span>
+                                        <p class="w-90 md-w-100">Streamline Your Operations with Cutting-Edge Solutions.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 text-center text-md-end">
+                                <a href="{{route('service.software')}}" class="btn btn-large btn-expand-ltr text-dark-gray btn-rounded fw-700"><span class="bg-base-color"></span>Get started now</a>
+                            </div>
                         </div>
+
+                        <div class="row border-bottom border-2 border-color-dark-gray pb-50px mb-50px sm-pb-35px sm-mb-35px align-items-center">
+                            <div class="col-md-1 text-center text-md-end md-mb-15px">
+                                <div class="fs-16 fw-600 text-dark-gray">02</div>
+                            </div>
+                            <div class="col-md-7 offset-lg-1 icon-with-text-style-01 md-mb-25px">
+                                <div class="feature-box feature-box-left-icon-middle last-paragraph-no-margin">
+                                    <div class="feature-box-icon me-50px md-me-35px">
+                                        <img class="w-75px" alt="" data-cfsrc="{{asset('Frontend/images/Services/web-developmnet.svg')}}" style="display:none;visibility:hidden;" /><noscript><img src="{{asset('Frontend/images/Services/web-developmnet.svg')}}" class="w-75px" alt=""/></noscript>
+                                    </div>
+                                    <div class="feature-box-content">
+                                        <span class="d-inline-block text-dark-gray mb-5px fs-20 ls-minus-05px">Creative <span class="fw-700">web development</span></span>
+                                        <p class="w-90 md-w-100">Expert Solutions for Your Online Presence.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 text-center text-md-end">
+                                <a href="{{route('service.web-dev')}}" class="btn btn-large btn-expand-ltr text-dark-gray btn-rounded fw-700"><span class="bg-base-color"></span>Get started now</a>
+                            </div>
+                        </div>
+
+                        <div class="row border-bottom border-2 border-color-dark-gray pb-50px mb-50px sm-pb-35px sm-mb-35px align-items-center">
+                            <div class="col-md-1 text-center text-md-end md-mb-15px">
+                                <div class="fs-16 fw-600 text-dark-gray">03</div>
+                            </div>
+                            <div class="col-md-7 offset-lg-1 icon-with-text-style-01 md-mb-25px">
+                                <div class="feature-box feature-box-left-icon-middle last-paragraph-no-margin">
+                                    <div class="feature-box-icon me-50px md-me-35px">
+                                        <img class="w-75px" alt="" data-cfsrc="{{asset('Frontend/images/Services/ui-ux.svg')}}" style="display:none;visibility:hidden;" /><noscript><img src="{{asset('Frontend/images/Services/ui-ux.svg')}}" class="w-75px" alt=""/></noscript>
+                                    </div>
+                                    <div class="feature-box-content">
+                                        <span class="d-inline-block text-dark-gray mb-5px fs-20 ls-minus-05px">Best <span class="fw-700">UI UX Design</span></span>
+                                        <p class="w-90 md-w-100">Create Intuitive and Engaging User Experiences.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 text-center text-md-end">
+                                <a href="{{route('service.uiux')}}" class="btn btn-large btn-expand-ltr text-dark-gray btn-rounded fw-700"><span class="bg-base-color"></span>Get started now</a>
+                            </div>
+                        </div>
+
+                        <div class="row border-bottom border-2 border-color-dark-gray pb-50px mb-50px sm-pb-35px sm-mb-35px align-items-center">
+                            <div class="col-md-1 text-center text-md-end md-mb-15px">
+                                <div class="fs-16 fw-600 text-dark-gray">04</div>
+                            </div>
+                            <div class="col-md-7 offset-lg-1 icon-with-text-style-01 md-mb-25px">
+                                <div class="feature-box feature-box-left-icon-middle last-paragraph-no-margin">
+                                    <div class="feature-box-icon me-50px md-me-35px">
+                                        <img class="w-75px" alt="" data-cfsrc="{{asset('Frontend/images/Services/digital-marketing.svg')}}" style="display:none;visibility:hidden;" /><noscript><img src="{{asset('Frontend/images/Services/digital-marketing.svg')}}" class="w-75px" alt=""/></noscript>
+                                    </div>
+                                    <div class="feature-box-content">
+                                        <span class="d-inline-block text-dark-gray mb-5px fs-20 ls-minus-05px">Best <span class="fw-700">Digital Marketing</span></span>
+                                        <p class="w-90 md-w-100">Boost Your Online Presence with Strategic Campaigns.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 text-center text-md-end">
+                                <a href="{{route('service.digital-marketing')}}" class="btn btn-large btn-expand-ltr text-dark-gray btn-rounded fw-700"><span class="bg-base-color"></span>Get started now</a>
+                            </div>
+                        </div>
+
+                        <div class="row border-bottom border-2 border-color-dark-gray pb-50px mb-50px sm-pb-35px sm-mb-35px align-items-center">
+                            <div class="col-md-1 text-center text-md-end md-mb-15px">
+                                <div class="fs-16 fw-600 text-dark-gray">05</div>
+                            </div>
+                            <div class="col-md-7 offset-lg-1 icon-with-text-style-01 md-mb-25px">
+                                <div class="feature-box feature-box-left-icon-middle last-paragraph-no-margin">
+                                    <div class="feature-box-icon me-50px md-me-35px">
+                                        <img class="w-75px" alt="" data-cfsrc="{{asset('Frontend/images/Services/graphic.svg')}}" style="display:none;visibility:hidden;" /><noscript><img src="{{asset('Frontend/images/Services/graphic.svg')}}" class="w-75px" alt=""/></noscript>
+                                    </div>
+                                    <div class="feature-box-content">
+                                        <span class="d-inline-block text-dark-gray mb-5px fs-20 ls-minus-05px">Best <span class="fw-700">Graphics Design</span></span>
+                                        <p class="w-90 md-w-100">Expert Solutions for Your Online Presence.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 text-center text-md-end">
+                                <a href="{{route('service.graphics-design')}}" class="btn btn-large btn-expand-ltr text-dark-gray btn-rounded fw-700"><span class="bg-base-color"></span>Get started now</a>
+                            </div>
+                        </div>
+
+                        <div class="row border-bottom border-2 border-color-dark-gray pb-50px mb-50px sm-pb-35px sm-mb-35px align-items-center">
+                            <div class="col-md-1 text-center text-md-end md-mb-15px">
+                                <div class="fs-16 fw-600 text-dark-gray">06</div>
+                            </div>
+                            <div class="col-md-7 offset-lg-1 icon-with-text-style-01 md-mb-25px">
+                                <div class="feature-box feature-box-left-icon-middle last-paragraph-no-margin">
+                                    <div class="feature-box-icon me-50px md-me-35px">
+                                        <img class="w-75px" alt="" data-cfsrc="{{asset('Frontend/images/Services/mobile-ap.svg')}}" style="display:none;visibility:hidden;" /><noscript><img src="{{asset('Frontend/images/Services/mobile-ap.svg')}}" class="w-75px" alt=""/></noscript>
+                                    </div>
+                                    <div class="feature-box-content">
+                                        <span class="d-inline-block text-dark-gray mb-5px fs-20 ls-minus-05px">Best <span class="fw-700">Mobile App Development</span></span>
+                                        <p class="w-90 md-w-100">Build High-Performance Apps for iOS and Android.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 text-center text-md-end">
+                                <a href="{{route('service.mobile-app')}}" class="btn btn-large btn-expand-ltr text-dark-gray btn-rounded fw-700"><span class="bg-base-color"></span>Get started now</a>
+                            </div>
+                        </div>
+
+                        <div class="row border-bottom border-2 border-color-dark-gray pb-50px mb-50px sm-pb-35px sm-mb-35px align-items-center">
+                            <div class="col-md-1 text-center text-md-end md-mb-15px">
+                                <div class="fs-16 fw-600 text-dark-gray">07</div>
+                            </div>
+                            <div class="col-md-7 offset-lg-1 icon-with-text-style-01 md-mb-25px">
+                                <div class="feature-box feature-box-left-icon-middle last-paragraph-no-margin">
+                                    <div class="feature-box-icon me-50px md-me-35px">
+                                        <img class="w-75px" alt="" data-cfsrc="{{asset('Frontend/images/Services/saas.svg')}}" style="display:none;visibility:hidden;" /><noscript><img src="{{asset('Frontend/images/Services/saas.svg')}}" class="w-75px" alt=""/></noscript>
+                                    </div>
+                                    <div class="feature-box-content">
+                                        <span class="d-inline-block text-dark-gray mb-5px fs-20 ls-minus-05px">SaaS <span class="fw-700">(Software as a Service)</span></span>
+                                        <p class="w-90 md-w-100">Expert Solutions for Your Online Presence.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 text-center text-md-end">
+                                <a href="{{route('service.saas')}}" class="btn btn-large btn-expand-ltr text-dark-gray btn-rounded fw-700"><span class="bg-base-color"></span>Get started now</a>
+                            </div>
+                        </div>
+
+                        <div class="row align-items-center">
+                            <div class="col-md-1 text-center text-md-end md-mb-15px">
+                                <div class="fs-16 fw-600 text-dark-gray">08</div>
+                            </div>
+                            <div class="col-md-7 offset-lg-1 icon-with-text-style-01 md-mb-25px">
+                                <div class="feature-box feature-box-left-icon-middle last-paragraph-no-margin">
+                                    <div class="feature-box-icon me-50px md-me-35px">
+                                        <img class="w-75px" alt="" data-cfsrc="{{asset('Frontend/images/Services/video.svg')}}" style="display:none;visibility:hidden;" /><noscript><img src="{{asset('Frontend/images/Services/video.svg')}}" class="w-75px" alt=""/></noscript>
+                                    </div>
+                                    <div class="feature-box-content">
+                                        <span class="d-inline-block text-dark-gray mb-5px fs-20 ls-minus-05px">Best <span class="fw-700">Video Editing</span></span>
+                                        <p class="w-90 md-w-100">Impactful animated product explainer videos.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 text-center text-md-end">
+                                <a href="{{route('service.video-edit')}}" class="btn btn-large btn-expand-ltr text-dark-gray btn-rounded fw-700"><span class="bg-base-color"></span>Get started now</a>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
-                <div class="col-md-6 order-1 order-md-2" data-aos="fade-left">
-                    <div class="w-100 position-relative serviceimg-box">
-                        <span class="ser-box sr">
-                            <p class="mb-0" style="font-size: 12px">Special Offer</p>
-                            <strong>20% <span style="font-size: 12px">Off</span></strong>
-                        </span>
-                        <img class="service-image" src="{{ asset('Frontend') }}/images/service4.webp" width="90%"
-                            alt="" srcset="">
+                <div class="row mx-0 justify-content-center" data-anime='{ "el": "childs", "translateY": [0, 0], "opacity": [0,1], "duration": 200, "delay": 0, "staggervalue": 100, "easing": "easeOutQuad" }'>
+                    <div class="col-auto text-center last-paragraph-no-margin bg-dark-gray pt-15px pb-15px ps-8 pe-8 border-radius-100px">
+                        <div class="d-inline-block align-middle me-5px text-base-color">✉</div>
+                        <div class="d-inline-block align-middle text-white sm-lh-24">Our nearly <span class="fw-500">50+</span> creative and expertise people are ready to help! <a href="{{ route('contact') }}" class="text-white fw-500 text-decoration-line-bottom">Contact now</a></div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+        <!-- end section -->
 
-    <!-- Section 4 -->
-    <section class="container-fluid" data-aos="fade-up">
-        <div class="container py-4 p-md-5">
-            <div class=" row py-md-5 mx-0">
-                <div class="col-md-6" data-aos="fade-right">
-                    <div class="w-100 position-relative serviceimg-box">
-                        <span class="ser-box sl">
-                            <p class="mb-0" style="font-size: 12px">Special Offer</p>
-                            <strong>20% <span style="font-size: 12px">Off</span></strong>
-                        </span>
-                        <img class="service-image-right" src="{{ asset('Frontend') }}/images/service5.webp"
-                            width="90%" alt="" srcset="">
+        <!-- start review section -->
+        <section class="pb-4 lg-pb-6 position-relative">
+            <div class="container position-relative">
+                <div class="row justify-content-center mb-6 sm-mb-30px" data-anime='{ "el": "childs", "translateY": [0, 0], "opacity": [0,1], "duration": 800, "delay": 200, "staggervalue": 300, "easing": "easeOutQuad" }'>
+                    <div class="col-lg-5">
+                        <h3 class="text-dark-gray fw-600 ls-minus-2px w-80 lg-w-100">Trusted by genius people.</h3>
+                        <div class="mb-30px d-flex align-items-center md-mb-30px">
+                            <div class="fw-700 fs-70 text-dark-gray me-10px">4.96</div>
+                            <div class="text-center">
+                                <div class="bg-base-color text-dark-gray border-radius-30px ps-20px pe-20px fs-16 ls-minus-2px">
+                                    ★
+                                    ★
+                                    ★
+                                    ★
+                                    ★
+                                </div>
+                                <span class="text-dark-gray fs-13 fw-500 text-uppercase">Clutch review</span>
+                            </div>
+                        </div>
+                        <div class="d-flex md-mb-25px">
+                            <!-- start slider navigation -->
+                            <div class="slider-one-slide-prev-1 bg-white border border-color-extra-medium-gray text-dark-gray swiper-button-prev slider-navigation-style-04"><</div>
+                            <div class="slider-one-slide-next-1 bg-white border border-color-extra-medium-gray text-dark-gray swiper-button-next slider-navigation-style-04">></div>
+                            <!-- end slider navigation -->
+                        </div>
                     </div>
-                </div>
-
-                <div class="col-md-6 d-flex z-3 justify-content-center justify-content-md-start" data-aos="fade-left">
-                    <div class="card rounded-sm p-3 service-card">
-                        <div class="card-body">
-                            <h3>Digital Marketing</h3>
-                            <p class="text-black">Boost Your Online Presence with Strategic Campaigns</p>
-                            <ul class="service-list">
-                                <li>
-                                    <span>
-                                        <svg width="18" height="18" viewBox="0 0 21 21" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M10.7181 0.400757C5.10389 0.400757 0.536377 4.88676 0.536377 10.4008C0.536377 15.9148 5.10389 20.4008 10.7181 20.4008C16.3323 20.4008 20.8998 15.9148 20.8998 10.4008C20.8998 4.88676 16.3323 0.400757 10.7181 0.400757ZM8.68276 14.8138L5.63554 11.8274C5.23269 11.4326 5.23188 10.7841 5.63375 10.3883C6.02575 10.0022 6.65485 10.0015 7.04774 10.3867L8.68072 11.9878L13.364 7.38803C13.7565 7.00259 14.3854 7.00259 14.7778 7.38803C15.1804 7.78341 15.1804 8.43211 14.7778 8.82749L8.68276 14.8138Z"
-                                                fill="#3B82F6" />
-                                        </svg>
-
-                                    </span>
-                                    Targeted Advertising
-                                </li>
-                                <li>
-                                    <span>
-                                        <svg width="18" height="18" viewBox="0 0 21 21" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M10.7181 0.400757C5.10389 0.400757 0.536377 4.88676 0.536377 10.4008C0.536377 15.9148 5.10389 20.4008 10.7181 20.4008C16.3323 20.4008 20.8998 15.9148 20.8998 10.4008C20.8998 4.88676 16.3323 0.400757 10.7181 0.400757ZM8.68276 14.8138L5.63554 11.8274C5.23269 11.4326 5.23188 10.7841 5.63375 10.3883C6.02575 10.0022 6.65485 10.0015 7.04774 10.3867L8.68072 11.9878L13.364 7.38803C13.7565 7.00259 14.3854 7.00259 14.7778 7.38803C15.1804 7.78341 15.1804 8.43211 14.7778 8.82749L8.68276 14.8138Z"
-                                                fill="#3B82F6" />
-                                        </svg>
-
-                                    </span>
-                                    SEO Optimization
-                                </li>
-                                <li>
-                                    <span>
-                                        <svg width="18" height="18" viewBox="0 0 21 21" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M10.7181 0.400757C5.10389 0.400757 0.536377 4.88676 0.536377 10.4008C0.536377 15.9148 5.10389 20.4008 10.7181 20.4008C16.3323 20.4008 20.8998 15.9148 20.8998 10.4008C20.8998 4.88676 16.3323 0.400757 10.7181 0.400757ZM8.68276 14.8138L5.63554 11.8274C5.23269 11.4326 5.23188 10.7841 5.63375 10.3883C6.02575 10.0022 6.65485 10.0015 7.04774 10.3867L8.68072 11.9878L13.364 7.38803C13.7565 7.00259 14.3854 7.00259 14.7778 7.38803C15.1804 7.78341 15.1804 8.43211 14.7778 8.82749L8.68276 14.8138Z"
-                                                fill="#3B82F6" />
-                                        </svg>
-
-                                    </span>
-                                    Content Marketing
-                                </li>
-                                <li>
-                                    <span>
-                                        <svg width="18" height="18" viewBox="0 0 21 21" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M10.7181 0.400757C5.10389 0.400757 0.536377 4.88676 0.536377 10.4008C0.536377 15.9148 5.10389 20.4008 10.7181 20.4008C16.3323 20.4008 20.8998 15.9148 20.8998 10.4008C20.8998 4.88676 16.3323 0.400757 10.7181 0.400757ZM8.68276 14.8138L5.63554 11.8274C5.23269 11.4326 5.23188 10.7841 5.63375 10.3883C6.02575 10.0022 6.65485 10.0015 7.04774 10.3867L8.68072 11.9878L13.364 7.38803C13.7565 7.00259 14.3854 7.00259 14.7778 7.38803C15.1804 7.78341 15.1804 8.43211 14.7778 8.82749L8.68276 14.8138Z"
-                                                fill="#3B82F6" />
-                                        </svg>
-
-                                    </span>
-                                    Social Media Management
-                                </li>
-                            </ul>
-                            <a href="{{ route('service.digital-marketing') }}" class="btn btn-primary btn-sm">Learn
-                                more</a>
+                    <div class="col-xl-6 col-lg-7 overflow-hidden offset-xl-1">
+                        <div class="swiper magic-cursor" data-slider-options='{ "slidesPerView": 1, "spaceBetween": 40, "loop": true, "navigation": { "nextEl": ".slider-one-slide-next-1", "prevEl": ".slider-one-slide-prev-1" }, "keyboard": { "enabled": true, "onlyInViewport": true }, "breakpoints": { "992": { "slidesPerView": 1 }, "768": { "slidesPerView":1 }, "320": { "slidesPerView": 1 } }, "effect": "slide" }'>
+                            <div class="swiper-wrapper">
+                                <!-- start review item -->
+                                <div class="swiper-slide">
+                                    <h5 class="text-dark-gray mb-20px w-90 xl-w-100 lh-42 fw-400 ls-minus-1px">I could not be happier with the website that Synex Digital created for my business. They took my ideas and turned them into a stunning, user-friendly website that exceeded my expectations.</h5>
+                                    <span class="text-dark-gray fw-600 d-block fs-15 text-uppercase lh-22 ls-2px">@Mahadi Tahsan</span>
+                                </div>
+                                <!-- end review item -->
+                                <!-- start review item -->
+                                <div class="swiper-slide">
+                                    <h5 class="text-dark-gray mb-20px w-90 xl-w-100 lh-42 fw-400 ls-minus-1px">Working with Synex Digital has been a game-changer for our online visibility. Their SEO team’s expertise and strategies have propelled our website to the top of search engine rankings. Glad to hire them on a monthly basis.</h5>
+                                    <span class="text-dark-gray fw-600 d-block fs-15 text-uppercase lh-22 ls-2px">@MD Sydul Amin</span>
+                                </div>
+                                <!-- end review item -->
+                                <!-- start review item -->
+                                <div class="swiper-slide">
+                                    <h5 class="text-dark-gray mb-20px w-90 xl-w-100 lh-42 fw-400 ls-minus-1px">Synex Digital’s management software completely revolutionized our school. For schools that require reliability, streamlined administration, user-friendly design, and responsive assistance redefine efficiency!</h5>
+                                    <span class="text-dark-gray fw-600 d-block fs-15 text-uppercase lh-22 ls-2px">@Shawon Islam</span>
+                                </div>
+                                <!-- end review item -->
+                            </div>
                         </div>
                     </div>
                 </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="separator-line-1px w-100 bg-dark-gray opacity-1 mb-6 sm-mb-30px"></div>
+                    </div>
+                </div>
+                <div class="row row-cols-1 row-cols-lg-5 row-cols-md-3 row-cols-sm-2 clients-style-06 justify-content-center" data-anime='{ "el": "childs", "translateY": [15, 0], "scale": [0.8, 1], "opacity": [0,1], "duration": 800, "delay": 200, "staggervalue": 300, "easing": "easeOutQuad" }'>
+                    <!-- start client item -->
+                    <div class="col client-box text-center md-mb-40px">
+                        <a href="#"><img src="images/logo-walmart-dark-gray.svg" class="h-35px" alt=""></a>
+                    </div>
+                    <!-- end client item -->
+                    <!-- start client item -->
+                    <div class="col client-box text-center md-mb-40px">
+                        <a href="#"><img src="images/logo-invision-dark-gray.svg" class="h-40px" alt=""></a>
+                    </div>
+                    <!-- end client item -->
+                    <!-- start client item -->
+                    <div class="col client-box text-center md-mb-40px">
+                        <a href="#"><img src="images/logo-netflix-dark-gray.svg" class="h-35px" alt=""></a>
+                    </div>
+                    <!-- end client item -->
+                    <!-- start client item -->
+                    <div class="col client-box text-center sm-mb-40px">
+                        <a href="#"><img src="images/logo-logitech-dark-gray.svg" class="h-35px" alt=""></a>
+                    </div>
+                    <!-- end client item -->
+                    <!-- start client item -->
+                    <div class="col client-box text-center">
+                        <a href="#"><img src="images/logo-amazon-dark-gray.svg" class="h-35px" alt=""></a>
+                    </div>
+                    <!-- end client item -->
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+        <!-- end section -->
 
-    <!-- Section 5 -->
-    <section class="container-fluid bg-testimonial" data-aos="fade-up">
-        <div class="container py-4 p-md-5">
-            <div class=" row py-md-5 mx-0">
-                <div class="col-md-6 d-flex z-3 justify-content-center justify-content-md-end order-2 order-md-1"
-                    data-aos="fade-right">
-                    <div class="card rounded-sm p-3 service-card">
-                        <div class="card-body">
-                            <h3>Graphics Design</h3>
-                            <p class="text-black">Expert Solutions for Your Online Presence</p>
-                            <ul class="service-list">
-                                <li>
-                                    <span>
-                                        <svg width="18" height="18" viewBox="0 0 21 21" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M10.7181 0.400757C5.10389 0.400757 0.536377 4.88676 0.536377 10.4008C0.536377 15.9148 5.10389 20.4008 10.7181 20.4008C16.3323 20.4008 20.8998 15.9148 20.8998 10.4008C20.8998 4.88676 16.3323 0.400757 10.7181 0.400757ZM8.68276 14.8138L5.63554 11.8274C5.23269 11.4326 5.23188 10.7841 5.63375 10.3883C6.02575 10.0022 6.65485 10.0015 7.04774 10.3867L8.68072 11.9878L13.364 7.38803C13.7565 7.00259 14.3854 7.00259 14.7778 7.38803C15.1804 7.78341 15.1804 8.43211 14.7778 8.82749L8.68276 14.8138Z"
-                                                fill="#3B82F6" />
-                                        </svg>
-
-                                    </span>
-                                    Custom Website Design
-                                </li>
-                                <li>
-                                    <span>
-                                        <svg width="18" height="18" viewBox="0 0 21 21" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M10.7181 0.400757C5.10389 0.400757 0.536377 4.88676 0.536377 10.4008C0.536377 15.9148 5.10389 20.4008 10.7181 20.4008C16.3323 20.4008 20.8998 15.9148 20.8998 10.4008C20.8998 4.88676 16.3323 0.400757 10.7181 0.400757ZM8.68276 14.8138L5.63554 11.8274C5.23269 11.4326 5.23188 10.7841 5.63375 10.3883C6.02575 10.0022 6.65485 10.0015 7.04774 10.3867L8.68072 11.9878L13.364 7.38803C13.7565 7.00259 14.3854 7.00259 14.7778 7.38803C15.1804 7.78341 15.1804 8.43211 14.7778 8.82749L8.68276 14.8138Z"
-                                                fill="#3B82F6" />
-                                        </svg>
-
-                                    </span>
-                                    Mobile-Friendly Development
-                                </li>
-                                <li>
-                                    <span>
-                                        <svg width="18" height="18" viewBox="0 0 21 21" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M10.7181 0.400757C5.10389 0.400757 0.536377 4.88676 0.536377 10.4008C0.536377 15.9148 5.10389 20.4008 10.7181 20.4008C16.3323 20.4008 20.8998 15.9148 20.8998 10.4008C20.8998 4.88676 16.3323 0.400757 10.7181 0.400757ZM8.68276 14.8138L5.63554 11.8274C5.23269 11.4326 5.23188 10.7841 5.63375 10.3883C6.02575 10.0022 6.65485 10.0015 7.04774 10.3867L8.68072 11.9878L13.364 7.38803C13.7565 7.00259 14.3854 7.00259 14.7778 7.38803C15.1804 7.78341 15.1804 8.43211 14.7778 8.82749L8.68276 14.8138Z"
-                                                fill="#3B82F6" />
-                                        </svg>
-
-                                    </span>
-                                    E-Commerce Solutions
-                                </li>
-                                <li>
-                                    <span>
-                                        <svg width="18" height="18" viewBox="0 0 21 21" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M10.7181 0.400757C5.10389 0.400757 0.536377 4.88676 0.536377 10.4008C0.536377 15.9148 5.10389 20.4008 10.7181 20.4008C16.3323 20.4008 20.8998 15.9148 20.8998 10.4008C20.8998 4.88676 16.3323 0.400757 10.7181 0.400757ZM8.68276 14.8138L5.63554 11.8274C5.23269 11.4326 5.23188 10.7841 5.63375 10.3883C6.02575 10.0022 6.65485 10.0015 7.04774 10.3867L8.68072 11.9878L13.364 7.38803C13.7565 7.00259 14.3854 7.00259 14.7778 7.38803C15.1804 7.78341 15.1804 8.43211 14.7778 8.82749L8.68276 14.8138Z"
-                                                fill="#3B82F6" />
-                                        </svg>
-
-                                    </span>
-                                    SEO Optimization
-                                </li>
-                            </ul>
-                            <a href="{{ route('service.graphics-design') }}" class="btn btn-primary btn-sm">Learn more</a>
+        <!-- start section -->
+        <section class="pb-4 sm-pt-30px sm-pb-40px overflow-hidden position-relative">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-5 text-center text-sm-start">
+                        <div class="outside-box-left-25 xl-outside-box-left-10 sm-outside-box-left-0">
+                            <div class="fs-350 xl-fs-250 lg-fs-200 md-fs-170 sm-fs-100 text-dark-gray fw-600 ls-minus-20px word-break-normal">work</div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-6 order-1 order-md-2" data-aos="fade-left">
-                    <div class="w-100 position-relative serviceimg-box">
-                        <span class="ser-box sr">
-                            <p class="mb-0" style="font-size: 12px">Special Offer</p>
-                            <strong>20% <span style="font-size: 12px">Off</span></strong>
-                        </span>
-                        <img class="service-image" src="{{ asset('Frontend') }}/images/service1.webp" width="90%"
-                            alt="" srcset="">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Section 6 -->
-    <section class="container-fluid" data-aos="fade-up">
-        <div class="container py-4 p-md-5">
-            <div class=" row py-md-5 mx-0">
-                <div class="col-md-6" data-aos="fade-right">
-                    <div class="w-100 position-relative serviceimg-box">
-                        <span class="ser-box sl">
-                            <p class="mb-0" style="font-size: 12px">Special Offer</p>
-                            <strong>20% <span style="font-size: 12px">Off</span></strong>
-                        </span>
-                        <img class="service-image-right" src="{{ asset('Frontend') }}/images/service7.webp"
-                            width="90%" alt="" srcset="">
-                    </div>
-                </div>
-
-                <div class="col-md-6 d-flex z-3 justify-content-center justify-content-md-start" data-aos="fade-left">
-                    <div class="card rounded-sm p-3 service-card">
-                        <div class="card-body">
-                            <h3>Mobile App Development</h3>
-                            <p class="text-black">Build High-Performance Apps for iOS and Android</p>
-                            <ul class="service-list">
-                                <li>
-                                    <span>
-                                        <svg width="18" height="18" viewBox="0 0 21 21" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M10.7181 0.400757C5.10389 0.400757 0.536377 4.88676 0.536377 10.4008C0.536377 15.9148 5.10389 20.4008 10.7181 20.4008C16.3323 20.4008 20.8998 15.9148 20.8998 10.4008C20.8998 4.88676 16.3323 0.400757 10.7181 0.400757ZM8.68276 14.8138L5.63554 11.8274C5.23269 11.4326 5.23188 10.7841 5.63375 10.3883C6.02575 10.0022 6.65485 10.0015 7.04774 10.3867L8.68072 11.9878L13.364 7.38803C13.7565 7.00259 14.3854 7.00259 14.7778 7.38803C15.1804 7.78341 15.1804 8.43211 14.7778 8.82749L8.68276 14.8138Z"
-                                                fill="#3B82F6" />
-                                        </svg>
-
-                                    </span>
-                                    Custom App Design
-                                </li>
-                                <li>
-                                    <span>
-                                        <svg width="18" height="18" viewBox="0 0 21 21" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M10.7181 0.400757C5.10389 0.400757 0.536377 4.88676 0.536377 10.4008C0.536377 15.9148 5.10389 20.4008 10.7181 20.4008C16.3323 20.4008 20.8998 15.9148 20.8998 10.4008C20.8998 4.88676 16.3323 0.400757 10.7181 0.400757ZM8.68276 14.8138L5.63554 11.8274C5.23269 11.4326 5.23188 10.7841 5.63375 10.3883C6.02575 10.0022 6.65485 10.0015 7.04774 10.3867L8.68072 11.9878L13.364 7.38803C13.7565 7.00259 14.3854 7.00259 14.7778 7.38803C15.1804 7.78341 15.1804 8.43211 14.7778 8.82749L8.68276 14.8138Z"
-                                                fill="#3B82F6" />
-                                        </svg>
-
-                                    </span>
-                                    Cross-Platform Compatibility
-                                </li>
-                                <li>
-                                    <span>
-                                        <svg width="18" height="18" viewBox="0 0 21 21" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M10.7181 0.400757C5.10389 0.400757 0.536377 4.88676 0.536377 10.4008C0.536377 15.9148 5.10389 20.4008 10.7181 20.4008C16.3323 20.4008 20.8998 15.9148 20.8998 10.4008C20.8998 4.88676 16.3323 0.400757 10.7181 0.400757ZM8.68276 14.8138L5.63554 11.8274C5.23269 11.4326 5.23188 10.7841 5.63375 10.3883C6.02575 10.0022 6.65485 10.0015 7.04774 10.3867L8.68072 11.9878L13.364 7.38803C13.7565 7.00259 14.3854 7.00259 14.7778 7.38803C15.1804 7.78341 15.1804 8.43211 14.7778 8.82749L8.68276 14.8138Z"
-                                                fill="#3B82F6" />
-                                        </svg>
-
-                                    </span>
-                                    Robust Backend Integration
-                                </li>
-                                <li>
-                                    <span>
-                                        <svg width="18" height="18" viewBox="0 0 21 21" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M10.7181 0.400757C5.10389 0.400757 0.536377 4.88676 0.536377 10.4008C0.536377 15.9148 5.10389 20.4008 10.7181 20.4008C16.3323 20.4008 20.8998 15.9148 20.8998 10.4008C20.8998 4.88676 16.3323 0.400757 10.7181 0.400757ZM8.68276 14.8138L5.63554 11.8274C5.23269 11.4326 5.23188 10.7841 5.63375 10.3883C6.02575 10.0022 6.65485 10.0015 7.04774 10.3867L8.68072 11.9878L13.364 7.38803C13.7565 7.00259 14.3854 7.00259 14.7778 7.38803C15.1804 7.78341 15.1804 8.43211 14.7778 8.82749L8.68276 14.8138Z"
-                                                fill="#3B82F6" />
-                                        </svg>
-
-                                    </span>
-                                    Ongoing Maintenance and Support
-                                </li>
-                            </ul>
-                            <a href="{{ route('service.mobile-app') }}" class="btn btn-primary btn-sm">Learn more</a>
+                    <div class="col-sm-7 text-center text-sm-end">
+                        <div class="outside-box-right-5 sm-outside-box-right-0">
+                            <div class="fs-350 xl-fs-250 lg-fs-200 md-fs-170 sm-fs-100 text-base-color fw-600 ls-minus-20px position-relative d-inline-block word-break-normal">together
+                                <div class="position-absolute left-minus-140px top-minus-140px z-index-9 xl-left-minus-110px top-minus-140px xl-top-minus-100px md-top-minus-90px z-index-9 xl-w-230px md-w-200px d-none d-md-block" data-anime='{ "translateY": [-15, 0], "scale": [0.5, 1], "opacity": [0,1], "duration": 800, "delay": 200, "staggervalue": 300, "easing": "easeOutQuad" }'>
+                                    <img class="animation-rotation" alt="" data-cfsrc="images/demo-web-agency-05.png" style="display:none;visibility:hidden;"><noscript><img src="images/demo-web-agency-05.png" class="animation-rotation" alt=""></noscript>
+                                    <div class="absolute-middle-center w-100 z-index-minus-1"><img alt="" data-cfsrc="images/demo-web-agency-04.png" style="display:none;visibility:hidden;"><noscript><img src="images/demo-web-agency-04.png" alt=""></noscript></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+        <!-- end section -->
 
-    <!-- Section 7 -->
-    <section class="container-fluid bg-testimonial" data-aos="fade-up">
-        <div class="container py-4 p-md-5">
-            <div class=" row py-md-5 mx-0">
-                <div class="col-md-6 d-flex z-3 justify-content-center justify-content-md-end order-2 order-md-1"
-                    data-aos="fade-right">
-                    <div class="card rounded-sm p-3 service-card">
-                        <div class="card-body">
-                            <h3>SaaS (Software as a Service)</h3>
-                            <p class="text-black">Expert Solutions for Your Online Presence</p>
-                            <ul class="service-list">
-                                <li>
-                                    <span>
-                                        <svg width="18" height="18" viewBox="0 0 21 21" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M10.7181 0.400757C5.10389 0.400757 0.536377 4.88676 0.536377 10.4008C0.536377 15.9148 5.10389 20.4008 10.7181 20.4008C16.3323 20.4008 20.8998 15.9148 20.8998 10.4008C20.8998 4.88676 16.3323 0.400757 10.7181 0.400757ZM8.68276 14.8138L5.63554 11.8274C5.23269 11.4326 5.23188 10.7841 5.63375 10.3883C6.02575 10.0022 6.65485 10.0015 7.04774 10.3867L8.68072 11.9878L13.364 7.38803C13.7565 7.00259 14.3854 7.00259 14.7778 7.38803C15.1804 7.78341 15.1804 8.43211 14.7778 8.82749L8.68276 14.8138Z"
-                                                fill="#3B82F6" />
-                                        </svg>
-
-                                    </span>
-                                    Cloud-Based Access
-                                </li>
-                                <li>
-                                    <span>
-                                        <svg width="18" height="18" viewBox="0 0 21 21" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M10.7181 0.400757C5.10389 0.400757 0.536377 4.88676 0.536377 10.4008C0.536377 15.9148 5.10389 20.4008 10.7181 20.4008C16.3323 20.4008 20.8998 15.9148 20.8998 10.4008C20.8998 4.88676 16.3323 0.400757 10.7181 0.400757ZM8.68276 14.8138L5.63554 11.8274C5.23269 11.4326 5.23188 10.7841 5.63375 10.3883C6.02575 10.0022 6.65485 10.0015 7.04774 10.3867L8.68072 11.9878L13.364 7.38803C13.7565 7.00259 14.3854 7.00259 14.7778 7.38803C15.1804 7.78341 15.1804 8.43211 14.7778 8.82749L8.68276 14.8138Z"
-                                                fill="#3B82F6" />
-                                        </svg>
-
-                                    </span>
-                                    Scalability
-                                </li>
-                                <li>
-                                    <span>
-                                        <svg width="18" height="18" viewBox="0 0 21 21" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M10.7181 0.400757C5.10389 0.400757 0.536377 4.88676 0.536377 10.4008C0.536377 15.9148 5.10389 20.4008 10.7181 20.4008C16.3323 20.4008 20.8998 15.9148 20.8998 10.4008C20.8998 4.88676 16.3323 0.400757 10.7181 0.400757ZM8.68276 14.8138L5.63554 11.8274C5.23269 11.4326 5.23188 10.7841 5.63375 10.3883C6.02575 10.0022 6.65485 10.0015 7.04774 10.3867L8.68072 11.9878L13.364 7.38803C13.7565 7.00259 14.3854 7.00259 14.7778 7.38803C15.1804 7.78341 15.1804 8.43211 14.7778 8.82749L8.68276 14.8138Z"
-                                                fill="#3B82F6" />
-                                        </svg>
-
-                                    </span>
-                                    Automatic Updates
-                                </li>
-                                <li>
-                                    <span>
-                                        <svg width="18" height="18" viewBox="0 0 21 21" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M10.7181 0.400757C5.10389 0.400757 0.536377 4.88676 0.536377 10.4008C0.536377 15.9148 5.10389 20.4008 10.7181 20.4008C16.3323 20.4008 20.8998 15.9148 20.8998 10.4008C20.8998 4.88676 16.3323 0.400757 10.7181 0.400757ZM8.68276 14.8138L5.63554 11.8274C5.23269 11.4326 5.23188 10.7841 5.63375 10.3883C6.02575 10.0022 6.65485 10.0015 7.04774 10.3867L8.68072 11.9878L13.364 7.38803C13.7565 7.00259 14.3854 7.00259 14.7778 7.38803C15.1804 7.78341 15.1804 8.43211 14.7778 8.82749L8.68276 14.8138Z"
-                                                fill="#3B82F6" />
-                                        </svg>
-
-                                    </span>
-                                    Cost Efficiency
-                                </li>
-                            </ul>
-                            <a href="{{ route('service.saas') }}" class="btn btn-primary btn-sm">Learn more</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 order-1 order-md-2" data-aos="fade-left">
-                    <div class="w-100 position-relative serviceimg-box">
-                        <span class="ser-box sr">
-                            <p class="mb-0" style="font-size: 12px">Special Offer</p>
-                            <strong>20% <span style="font-size: 12px">Off</span></strong>
-                        </span>
-                        <img class="service-image" src="{{ asset('Frontend') }}/images/service9.webp" width="90%"
-                            alt="" srcset="">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Section 8 -->
-    <section class="container-fluid" data-aos="fade-up">
-        <div class="container py-4 p-md-5">
-            <div class=" row py-md-5 mx-0">
-                <div class="col-md-6" data-aos="fade-right">
-                    <div class="w-100 position-relative serviceimg-box">
-                        <span class="ser-box sl">
-                            <p class="mb-0" style="font-size: 12px">Special Offer</p>
-                            <strong>20% <span style="font-size: 12px">Off</span></strong>
-                        </span>
-                        <img class="service-image-right" src="{{ asset('Frontend') }}/images/service10.webp"
-                            width="90%" alt="" srcset="">
-                    </div>
-                </div>
-
-                <div class="col-md-6 d-flex z-3 justify-content-center justify-content-md-start" data-aos="fade-left">
-                    <div class="card rounded-sm p-3 service-card">
-                        <div class="card-body">
-                            <h3>Video Editing</h3>
-                            <p class="text-black"> Impactful animated product explainer videos</p>
-                            <ul class="service-list">
-                                <li>
-                                    <span>
-                                        <svg width="18" height="18" viewBox="0 0 21 21" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M10.7181 0.400757C5.10389 0.400757 0.536377 4.88676 0.536377 10.4008C0.536377 15.9148 5.10389 20.4008 10.7181 20.4008C16.3323 20.4008 20.8998 15.9148 20.8998 10.4008C20.8998 4.88676 16.3323 0.400757 10.7181 0.400757ZM8.68276 14.8138L5.63554 11.8274C5.23269 11.4326 5.23188 10.7841 5.63375 10.3883C6.02575 10.0022 6.65485 10.0015 7.04774 10.3867L8.68072 11.9878L13.364 7.38803C13.7565 7.00259 14.3854 7.00259 14.7778 7.38803C15.1804 7.78341 15.1804 8.43211 14.7778 8.82749L8.68276 14.8138Z"
-                                                fill="#3B82F6" />
-                                        </svg>
-
-                                    </span>
-                                    Video Editing Service
-                                </li>
-                                <li>
-                                    <span>
-                                        <svg width="18" height="18" viewBox="0 0 21 21" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M10.7181 0.400757C5.10389 0.400757 0.536377 4.88676 0.536377 10.4008C0.536377 15.9148 5.10389 20.4008 10.7181 20.4008C16.3323 20.4008 20.8998 15.9148 20.8998 10.4008C20.8998 4.88676 16.3323 0.400757 10.7181 0.400757ZM8.68276 14.8138L5.63554 11.8274C5.23269 11.4326 5.23188 10.7841 5.63375 10.3883C6.02575 10.0022 6.65485 10.0015 7.04774 10.3867L8.68072 11.9878L13.364 7.38803C13.7565 7.00259 14.3854 7.00259 14.7778 7.38803C15.1804 7.78341 15.1804 8.43211 14.7778 8.82749L8.68276 14.8138Z"
-                                                fill="#3B82F6" />
-                                        </svg>
-
-                                    </span>
-                                    Arrange clips in sequence
-                                </li>
-                                <li>
-                                    <span>
-                                        <svg width="18" height="18" viewBox="0 0 21 21" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M10.7181 0.400757C5.10389 0.400757 0.536377 4.88676 0.536377 10.4008C0.536377 15.9148 5.10389 20.4008 10.7181 20.4008C16.3323 20.4008 20.8998 15.9148 20.8998 10.4008C20.8998 4.88676 16.3323 0.400757 10.7181 0.400757ZM8.68276 14.8138L5.63554 11.8274C5.23269 11.4326 5.23188 10.7841 5.63375 10.3883C6.02575 10.0022 6.65485 10.0015 7.04774 10.3867L8.68072 11.9878L13.364 7.38803C13.7565 7.00259 14.3854 7.00259 14.7778 7.38803C15.1804 7.78341 15.1804 8.43211 14.7778 8.82749L8.68276 14.8138Z"
-                                                fill="#3B82F6" />
-                                        </svg>
-
-                                    </span>
-                                    Sync audio and video
-                                </li>
-                                <li>
-                                    <span>
-                                        <svg width="18" height="18" viewBox="0 0 21 21" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M10.7181 0.400757C5.10389 0.400757 0.536377 4.88676 0.536377 10.4008C0.536377 15.9148 5.10389 20.4008 10.7181 20.4008C16.3323 20.4008 20.8998 15.9148 20.8998 10.4008C20.8998 4.88676 16.3323 0.400757 10.7181 0.400757ZM8.68276 14.8138L5.63554 11.8274C5.23269 11.4326 5.23188 10.7841 5.63375 10.3883C6.02575 10.0022 6.65485 10.0015 7.04774 10.3867L8.68072 11.9878L13.364 7.38803C13.7565 7.00259 14.3854 7.00259 14.7778 7.38803C15.1804 7.78341 15.1804 8.43211 14.7778 8.82749L8.68276 14.8138Z"
-                                                fill="#3B82F6" />
-                                        </svg>
-
-                                    </span>
-                                    Apply color grading
-                                </li>
-                            </ul>
-                            <a href="{{ route('service.video-edit') }}" class="btn btn-primary btn-sm">Learn more</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Collaborate -->
-    <x-collaborate />
-
-    <!-- News Letter-->
-    <x-newsletter />
 @endsection

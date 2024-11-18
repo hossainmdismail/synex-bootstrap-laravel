@@ -45,6 +45,8 @@
                         <ul class="footer-navbar fw-600 fs-16">
                             <li class="nav-item active"><a href="{{ route('home') }}" class="nav-link">Home</a>
                             </li>
+                            <li class="nav-item"><a href="{{ route('about') }}"
+                                    class="nav-link">About Us</a></li>
                             <li class="nav-item"><a href="{{ route('services') }}"
                                     class="nav-link">Services</a></li>
                             <li class="nav-item"><a href="{{ route('projects') }}"

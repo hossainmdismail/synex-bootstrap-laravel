@@ -456,9 +456,9 @@
                                     <div class="portfolio-box">
                                         <div class="portfolio-image">
                                             <img alt=""
-                                                data-cfsrc="{{ asset('Frontend/demo') }}/portfolio-241.jpg"
+                                                data-cfsrc="{{ asset('Frontend/demo') }}/portfolio-241.webp"
                                                 style="display:none;visibility:hidden;" /><noscript><img
-                                                    src="{{ asset('Frontend/demo') }}/portfolio-241.jpg"
+                                                    src="{{ asset('Frontend/demo') }}/portfolio-241.webp"
                                                     alt="" /></noscript>
                                         </div>
                                         <div
@@ -466,7 +466,7 @@
                                             <div
                                                 class="d-flex align-items-center justify-content-start flex-wrap text-left w-100">
                                                 <div class="fs-20 fw-600 text-dark-gray portfolio-title ls-minus-05px">
-                                                    Pixflow</div>
+                                                    Orbit</div>
                                                 <i
                                                     class="line-icon-Arrow-OutRight icon-large align-middle text-dark-gray"></i>
                                             </div>
@@ -763,10 +763,6 @@
                             <div class="position-absolute top-minus-50px right-0px right-minus-100px z-index-9"
                                 data-bottom-top="transform:scale(1, 1) translate3d(0px, 60px, 0px);"
                                 data-top-bottom="transform:scale(1, 1) translate3d(0px, -60px, 0px);">
-                                <img class="" alt="" data-cfsrc="images/demo-design-agency-01.png"
-                                    style="display:none;visibility:hidden;"><noscript><img
-                                        src="images/demo-design-agency-01.png" class=""
-                                        alt=""></noscript>
                             </div>
                         </div>
                         <div class="fs-180 xs-fs-120 xs-lh-112 text-base-color word-break-normal alt-font text-center ls-minus-4px"

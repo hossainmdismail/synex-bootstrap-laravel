@@ -1,231 +1,1053 @@
-@extends('Frontend.layout.app')
-@section('content')
-    @php
-        $items = [
-            [
-                'title' => 'Digital Marketing Strategy Development',
-                'description' =>
-                    'We create tailored strategies that align with your business goals, ensuring every campaign drives results. Leverage our expertise to navigate the digital landscape effectively.',
-            ],
-            [
-                'title' => 'Social Media Marketing',
-                'description' =>
-                    'Our Digital Marketing Managers would manage your social media channels, driving engagement and building your brand effortlessly. Trust us to amplify your social media impact.',
-            ],
-            [
-                'title' => 'SEO Optimization',
-                'description' =>
-                    'Enhance your website’s visibility on search engines, driving organic traffic and boosting your online presence. Choose us to help your business rank higher and reach more customers.',
-            ],
-            [
-                'title' => 'Content Marketing',
-                'description' =>
-                    'We produce compelling content that resonates with your audience, positioning your brand as a leader in your industry.',
-            ],
-            [
-                'title' => 'Pay-Per-Click Advertising (PPC)',
-                'description' =>
-                    'Maximize your ROI with targeted PPC campaigns that reach your ideal audience. Partner with us to make every click count and drive more leads.',
-            ],
-            [
-                'title' => 'Email Marketing',
-                'description' =>
-                    'Drive digital marketing success with our personalized email campaigns that nurture leads and convert them into loyal customers. Grow your business with our email strategies.',
-            ],
-        ];
-    @endphp
-    @include('Frontend.layout.calendly')
+<!doctype html>
+<html class="no-js" lang="en">
 
-    <section class="container-fluid py-5 service-page sp-img-2 overflow-hidden"
-        style="background-image: url({{ asset('Frontend/images/Services/srb-2.webp') }})">
-        <div class="container py-5">
-            <div class="row py-3 py-md-5">
-                <div class="col-md-6 px-4 px-md-2 position-relative">
-                    <div class="bd-top">
-                        <span class="text-primary">Digital Marketing</span>
-                        <h1 class="pt-2">
-                            Get Strategic <span class="text-primary">Digital Marketing</span> with Us
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="ThemeZaa">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <!-- favicon icon -->
+    <link rel="shortcut icon" href="{{ asset('Frontend/images/icons/fav-low.png') }}">
+    <link rel="apple-touch-icon" href="{{ asset('Frontend/images/icons/fav-low.png') }}">
+    <link rel="apple-touch-icon" sizes="72x72" href="{{ asset('Frontend/images/icons/fav-low.png') }}">
+    <link rel="apple-touch-icon" sizes="114x114" href="{{ asset('Frontend/images/icons/fav-low.png') }}">
+    @include('Frontend.layout.headerLink')
+    <link rel="stylesheet" href="{{ asset('Frontend/css/seo-agency.css') }}" />
+</head>
+
+<body data-mobile-nav-style="full-screen-menu" data-mobile-nav-bg-color="#2a2b3f" class="custom-cursor">
+    <!-- start cursor -->
+    <div class="cursor-page-inner">
+        <div class="circle-cursor circle-cursor-inner"></div>
+        <div class="circle-cursor circle-cursor-outer"></div>
+    </div>
+    <!-- end cursor -->
+    <!-- start header -->
+    <header>
+        <!-- start navigation -->
+        <nav class="navbar navbar-expand-lg bg-transparent header-light header-reverse glass-effect"
+            data-header-hover="light">
+            <div class="container-fluid">
+                <div class="col-auto">
+                    <a class="navbar-brand" href="demo-seo-agency.html">
+                        <script type="text/javascript" style="display:none">
+                            //<![CDATA[
+                            window.__mirage2 = {
+                                petok: "HBpmF2N2wK1S2eLv1yTwXLgPP6OMa1AC3PBy315l5UE-3600-0.0.1.1"
+                            };
+                            //]]>
+                        </script>
+                        <script type="text/javascript" src="{{ asset('Frontend/js/mirage2.min.js') }}"></script>
+                        <img data-at2x="{{ asset('Frontend') }}/images/logo-text.svg" alt="" class="default-logo"
+                            data-cfsrc="{{ asset('Frontend') }}/images/logo-text.svg"
+                            style="display:none;visibility:hidden;"><noscript><img
+                                src="{{ asset('Frontend') }}/images/logo-text.svg"
+                                data-at2x="{{ asset('Frontend') }}/images/logo-text.svg" alt=""
+                                class="default-logo"></noscript>
+                        <img data-at2x="{{ asset('Frontend') }}/images/logo-text.svg" alt="" class="alt-logo"
+                            data-cfsrc="{{ asset('Frontend') }}/images/logo-text.svg"
+                            style="display:none;visibility:hidden;"><noscript><img
+                                src="{{ asset('Frontend') }}/images/logo-text.svg"
+                                data-at2x="{{ asset('Frontend') }}/images/logo-text.svg" alt=""
+                                class="alt-logo"></noscript>
+                        <img data-at2x="{{ asset('Frontend') }}/images/logo-text.svg" alt="" class="mobile-logo"
+                            data-cfsrc="{{ asset('Frontend') }}/images/logo-text.svg"
+                            style="display:none;visibility:hidden;"><noscript><img
+                                src="{{ asset('Frontend') }}/images/logo-text.svg"
+                                data-at2x="{{ asset('Frontend') }}/images/logo-text.svg" alt=""
+                                class="mobile-logo"></noscript>
+                    </a>
+                </div>
+                <div class="col-auto menu-order left-nav">
+                    <button class="navbar-toggler float-start" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-line"></span>
+                        <span class="navbar-toggler-line"></span>
+                        <span class="navbar-toggler-line"></span>
+                        <span class="navbar-toggler-line"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav alt-font">
+                            <li class="nav-item"><a href="{{route('home')}}" class="nav-link">Home</a></li>
+                            <li class="nav-item"><a href="{{route('about')}}" class="nav-link">About Us</a></li>
+                            <li class="nav-item"><a href="{{route('services')}}" class="nav-link">Services</a></li>
+                            <li class="nav-item"><a href="{{route('projects')}}" class="nav-link">Projects</a>
+                            </li>
+                            <li class="nav-item"><a href="{{route('blogs')}}" class="nav-link">Blog</a>
+                            </li>
+                            <li class="nav-item"><a href="{{route('contact')}}" class="nav-link">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-auto ms-auto">
+                    <div class="header-icon">
+                        <div class="header-button"><a href="{{route('contact')}}" class="btn btn-small btn-dark-gray btn-box-shadow btn-rounded">Get a quote</a></div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- end navigation -->
+    </header>
+    <!-- end header -->
+    <!-- start banner slider -->
+    <section class="cover-background position-relative ipad-top-space-margin"
+        style="background-image: url({{ asset('Frontend/images/demo-seo-agency-bg.jpg')}})">
+        <div class="background-position-left-top h-100 w-100 position-absolute left-0px top-0"
+            style="background-image: url('images/vertical-line-bg-medium-gray.svg')"></div>
+        <div class="background-position-center-bottom background-size-100 background-no-repeat position-absolute bottom-0 left-0px w-100 h-400px lg-h-170px z-index-1"
+            style="background-image: url({{ asset('Frontend/images/demo-seo-agency-bottom-bg.png')}})"></div>
+        <div id="particles-style-01" class="h-100 position-absolute left-0px top-0 w-100" data-particle="true"
+            data-particle-options='{"particles": {"number": {"value": 1.1,"density": {"enable": true,"value_area": 900}},"shape": {"type": ["image"],"image":{"src":"images/particles-demo-4-bg.png","width":180,"height":100}},"opacity": {"value": 0.5,"random": false,"anim": {"enable": false,"speed": 1,"sync": false}},"size": {"value": 120,"random": true,"anim": {"enable": false,"sync": true}},"line_linked":{"enable":false,"distance":0,"color":"#ffffff","opacity":0.4,"width":1},"move": {"enable": true,"speed":1,"direction": "right","random": false,"straight": false}},"interactivity": {"detect_on": "canvas","events": {"onhover": {"enable": false,"mode": "repulse"},"onclick": {"enable": false,"mode": "push"},"resize": true}},"retina_detect": false}'>
+        </div>
+        <div class="container position-relative pb-2">
+            <div class="row align-items-center text-center text-md-start justify-content-sm-center">
+                <div class="col-md-6 col-sm-9 position-relative z-index-1 text-dark-gray md-mb-35px">
+                    <div class="alt-font fs-110 md-fs-100 fw-300 lh-85 ls-minus-2px mb-15px fancy-text-style-4"
+                        data-anime='{ "el": "childs", "opacity": [0, 1], "rotateY": [-90, 0], "rotateZ": [-10, 0], "translateY": [80, 0], "translateZ": [50, 0], "staggervalue": 200, "duration": 900, "easing": "easeOutCirc" }'>
+                        <span class="d-inline-block">Organic</span>
+                        <span class="fw-700 fs-150 md-fs-120 ls-minus-5px d-inline-block"
+                            data-fancy-text='{ "effect": "rubber-band", "string": ["search", "results"] }'></span>
+                    </div>
+                    <div
+                        data-anime='{ "opacity": [0, 1], "rotateY": [-90, 0], "rotateZ": [-10, 0], "translateY": [80, 0], "translateZ": [50, 0], "duration": 900, "delay": 500, "easing": "easeOutCirc" }'>
+                        <span
+                            class="alt-font fs-20 fw-500 w-70 lg-w-85 sm-w-100 mb-40px md-mb-30px d-block opacity-7">We
+                            offer flexible pricing plans so that our clients can take advantage of services.</span>
+                    </div>
+                    <a href="{{route('contact')}}"
+                        class="btn btn-extra-large btn-rounded with-rounded btn-gradient-orange-sky-blue btn-box-shadow box-shadow-extra-large"
+                        data-anime='{ "opacity": [0, 1], "rotateY": [-90, 0], "rotateZ": [-10, 0], "translateY": [80, 0], "translateZ": [50, 0], "duration": 900, "delay": 800, "easing": "easeOutCirc" }'>Get
+                        free analysis<span class="bg-white text-base-color">➔</span></a>
+                </div>
+                <div class="col-md-6 text-center"
+                    data-anime='{ "opacity": [0, 1], "translateY": [150, 0], "duration": 2000, "easing": "easeOutBack" }'>
+                    <img alt="" class="animation-float" data-cfsrc="{{ asset('Frontend/images/demo-seo-agency-banner-right.png')}}"
+                        style="display:none;visibility:hidden;"><noscript><img
+                            src="{{ asset('Frontend/images/demo-seo-agency-banner-right.png')}}" alt=""
+                            class="animation-float"></noscript>
+                </div>
+            </div>
+            <div class="position-absolute bottom-minus-90px md-bottom-minus-70px sm-bottom-minus-50px right-30px sm-right-10px z-index-9"
+                data-anime='{ "opacity": [0, 1], "scale": [0, 1], "translateZ": [50, 0], "staggervalue": 200, "duration": 900, "delay": 800, "easing": "easeOutCirc" }'>
+                <img alt="" class="md-w-180px xs-w-150px"
+                    data-cfsrc="{{ asset('Frontend/images/demo-seo-agency-banner-bottom.png')}}"
+                    style="display:none;visibility:hidden;"><noscript><img
+                        src="url({{ asset('Frontend/images/demo-seo-agency-banner-bottom.png')}}" alt=""
+                        class="md-w-180px xs-w-150px"></noscript>
+            </div>
+        </div>
+    </section>
+    <!-- end banner slider -->
+    <!-- start section -->
+    <section class="background-position-center-top pb-0 pt-4 sm-pt-40px"
+        style="background-image: url({{ asset('Frontend/images/demo-seo-agency-vertical-line-bg.svg')}})">
+        <div class="container">
+            <div class="row justify-content-center mb-4">
+                <div class="col-xl-7 col-lg-8 col-md-10 text-center"
+                    data-anime='{ "translateY": [50, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 150, "easing": "easeOutQuad" }'>
+                    <h2 class="fw-600 text-dark-gray alt-font ls-minus-1px">Social marketing services</h2>
+                </div>
+            </div>
+            <div class="row row-cols-1 row-cols-xl-4 row-cols-lg-3 row-cols-sm-2 justify-content-center"
+                data-anime='{ "el": "childs", "rotateZ": [5, 0], "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 200, "easing": "easeOutQuad" }'>
+                <!-- start features box item -->
+                <div class="col icon-with-text-style-03 lg-mb-50px xs-mb-40px transition-inner-all">
+                    <div class="feature-box ps-7 pe-7 sm-ps-4 sm-pe-4">
+                        <div class="feature-box-icon mb-30px sm-mb-20px">
+                            <img class="h-65px" src="{{ asset('Frontend/images/demo-seo-agency-icon-03.svg')}}" alt="">
+                        </div>
+                        <div class="feature-box-content last-paragraph-no-margin">
+                            <span class="d-inline-block alt-font fw-700 text-dark-gray mb-5px fs-20">Real time
+                                analytics</span>
+                            <p>We deliver email marketing campaigns to your audience.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- end features box item -->
+                <!-- start features box item -->
+                <div class="col icon-with-text-style-03 lg-mb-50px xs-mb-40px transition-inner-all">
+                    <div class="feature-box ps-7 pe-7 sm-ps-4 sm-pe-4">
+                        <div class="feature-box-icon mb-30px sm-mb-20px">
+                            <img class="h-65px" src="{{ asset('Frontend/images/demo-seo-agency-icon-01.svg')}}" alt="">
+                        </div>
+                        <div class="feature-box-content last-paragraph-no-margin">
+                            <span class="d-inline-block alt-font fw-700 text-dark-gray mb-5px fs-20">Keywords
+                                analytics</span>
+                            <p>We also help our clients with social media strategy.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- end features box item -->
+                <!-- start features box item -->
+                <div class="col icon-with-text-style-03 xs-mb-40px transition-inner-all">
+                    <div class="feature-box ps-7 pe-7 sm-ps-4 sm-pe-4">
+                        <div class="feature-box-icon mb-30px sm-mb-20px">
+                            <img class="h-65px" src="{{ asset('Frontend/images/demo-seo-agency-icon-04.svg')}}" alt="">
+                        </div>
+                        <div class="feature-box-content last-paragraph-no-margin">
+                            <span class="d-inline-block alt-font fw-700 text-dark-gray mb-5px fs-20">SEO
+                                optimization</span>
+                            <p>We believe in challenges and so we have made challenges.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- end features box item -->
+                <!-- start features box item -->
+                <div class="col icon-with-text-style-03">
+                    <div class="feature-box ps-7 pe-7 sm-ps-4 sm-pe-4">
+                        <div class="feature-box-icon mb-30px sm-mb-20px">
+                            <img class="h-65px" src="{{ asset('Frontend/images/demo-seo-agency-icon-02.svg')}}" alt="">
+                        </div>
+                        <div class="feature-box-content last-paragraph-no-margin">
+                            <span class="d-inline-block alt-font fw-700 text-dark-gray mb-5px fs-20">Boost
+                                performance</span>
+                            <p>Team delivers incomparable quality with designing.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- end features box item -->
+            </div>
+        </div>
+    </section>
+    <!-- end section -->
+    <!-- start section -->
+    <section
+        class="position-relative background-position-center-top half-section xs-ps-15px xs-pe-15px overflow-hidden"
+        style="background-image: url({{ asset('Frontend/images/vertical-line-bg-medium-gray.svg')}})">
+        <div id="particles-style-02" class="h-100 position-absolute left-0px top-0 z-index-minus-1 w-100"
+            data-particle="true"
+            data-particle-options='{"particles": {"number": {"value":8,"density": {"enable": true,"value_area": 4000}},"shape": {"type": ["image"],"image":{"src":"images/demo-seo-agency-particles-img.png","width":220,"height":134}},"opacity": {"value": 0.5,"random": false,"anim": {"enable": false,"speed": 1,"sync": false}},"size": {"value": 120,"random": true,"anim": {"enable": false,"sync": true}},"line_linked":{"enable":false,"distance":0,"color":"#ffffff","opacity":0.4,"width":1},"move": {"enable": true,"speed":1,"direction": "right","random": false,"straight": false}},"interactivity": {"detect_on": "canvas","events": {"onhover": {"enable": false,"mode": "repulse"},"onclick": {"enable": false,"mode": "push"},"resize": true}},"retina_detect": false}'>
+        </div>
+        <div class="container bg-white border-radius-6px box-shadow-double-large"
+            data-bottom-top="transform:scale(1, 1) translateX(20px);"
+            data-top-bottom="transform:scale(1, 1) translateX(-20px);">
+            <div
+                class="row row-cols-1 row-cols-lg-3 row-cols-sm-2 align-items-center pt-50px pb-50px ps-30px pe-30px justify-content-center">
+                <!-- start content box item -->
+                <div class="col md-mb-40px alt-font text-dark-gray fw-600">
+                    <div
+                        class="d-flex flex-column flex-md-row justify-content-center align-items-center g-0 text-center text-md-start">
+                        <div class="flex-shrink-0 me-15px sm-me-0">
+                            <h2 class="mb-0">99<sup class="fs-30">%</sup></h2>
+                        </div>
+                        <div>
+                            <span class="fs-18 lh-26 d-block">Track and analyze <br />business reports.</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- end content box item -->
+                <!-- start content box item -->
+                <div class="col md-mb-40px alt-font text-dark-gray fw-600">
+                    <div
+                        class="d-flex flex-column flex-md-row justify-content-center align-items-center g-0 text-center text-md-start">
+                        <div class="flex-shrink-0 me-15px sm-me-0">
+                            <h2 class="mb-0">4.96</h2>
+                        </div>
+                        <div>
+                            <div class="review-star-icon fs-20 lh-34 text-gradient-orange-sky-blue">
+                                ★
+                                ★
+                                ★
+                                ★
+                                ★
+                            </div>
+                            <span class="d-block fs-18 lh-20">Best rated agency</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- end content box item -->
+                <!-- start content box item -->
+                <div class="col alt-font text-dark-gray fw-600">
+                    <div
+                        class="d-flex flex-column flex-md-row justify-content-center align-items-center g-0 text-center text-md-start">
+                        <div class="flex-shrink-0 me-15px sm-me-0">
+                            <h2 class="mb-0">98<sup class="fs-30">%</sup></h2>
+                        </div>
+                        <div>
+                            <span class="fs-18 lh-26 d-block">Genuine repeated <br />happy customers.</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- end content box item -->
+            </div>
+        </div>
+    </section>
+    <!-- end section -->
+    <!-- start section -->
+    <section class="background-position-center-top pt-0"
+        style="background-image: url({{ asset('Frontend/images/vertical-line-bg-medium-gray.svg')}})">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div
+                    class="col-12 d-block d-sm-flex align-items-center text-center text-sm-start justify-content-center fs-22 alt-font mb-7">
+                    <div class="me-5px xs-ms-10px d-inline-block align-middle"><i
+                            class="fa-regular fa-heart text-red"></i></div>
+                    <div class="d-inline-block align-middle">Join the <span
+                            class="fw-800 text-dark-gray text-decoration-line-bottom-medium">10000+</span> companies
+                        trusting our agency.</div>
+                </div>
+            </div>
+            <div class="row justify-content-center align-items-center">
+                <div class="col-md-6 animation-float sm-mb-50px"
+                    data-anime='{ "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 150, "easing": "easeOutQuad" }'>
+                    <img alt="" data-cfsrc="{{ asset('Frontend/images/demo-seo-agency-03.png')}}"
+                        style="display:none;visibility:hidden;"><noscript><img src="{{ asset('Frontend/images/demo-seo-agency-03.png')}}"
+                            alt=""></noscript>
+                </div>
+                <div class="col-lg-5 offset-lg-1 col-md-6 text-center text-md-start"
+                    data-anime='{ "el": "childs", "willchange": "transform", "opacity": [0, 1], "rotateY": [-90, 0], "rotateZ": [-10, 0], "translateY": [80, 0], "translateZ": [50, 0], "staggervalue": 200, "duration": 600, "delay": 100, "easing": "easeOutCirc" }'>
+                    <span
+                        class="ps-20px pe-20px mb-25px md-mb-20px text-uppercase text-dark-gray fs-13 lh-40 md-lh-50 ls-1px alt-font fw-700 border-radius-4px bg-gradient-chablis-red-quartz-white d-inline-block">Working
+                        process</span>
+                    <h2 class="alt-font text-dark-gray fw-600 ls-minus-1px">Simple working process to start.</h2>
+                    <p class="w-80 xl-w-85 lg-w-90 md-w-100 mb-20px">We are committed to deliver unique digital media
+                        solutions from web development to eCommerce solutions for our happy clients by using our
+                        knowledge and expertise.</p>
+                    <a href="demo-seo-agency-process.html"
+                        class="btn btn-link btn-hover-animation-switch btn-large text-dark-gray fw-700">
+                        {{-- <span>
+                            <span class="btn-text">learn more</span>
+                            <span class="btn-icon">➔</span>
+                            <span class="btn-icon">➔</span>
+                        </span> --}}
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end section -->
+    <!-- start section -->
+    <section class="background-position-center-bottom background-size-100 background-no-repeat bg-base-color"
+        style="background-image: url({{ asset('Frontend/images/demo-seo-agency-analysis-bg.png')}})"
+        data-anime='{ "translate": [0, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 150, "easing": "easeOutQuad" }'>
+        <div class="container-fluid d-none d-md-block">
+            <div class="row">
+                <div class="p-0 overlap-section text-end pe-4 md-pe-5">
+                    <img alt="" class="animation-rotation lg-w-150px"
+                        data-cfsrc="{{ asset('Frontend/images/demo-seo-agency-08.png')}}"
+                        style="display:none;visibility:hidden;"><noscript><img src="{{ asset('Frontend/images/demo-seo-agency-08.png')}}"
+                            alt="" class="animation-rotation lg-w-150px"></noscript>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row justify-content-center mb-1">
+                <div class="col-12 text-center">
+                    <h2 class="fw-600 alt-font text-white ls-minus-1px">Receive your free SEO analysis?</h2>
+                </div>
+            </div>
+            <div class="row contact-form-style-06 position-relative justify-content-center pb-12">
+                <div class="col-xl-10">
+                    <!-- start SEO analysis form -->
+                    <form action="https://craftohtml.themezaa.com/email-templates/contact-form.php" method="post"
+                        class="row justify-content-center">
+                        <div class="col-md-5 sm-mb-25px">
+                            <input
+                                class="border-color-transparent-white-very-light input-medium bg-transparent ps-35px border-radius-100px fw-300 placeholder-light form-control required"
+                                type="url" name="url" placeholder="Enter your website URL.." />
+                        </div>
+                        <div class="col-md-5 sm-mb-25px">
+                            <input
+                                class="border-color-transparent-white-very-light input-medium bg-transparent ps-35px border-radius-100px fw-300 placeholder-light form-control required"
+                                type="email" name="email" placeholder="Enter your email..." />
+                        </div>
+                        <div class="col-12 col-md-auto">
+                            <button type="submit" aria-label="submit"
+                                class="btn bg-white text-base-color p-0 btn-rounded submit w-65px h-65px sm-w-100">➔</button>
+                        </div>
+                        <div
+                            class="col-12 col-md-10 form-results border-radius-4px mt-15px lh-normal pt-10px pb-10px ps-15px pe-15px fs-16 text-center d-none">
+                        </div>
+                    </form>
+                    <!-- end SEO analysis form -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end section -->
+    <!-- start section -->
+    <section class="background-position-center-top pt-4 md-pt-6 sm-pt-40px"
+        style="background-image: url('images/demo-seo-agency-vertical-line-bg.svg')">
+        <div class="container">
+            <div class="row mb-8 md-mb-10">
+                <div class="col-12 tab-style-04">
+                    <!-- start tab navigation -->
+                    <ul
+                        class="nav nav-tabs border-0 justify-content-center fw-500 fs-19 mb-4 md-mb-6 sm-mb-5px alt-font">
+                        <li class="nav-item"><a data-bs-toggle="tab" href="#tab_five1"
+                                class="nav-link active">Keyword research<span
+                                    class="tab-border bg-dark-gray"></span></a></li>
+                        <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#tab_five2">Target
+                                analysis<span class="tab-border bg-dark-gray"></span></a></li>
+                        <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#tab_five3">Social
+                                marketing<span class="tab-border bg-dark-gray"></span></a></li>
+                        <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#tab_five4">Email
+                                campaign<span class="tab-border bg-dark-gray"></span></a></li>
+                    </ul>
+                    <!-- end tab navigation -->
+                    <div class="tab-content">
+                        <!-- start tab content -->
+                        <div class="tab-pane fade in active show" id="tab_five1">
+                            <div class="row align-items-center justify-content-center">
+                                <div class="col-lg-7 col-md-6 sm-mb-30px"
+                                    data-anime='{ "opacity": [0, 1], "staggervalue": 200, "duration": 600, "delay": 0, "easing": "easeOutCirc" }'>
+                                    <img alt="" data-cfsrc="{{ asset('Frontend/images/demo-seo-agency-tab-01.png')}}"
+                                        style="display:none;visibility:hidden;" /><noscript><img
+                                            src="{{ asset('Frontend/images/demo-seo-agency-tab-01.png')}}" alt="" /></noscript>
+                                </div>
+                                <div class="col-lg-5 col-md-6 ps-8 lg-ps-3 sm-ps-15px text-center text-md-start"
+                                    data-anime='{ "el": "childs", "willchange": "transform", "opacity": [0, 1], "rotateY": [-90, 0], "rotateZ": [-10, 0], "translateY": [80, 0], "translateZ": [50, 0], "staggervalue": 200, "duration": 600, "delay": 100, "easing": "easeOutCirc" }'>
+                                    <span
+                                        class="ps-20px pe-20px mb-30px md-mb-20px text-uppercase text-dark-gray fs-13 lh-40 md-lh-50 ls-1px alt-font fw-700 border-radius-4px bg-gradient-chablis-red-quartz-white d-inline-block">Keyword
+                                        research</span>
+                                    <h2 class="alt-font text-dark-gray fw-600 ls-minus-1px">Keywords lead to customers.
+                                    </h2>
+                                    <p class="w-80 xl-w-90 md-w-100">We are committed to deliver unique digital media
+                                        solutions from web design to eCommerce solutions for our clients by using our
+                                        knowledge and expertise.</p>
+                                    <a href="demo-seo-agency-what-we-do.html"
+                                        class="btn btn-link btn-hover-animation-switch btn-large text-dark-gray fw-700">
+                                        {{-- <span>
+                                            <span class="btn-text">learn more</span>
+                                            <span class="btn-icon">➔</span>
+                                            <span class="btn-icon">➔</span>
+                                        </span> --}}
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end tab content -->
+                        <!-- start tab content -->
+                        <div class="tab-pane fade in" id="tab_five2">
+                            <div class="row align-items-center justify-content-center">
+                                <div class="col-lg-7 col-md-6 sm-mb-30px">
+                                    <img alt="" data-cfsrc="{{ asset('Frontend/images/demo-seo-agency-tab-02.png')}}"
+                                        style="display:none;visibility:hidden;" /><noscript><img
+                                            src="{{ asset('Frontend/images/demo-seo-agency-tab-02.png')}}" alt="" /></noscript>
+                                </div>
+                                <div class="col-lg-5 col-md-6 ps-8 lg-ps-3 sm-ps-15px text-center text-md-start">
+                                    <span
+                                        class="ps-20px pe-20px mb-30px md-mb-20px text-uppercase text-dark-gray fs-13 lh-40 md-lh-50 ls-1px alt-font fw-700 border-radius-4px bg-gradient-chablis-red-quartz-white d-inline-block">Target
+                                        analysis</span>
+                                    <h2 class="alt-font text-dark-gray fw-600 ls-minus-1px">Power your online
+                                        visibility.</h2>
+                                    <p class="w-80 xl-w-90 md-w-100">We are committed to deliver unique digital media
+                                        solutions from web design to eCommerce solutions for our clients by using our
+                                        knowledge and expertise.</p>
+                                    <a href="demo-seo-agency-what-we-do.html"
+                                        class="btn btn-link btn-hover-animation-switch btn-large text-dark-gray fw-700">
+                                        {{-- <span>
+                                            <span class="btn-text">learn more</span>
+                                            <span class="btn-icon">➔</span>
+                                            <span class="btn-icon">➔</span>
+                                        </span> --}}
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end tab content -->
+                        <!-- start tab content -->
+                        <div class="tab-pane fade in" id="tab_five3">
+                            <div class="row align-items-center justify-content-center">
+                                <div class="col-lg-7 col-md-6 sm-mb-30px">
+                                    <img alt="" data-cfsrc="{{ asset('Frontend/images/demo-seo-agency-tab-03.png')}}"
+                                        style="display:none;visibility:hidden;" /><noscript><img
+                                            src="{{ asset('Frontend/images/demo-seo-agency-tab-03.png')}}" alt="" /></noscript>
+                                </div>
+                                <div class="col-lg-5 col-md-6 ps-8 lg-ps-3 sm-ps-15px text-center text-md-start">
+                                    <span
+                                        class="ps-20px pe-20px mb-30px md-mb-20px text-uppercase text-dark-gray fs-13 lh-40 md-lh-50 ls-1px alt-font fw-700 border-radius-4px bg-gradient-chablis-red-quartz-white d-inline-block">Social
+                                        marketing</span>
+                                    <h2 class="alt-font text-dark-gray fw-600 ls-minus-1px">Brand identity and
+                                        strategy.</h2>
+                                    <p class="w-80 xl-w-90 md-w-100">We are committed to deliver unique digital media
+                                        solutions from web design to eCommerce solutions for our clients by using our
+                                        knowledge and expertise.</p>
+                                    <a href="demo-seo-agency-what-we-do.html"
+                                        class="btn btn-link btn-hover-animation-switch btn-large text-dark-gray fw-700">
+                                        {{-- <span>
+                                            <span class="btn-text">learn more</span>
+                                            <span class="btn-icon">➔</span>
+                                            <span class="btn-icon">➔</span>
+                                        </span> --}}
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end tab content -->
+                        <!-- start tab content -->
+                        <div class="tab-pane fade in" id="tab_five4">
+                            <div class="row align-items-center justify-content-center">
+                                <div class="col-lg-7 col-md-6 sm-mb-30px">
+                                    <img alt="" data-cfsrc="{{ asset('Frontend/images/demo-seo-agency-tab-04.png')}}"
+                                        style="display:none;visibility:hidden;" /><noscript><img
+                                            src="{{ asset('Frontend/images/demo-seo-agency-tab-04.png')}}" alt="" /></noscript>
+                                </div>
+                                <div class="col-lg-5 col-md-6 ps-8 lg-ps-3 sm-ps-15px text-center text-md-start">
+                                    <span
+                                        class="ps-20px pe-20px mb-30px md-mb-20px text-uppercase text-dark-gray fs-13 lh-40 md-lh-50 ls-1px alt-font fw-700 border-radius-4px bg-gradient-chablis-red-quartz-white d-inline-block">Email
+                                        marketing</span>
+                                    <h2 class="alt-font text-dark-gray fw-600 ls-minus-1px">Tailor-made email campaign.
+                                    </h2>
+                                    <p class="w-80 xl-w-90 md-w-100">We are committed to deliver unique digital media
+                                        solutions from web design to eCommerce solutions for our clients by using our
+                                        knowledge and expertise.</p>
+                                    <a href="demo-seo-agency-what-we-do.html"
+                                        class="btn btn-link btn-hover-animation-switch btn-large text-dark-gray fw-700">
+                                        {{-- <span>
+                                            <span class="btn-text">learn more</span>
+                                            <span class="btn-icon">➔</i></span>
+                                            <span class="btn-icon">➔</span>
+                                        </span> --}}
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end tab content -->
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center mb-4">
+                <div class="col-xl-7 col-lg-8 col-md-10 text-center"
+                    data-anime='{ "translateY": [50, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 150, "easing": "easeOutQuad" }'>
+                    <h2 class="text-dark-gray fw-600 alt-font ls-minus-1px">Choose the best package your business needs
+                    </h2>
+                </div>
+            </div>
+            <div class="row align-items-center justify-content-center pricing-table-style-06"
+                data-anime='{ "el": "childs", "willchange": "transform", "scale": [0.95, 1], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 150, "easing": "easeOutQuad" }'>
+                <!-- start pricing item -->
+                <div class="col-lg-4 col-md-8 md-mb-30px">
+                    <div class="bg-white box-shadow-quadruple-large border-radius-6px p-18 lg-p-13 text-center">
+                        <h6 class="text-dark-gray fw-600 alt-font mb-0">Standard</h6>
+                        <span class="mb-20px d-inline-block">Unlimited users</span>
+                        <div class="row align-items-center">
+                            <div class="col-sm-5 pe-sm-0">
+                                <h2 class="text-dark-gray mb-0 alt-font fw-600 ls-minus-2px text-center text-sm-end">
+                                    <sup class="fs-28">$</sup>22</h2>
+                            </div>
+                            <div
+                                class="col-lg-7 col-sm-5 text-center text-sm-start last-paragraph-no-margin fs-15 lh-24">
+                                <p>per user/month billed annually</p>
+                            </div>
+                        </div>
+                        <ul class="p-0 mt-20px mb-30px list-style-01 text-start lh-normal">
+                            <li class="border-color-extra-medium-gray pt-20px pb-20px text-dark-gray d-flex"><i
+                                    class="feather icon-feather-check fs-20 text-green me-10px"></i>Marketing strategy
+                            </li>
+                            <li class="border-color-extra-medium-gray pt-20px pb-20px text-dark-gray d-flex"><i
+                                    class="feather icon-feather-check fs-20 text-green me-10px"></i>Competitive work
+                                analysis</li>
+                            <li class="border-color-extra-medium-gray pt-20px pb-20px opacity-6 d-flex"><i
+                                    class="feather icon-feather-x fs-20 text-red me-10px"></i>Social media share audit
+                            </li>
+                            <li class="border-color-extra-medium-gray pt-20px pb-20px opacity-6 d-flex"><i
+                                    class="feather icon-feather-x fs-20 text-red me-10px"></i>Monthly management</li>
+                        </ul>
+                        <div class="pricing-footer w-100">
+                            <a href="demo-seo-agency-pricing.html"
+                                class="btn btn-medium btn-dark-gray btn-round-edge w-100 btn-box-shadow">Choose
+                                package</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- end pricing item -->
+                <!-- start pricing item -->
+                <div class="col-lg-4 col-md-8 md-mb-30px">
+                    <div class="bg-white box-shadow-quadruple-large border-radius-6px p-18 lg-p-13 text-center">
+                        <span
+                            class="ps-15px pe-15px mb-20px text-uppercase text-base-color fs-12 lh-26 alt-font fw-700 border-radius-4px box-shadow-large border border-1 border-color-extra-medium-gray d-inline-block">popular
+                        </span>
+                        <h6 class="text-dark-gray fw-600 alt-font mb-0">Business</h6>
+                        <span class="mb-20px d-inline-block">Unlimited users</span>
+                        <div class="row align-items-center">
+                            <div class="col-sm-5 pe-sm-0">
+                                <h2 class="text-dark-gray mb-0 alt-font fw-600 ls-minus-2px text-center text-sm-end">
+                                    <sup class="fs-28">$</sup>33</h2>
+                            </div>
+                            <div
+                                class="col-lg-7 col-sm-5 text-center text-sm-start last-paragraph-no-margin fs-15 lh-24">
+                                <p>per user/month billed annually</p>
+                            </div>
+                        </div>
+                        <ul class="p-0 mt-20px mb-30px list-style-01 text-start lh-normal">
+                            <li class="border-color-extra-medium-gray pt-20px pb-20px text-dark-gray d-flex"><i
+                                    class="feather icon-feather-check fs-20 text-green me-10px"></i>Marketing strategy
+                            </li>
+                            <li class="border-color-extra-medium-gray pt-20px pb-20px text-dark-gray d-flex"><i
+                                    class="feather icon-feather-check fs-20 text-green me-10px"></i>Competitive work
+                                analysis</li>
+                            <li class="border-color-extra-medium-gray pt-20px pb-20px text-dark-gray d-flex"><i
+                                    class="feather icon-feather-check fs-20 text-green me-10px"></i>Social media share
+                                audit</li>
+                            <li class="border-color-extra-medium-gray pt-20px pb-20px opacity-5 d-flex"><i
+                                    class="feather icon-feather-x fs-20 text-red me-10px"></i>Monthly management</li>
+                        </ul>
+                        <div class="pricing-footer w-100">
+                            <a href="demo-seo-agency-pricing.html"
+                                class="btn btn-medium btn-base-color btn-round-edge w-100 btn-box-shadow">Choose
+                                package</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- end pricing item -->
+                <!-- start pricing item -->
+                <div class="col-lg-4 col-md-8">
+                    <div class="bg-white box-shadow-quadruple-large border-radius-6px p-18 lg-p-13 text-center">
+                        <h6 class="text-dark-gray fw-600 alt-font mb-0">Ultimate</h6>
+                        <span class="mb-20px d-inline-block">Unlimited users</span>
+                        <div class="row align-items-center">
+                            <div class="col-sm-5 pe-sm-0">
+                                <h2 class="text-dark-gray mb-0 alt-font fw-600 ls-minus-2px text-center text-sm-end">
+                                    <sup class="fs-28">$</sup>44</h2>
+                            </div>
+                            <div
+                                class="col-lg-7 col-sm-5 text-center text-sm-start last-paragraph-no-margin fs-15 lh-24">
+                                <p>per user/month billed annually</p>
+                            </div>
+                        </div>
+                        <ul class="p-0 mt-20px mb-30px list-style-01 text-start lh-normal">
+                            <li class="border-color-extra-medium-gray pt-20px pb-20px text-dark-gray d-flex"><i
+                                    class="feather icon-feather-check fs-20 text-green me-10px"></i>Marketing strategy
+                            </li>
+                            <li class="border-color-extra-medium-gray pt-20px pb-20px text-dark-gray d-flex"><i
+                                    class="feather icon-feather-check fs-20 text-green me-10px"></i>Competitive work
+                                analysis</li>
+                            <li class="border-color-extra-medium-gray pt-20px pb-20px text-dark-gray d-flex"><i
+                                    class="feather icon-feather-check fs-20 text-green me-10px"></i>Social media share
+                                audit</li>
+                            <li class="border-color-extra-medium-gray pt-20px pb-20px text-dark-gray d-flex"><i
+                                    class="feather icon-feather-check fs-20 text-green me-10px"></i>Monthly management
+                            </li>
+                        </ul>
+                        <div class="pricing-footer w-100">
+                            <a href="demo-seo-agency-pricing.html"
+                                class="btn btn-medium btn-dark-gray btn-round-edge w-100 btn-box-shadow">Choose
+                                package</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- end pricing item -->
+            </div>
+        </div>
+    </section>
+    <!-- end section -->
+    <!-- start section -->
+    {{-- <section class="cover-background" style="background-image: url('images/demo-seo-agency-bg-02.jpg')">
+        <div class="container">
+            <div class="row justify-content-center text-center text-lg-start"
+                data-anime='{ "el": "childs", "translateY": [0, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 150, "easing": "easeOutQuad" }'>
+                <div class="col-lg-6 col-md-9 md-mb-35px">
+                    <span
+                        class="ps-20px pe-20px mb-25px text-uppercase text-dark-gray fs-13 lh-40 md-lh-50 ls-1px alt-font fw-700 border-radius-4px bg-white d-inline-block">Satisfied
+                        clients</span>
+                    <h2 class="alt-font text-dark-gray fw-600 ls-minus-1px mb-30px">What our clients are saying about
+                        us?</h2>
+                    <div class="d-flex justify-content-center justify-content-lg-start">
+                        <!-- start slider navigation -->
+                        <div
+                            class="slider-one-slide-prev-1 text-dark-gray swiper-button-prev slider-navigation-style-04 border border-1 border-color-transparent-dark-very-light"><
+                        </div>
+                        <div
+                            class="slider-one-slide-next-1 text-dark-gray swiper-button-next slider-navigation-style-04 border border-1 border-color-transparent-dark-very-light">>
+                            </div>
+                        <!-- end slider navigation -->
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-10">
+                    <div class="swiper slider-one-slide magic-cursor"
+                        data-slider-options='{ "slidesPerView": 1, "loop": true, "autoplay": { "delay": 4000, "disableOnInteraction": false }, "navigation": { "nextEl": ".slider-one-slide-next-1", "prevEl": ".slider-one-slide-prev-1" }, "keyboard": { "enabled": true, "onlyInViewport": true }, "effect": "slide" }'>
+                        <div class="swiper-wrapper">
+                            <!-- start text slider item -->
+                            <div class="swiper-slide">
+                                <span class="d-inline-block fs-22 lh-36 w-90 lg-w-100 mb-20px text-dark-gray">This
+                                    theme has a wide variety of options and a really good customer support. Some of the
+                                    customizations are unlimited but even so the theme still gives a lot of features
+                                    while prioritizing web speed.</span>
+                                <div class="mt-5px">
+                                    <div
+                                        class="rounded-circle bg-white rounded-circle w-100px h-100px d-inline-block align-middle overflow-hidden me-20px">
+                                    </div>
+                                    <div class="d-inline-block align-middle text-start">
+                                        <div class="text-dark-gray fs-20 fw-600 alt-font">Herman miller</div>
+                                        <div class="lh-30">Chief financial</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end text slider item -->
+                            <!-- start text slider item -->
+                            <div class="swiper-slide">
+                                <span class="d-inline-block fs-22 lh-36 w-90 lg-w-100 mb-20px text-dark-gray">Their
+                                    team are easy to work with and helped me make amazing websites in a short amount of
+                                    time. Thanks guys for all your hard work. This is an excellent theme!</span>
+                                <div class="mt-5px">
+                                    <div
+                                        class="rounded-circle bg-white rounded-circle w-100px h-100px d-inline-block align-middle overflow-hidden me-20px">
+                                        <img alt="" data-cfsrc="images/demo-seo-agency-avtar-02.jpg"
+                                            style="display:none;visibility:hidden;"><noscript><img
+                                                src="images/demo-seo-agency-avtar-02.jpg" alt=""></noscript>
+                                    </div>
+                                    <div class="d-inline-block align-middle text-start">
+                                        <div class="text-dark-gray fs-20 fw-600 alt-font">Michelle moore</div>
+                                        <div class="lh-30">Sales manager</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end text slider item -->
+                            <!-- start text slider item -->
+                            <div class="swiper-slide">
+                                <span class="d-inline-block fs-22 lh-36 w-90 lg-w-100 mb-20px text-dark-gray">Our
+                                    experience with your agency has been amazingly satisfying so far. The company I work
+                                    with is happy to let you know that we are a regular customer and look forward to our
+                                    cooperation soon!</span>
+                                <div class="mt-5px">
+                                    <div
+                                        class="rounded-circle bg-white rounded-circle w-100px h-100px d-inline-block align-middle overflow-hidden me-20px">
+                                        <img alt="" data-cfsrc="images/demo-seo-agency-avtar-03.jpg"
+                                            style="display:none;visibility:hidden;"><noscript><img
+                                                src="images/demo-seo-agency-avtar-03.jpg" alt=""></noscript>
+                                    </div>
+                                    <div class="d-inline-block align-middle text-start">
+                                        <div class="text-dark-gray fs-20 fw-600 alt-font">Loretta smith</div>
+                                        <div class="lh-30">Sales manager</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end text slider item -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> --}}
+    <!-- end section -->
+    <!-- start section -->
+    <section class="bg-gradient-top-very-light-gray overlap-height position-relative">
+        <div class="container overlap-gap-section">
+            <div class="row justify-content-center mb-4">
+                <div class="col-xxl-6 col-lg-8 col-md-10 text-center"
+                    data-anime='{ "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 150, "easing": "easeOutQuad" }'>
+                    <h2 class="fw-600 alt-font text-dark-gray ls-minus-1px">Trusted by over 26,300 reputed companies
+                    </h2>
+                </div>
+            </div>
+            <div class="row justify-content-center row-cols-2 row-cols-md-4 row-cols-sm-3 clients-style-03">
+                <!-- start client item -->
+                <div class="col text-center mb-35px"
+                    data-anime='{ "translateY": [15, 0], "opacity": [0,1], "duration": 600, "delay": 300, "staggervalue": 150, "easing": "easeOutQuad" }'>
+                    <div class="client-box">
+                        <a href="#"><img alt=""
+                                class="box-shadow-extra-large border-radius-100px lg-w-80 md-w-95 xs-w-auto"
+                                data-cfsrc="{{ asset('Frontend/images/demo-seo-agency-clients-01.jpg')}}"
+                                style="display:none;visibility:hidden;"><noscript><img
+                                    src="{{ asset('Frontend/images/demo-seo-agency-clients-01.jpg')}}" alt=""
+                                    class="box-shadow-extra-large border-radius-100px lg-w-80 md-w-95 xs-w-auto"></noscript></a>
+                    </div>
+                </div>
+                <!-- end client item -->
+                <!-- start client item -->
+                <div class="col text-center mb-35px"
+                    data-anime='{ "translateY": [15, 0], "opacity": [0,1], "duration": 600, "delay": 1000, "staggervalue": 150, "easing": "easeOutQuad" }'>
+                    <div class="client-box">
+                        <a href="#"><img alt=""
+                                class="box-shadow-extra-large border-radius-100px lg-w-80 md-w-95 xs-w-auto"
+                                data-cfsrc="{{ asset('Frontend/images/demo-seo-agency-clients-02.jpg')}}"
+                                style="display:none;visibility:hidden;"><noscript><img
+                                    src="{{ asset('Frontend/images/demo-seo-agency-clients-02.jpg')}}" alt=""
+                                    class="box-shadow-extra-large border-radius-100px lg-w-80 md-w-95 xs-w-auto"></noscript></a>
+                    </div>
+                </div>
+                <!-- end client item -->
+                <!-- start client item -->
+                <div class="col text-center mb-35px"
+                    data-anime='{ "translateY": [15, 0], "opacity": [0,1], "duration": 600, "delay":900, "staggervalue": 150, "easing": "easeOutQuad" }'>
+                    <div class="client-box">
+                        <a href="#"><img alt=""
+                                class="box-shadow-extra-large border-radius-100px lg-w-80 md-w-95 xs-w-auto"
+                                data-cfsrc="{{ asset('Frontend/images/demo-seo-agency-clients-03.jpg')}}"
+                                style="display:none;visibility:hidden;"><noscript><img
+                                    src="{{ asset('Frontend/images/demo-seo-agency-clients-03.jpg')}}" alt=""
+                                    class="box-shadow-extra-large border-radius-100px lg-w-80 md-w-95 xs-w-auto"></noscript></a>
+                    </div>
+                </div>
+                <!-- end client item -->
+                <!-- start client item -->
+                <div class="col text-center mb-35px"
+                    data-anime='{ "translateY": [15, 0], "opacity": [0,1], "duration": 600, "delay": 500, "staggervalue": 150, "easing": "easeOutQuad" }'>
+                    <div class="client-box">
+                        <a href="#"><img alt=""
+                                class="box-shadow-extra-large border-radius-100px lg-w-80 md-w-95 xs-w-auto"
+                                data-cfsrc="{{ asset('Frontend/images/demo-seo-agency-clients-04.jpg')}}"
+                                style="display:none;visibility:hidden;"><noscript><img
+                                    src="{{ asset('Frontend/images/demo-seo-agency-clients-04.jpg')}}" alt=""
+                                    class="box-shadow-extra-large border-radius-100px lg-w-80 md-w-95 xs-w-auto"></noscript></a>
+                    </div>
+                </div>
+                <!-- end client item -->
+                <!-- start client item -->
+                <div class="col text-center sm-mb-35px"
+                    data-anime='{ "translateY": [15, 0], "opacity": [0,1], "duration": 600, "delay": 700, "staggervalue": 150, "easing": "easeOutQuad" }'>
+                    <div class="client-box">
+                        <a href="#"><img alt=""
+                                class="box-shadow-extra-large border-radius-100px lg-w-80 md-w-95 xs-w-auto"
+                                data-cfsrc="{{ asset('Frontend/images/demo-seo-agency-clients-05.jpg')}}"
+                                style="display:none;visibility:hidden;"><noscript><img
+                                    src="{{ asset('Frontend/images/demo-seo-agency-clients-05.jpg')}}" alt=""
+                                    class="box-shadow-extra-large border-radius-100px lg-w-80 md-w-95 xs-w-auto"></noscript></a>
+                    </div>
+                </div>
+                <!-- end client item -->
+                <!-- start client item -->
+                <div class="col text-center sm-mb-35px"
+                    data-anime='{ "translateY": [15, 0], "opacity": [0,1], "duration": 600, "delay":1200, "staggervalue": 150, "easing": "easeOutQuad" }'>
+                    <div class="client-box">
+                        <a href="#"><img alt=""
+                                class="box-shadow-extra-large border-radius-100px lg-w-80 md-w-95 xs-w-auto"
+                                data-cfsrc="{{ asset('Frontend/images/demo-seo-agency-clients-06.jpg')}}"
+                                style="display:none;visibility:hidden;"><noscript><img
+                                    src="{{ asset('Frontend/images/demo-seo-agency-clients-06.jpg')}}" alt=""
+                                    class="box-shadow-extra-large border-radius-100px lg-w-80 md-w-95 xs-w-auto"></noscript></a>
+                    </div>
+                </div>
+                <!-- end client item -->
+                <!-- start client item -->
+                <div class="col text-center"
+                    data-anime='{ "translateY": [15, 0], "opacity": [0,1], "duration": 600, "delay": 800, "staggervalue": 150, "easing": "easeOutQuad" }'>
+                    <div class="client-box">
+                        <a href="#"><img alt=""
+                                class="box-shadow-extra-large border-radius-100px lg-w-80 md-w-95 xs-w-auto"
+                                data-cfsrc="{{ asset('Frontend/images/demo-seo-agency-clients-07.jpg')}}"
+                                style="display:none;visibility:hidden;"><noscript><img
+                                    src="{{ asset('Frontend/images/demo-seo-agency-clients-07.jpg')}}" alt=""
+                                    class="box-shadow-extra-large border-radius-100px lg-w-80 md-w-95 xs-w-auto"></noscript></a>
+                    </div>
+                </div>
+                <!-- end client item -->
+            </div>
+            <div class="row justify-content-center mt-7 mb-9 sm-mt-40px sm-mb-0">
+                <div
+                    class="col-12 d-block d-sm-flex align-items-center text-center text-sm-start justify-content-center fs-22 alt-font">
+                    <div class="me-5px xs-ms-10px d-inline-block align-middle"><i
+                            class="fa-regular fa-heart text-red"></i></div>
+                    <div class="d-inline-block align-middle">Join the <span
+                            class="fw-800 text-dark-gray text-decoration-line-bottom-medium">10000+</span> companies
+                        trusting our agency.</div>
+                </div>
+            </div>
+        </div>
+        <div class="background-position-center-bottom background-size-100 background-no-repeat h-300px sm-h-150px position-absolute sm-position-relative left-0px bottom-0 w-100 d-none d-md-block"
+            style="background-image: url('images/demo-seo-agency-analysis-bg.png')"></div>
+    </section>
+    <!-- end section -->
+    <!-- start section -->
+    <section class="p-0 sm-pt-50px">
+        <div class="container overlap-section">
+            <div class="row justify-content-center box-shadow-quadruple-large border-radius-6px overflow-hidden g-0">
+                <!-- start contact address -->
+                <div class="col-lg-6">
+                    <div class="p-15 lg-p-13 md-p-10 bg-white h-100 background-position-right-bottom background-no-repeat xs-background-image-none"
+                        style="background-image: url('images/demo-seo-agency-contact-bottom.png')">
+                        <span
+                            class="ps-25px pe-25px mb-25px text-uppercase text-dark-gray fs-13 lh-42 ls-1px alt-font fw-700 border-radius-4px bg-gradient-chablis-red-quartz-white d-inline-block">Keep
+                            in touch</span>
+                        <h3 class="alt-font text-dark-gray fw-600">Looking for help? Ready to help!</h3>
+                        <p>Feel free to get in touch..</p>
+                        {{-- <div class="mt-11">
+                            <div class="col icon-with-text-style-08 mb-25px">
+                                <div
+                                    class="feature-box feature-box-left-icon-middle border-bottom pb-25px border-color-extra-medium-gray">
+                                    <div class="feature-box-icon me-25px xs-me-15px lh-0px">
+                                        <i class="bi bi-telephone-outbound icon-medium text-dark-gray"></i>
+                                    </div>
+                                    <div class="feature-box-content">
+                                        <span class="alt-font fs-18 fw-500">Feel free to get in touch?</span>
+                                        <span class="d-block fw-600 alt-font fs-20"><a href="tel:1234567890"
+                                                class="text-dark-gray">123 456 7890</a></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col icon-with-text-style-08 mb-25px">
+                                <div
+                                    class="feature-box feature-box-left-icon-middle border-bottom pb-25px border-color-extra-medium-gray">
+                                    <div class="feature-box-icon me-25px xs-me-15px lh-0px">
+                                        <i class="bi bi-envelope icon-medium text-dark-gray"></i>
+                                    </div>
+                                    <div class="feature-box-content">
+                                        <span class="alt-font fs-18 fw-500">How can we help you?</span>
+                                        <span class="d-block fw-600 alt-font fs-20"><a
+                                                href="cdn-cgi/l/email-protection.html#e78f828b97a79e88929583888a868e89c984888a"
+                                                class="text-dark-gray"><span class="__cf_email__"
+                                                    data-cfemail="f79f929b87b78e98828593989a969e99d994989a">[email&#160;protected]</span></a></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col icon-with-text-style-08">
+                                <div class="feature-box feature-box-left-icon-middle">
+                                    <div class="feature-box-icon me-25px xs-me-15px lh-0px">
+                                        <i class="bi bi-chat-text icon-medium text-dark-gray"></i>
+                                    </div>
+                                    <div class="feature-box-content">
+                                        <span class="alt-font fs-18 fw-500">Are you ready for coffee?</span>
+                                        <span class="text-dark-gray d-block alt-font fw-600 fs-20">401 Broadway,
+                                            London</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> --}}
+                    </div>
+                </div>
+                <!-- end contact address -->
+                <div class="col-lg-6 contact-form-style-03">
+                    <div class="p-15 lg-p-13 md-p-10 bg-dark-gray h-100">
+                        <h1 class="fw-600 alt-font text-white fancy-text-style-4 ls-minus-1px">Say
+                            <span
+                                data-fancy-text='{ "effect": "rotate", "string": ["hello!", "hallå!", "salve!"] }'></span>
                         </h1>
-                        <p class="pt-2">
-                            Our all-encompassing digital marketing services can unleash the complete power of your own
-                            brand. Our tactics are made for success in digital marketing regardless of whether yours is a
-                            small business or a mature company willing to boost. The campaigns that we create will guarantee
-                            you that our team’s work is just as effective as a skilled team with certified Digital Marketing
-                            Managers from Meta.
-                        </p>
-                        <div class="pt-4">
-                            <button class="btn btn-primary btn-default">View Project</button>
-                            <button class="btn btn-outline-primary btn-default">Get in touch</button>
-                        </div>
-                    </div>
-                    <div class="bg">
-                        <div class="position-relative service-middlebox">
-                            <svg class="service-image-bg" xmlns="http://www.w3.org/2000/svg" version="1.1"
-                                xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs"
-                                width="1440" height="560" preserveAspectRatio="none" viewBox="0 0 1440 560">
-                                <g mask="url(&quot;#SvgjsMask1012&quot;)" fill="none">
-                                    <path
-                                        d="M442.86 623.26C629.7 588.92 712.45 124.57 1012 119.79 1311.55 115.01 1435.26 247.79 1581.14 248.59"
-                                        stroke="rgba(51,121,194,0.58)" stroke-width="2"></path>
-                                    <path
-                                        d="M293.63 661.83C437.3 642.39 513.32 312.51 754.14 309.36 994.96 306.21 984.39 379.36 1214.64 379.36 1444.9 379.36 1558.7 309.56 1675.15 309.36"
-                                        stroke="rgba(51,121,194,0.58)" stroke-width="2"></path>
-                                    <path
-                                        d="M687.77 632.97C854.78 598.49 925.29 169.86 1185.47 166.49 1445.64 163.12 1552.3 326.85 1683.16 328.89"
-                                        stroke="rgba(51,121,194,0.58)" stroke-width="2"></path>
-                                    <path
-                                        d="M414.39 574.39C571.75 523.51 600.61 79.8 839.12 67.22 1077.63 54.64 1051.49 137.22 1263.86 137.22 1476.22 137.22 1580.97 67.45 1688.59 67.22"
-                                        stroke="rgba(51,121,194,0.58)" stroke-width="2"></path>
-                                    <path
-                                        d="M247.52 610.99C428.95 596.85 555.2 236 871.01 235.35 1186.82 234.7 1332.71 407.34 1494.5 408.95"
-                                        stroke="rgba(51,121,194,0.58)" stroke-width="2"></path>
-                                </g>
-                                <defs>
-                                    <mask id="SvgjsMask1012">
-                                        <rect width="1440" height="560" fill="#ffffff"></rect>
-                                    </mask>
-                                </defs>
-                            </svg>
-                        </div>
+                        <!-- start contact form -->
+                        {{-- <form action="https://craftohtml.themezaa.com/email-templates/contact-form.php"
+                            method="post">
+                            <div class="position-relative form-group mb-20px">
+                                <span class="form-icon"><i class="bi bi-person icon-extra-medium"></i></span>
+                                <input
+                                    class="ps-0 border-radius-0px fs-17 bg-transparent border-color-transparent-white-light placeholder-medium-gray form-control required"
+                                    type="text" name="name" placeholder="Enter your name*">
+                            </div>
+                            <div class="position-relative form-group mb-20px">
+                                <span class="form-icon"><i class="bi bi-envelope icon-extra-medium"></i></span>
+                                <input
+                                    class="ps-0 border-radius-0px fs-17 bg-transparent border-color-transparent-white-light placeholder-medium-gray form-control required"
+                                    type="email" name="email" placeholder="Enter your email address*">
+                            </div>
+                            <div class="position-relative form-group form-textarea mt-15px mb-25px">
+                                <textarea
+                                    class="ps-0 border-radius-0px fs-17 bg-transparent border-color-transparent-white-light placeholder-medium-gray form-control"
+                                    name="comment" placeholder="Enter your message" rows="4"></textarea>
+                                <span class="form-icon"><i
+                                        class="bi bi-chat-square-dots icon-extra-medium"></i></span>
+                                <input type="hidden" name="redirect" value="">
+                                <button
+                                    class="btn btn-small btn-gradient-orange-sky-blue ls-1px mt-30px submit w-100 btn-round-edge-small"
+                                    type="submit">Send message</button>
+                                <div class="form-results mt-20px d-none"></div>
+                            </div>
+                            <span class="text-white opacity-3 fs-14 lh-22 d-block">I accept the terms & conditions and
+                                i understand that my data will be hold securely in accordance with the privacy
+                                policy.</span>
+                        </form> --}}
+                        <!-- end contact form -->
+                        <a href="{{route('contact')}}" class="btn btn-small btn-gradient-orange-sky-blue ls-1px mt-30px submit w-100 btn-round-edge-small">Send message</a><span class="mt-5 text-white opacity-3 fs-14 lh-22 d-block">I accept the terms & conditions and i understand that my data will be hold securely in accordance with the privacy policy.</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    {{-- Service items --}}
-    <section class="container py-5">
-        <div class="row pb-4">
-            <div class="col-md-6 m-auto text-center">
-                <h3>Driving <span class="text-primary">Digital Success</span> with Our Digital Marketing Expertise</h3>
-                <p class="pt-3">
-                    In today’s competitive landscape, digital marketing is the key to business growth. At Synex Digital, we
-                    offer tailored digital marketing services that elevate your brand, especially for small businesses.
-                </p>
-            </div>
-        </div>
-        <div class="row flex g-4">
-            @foreach ($items as $item)
-                <div class="col-md-4 text-center">
-                    <x-service-item title="{{ $item['title'] }}" description="{{ $item['description'] }}" />
-                </div>
-            @endforeach
-        </div>
-    </section>
-    {{-- How we work --}}
-    <section class="container py-5">
-        <div class="row pb-4">
-            <div class="col-md-8 m-auto text-center">
-                <h3>Our Simple <span class="text-primary">Process </span></h3>
-                <p class="pt-3">
-                    Our digital marketing services provide a seamless process from beginning to end when you use them. This
-                    promotes effective strategies that are based on data and adapted specifically to the unique objectives
-                    of your brand.
-                </p>
-            </div>
-        </div>
-        <div class="row pt-2 pt-md-3">
-            <img class="d-none d-md-block mind-map-svg" src="{{ asset('Frontend/images/Services/sr-2.svg') }}"
-                alt="Synex Digital - Ui Ux Desgin" srcset="">
-
-            {{-- Mobile menu --}}
-            <div class="accordion d-block d-md-none" id="accordionExample">
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingOne">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                            Step 1
-                        </button>
-                    </h2>
-                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-                        data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <ul>
-                                <li>Market Analysis</li>
-                                <li>Audience Segmentation</li>
-                                <li>Competitor Insights</li>
-                            </ul>
+    <!-- end section -->
+    <!-- start subscription popup -->
+    {{-- <div id="subscribe-popup" class="mfp-hide subscribe-popup">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-9 col-md-10 bg-white">
+                    <div class="row position-relative box-shadow-quadruple-large">
+                        <div class="col-lg-6 cover-background md-h-400px xs-h-300px"
+                            style="background-image:url('images/newsletter-popup-img-01.jpg');"></div>
+                        <div class="col-lg-6 newsletter-popup p-8 pt-10 pb-10 lg-p-5 md-p-6 xs-p-8 position-relative">
+                            <h4 class="d-inline-block alt-font fw-700 text-dark-gray mb-15px">Subscribe to the latest
+                                updates!</h4>
+                            <p>Subscribe to our newsletters and get the latest business updates.</p>
+                            <div class="d-inline-block w-100 newsletter-style-05 position-relative mb-20px">
+                                <form action="https://craftohtml.themezaa.com/email-templates/subscribe-newsletter.php"
+                                    method="post">
+                                    <input class="input-medium w-100 border-radius-4px form-control required mb-15px"
+                                        type="email" name="email" placeholder="Enter your email address" />
+                                    <input type="hidden" name="redirect" value="">
+                                    <button type="submit"
+                                        class="btn btn-medium btn-round-edge btn-dark-gray btn-box-shadow w-100 submit">Subscribe
+                                        now!</button>
+                                    <div
+                                        class="form-results border-radius-4px mt-10px lh-normal pt-10px pb-10px ps-15px pe-15px fs-16 w-100 text-center position-absolute z-index-1 d-none">
+                                    </div>
+                                </form>
+                            </div>
+                            <label for="newsletter-off" class="fs-15"><input
+                                    class="w-auto me-10px position-relative top-1px p-0" type="checkbox"
+                                    id="newsletter-off" name="newsletter-off">Don't show this popup again</label>
                         </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingTwo">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            Step 2
-                        </button>
-                    </h2>
-                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                        data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <ul>
-                                <li>Digital Marketing Plan</li>
-                                <li>Content Strategy</li>
-                                <li>Channel Selection</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingThree">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                            Step 3
-                        </button>
-                    </h2>
-                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                        data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <ul>
-                                <li>Content Creation</li>
-                                <li>Ad Placement</li>
-                                <li>Social Media Engagement</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingFour">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                            Step 4
-                        </button>
-                    </h2>
-                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
-                        data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <ul>
-                                <li>Performance Tracking</li>
-                                <li>A/B Testing</li>
-                                <li>Campaign Adjustments</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingFive">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                            Step 5
-                        </button>
-                    </h2>
-                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
-                        data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <ul>
-                                <li>Detailed Analytics</li>
-                                <li>Client Review</li>
-                                <li>Continuous Improvement</li>
-                            </ul>
-                        </div>
+                        <button title="Close (Esc)" type="button" class="mfp-close text-dark-gray"></button>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div> --}}
+    <!-- end subscription popup -->
+    <!-- start footer -->
+    <footer class="footer-light half-footer">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- start footer column -->
+                <div class="col-12 col-md-auto sm-mb-15px text-center text-md-start">
+                    <a href="demo-seo-agency.html" class="footer-logo"><img
+                            data-at2x="images/demo-seo-agency-logo-black@2x.png" alt=""
+                            data-cfsrc="images/demo-seo-agency-logo-black.png"
+                            style="display:none;visibility:hidden;"><noscript><img
+                                src="images/demo-seo-agency-logo-black.png"
+                                data-at2x="images/demo-seo-agency-logo-black@2x.png" alt=""></noscript></a>
+                </div>
+                <!-- end footer column -->
+                <!-- start footer column -->
+                <div class="col">
+                    <ul class="footer-navbar fs-18 alt-font text-end fw-600 text-center text-md-end sm-lh-24">
+                        <li class="nav-item active"><a href="{{route('home')}}" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="{{route('about')}}" class="nav-link">About Us</a></li>
+                        <li class="nav-item"><a href="{{route('services')}}" class="nav-link">Services</a></li>
+                        <li class="nav-item"><a href="{{route('projects')}}" class="nav-link">Projects</a></li>
+                        <li class="nav-item"><a href="{{route('blogs')}}" class="nav-link">Blog</a></li>
+                        <li class="nav-item"><a href="{{route('contact')}}" class="nav-link">Contact</a></li>
+                    </ul>
+                </div>
+                <!-- end footer column -->
+            </div>
+            <div class="row justify-content-center align-items-center pt-40px sm-pt-30px">
+                <!-- start footer divider -->
+                <div class="col-12 mb-40px sm-mb-30px">
+                    <div class="divider-style-03 divider-style-03-01 border-color-transparent-dark-very-light"></div>
+                </div>
+                <!-- end footer divider -->
+                <!-- start footer column -->
+                <div
+                    class="col-lg-7 col-md-8 fs-14 lh-24 text-center text-md-start last-paragraph-no-margin sm-mb-20px">
+                    <p>Copyright © 2024 Synex Digital. All Rights Reserved</p>
+                </div>
+                <!-- end footer column -->
+                <!-- start footer column -->
+                <div class="col-lg-5 col-md-4 text-end elements-social social-icon-style-08 text-center text-md-end">
+                    <ul class="medium-icon dark d-inline-block">
+                        <li class="mb-0"><a class="facebook" href="https://www.facebook.com/" target="_blank"><i
+                                    class="fa-brands fa-facebook-f"></i></a></li>
+                        <li class="mb-0"><a class="instagram" href="https://www.instagram.com/" target="_blank"><i
+                                    class="fa-brands fa-instagram"></i></a></li>
+                        <li class="mb-0"><a class="twitter" href="https://www.twitter.com/" target="_blank"><i
+                                    class="fa-brands fa-twitter"></i></a></li>
+                        <li class="mb-0"><a class="dribbble" href="http://www.dribbble.com/" target="_blank"><i
+                                    class="fa-brands fa-dribbble"></i></a></li>
+                    </ul>
+                </div>
+                <!-- end footer column -->
+            </div>
+        </div>
+    </footer>
+    <!-- end footer -->
+    <!-- start scroll progress -->
+    <div class="scroll-progress d-none d-xxl-block">
+        <a href="#" class="scroll-top" aria-label="scroll">
+            <span class="scroll-text">Scroll</span><span class="scroll-line"><span
+                    class="scroll-point"></span></span>
+        </a>
+    </div>
+    <!-- end scroll progress -->
+    <!-- javascript libraries -->
+    @include('Frontend.layout.footerLink')
+</body>
 
-    <!-- Collaborate -->
-    <x-collaborate />
-
-    <!-- News Letter-->
-    <x-newsletter />
-@endsection
+</html>

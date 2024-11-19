@@ -43,7 +43,7 @@
     <meta name="author" content="ThemeZaa">
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <!-- favicon icon -->
-    <link rel="shortcut icon" href="{{ asset('Frontend') }}/images/favicon.png">
+    <link rel="shortcut icon" href="{{ asset('Frontend/images/icons/fav-low.png') }}">
     <link rel="apple-touch-icon" href="{{ asset('Frontend') }}/images/favicon.png">
     <link rel="apple-touch-icon" sizes="72x72" href="{{ asset('Frontend') }}/images/favicon.png">
     <link rel="apple-touch-icon" sizes="114x114" href="{{ asset('Frontend') }}/images/favicon.png">

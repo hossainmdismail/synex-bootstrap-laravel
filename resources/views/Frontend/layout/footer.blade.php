@@ -9,10 +9,10 @@
                 </div>
                 <div class="col-md-2 col-sm-4 text-center text-sm-end">
                     <a href="demo-web-agency.html" class="footer-logo d-inline-block"><img
-                            data-at2x="images/demo-web-agency-logo-black@2x.png" alt=""
-                            data-cfsrc="images/demo-web-agency-logo-black.png"
+                            data-at2x="{{ asset('Frontend') }}/images/logo-text.svg" alt=""
+                            data-cfsrc="{{ asset('Frontend') }}/images/logo-text.svg"
                             style="display:none;visibility:hidden;"><noscript><img
-                                src="images/demo-web-agency-logo-black.png"
+                                src="{{ asset('Frontend') }}/images/logo-text.svg"
                                 data-at2x="images/demo-web-agency-logo-black@2x.png" alt=""></noscript></a>
                 </div>
             </div>
@@ -31,9 +31,11 @@
                 <!-- end footer column -->
                 <!-- start footer column -->
                 <div class="col-md-3 col-sm-4 last-paragraph-no-margin ms-auto text-center text-sm-end">
-                    <a href="tel:1235678901" class="text-dark-gray d-block lh-18 text-dark-gray-hover">+880 1613-408101</a>
+                    <a href="tel:1235678901" class="text-dark-gray d-block lh-18 text-dark-gray-hover">+880
+                        1613-408101</a>
                     <a href="mailto:office@synexdigital.com"
-                        class="text-dark-gray text-dark-gray-hover fw-600 text-decoration-line-bottom"> office@synexdigital.com</a>
+                        class="text-dark-gray text-dark-gray-hover fw-600 text-decoration-line-bottom">
+                        office@synexdigital.com</a>
                 </div>
                 <!-- end footer column -->
             </div>
@@ -45,12 +47,9 @@
                         <ul class="footer-navbar fw-600 fs-16">
                             <li class="nav-item active"><a href="{{ route('home') }}" class="nav-link">Home</a>
                             </li>
-                            <li class="nav-item"><a href="{{ route('about') }}"
-                                    class="nav-link">About Us</a></li>
-                            <li class="nav-item"><a href="{{ route('services') }}"
-                                    class="nav-link">Services</a></li>
-                            <li class="nav-item"><a href="{{ route('projects') }}"
-                                    class="nav-link">Projects</a></li>
+                            <li class="nav-item"><a href="{{ route('about') }}" class="nav-link">About Us</a></li>
+                            <li class="nav-item"><a href="{{ route('services') }}" class="nav-link">Services</a></li>
+                            <li class="nav-item"><a href="{{ route('projects') }}" class="nav-link">Projects</a></li>
                             <li class="nav-item"><a href="{{ route('blogs') }}" class="nav-link">Blogs</a>
                             </li>
                             <li class="nav-item"><a href="{{ route('contact') }}" class="nav-link">Contact</a>

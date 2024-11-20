@@ -26,10 +26,10 @@
         gtag('config', 'AW-16659065389');
     </script>
     <!-- favicon icon -->
-    <link rel="shortcut icon" href="{{ asset('Frontend') }}/images/favicon.png">
-    <link rel="apple-touch-icon" href="{{ asset('Frontend') }}/images/favicon.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="{{ asset('Frontend') }}/images/favicon.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="{{ asset('Frontend') }}/images/favicon.png">
+    <link rel="shortcut icon" href="{{ asset('Frontend/images/icons/fav-low.png') }}">
+    <link rel="apple-touch-icon" href="{{ asset('Frontend/images/icons/fav-low.png') }}">
+    <link rel="apple-touch-icon" sizes="72x72" href="{{ asset('Frontend/images/icons/fav-low.png') }}">
+    <link rel="apple-touch-icon" sizes="114x114" href="{{ asset('Frontend/images/icons/fav-low.png') }}">
     <!-- google fonts preconnect -->
     <link rel="preconnect" href="https://fonts.googleapis.com/" crossorigin>
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>

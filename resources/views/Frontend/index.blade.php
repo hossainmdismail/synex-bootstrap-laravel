@@ -134,7 +134,7 @@
                     <div class="position-relative pb-60px last-paragraph-no-margin">
                         <p class="lh-30 w-90 sm-w-100">ERP Development, CRM Development, Project Management
                             Software, Business Intelligence Software.</p>
-                        <a href="{{route('service.software')}}"
+                        <a href="{{ route('service.software') }}"
                             class="hover-content d-flex justify-content-center align-items-center icon-box w-45px h-45px rounded-circle bg-base-color border-2">→</a>
                     </div>
                 </div>
@@ -152,7 +152,7 @@
                     <div class="position-relative pb-60px last-paragraph-no-margin">
                         <p class="lh-30 w-90 sm-w-100">SaaS Application Development, Product Design, Maintenance
                             and Support.</p>
-                        <a href="{{route('service.saas')}}"
+                        <a href="{{ route('service.saas') }}"
                             class="hover-content d-flex justify-content-center align-items-center icon-box w-45px h-45px rounded-circle bg-base-color border-2">→</a>
                     </div>
                 </div>
@@ -169,7 +169,7 @@
                     <div class="position-relative pb-60px last-paragraph-no-margin">
                         <p class="lh-30 w-90 sm-w-100">Frontend/Backend, Full Stack/CMS, E-commerce Development,
                             Maintenance and Support.</p>
-                        <a href="{{route('service.web-dev')}}"
+                        <a href="{{ route('service.web-dev') }}"
                             class="hover-content d-flex justify-content-center align-items-center icon-box w-45px h-45px rounded-circle bg-base-color border-2">→</a>
                     </div>
                 </div>
@@ -185,7 +185,7 @@
                     <div class="position-relative pb-60px last-paragraph-no-margin">
                         <p class="lh-30 w-90 sm-w-100">iOS/Android, Custom Development, Maintenance and Support.
                         </p>
-                        <a href="{{route('service.mobile-app')}}"
+                        <a href="{{ route('service.mobile-app') }}"
                             class="hover-content d-flex justify-content-center align-items-center icon-box w-45px h-45px rounded-circle bg-base-color border-2">→</a>
                     </div>
                 </div>
@@ -202,7 +202,7 @@
                     <div class="position-relative pb-60px last-paragraph-no-margin">
                         <p class="lh-30 w-90 sm-w-100">SEO, Google Ads, Meta Ads, Social Media Management, LinkedIn
                             Ads.</p>
-                        <a href="{{route('service.digital-marketing')}}"
+                        <a href="{{ route('service.digital-marketing') }}"
                             class="hover-content d-flex justify-content-center align-items-center icon-box w-45px h-45px rounded-circle bg-base-color border-2">→</a>
                     </div>
                 </div>
@@ -217,7 +217,7 @@
                     <div class="position-relative pb-60px last-paragraph-no-margin">
                         <p class="lh-30 w-90 sm-w-100">User Interface/Experience Design, Visual Design, User
                             Testing.</p>
-                        <a href="{{route('service.uiux')}}"
+                        <a href="{{ route('service.uiux') }}"
                             class="hover-content d-flex justify-content-center align-items-center icon-box w-45px h-45px rounded-circle bg-base-color border-2">→</a>
                     </div>
                 </div>
@@ -234,7 +234,7 @@
                     <div class="position-relative pb-60px last-paragraph-no-margin">
                         <p class="lh-30 w-90 sm-w-100">Branding and Identity, Print Design, Digital Design,
                             Illustration, 3D Design.</p>
-                        <a href="{{route('service.graphics-design')}}"
+                        <a href="{{ route('service.graphics-design') }}"
                             class="hover-content d-flex justify-content-center align-items-center icon-box w-45px h-45px rounded-circle bg-base-color border-2">→</a>
                     </div>
                 </div>
@@ -249,7 +249,7 @@
                     <div class="position-relative pb-60px last-paragraph-no-margin">
                         <p class="lh-30 w-90 sm-w-100">Post-Production, Motion Graphics, Video Production, Editing
                             for Social Media.</p>
-                        <a href="{{route('service.video-edit')}}"
+                        <a href="{{ route('service.video-edit') }}"
                             class="hover-content d-flex justify-content-center align-items-center icon-box w-45px h-45px rounded-circle bg-base-color border-2">→</a>
                     </div>
                 </div>
@@ -270,14 +270,16 @@
                             data-top-bottom="transform:scale(1, 1) translate3d(-100px, 0px, 0px);">projects
                             <div class="position-absolute right-minus-100px top-minus-120px z-index-9 md-w-200px d-none d-md-block"
                                 data-anime='{ "translateY": [0, 0], "scale": [0.7, 1], "opacity": [0,1], "duration": 800, "delay": 200, "staggervalue": 300, "easing": "easeOutQuad" }'>
-                                <img class="animation-rotation" alt="" data-cfsrc="{{ asset('Frontend') }}/images/demo-web-agency-03.png"
+                                <img class="animation-rotation" alt=""
+                                    data-cfsrc="{{ asset('Frontend') }}/images/demo-web-agency-03.png"
                                     style="display:none;visibility:hidden;"><noscript><img
-                                        src="{{ asset('Frontend') }}/images/demo-web-agency-03.png" class="animation-rotation"
-                                        alt=""></noscript>
+                                        src="{{ asset('Frontend') }}/images/demo-web-agency-03.png"
+                                        class="animation-rotation" alt=""></noscript>
                                 <div class="absolute-middle-center w-100 z-index-minus-1"><img alt=""
                                         data-cfsrc="{{ asset('Frontend') }}/images/demo-web-agency-02.png"
                                         style="display:none;visibility:hidden;"><noscript><img
-                                            src="{{ asset('Frontend') }}/images/demo-web-agency-02.png" alt=""></noscript></div>
+                                            src="{{ asset('Frontend') }}/images/demo-web-agency-02.png"
+                                            alt=""></noscript></div>
                             </div>
                         </div>
                     </div>
@@ -302,7 +304,7 @@
                                     data-top-bottom="transform: translateY(-40px)">
                                     <div class="portfolio-image bg-medium-gray border-radius-6px">
                                         <a href="demo-web-agency-single-project-creative.html"><img alt=""
-                                                data-cfsrc="{{  $project['image'] }}"
+                                                data-cfsrc="{{ $project['image'] }}"
                                                 style="display:none;visibility:hidden;" /><noscript><img
                                                     src="{{ $project['image'] }}" alt="" /></noscript></a>
                                     </div>
@@ -342,45 +344,19 @@
                 </div>
                 <div class="col-lg-6 offset-lg-1 text-center text-lg-start">
                     <p class="w-85 lg-w-100 mb-40px mt-10 md-mt-0 md-mb-25px">We are excited for our work and how
-                        it positively impacts clients. With over 12 years of experience we have been constantly
+                        it positively impacts clients. With over 4 years of experience we have been constantly
                         providing excellent web solutions.</p>
                     <div class="row border-top border-color-dark-gray g-0">
                         <div class="col-2 text-center align-self-center">
-                            <span class="text-dark-gray fs-14 fw-600">9X</span>
+                            <span class="text-dark-gray fs-14 fw-600">1X</span>
                         </div>
                         <div
                             class="col-8 last-paragraph-no-margin ps-30px pe-30px pt-15px pb-15px border-start border-color-dark-gray">
-                            <p class="ls-minus-05px">Site of the day - <span class="fw-600 text-dark-gray">Awwwards</span>
-                            </p>
+                            <p class="ls-minus-05px">Creative IT - <span class="fw-600 text-dark-gray">Success Meetup
+                                    Awards</span></p>
                         </div>
                         <div class="col-2 align-self-center text-center">
-                            <span class="text-dark-gray fs-14 fw-600">2021</span>
-                        </div>
-                    </div>
-                    <div class="row border-top border-color-dark-gray g-0">
-                        <div class="col-2 text-center align-self-center">
-                            <span class="text-dark-gray fs-14 fw-600">2X</span>
-                        </div>
-                        <div
-                            class="col-8 last-paragraph-no-margin ps-30px pe-30px pt-15px pb-15px border-start border-color-dark-gray">
-                            <p class="ls-minus-05px">Site of the day - <span class="fw-600 text-dark-gray">CSS
-                                    Design Awards</span></p>
-                        </div>
-                        <div class="col-2 align-self-center text-center">
-                            <span class="text-dark-gray fs-14 fw-600">2020</span>
-                        </div>
-                    </div>
-                    <div class="row border-top border-color-dark-gray g-0">
-                        <div class="col-2 text-center align-self-center">
-                            <span class="text-dark-gray fs-14 fw-600">4X</span>
-                        </div>
-                        <div
-                            class="col-8 last-paragraph-no-margin ps-30px pe-30px pt-15px pb-15px border-start border-color-dark-gray">
-                            <p class="ls-minus-05px">Site of the month - <span
-                                    class="fw-600 text-dark-gray">Awwwards</span></p>
-                        </div>
-                        <div class="col-2 align-self-center text-center">
-                            <span class="text-dark-gray fs-14 fw-600">2019</span>
+                            <span class="text-dark-gray fs-14 fw-600">2023</span>
                         </div>
                     </div>
                     <div class="row border-top border-bottom border-color-dark-gray g-0">
@@ -398,19 +374,25 @@
                     </div>
                     <div class="row row-cols-2 row-cols-sm-3 align-items-center mt-50px sm-mt-40px justify-content-center">
                         <div class="col xs-mb-30px">
-                            <a href="#"><img alt="" data-cfsrc="{{ asset('Frontend') }}/images/demo-web-agency-awards-logo-01.png"
+                            <a href="#"><img alt=""
+                                    data-cfsrc="{{ asset('Frontend/images/brand/cit.png') }}"
                                     style="display:none;visibility:hidden;" /><noscript><img
-                                        src="{{ asset('Frontend') }}/images/demo-web-agency-awards-logo-01.png" alt="" /></noscript></a>
+                                        src="{{ asset('Frontend/images/brand/cit.png') }}"
+                                        alt="" /></noscript></a>
                         </div>
                         <div class="col xs-mb-30px">
-                            <a href="#"><img alt="" data-cfsrc="{{ asset('Frontend') }}/images/demo-web-agency-awards-logo-02.png"
+                            <a href="#"><img alt=""
+                                    data-cfsrc="{{ asset('Frontend') }}/images/demo-web-agency-awards-logo-02.png"
                                     style="display:none;visibility:hidden;" /><noscript><img
-                                        src="{{ asset('Frontend') }}/images/demo-web-agency-awards-logo-02.png" alt="" /></noscript></a>
+                                        src="{{ asset('Frontend') }}/images/demo-web-agency-awards-logo-02.png"
+                                        alt="" /></noscript></a>
                         </div>
                         <div class="col">
-                            <a href="#"><img alt="" data-cfsrc="{{ asset('Frontend') }}/images/demo-web-agency-awards-logo-03.png"
+                            <a href="#"><img alt=""
+                                    data-cfsrc="{{ asset('Frontend') }}/images/demo-web-agency-awards-logo-03.png"
                                     style="display:none;visibility:hidden;" /><noscript><img
-                                        src="{{ asset('Frontend') }}/images/demo-web-agency-awards-logo-03.png" alt="" /></noscript></a>
+                                        src="{{ asset('Frontend') }}/images/demo-web-agency-awards-logo-03.png"
+                                        alt="" /></noscript></a>
                         </div>
                     </div>
                 </div>
@@ -421,49 +403,62 @@
 
     <!-- start Reviews section -->
     <section class="pb-4 lg-pb-6 sm-pb-50px position-relative bg-dark-gray section-dark">
-        <div class="cover-background position-absolute h-100 w-100 left-0px top-0px" style="background-image: url({{asset('Frontend')}}/images/demo-web-agency-bg-01.png)"></div>
+        <div class="cover-background position-absolute h-100 w-100 left-0px top-0px"
+            style="background-image: url({{ asset('Frontend') }}/images/demo-web-agency-bg-01.png)"></div>
         <div class="container position-relative">
-            <div class="row justify-content-center align-items-center mb-9 xl-mb-5 sm-mb-30px" data-anime='{ "el": "childs", "translateX": [15, 0], "opacity": [0,1], "duration": 800, "delay": 200, "staggervalue": 300, "easing": "easeOutQuad" }'>
+            <div class="row justify-content-center align-items-center mb-9 xl-mb-5 sm-mb-30px"
+                data-anime='{ "el": "childs", "translateX": [15, 0], "opacity": [0,1], "duration": 800, "delay": 200, "staggervalue": 300, "easing": "easeOutQuad" }'>
                 <div class="col-lg-5">
                     <div class="mb-15 d-flex align-items-center md-mb-30px">
                         <div class="fw-700 fs-80 text-white me-10px">4.96</div>
                         <div class="text-center">
-                            <div class="bg-base-color text-dark-gray border-radius-30px ps-20px pe-20px fs-16 ls-minus-2px">
-                                ★
-                                ★
-                                ★
-                                ★
-                                ★
-                            </div>
+                            <div
+                                class="bg-base-color text-dark-gray border-radius-30px ps-20px pe-20px fs-16 ls-minus-2px">
+                                ★★★★★</div>
                             <span class="text-white fs-13 fw-500 text-uppercase">Clutch review</span>
                         </div>
                     </div>
                     <div class="d-flex md-mb-25px">
-                        <!-- start slider navigation -->
-                        <div class="slider-one-slide-prev-1 bg-sherpa-blue text-white swiper-button-prev slider-navigation-style-04 w-60px h-60px"><</div>
-                        <div class="slider-one-slide-next-1 bg-sherpa-blue text-white swiper-button-next slider-navigation-style-04 w-60px h-60px">></div>
-                        <!-- end slider navigation -->
+                        <div
+                            class="slider-one-slide-prev-1 bg-sherpa-blue text-white swiper-button-prev slider-navigation-style-04 w-60px h-60px">
+                        </div>
+                        <div
+                            class="slider-one-slide-next-1 bg-sherpa-blue text-white swiper-button-next slider-navigation-style-04 w-60px h-60px">
+                        </div>
                     </div>
                 </div>
                 <div class="col-xl-6 col-lg-7 overflow-hidden offset-xl-1">
-                    <div class="swiper magic-cursor light" data-slider-options='{ "slidesPerView": 1, "spaceBetween": 40, "loop": true, "autoplay": { "delay": 3000, "disableOnInteraction": false }, "navigation": { "nextEl": ".slider-one-slide-next-1", "prevEl": ".slider-one-slide-prev-1" }, "keyboard": { "enabled": true, "onlyInViewport": true }, "breakpoints": { "992": { "slidesPerView": 1 }, "768": { "slidesPerView":1 }, "320": { "slidesPerView": 1 } }, "effect": "slide" }'>
+                    <div class="swiper magic-cursor light"
+                        data-slider-options='{ "slidesPerView": 1, "spaceBetween": 40, "loop": true, "autoplay": { "delay": 3000, "disableOnInteraction": false }, "navigation": { "nextEl": ".slider-one-slide-next-1", "prevEl": ".slider-one-slide-prev-1" }, "keyboard": { "enabled": true, "onlyInViewport": true }, "breakpoints": { "992": { "slidesPerView": 1 }, "768": { "slidesPerView":1 }, "320": { "slidesPerView": 1 } }, "effect": "slide" }'>
                         <div class="swiper-wrapper">
                             <!-- start review item -->
                             <div class="swiper-slide">
-                                <h5 class="text-white mb-20px w-90 xl-w-100 lh-42 fw-400">I could not be happier with the website that Synex Digital created for my business. They took my ideas and turned them into a stunning, user-friendly website that exceeded my expectations.</h5>
-                                <span class="text-base-color fw-600 d-block fs-15 text-uppercase lh-22 ls-2px">@Mahadi Tahsan</span>
+                                <h5 class="text-white mb-20px w-90 xl-w-100 lh-42 fw-400">I could not be happier with
+                                    the website that Synex Digital created for my business. They took my ideas and
+                                    turned them into a stunning, user-friendly website that exceeded my expectations.
+                                </h5>
+                                <span class="text-base-color fw-600 d-block fs-15 text-uppercase lh-22 ls-2px">@Mahadi
+                                    Tahsan</span>
                             </div>
                             <!-- end review item -->
                             <!-- start review item -->
                             <div class="swiper-slide">
-                                <h5 class="text-white mb-20px w-90 xl-w-100 lh-42 fw-400">Working with Synex Digital has been a game-changer for our online visibility. Their SEO team’s expertise and strategies have propelled our website to the top of search engine rankings. Glad to hire them on a monthly basis.</h5>
-                                <span class="text-base-color fw-600 d-block fs-15 text-uppercase lh-22 ls-2px">@MD Sydul Amin</span>
+                                <h5 class="text-white mb-20px w-90 xl-w-100 lh-42 fw-400">Working with Synex Digital
+                                    has been a game-changer for our online visibility. Their SEO team’s expertise and
+                                    strategies have propelled our website to the top of search engine rankings. Glad to
+                                    hire them on a monthly basis.</h5>
+                                <span class="text-base-color fw-600 d-block fs-15 text-uppercase lh-22 ls-2px">@MD
+                                    Sydul Amin</span>
                             </div>
                             <!-- end review item -->
                             <!-- start review item -->
                             <div class="swiper-slide">
-                                <h5 class="text-white mb-20px w-90 xl-w-100 lh-42 fw-400">Synex Digital’s management software completely revolutionized our school. For schools that require reliability, streamlined administration, user-friendly design, and responsive assistance redefine efficiency!</h5>
-                                <span class="text-base-color fw-600 d-block fs-15 text-uppercase lh-22 ls-2px">@Shawon Islam</span>
+                                <h5 class="text-white mb-20px w-90 xl-w-100 lh-42 fw-400">Synex Digital’s management
+                                    software completely revolutionized our school. For schools that require reliability,
+                                    streamlined administration, user-friendly design, and responsive assistance redefine
+                                    efficiency!</h5>
+                                <span class="text-base-color fw-600 d-block fs-15 text-uppercase lh-22 ls-2px">@Shawon
+                                    Islam</span>
                             </div>
                             <!-- end review item -->
                         </div>
@@ -475,30 +470,34 @@
                     <div class="separator-line-1px w-100 bg-white opacity-1 mb-6 sm-mb-30px"></div>
                 </div>
             </div>
-            <div class="row row-cols-1 row-cols-lg-5 row-cols-md-3 row-cols-sm-2 clients-style-06 justify-content-center" data-anime='{ "el": "childs", "translateY": [0, 0], "scale": [1.1, 1], "opacity": [0,1], "duration": 800, "delay": 200, "staggervalue": 300, "easing": "easeOutQuad" }'>
+            <div class="row row-cols-1 row-cols-lg-5 row-cols-md-3 row-cols-sm-2 clients-style-06 justify-content-center"
+                data-anime='{ "el": "childs", "translateY": [0, 0], "scale": [1.1, 1], "opacity": [0,1], "duration": 800, "delay": 200, "staggervalue": 300, "easing": "easeOutQuad" }'>
                 <!-- start client item -->
                 <div class="col client-box text-center md-mb-40px">
-                    <a href="#"><img src="{{ asset('Frontend') }}/images/logo-walmart-white.svg" class="h-35px" alt=""></a>
+                    <a href="#"><img src="{{ asset('Frontend/images/brand/amazon-web-services.png') }}"
+                            class="h-35px" alt=""></a>
                 </div>
                 <!-- end client item -->
                 <!-- start client item -->
                 <div class="col client-box text-center md-mb-40px">
-                    <a href="#"><img src="{{ asset('Frontend') }}/images/logo-netflix-white.svg" class="h-35px" alt=""></a>
+                    <a><img src="{{ asset('Frontend/images/brand/Logo-Notion-White-al-vivo.png') }}" class="h-35px"
+                            alt=""></a>
                 </div>
                 <!-- end client item -->
                 <!-- start client item -->
                 <div class="col client-box text-center md-mb-40px">
-                    <a href="#"><img src="{{ asset('Frontend') }}/images/logo-invision-white.svg" class="h-35px" alt=""></a>
+                    <a><img src="{{ asset('Frontend/images/brand/meta_PNG7.png') }}" class="h-35px" alt=""></a>
                 </div>
                 <!-- end client item -->
                 <!-- start client item -->
                 <div class="col client-box text-center sm-mb-40px">
-                    <a href="#"><img src="{{ asset('Frontend') }}/images/logo-yahoo-white.svg" class="h-35px" alt=""></a>
+                    <a><img src="{{ asset('Frontend/images/brand/stripe.png') }}" class="h-35px" alt=""></a>
                 </div>
                 <!-- end client item -->
                 <!-- start client item -->
                 <div class="col client-box text-center">
-                    <a href="#"><img src="{{ asset('Frontend') }}/images/logo-amazon-white.svg" class="h-35px" alt=""></a>
+                    <a><img src="{{ asset('Frontend/images/brand/GitHub-Wordmark-White-Dark-Background-Logo.wine.svg') }}"
+                            class="h-35px" alt=""></a>
                 </div>
                 <!-- end client item -->
             </div>
@@ -530,18 +529,18 @@
                                 <li class="grid-item">
                                     <div class="card bg-transparent border-0 h-100">
                                         <div class="blog-image position-relative overflow-hidden border-radius-4px">
-                                            <a href="{{route('blog.view', $blog['slug'])}}"><img alt=""
+                                            <a href="{{ route('blog.view', $blog['slug']) }}"><img alt=""
                                                     data-cfsrc="{{ $blog['image'] }}"
                                                     style="display:none;visibility:hidden;"><noscript><img
                                                         src="{{ $blog['image'] }}" alt=""></noscript></a>
                                         </div>
                                         <div class="card-body p-0 pt-30px sm-pt-20px lg-pb-20px">
                                             <span class="fs-14 text-uppercase d-block mb-5px fw-500"><a
-                                                    href="{{route('blog.view', $blog['slug'])}}"
+                                                    href="{{ route('blog.view', $blog['slug']) }}"
                                                     class="text-dark-gray text-dark-gray-hover fw-700 categories-text">{{ $blog['author'] }}</a>👁<a
                                                     href="#"
                                                     class="blog-date text-medium-gray-hover">{{ $blog['view'] }}</a></span>
-                                            <a href="{{route('blog.view', $blog['slug'])}}"
+                                            <a href="{{ route('blog.view', $blog['slug']) }}"
                                                 class="card-title fw-600 fs-17 lh-28 text-dark-gray text-dark-gray-hover d-inline-block w-95 sm-w-100">{{ $blog['title'] }}</a>
                                         </div>
                                     </div>
@@ -575,14 +574,16 @@
                             together
                             <div class="position-absolute left-minus-140px top-minus-140px z-index-9 xl-left-minus-110px top-minus-140px xl-top-minus-100px md-top-minus-90px z-index-9 xl-w-230px md-w-200px d-none d-md-block"
                                 data-anime='{ "translateY": [-15, 0], "scale": [0.5, 1], "opacity": [0,1], "duration": 800, "delay": 200, "staggervalue": 300, "easing": "easeOutQuad" }'>
-                                <img class="animation-rotation" alt="" data-cfsrc="{{ asset('Frontend') }}/images/demo-web-agency-05.png"
+                                <img class="animation-rotation" alt=""
+                                    data-cfsrc="{{ asset('Frontend') }}/images/demo-web-agency-05.png"
                                     style="display:none;visibility:hidden;"><noscript><img
-                                        src="{{ asset('Frontend') }}/images/demo-web-agency-05.png" class="animation-rotation"
-                                        alt=""></noscript>
+                                        src="{{ asset('Frontend') }}/images/demo-web-agency-05.png"
+                                        class="animation-rotation" alt=""></noscript>
                                 <div class="absolute-middle-center w-100 z-index-minus-1"><img alt=""
                                         data-cfsrc="{{ asset('Frontend') }}/images/demo-web-agency-04.png"
                                         style="display:none;visibility:hidden;"><noscript><img
-                                            src="{{ asset('Frontend') }}/images/demo-web-agency-04.png" alt=""></noscript></div>
+                                            src="{{ asset('Frontend') }}/images/demo-web-agency-04.png"
+                                            alt=""></noscript></div>
                             </div>
                         </div>
                     </div>

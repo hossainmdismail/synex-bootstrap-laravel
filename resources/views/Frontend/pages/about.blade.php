@@ -155,33 +155,6 @@
                         </div>
                     </div>
                 </div>
-                <div class="row row-cols-1 row-cols-lg-5 row-cols-md-3 row-cols-sm-2 clients-style-06 justify-content-center" data-anime='{ "translateY": [0, 0], "opacity": [0,1], "duration": 800, "delay": 200, "staggervalue": 300, "easing": "easeOutQuad" }'>
-                    <!-- start client item -->
-                    <div class="col client-box text-center md-mb-40px">
-                        <a href="#"><img src="{{asset('Frontend/images/logo-walmart-dark-gray.svg')}}" class="h-35px" alt=""></a>
-                    </div>
-                    <!-- end client item -->
-                    <!-- start client item -->
-                    <div class="col client-box text-center md-mb-40px">
-                        <a href="#"><img src="images/logo-invision-dark-gray.svg" class="h-40px" alt=""></a>
-                    </div>
-                    <!-- end client item -->
-                    <!-- start client item -->
-                    <div class="col client-box text-center md-mb-40px">
-                        <a href="#"><img src="images/logo-netflix-dark-gray.svg" class="h-35px" alt=""></a>
-                    </div>
-                    <!-- end client item -->
-                    <!-- start client item -->
-                    <div class="col client-box text-center sm-mb-40px">
-                        <a href="#"><img src="images/logo-logitech-dark-gray.svg" class="h-35px" alt=""></a>
-                    </div>
-                    <!-- end client item -->
-                    <!-- start client item -->
-                    <div class="col client-box text-center">
-                        <a href="#"><img src="images/logo-amazon-dark-gray.svg" class="h-35px" alt=""></a>
-                    </div>
-                    <!-- end client item -->
-                </div>
             </div>
         </section>
         <!-- end section -->
@@ -360,10 +333,6 @@
                     <div class="col-sm-7 text-center text-sm-end">
                         <div class="outside-box-right-5 sm-outside-box-right-0">
                             <div class="fs-350 xl-fs-250 lg-fs-200 md-fs-170 sm-fs-100 text-base-color fw-600 ls-minus-20px position-relative d-inline-block word-break-normal">together
-                                <div class="position-absolute left-minus-140px top-minus-140px z-index-9 xl-left-minus-110px top-minus-140px xl-top-minus-100px md-top-minus-90px z-index-9 xl-w-230px md-w-200px d-none d-md-block" data-anime='{ "translateY": [-15, 0], "scale": [0.5, 1], "opacity": [0,1], "duration": 800, "delay": 200, "staggervalue": 300, "easing": "easeOutQuad" }'>
-                                    <img class="animation-rotation" alt="" data-cfsrc="images/demo-web-agency-05.png" style="display:none;visibility:hidden;"><noscript><img src="images/demo-web-agency-05.png" class="animation-rotation" alt=""></noscript>
-                                    <div class="absolute-middle-center w-100 z-index-minus-1"><img alt="" data-cfsrc="images/demo-web-agency-04.png" style="display:none;visibility:hidden;"><noscript><img src="images/demo-web-agency-04.png" alt=""></noscript></div>
-                                </div>
                             </div>
                         </div>
                     </div>

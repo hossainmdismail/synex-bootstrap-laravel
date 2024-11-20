@@ -85,9 +85,9 @@
                 <div class="col-lg-6">
                     <div class="outside-box-left-20 md-outside-box-left-0" data-bottom-top="transform:scale(1.1, 1.1)"
                         data-top-bottom="transform:scale(1, 1)">
-                        <img alt="" data-cfsrc="{{ asset('Frontend/images/demo-web-agency-01.jpg') }}"
+                        <img alt="synex digital" data-cfsrc="{{ asset('Frontend/images/demo-web-agency-01.jpg') }}"
                             style="display:none;visibility:hidden;" /><noscript><img
-                                src="{{ asset('Frontend/images/demo-web-agency-01.jpg') }}" alt="" /></noscript>
+                                src="{{ asset('Frontend/images/demo-web-agency-01.jpg') }}" alt="synex digital" /></noscript>
                     </div>
                 </div>
                 <div class="col-lg-5 offset-lg-1 z-index-9 md-mt-35px"
@@ -102,7 +102,7 @@
                         IT
                         solutions reflect our dedication to excellence. We are your one-stop technological solution
                         supplier, meeting your business's particular demands with precision and competence.</p>
-                    <a href="demo-web-agency-about.html"
+                    <a href="{{route('projects')}}"
                         class="btn btn-large btn-expand-ltr text-dark-gray btn-rounded fw-700"><span
                             class="bg-base-color"></span>Explore Our Portfolio</a>
                     <div
@@ -134,8 +134,7 @@
                     <div class="position-relative pb-60px last-paragraph-no-margin">
                         <p class="lh-30 w-90 sm-w-100">ERP Development, CRM Development, Project Management
                             Software, Business Intelligence Software.</p>
-                        <a href="{{ route('service.software') }}"
-                            class="hover-content d-flex justify-content-center align-items-center icon-box w-45px h-45px rounded-circle bg-base-color border-2">→</a>
+                        <a class="hover-content d-flex justify-content-center align-items-center icon-box w-45px h-45px rounded-circle bg-base-color border-2">→</a>
                     </div>
                 </div>
                 <!-- end process step item -->
@@ -152,8 +151,7 @@
                     <div class="position-relative pb-60px last-paragraph-no-margin">
                         <p class="lh-30 w-90 sm-w-100">SaaS Application Development, Product Design, Maintenance
                             and Support.</p>
-                        <a href="{{ route('service.saas') }}"
-                            class="hover-content d-flex justify-content-center align-items-center icon-box w-45px h-45px rounded-circle bg-base-color border-2">→</a>
+                        <a class="hover-content d-flex justify-content-center align-items-center icon-box w-45px h-45px rounded-circle bg-base-color border-2">→</a>
                     </div>
                 </div>
                 <!-- end process step item -->
@@ -234,8 +232,7 @@
                     <div class="position-relative pb-60px last-paragraph-no-margin">
                         <p class="lh-30 w-90 sm-w-100">Branding and Identity, Print Design, Digital Design,
                             Illustration, 3D Design.</p>
-                        <a href="{{ route('service.graphics-design') }}"
-                            class="hover-content d-flex justify-content-center align-items-center icon-box w-45px h-45px rounded-circle bg-base-color border-2">→</a>
+                        <a class="hover-content d-flex justify-content-center align-items-center icon-box w-45px h-45px rounded-circle bg-base-color border-2">→</a>
                     </div>
                 </div>
                 <!-- end process step item -->
@@ -245,11 +242,11 @@
                         <div class="number d-inline-block fs-90 fw-700 text-outline text-outline-color-extra-medium-gray">
                             08</div>
                     </div>
-                    <span class="fs-19 fw-600 text-dark-gray mb-5px d-block position-relative">Video Editing</span>
+                    <span class="fs-19 fw-600 text-dark-gray mb-5px d-block position-relative">Web Hosting</span>
                     <div class="position-relative pb-60px last-paragraph-no-margin">
                         <p class="lh-30 w-90 sm-w-100">Post-Production, Motion Graphics, Video Production, Editing
                             for Social Media.</p>
-                        <a href="{{ route('service.video-edit') }}"
+                        <a href="{{ route('service.software') }}"
                             class="hover-content d-flex justify-content-center align-items-center icon-box w-45px h-45px rounded-circle bg-base-color border-2">→</a>
                     </div>
                 </div>
@@ -270,16 +267,16 @@
                             data-top-bottom="transform:scale(1, 1) translate3d(-100px, 0px, 0px);">projects
                             <div class="position-absolute right-minus-100px top-minus-120px z-index-9 md-w-200px d-none d-md-block"
                                 data-anime='{ "translateY": [0, 0], "scale": [0.7, 1], "opacity": [0,1], "duration": 800, "delay": 200, "staggervalue": 300, "easing": "easeOutQuad" }'>
-                                <img class="animation-rotation" alt=""
+                                <img class="animation-rotation" alt="synex digital"
                                     data-cfsrc="{{ asset('Frontend') }}/images/demo-web-agency-03.png"
                                     style="display:none;visibility:hidden;"><noscript><img
                                         src="{{ asset('Frontend') }}/images/demo-web-agency-03.png"
-                                        class="animation-rotation" alt=""></noscript>
-                                <div class="absolute-middle-center w-100 z-index-minus-1"><img alt=""
+                                        class="animation-rotation" alt="synex digital"></noscript>
+                                <div class="absolute-middle-center w-100 z-index-minus-1"><img alt="synex digital"
                                         data-cfsrc="{{ asset('Frontend') }}/images/demo-web-agency-02.png"
                                         style="display:none;visibility:hidden;"><noscript><img
                                             src="{{ asset('Frontend') }}/images/demo-web-agency-02.png"
-                                            alt=""></noscript></div>
+                                            alt="synex digital"></noscript></div>
                             </div>
                         </div>
                     </div>
@@ -303,14 +300,13 @@
                                 <div class="portfolio-box" data-bottom-top="transform: translateY(40px)"
                                     data-top-bottom="transform: translateY(-40px)">
                                     <div class="portfolio-image bg-medium-gray border-radius-6px">
-                                        <a href="demo-web-agency-single-project-creative.html"><img alt=""
+                                        <a><img alt="synex digital"
                                                 data-cfsrc="{{ $project['image'] }}"
                                                 style="display:none;visibility:hidden;" /><noscript><img
-                                                    src="{{ $project['image'] }}" alt="" /></noscript></a>
+                                                    src="{{ $project['image'] }}" alt="synex digital" /></noscript></a>
                                     </div>
                                     <div class="portfolio-caption pt-35px pb-35px md-pt-25px md-pb-25px">
-                                        <a href="demo-web-agency-single-project-creative.html"
-                                            class="text-dark-gray text-dark-gray-hover fw-600">{{ $project['name'] }}</a>
+                                        <a class="text-dark-gray text-dark-gray-hover fw-600">{{ $project['name'] }}</a>
                                         <span
                                             class="d-inline-block align-middle w-10px separator-line-1px bg-light-gray ms-10px me-10px"></span>
                                         <div class="d-inline-block">{{ $project['category'] }}</div>
@@ -350,8 +346,7 @@
                         <div class="col-2 text-center align-self-center">
                             <span class="text-dark-gray fs-14 fw-600">1X</span>
                         </div>
-                        <div
-                            class="col-8 last-paragraph-no-margin ps-30px pe-30px pt-15px pb-15px border-start border-color-dark-gray">
+                        <div class="col-8 last-paragraph-no-margin ps-30px pe-30px pt-15px pb-15px border-start border-color-dark-gray">
                             <p class="ls-minus-05px">Creative IT - <span class="fw-600 text-dark-gray">Success Meetup
                                     Awards</span></p>
                         </div>
@@ -363,8 +358,7 @@
                         <div class="col-2 text-center align-self-center">
                             <span class="text-dark-gray fs-14 fw-600">3X</span>
                         </div>
-                        <div
-                            class="col-8 last-paragraph-no-margin ps-30px pe-30px pt-15px pb-15px border-start border-color-dark-gray">
+                        <div class="col-8 last-paragraph-no-margin ps-30px pe-30px pt-15px pb-15px border-start border-color-dark-gray">
                             <p class="ls-minus-05px">Site of the day - <span class="fw-600 text-dark-gray">The
                                     portfolio</span></p>
                         </div>
@@ -374,25 +368,21 @@
                     </div>
                     <div class="row row-cols-2 row-cols-sm-3 align-items-center mt-50px sm-mt-40px justify-content-center">
                         <div class="col xs-mb-30px">
-                            <a href="#"><img alt=""
-                                    data-cfsrc="{{ asset('Frontend/images/brand/cit.png') }}"
-                                    style="display:none;visibility:hidden;" /><noscript><img
-                                        src="{{ asset('Frontend/images/brand/cit.png') }}"
-                                        alt="" /></noscript></a>
+                            <a><img alt="synex digital" data-cfsrc="{{ asset('Frontend/images/brand/cit.png') }}" style="display:none;visibility:hidden;" /><noscript><img src="{{ asset('Frontend/images/brand/cit.png') }}" alt="synex digital" /></noscript></a>
                         </div>
                         <div class="col xs-mb-30px">
-                            <a href="#"><img alt=""
+                            <a><img alt="synex digital"
                                     data-cfsrc="{{ asset('Frontend') }}/images/demo-web-agency-awards-logo-02.png"
                                     style="display:none;visibility:hidden;" /><noscript><img
                                         src="{{ asset('Frontend') }}/images/demo-web-agency-awards-logo-02.png"
-                                        alt="" /></noscript></a>
+                                        alt="synex digital" /></noscript></a>
                         </div>
                         <div class="col">
-                            <a href="#"><img alt=""
+                            <a><img alt="synex digital"
                                     data-cfsrc="{{ asset('Frontend') }}/images/demo-web-agency-awards-logo-03.png"
                                     style="display:none;visibility:hidden;" /><noscript><img
                                         src="{{ asset('Frontend') }}/images/demo-web-agency-awards-logo-03.png"
-                                        alt="" /></noscript></a>
+                                        alt="synex digital" /></noscript></a>
                         </div>
                     </div>
                 </div>
@@ -420,10 +410,10 @@
                     </div>
                     <div class="d-flex md-mb-25px">
                         <div
-                            class="slider-one-slide-prev-1 bg-sherpa-blue text-white swiper-button-prev slider-navigation-style-04 w-60px h-60px">
+                            class="slider-one-slide-prev-1 bg-sherpa-blue text-white swiper-button-prev slider-navigation-style-04 w-60px h-60px">◄
                         </div>
                         <div
-                            class="slider-one-slide-next-1 bg-sherpa-blue text-white swiper-button-next slider-navigation-style-04 w-60px h-60px">
+                            class="slider-one-slide-next-1 bg-sherpa-blue text-white swiper-button-next slider-navigation-style-04 w-60px h-60px">►
                         </div>
                     </div>
                 </div>
@@ -475,29 +465,29 @@
                 <!-- start client item -->
                 <div class="col client-box text-center md-mb-40px">
                     <a href="#"><img src="{{ asset('Frontend/images/brand/amazon-web-services.png') }}"
-                            class="h-35px" alt=""></a>
+                            class="h-35px" alt="synex digital"></a>
                 </div>
                 <!-- end client item -->
                 <!-- start client item -->
                 <div class="col client-box text-center md-mb-40px">
                     <a><img src="{{ asset('Frontend/images/brand/Logo-Notion-White-al-vivo.png') }}" class="h-35px"
-                            alt=""></a>
+                            alt="synex digital"></a>
                 </div>
                 <!-- end client item -->
                 <!-- start client item -->
                 <div class="col client-box text-center md-mb-40px">
-                    <a><img src="{{ asset('Frontend/images/brand/meta_PNG7.png') }}" class="h-35px" alt=""></a>
+                    <a><img src="{{ asset('Frontend/images/brand/meta_PNG7.png') }}" class="h-35px" alt="synex digital"></a>
                 </div>
                 <!-- end client item -->
                 <!-- start client item -->
                 <div class="col client-box text-center sm-mb-40px">
-                    <a><img src="{{ asset('Frontend/images/brand/stripe.png') }}" class="h-35px" alt=""></a>
+                    <a><img src="{{ asset('Frontend/images/brand/stripe.png') }}" class="h-35px" alt="synex digital"></a>
                 </div>
                 <!-- end client item -->
                 <!-- start client item -->
                 <div class="col client-box text-center">
                     <a><img src="{{ asset('Frontend/images/brand/GitHub-Wordmark-White-Dark-Background-Logo.wine.svg') }}"
-                            class="h-35px" alt=""></a>
+                            class="h-35px" alt="synex digital"></a>
                 </div>
                 <!-- end client item -->
             </div>
@@ -529,15 +519,15 @@
                                 <li class="grid-item">
                                     <div class="card bg-transparent border-0 h-100">
                                         <div class="blog-image position-relative overflow-hidden border-radius-4px">
-                                            <a href="{{ route('blog.view', $blog['slug']) }}"><img alt=""
+                                            <a href="{{ route('blog.view', $blog['slug']) }}"><img alt="synex digital"
                                                     data-cfsrc="{{ $blog['image'] }}"
                                                     style="display:none;visibility:hidden;"><noscript><img
-                                                        src="{{ $blog['image'] }}" alt=""></noscript></a>
+                                                        src="{{ $blog['image'] }}" alt="synex digital"></noscript></a>
                                         </div>
                                         <div class="card-body p-0 pt-30px sm-pt-20px lg-pb-20px">
                                             <span class="fs-14 text-uppercase d-block mb-5px fw-500"><a
                                                     href="{{ route('blog.view', $blog['slug']) }}"
-                                                    class="text-dark-gray text-dark-gray-hover fw-700 categories-text">{{ $blog['author'] }}</a>👁<a
+                                                    class="text-dark-gray text-dark-gray-hover fw-500 categories-text" style="font-size: 13px">{{ $blog['author'] }}</a>👁<a
                                                     href="#"
                                                     class="blog-date text-medium-gray-hover">{{ $blog['view'] }}</a></span>
                                             <a href="{{ route('blog.view', $blog['slug']) }}"
@@ -574,16 +564,16 @@
                             together
                             <div class="position-absolute left-minus-140px top-minus-140px z-index-9 xl-left-minus-110px top-minus-140px xl-top-minus-100px md-top-minus-90px z-index-9 xl-w-230px md-w-200px d-none d-md-block"
                                 data-anime='{ "translateY": [-15, 0], "scale": [0.5, 1], "opacity": [0,1], "duration": 800, "delay": 200, "staggervalue": 300, "easing": "easeOutQuad" }'>
-                                <img class="animation-rotation" alt=""
+                                <img class="animation-rotation" alt="synex digital"
                                     data-cfsrc="{{ asset('Frontend') }}/images/demo-web-agency-05.png"
                                     style="display:none;visibility:hidden;"><noscript><img
                                         src="{{ asset('Frontend') }}/images/demo-web-agency-05.png"
-                                        class="animation-rotation" alt=""></noscript>
-                                <div class="absolute-middle-center w-100 z-index-minus-1"><img alt=""
+                                        class="animation-rotation" alt="synex digital"></noscript>
+                                <div class="absolute-middle-center w-100 z-index-minus-1"><img alt="synex digital"
                                         data-cfsrc="{{ asset('Frontend') }}/images/demo-web-agency-04.png"
                                         style="display:none;visibility:hidden;"><noscript><img
                                             src="{{ asset('Frontend') }}/images/demo-web-agency-04.png"
-                                            alt=""></noscript></div>
+                                            alt="synex digital"></noscript></div>
                             </div>
                         </div>
                     </div>

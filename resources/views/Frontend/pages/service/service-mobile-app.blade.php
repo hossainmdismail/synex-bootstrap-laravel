@@ -68,11 +68,9 @@
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav">
-                            <li class="nav-item"><a href="{{route('home')}}" class="nav-link">Home</a></li>
-                            <li class="nav-item"><a href="{{route('about')}}" class="nav-link">About Us</a></li>
-                            <li class="nav-item"><a href="{{route('services')}}" class="nav-link">Services</a></li>
-                            <li class="nav-item"><a href="{{route('projects')}}" class="nav-link">Projects</a></li>
-                            <li class="nav-item"><a href="{{route('blogs')}}" class="nav-link">Blog</a></li>
+                            <li class="nav-item"><a href="#features" class="nav-link">Features</a></li>
+                            <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                            <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
                         </ul>
                     </div>
                 </div>
@@ -154,41 +152,13 @@
                         <span class="fw-800">10000+</span> people trusting travel application.</span>
                 </div>
             </div>
-            <div class="row row-cols-1 row-cols-lg-5 row-cols-md-3 row-cols-sm-2 clients-style-06 justify-content-center"
-                data-anime='{ "el": "childs", "translateX": [30, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 250, "easing": "easeOutQuad" }'>
-                <!-- start client item -->
-                <div class="col client-box text-center md-mb-35px">
-                    <a href="#"><img src="{{ asset('Frontend') }}/images/logo-walmart-dark-gray.svg" class="h-35px" alt=""></a>
-                </div>
-                <!-- end client item -->
-                <!-- start client item -->
-                <div class="col client-box text-center md-mb-35px">
-                    <a href="#"><img src="images/logo-logitech.svg" class="h-35px" alt=""></a>
-                </div>
-                <!-- end client item -->
-                <!-- start client item -->
-                <div class="col client-box text-center md-mb-35px">
-                    <a href="#"><img src="images/logo-monday.svg" class="h-35px" alt=""></a>
-                </div>
-                <!-- end client item -->
-                <!-- start client item -->
-                <div class="col client-box text-center sm-mb-35px">
-                    <a href="#"><img src="images/logo-google.svg" class="h-35px" alt=""></a>
-                </div>
-                <!-- end client item -->
-                <!-- start client item -->
-                <div class="col client-box text-center">
-                    <a href="#"><img src="images/logo-paypal.svg" class="h-35px" alt=""></a>
-                </div>
-                <!-- end client item -->
-            </div>
         </div>
     </section>
     <!-- end section -->
     <!-- start section -->
     <section class="pb-0">
         <div class="container">
-            <div class="row row-cols-1 row-cols-lg-3 row-cols-md-2 justify-content-center mb-6 sm-mb-12"
+            <div id="features" class="row row-cols-1 row-cols-lg-3 row-cols-md-2 justify-content-center mb-6 sm-mb-12"
                 data-anime='{ "el": "childs", "translateY": [0, 0], "perspective": [1200,1200], "scale": [1.1, 1], "rotateX": [50, 0], "opacity": [0,1], "duration": 800, "delay": 200, "staggervalue": 300, "easing": "easeOutQuad" }'>
                 <!-- start features box item -->
                 <div class="col icon-with-text-style-04 transition-inner-all md-mb-30px">
@@ -204,13 +174,6 @@
                             <p>We believe that what we create today, it will transform to brand growth in future.</p>
                             <a href="demo-application-features.html"
                                 class="btn btn-link btn-hover-animation-switch btn-extra-large text-dark-gray fw-700 text-uppercase-inherit mt-15px">
-                                {{-- <span>
-                                    <span class="btn-text">Learn more</span>
-                                    <span class="btn-icon"><i
-                                            class="fa-solid fa-arrow-right icon-very-small"></i></span>
-                                    <span class="btn-icon"><i
-                                            class="fa-solid fa-arrow-right icon-very-small"></i></span>
-                                </span> --}}
                             </a>
                         </div>
                     </div>
@@ -230,13 +193,6 @@
                             <p>We believe that what we create today, it will transform to brand growth in future.</p>
                             <a href="demo-application-features.html"
                                 class="btn btn-link btn-hover-animation-switch btn-extra-large text-dark-gray fw-700 text-uppercase-inherit mt-15px">
-                                {{-- <span>
-                                    <span class="btn-text">Learn more</span>
-                                    <span class="btn-icon"><i
-                                            class="fa-solid fa-arrow-right icon-very-small"></i></span>
-                                    <span class="btn-icon"><i
-                                            class="fa-solid fa-arrow-right icon-very-small"></i></span>
-                                </span> --}}
                             </a>
                         </div>
                         <span
@@ -258,13 +214,6 @@
                             <p>We believe that what we create today, it will transform to brand growth in future.</p>
                             <a href="demo-application-features.html"
                                 class="btn btn-link btn-hover-animation-switch btn-extra-large text-dark-gray fw-700 text-uppercase-inherit mt-15px">
-                                {{-- <span>
-                                    <span class="btn-text">Learn more</span>
-                                    <span class="btn-icon"><i
-                                            class="fa-solid fa-arrow-right icon-very-small"></i></span>
-                                    <span class="btn-icon"><i
-                                            class="fa-solid fa-arrow-right icon-very-small"></i></span>
-                                </span> --}}
                             </a>
                         </div>
                     </div>
@@ -471,7 +420,7 @@
     </section>
     <!-- end section -->
     <!-- start section -->
-    <section class="stack-box py-0">
+    <section id="projects" class="stack-box py-0">
         <div class="stack-box-contain">
             <!-- start stack item -->
             <div class="stack-item stack-item-01 bg-white lg-pt-8 lg-pb-8 xs-pt-50px xs-pb-50px">
@@ -621,263 +570,7 @@
     </section>
     <!-- end section -->
     <!-- start section -->
-    {{-- <section class="pb-0 position-relative">
-        <div class="container-fluid">
-            <div class="row justify-content-center lg-mx-0">
-                <div class="col-xxl-10 col-xl-11 cover-background p-6 border-radius-10px"
-                    style="background-image: url(images/demo-application-home-slider-bg.jpg)">
-                    <div class="row align-items-center">
-                        <div class="col-xxl-3 col-xl-4 position-relative text-center text-xl-start"
-                            data-anime='{ "translateY": [0, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
-                            <div
-                                class="bg-white-transparent-very-light d-inline-block mb-20px fw-600 text-white text-uppercase border-radius-30px ps-20px pe-20px fs-12">
-                                how it works</div>
-                            <h3 class="fw-600 text-white ls-minus-1px">What travelers community are saying.</h3>
-                            <div class="d-flex lg-mb-35px justify-content-center justify-content-xl-start">
-                                <!-- start slider navigation -->
-                                <div
-                                    class="slider-one-slide-prev-1 text-white swiper-button-prev slider-navigation-style-04 border border-2 border-color-transparent-white-light">
-                                    <i class="feather icon-feather-arrow-left icon-small"></i></div>
-                                <div
-                                    class="slider-one-slide-next-1 text-white swiper-button-next slider-navigation-style-04 border border-2 border-color-transparent-white-light">
-                                    <i class="feather icon-feather-arrow-right icon-small"></i></div>
-                                <!-- end slider navigation -->
-                            </div>
-                        </div>
-                        <div class="col-xxl-9 col-xl-8 ps-6 lg-ps-15px position-relative"
-                            data-anime='{ "translateY": [0, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
-                            <div class="outside-box-right-20 sm-outside-box-right-0">
-                                <div class="swiper slider-one-slide magic-cursor drag-cursor"
-                                    data-slider-options='{ "slidesPerView": 1, "spaceBetween": 30, "loop": true, "navigation": { "nextEl": ".slider-one-slide-next-1", "prevEl": ".slider-one-slide-prev-1" }, "autoplay": { "delay": 3000, "disableOnInteraction": false }, "keyboard": { "enabled": true, "onlyInViewport": true }, "breakpoints": { "1400": { "slidesPerView": 3 }, "1200": { "slidesPerView": 2 }, "992": { "slidesPerView": 3 }, "768": { "slidesPerView": 2 }, "320": { "slidesPerView": 1 } }, "effect": "slide" }'>
-                                    <div class="swiper-wrapper">
-                                        <!-- start review item -->
-                                        <div class="swiper-slide review-style-07">
-                                            <div
-                                                class="d-flex justify-content-center h-100 flex-column border-radius-6px p-12 xs-p-8 bg-oxford-blue">
-                                                <div class="mb-20px">
-                                                    <img class="rounded-circle w-90px h-90px me-15px" alt=""
-                                                        data-cfsrc="images/demo-application-home-avtar-02.jpg"
-                                                        style="display:none;visibility:hidden;"><noscript><img
-                                                            src="images/demo-application-home-avtar-02.jpg"
-                                                            class="rounded-circle w-90px h-90px me-15px"
-                                                            alt=""></noscript>
-                                                    <div class="d-inline-block align-middle">
-                                                        <div class="text-white fw-600 fs-18">Leonel mooney</div>
-                                                        <div class="lh-26 fs-15 fw-600">World traveler</div>
-                                                    </div>
-                                                </div>
-                                                <p class="mb-15px">Anthony Bourdain was an icon who different cultures
-                                                    and parts of the world through the food that humanity.</p>
-                                                <div class="d-flex align-items-center">
-                                                    <div class="d-inline-block me-auto">
-                                                        <div class="text-white float-start me-10px fw-500">5.0</div>
-                                                        <div class="review-star-icon float-start">
-                                                            <i class="bi bi-star-fill"></i><i
-                                                                class="bi bi-star-fill"></i><i
-                                                                class="bi bi-star-fill"></i><i
-                                                                class="bi bi-star-fill"></i><i
-                                                                class="bi bi-star-fill"></i>
-                                                        </div>
-                                                    </div>
-                                                    <div
-                                                        class="d-inline-block bg-medium-gray-transparent fw-600 text-uppercase border-radius-3px ps-15px pe-15px fs-12 lh-26 text-white">
-                                                        20 Jan</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- end review item -->
-                                        <!-- start review item -->
-                                        <div class="swiper-slide review-style-07">
-                                            <div
-                                                class="d-flex justify-content-center h-100 flex-column border-radius-6px p-12 xs-p-8 bg-oxford-blue">
-                                                <div class="mb-20px">
-                                                    <img class="rounded-circle w-90px h-90px me-15px" alt=""
-                                                        data-cfsrc="images/demo-application-home-avtar-03.jpg"
-                                                        style="display:none;visibility:hidden;"><noscript><img
-                                                            src="images/demo-application-home-avtar-03.jpg"
-                                                            class="rounded-circle w-90px h-90px me-15px"
-                                                            alt=""></noscript>
-                                                    <div class="d-inline-block align-middle">
-                                                        <div class="text-white fw-600 fs-18">Den viliamson</div>
-                                                        <div class="lh-26 fs-15 fw-600">World traveler</div>
-                                                    </div>
-                                                </div>
-                                                <p class="mb-15px">Anthony Bourdain was an icon who different cultures
-                                                    and parts of the world through the food that humanity.</p>
-                                                <div class="d-flex align-items-center">
-                                                    <div class="d-inline-block me-auto">
-                                                        <div class="text-white float-start me-10px fw-500">4.5</div>
-                                                        <div class="review-star-icon float-start">
-                                                            <i class="bi bi-star-fill"></i><i
-                                                                class="bi bi-star-fill"></i><i
-                                                                class="bi bi-star-fill"></i><i
-                                                                class="bi bi-star-fill"></i><i
-                                                                class="bi bi-star-half"></i>
-                                                        </div>
-                                                    </div>
-                                                    <div
-                                                        class="d-inline-block bg-medium-gray-transparent fw-600 text-uppercase border-radius-3px ps-15px pe-15px fs-12 lh-26 text-white">
-                                                        10 Jan</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- end review item -->
-                                        <!-- start review item -->
-                                        <div class="swiper-slide review-style-07">
-                                            <div
-                                                class="d-flex justify-content-center h-100 flex-column border-radius-6px p-12 xs-p-8 bg-oxford-blue">
-                                                <div class="mb-20px">
-                                                    <img class="rounded-circle w-90px h-90px me-15px" alt=""
-                                                        data-cfsrc="images/demo-application-home-avtar-04.jpg"
-                                                        style="display:none;visibility:hidden;"><noscript><img
-                                                            src="images/demo-application-home-avtar-04.jpg"
-                                                            class="rounded-circle w-90px h-90px me-15px"
-                                                            alt=""></noscript>
-                                                    <div class="d-inline-block align-middle">
-                                                        <div class="text-white fw-600 fs-18">Herman miller</div>
-                                                        <div class="lh-26 fs-15 fw-600">World traveler</div>
-                                                    </div>
-                                                </div>
-                                                <p class="mb-15px">Anthony Bourdain was an icon who different cultures
-                                                    and parts of the world through the food that humanity.</p>
-                                                <div class="d-flex align-items-center">
-                                                    <div class="d-inline-block me-auto">
-                                                        <div class="text-white float-start me-10px fw-500">5.0</div>
-                                                        <div class="review-star-icon float-start">
-                                                            <i class="bi bi-star-fill"></i><i
-                                                                class="bi bi-star-fill"></i><i
-                                                                class="bi bi-star-fill"></i><i
-                                                                class="bi bi-star-fill"></i><i
-                                                                class="bi bi-star-fill"></i>
-                                                        </div>
-                                                    </div>
-                                                    <div
-                                                        class="d-inline-block bg-medium-gray-transparent fw-600 text-uppercase border-radius-3px ps-15px pe-15px fs-12 lh-26 text-white">
-                                                        01 Jan</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- end review item -->
-                                        <!-- start review item -->
-                                        <div class="swiper-slide review-style-07">
-                                            <div
-                                                class="d-flex justify-content-center h-100 flex-column border-radius-6px p-12 xs-p-8 bg-oxford-blue">
-                                                <div class="mb-20px">
-                                                    <img class="rounded-circle w-90px h-90px me-15px" alt=""
-                                                        data-cfsrc="images/demo-application-home-avtar-05.jpg"
-                                                        style="display:none;visibility:hidden;"><noscript><img
-                                                            src="images/demo-application-home-avtar-05.jpg"
-                                                            class="rounded-circle w-90px h-90px me-15px"
-                                                            alt=""></noscript>
-                                                    <div class="d-inline-block align-middle">
-                                                        <div class="text-white fw-600 fs-18">Matthew taylor</div>
-                                                        <div class="lh-26 fs-15 fw-600">World traveler</div>
-                                                    </div>
-                                                </div>
-                                                <p class="mb-15px">Anthony Bourdain was an icon who different cultures
-                                                    and parts of the world through the food that humanity.</p>
-                                                <div class="d-flex align-items-center">
-                                                    <div class="d-inline-block me-auto">
-                                                        <div class="text-white float-start me-10px fw-500">5.0</div>
-                                                        <div class="review-star-icon float-start">
-                                                            <i class="bi bi-star-fill"></i><i
-                                                                class="bi bi-star-fill"></i><i
-                                                                class="bi bi-star-fill"></i><i
-                                                                class="bi bi-star-fill"></i><i
-                                                                class="bi bi-star-fill"></i>
-                                                        </div>
-                                                    </div>
-                                                    <div
-                                                        class="d-inline-block bg-medium-gray-transparent fw-600 text-uppercase border-radius-3px ps-15px pe-15px fs-12 lh-26 text-white">
-                                                        10 Dec</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- end review item -->
-                                        <!-- start review item -->
-                                        <div class="swiper-slide review-style-07">
-                                            <div
-                                                class="d-flex justify-content-center h-100 flex-column border-radius-6px p-12 xs-p-8 bg-oxford-blue">
-                                                <div class="mb-20px">
-                                                    <img class="rounded-circle w-90px h-90px me-15px" alt=""
-                                                        data-cfsrc="images/demo-application-home-avtar-03.jpg"
-                                                        style="display:none;visibility:hidden;"><noscript><img
-                                                            src="images/demo-application-home-avtar-03.jpg"
-                                                            class="rounded-circle w-90px h-90px me-15px"
-                                                            alt=""></noscript>
-                                                    <div class="d-inline-block align-middle">
-                                                        <div class="text-white fw-600 fs-18">Den viliamson</div>
-                                                        <div class="lh-26 fs-15 fw-600">World traveler</div>
-                                                    </div>
-                                                </div>
-                                                <p class="mb-15px">Anthony Bourdain was an icon who different cultures
-                                                    and parts of the world through the food that humanity.</p>
-                                                <div class="d-flex align-items-center">
-                                                    <div class="d-inline-block me-auto">
-                                                        <div class="text-white float-start me-10px fw-500">4.5</div>
-                                                        <div class="review-star-icon float-start">
-                                                            <i class="bi bi-star-fill"></i><i
-                                                                class="bi bi-star-fill"></i><i
-                                                                class="bi bi-star-fill"></i><i
-                                                                class="bi bi-star-fill"></i><i
-                                                                class="bi bi-star-half"></i>
-                                                        </div>
-                                                    </div>
-                                                    <div
-                                                        class="d-inline-block bg-medium-gray-transparent fw-600 text-uppercase border-radius-3px ps-15px pe-15px fs-12 lh-26 text-white">
-                                                        10 Jan</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- end review item -->
-                                        <!-- start review item -->
-                                        <div class="swiper-slide review-style-07">
-                                            <div
-                                                class="d-flex justify-content-center h-100 flex-column border-radius-6px p-12 xs-p-8 bg-oxford-blue">
-                                                <div class="mb-20px">
-                                                    <img class="rounded-circle w-90px h-90px me-15px" alt=""
-                                                        data-cfsrc="images/demo-application-home-avtar-04.jpg"
-                                                        style="display:none;visibility:hidden;"><noscript><img
-                                                            src="images/demo-application-home-avtar-04.jpg"
-                                                            class="rounded-circle w-90px h-90px me-15px"
-                                                            alt=""></noscript>
-                                                    <div class="d-inline-block align-middle">
-                                                        <div class="text-white fw-600 fs-18">Herman miller</div>
-                                                        <div class="lh-26 fs-15 fw-600">World traveler</div>
-                                                    </div>
-                                                </div>
-                                                <p class="mb-15px">Anthony Bourdain was an icon who different cultures
-                                                    and parts of the world through the food that humanity.</p>
-                                                <div class="d-flex align-items-center">
-                                                    <div class="d-inline-block me-auto">
-                                                        <div class="text-white float-start me-10px fw-500">5.0</div>
-                                                        <div class="review-star-icon float-start">
-                                                            <i class="bi bi-star-fill"></i><i
-                                                                class="bi bi-star-fill"></i><i
-                                                                class="bi bi-star-fill"></i><i
-                                                                class="bi bi-star-fill"></i><i
-                                                                class="bi bi-star-fill"></i>
-                                                        </div>
-                                                    </div>
-                                                    <div
-                                                        class="d-inline-block bg-medium-gray-transparent fw-600 text-uppercase border-radius-3px ps-15px pe-15px fs-12 lh-26 text-white">
-                                                        01 Jan</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- end review item -->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> --}}
-    <!-- end section -->
-    <!-- start section -->
-    <section class="position-relative z-index-2">
+    {{-- <section class="position-relative z-index-2">
         <div class="container">
             <div class="row justify-content-center mb-3">
                 <div class="col-md-7 text-center"
@@ -1078,7 +771,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
     <!-- end section -->
     <!-- start section -->
     <section class="pt-0">
@@ -1185,7 +878,7 @@
     </section>
     <!-- end section -->
     <!-- start footer -->
-    <footer class="footer-dark p-0 position-relative bg-black-pearl-blue-dark">
+    <footer id="contact" class="footer-dark p-0 position-relative bg-black-pearl-blue-dark">
         <div class="pt-40px pb-40px bg-black-pearl-blue">
             <div class="container position-relative">
                 <div class="row align-items-center justify-content-center">

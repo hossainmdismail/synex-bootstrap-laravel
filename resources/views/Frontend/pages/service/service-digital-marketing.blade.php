@@ -69,14 +69,11 @@
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav alt-font">
-                            <li class="nav-item"><a href="{{route('home')}}" class="nav-link">Home</a></li>
-                            <li class="nav-item"><a href="{{route('about')}}" class="nav-link">About Us</a></li>
-                            <li class="nav-item"><a href="{{route('services')}}" class="nav-link">Services</a></li>
-                            <li class="nav-item"><a href="{{route('projects')}}" class="nav-link">Projects</a>
+                            <li class="nav-item"><a href="#about" class="nav-link">About Us</a></li>
+                            <li class="nav-item"><a href="#process" class="nav-link">Working Process</a>
                             </li>
-                            <li class="nav-item"><a href="{{route('blogs')}}" class="nav-link">Blog</a>
-                            </li>
-                            <li class="nav-item"><a href="{{route('contact')}}" class="nav-link">Contact</a>
+                            <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+                            <li class="nav-item"><a href="#contact" class="nav-link">Contact</a>
                             </li>
                         </ul>
                     </div>
@@ -141,7 +138,7 @@
     </section>
     <!-- end banner slider -->
     <!-- start section -->
-    <section class="background-position-center-top pb-0 pt-4 sm-pt-40px"
+    <section id="about" class="background-position-center-top pb-0 pt-4 sm-pt-40px"
         style="background-image: url({{ asset('Frontend/images/demo-seo-agency-vertical-line-bg.svg')}})">
         <div class="container">
             <div class="row justify-content-center mb-4">
@@ -276,7 +273,7 @@
     </section>
     <!-- end section -->
     <!-- start section -->
-    <section class="background-position-center-top pt-0"
+    <section id="process" class="background-position-center-top pt-0"
         style="background-image: url({{ asset('Frontend/images/vertical-line-bg-medium-gray.svg')}})">
         <div class="container">
             <div class="row justify-content-center">
@@ -305,14 +302,6 @@
                     <p class="w-80 xl-w-85 lg-w-90 md-w-100 mb-20px">We are committed to deliver unique digital media
                         solutions from web development to eCommerce solutions for our happy clients by using our
                         knowledge and expertise.</p>
-                    <a href="demo-seo-agency-process.html"
-                        class="btn btn-link btn-hover-animation-switch btn-large text-dark-gray fw-700">
-                        {{-- <span>
-                            <span class="btn-text">learn more</span>
-                            <span class="btn-icon">➔</span>
-                            <span class="btn-icon">➔</span>
-                        </span> --}}
-                    </a>
                 </div>
             </div>
         </div>
@@ -368,7 +357,7 @@
     </section>
     <!-- end section -->
     <!-- start section -->
-    <section class="background-position-center-top pt-4 md-pt-6 sm-pt-40px"
+    <section id="services" class="background-position-center-top pt-4 md-pt-6 sm-pt-40px"
         style="background-image: url('images/demo-seo-agency-vertical-line-bg.svg')">
         <div class="container">
             <div class="row mb-8 md-mb-10">
@@ -407,14 +396,6 @@
                                     <p class="w-80 xl-w-90 md-w-100">We are committed to deliver unique digital media
                                         solutions from web design to eCommerce solutions for our clients by using our
                                         knowledge and expertise.</p>
-                                    <a href="demo-seo-agency-what-we-do.html"
-                                        class="btn btn-link btn-hover-animation-switch btn-large text-dark-gray fw-700">
-                                        {{-- <span>
-                                            <span class="btn-text">learn more</span>
-                                            <span class="btn-icon">➔</span>
-                                            <span class="btn-icon">➔</span>
-                                        </span> --}}
-                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -436,14 +417,6 @@
                                     <p class="w-80 xl-w-90 md-w-100">We are committed to deliver unique digital media
                                         solutions from web design to eCommerce solutions for our clients by using our
                                         knowledge and expertise.</p>
-                                    <a href="demo-seo-agency-what-we-do.html"
-                                        class="btn btn-link btn-hover-animation-switch btn-large text-dark-gray fw-700">
-                                        {{-- <span>
-                                            <span class="btn-text">learn more</span>
-                                            <span class="btn-icon">➔</span>
-                                            <span class="btn-icon">➔</span>
-                                        </span> --}}
-                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -465,14 +438,6 @@
                                     <p class="w-80 xl-w-90 md-w-100">We are committed to deliver unique digital media
                                         solutions from web design to eCommerce solutions for our clients by using our
                                         knowledge and expertise.</p>
-                                    <a href="demo-seo-agency-what-we-do.html"
-                                        class="btn btn-link btn-hover-animation-switch btn-large text-dark-gray fw-700">
-                                        {{-- <span>
-                                            <span class="btn-text">learn more</span>
-                                            <span class="btn-icon">➔</span>
-                                            <span class="btn-icon">➔</span>
-                                        </span> --}}
-                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -494,13 +459,6 @@
                                     <p class="w-80 xl-w-90 md-w-100">We are committed to deliver unique digital media
                                         solutions from web design to eCommerce solutions for our clients by using our
                                         knowledge and expertise.</p>
-                                    <a href="demo-seo-agency-what-we-do.html"
-                                        class="btn btn-link btn-hover-animation-switch btn-large text-dark-gray fw-700">
-                                        {{-- <span>
-                                            <span class="btn-text">learn more</span>
-                                            <span class="btn-icon">➔</i></span>
-                                            <span class="btn-icon">➔</span>
-                                        </span> --}}
                                     </a>
                                 </div>
                             </div>
@@ -509,219 +467,8 @@
                     </div>
                 </div>
             </div>
-            <div class="row justify-content-center mb-4">
-                <div class="col-xl-7 col-lg-8 col-md-10 text-center"
-                    data-anime='{ "translateY": [50, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 150, "easing": "easeOutQuad" }'>
-                    <h2 class="text-dark-gray fw-600 alt-font ls-minus-1px">Choose the best package your business needs
-                    </h2>
-                </div>
-            </div>
-            <div class="row align-items-center justify-content-center pricing-table-style-06"
-                data-anime='{ "el": "childs", "willchange": "transform", "scale": [0.95, 1], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 150, "easing": "easeOutQuad" }'>
-                <!-- start pricing item -->
-                <div class="col-lg-4 col-md-8 md-mb-30px">
-                    <div class="bg-white box-shadow-quadruple-large border-radius-6px p-18 lg-p-13 text-center">
-                        <h6 class="text-dark-gray fw-600 alt-font mb-0">Standard</h6>
-                        <span class="mb-20px d-inline-block">Unlimited users</span>
-                        <div class="row align-items-center">
-                            <div class="col-sm-5 pe-sm-0">
-                                <h2 class="text-dark-gray mb-0 alt-font fw-600 ls-minus-2px text-center text-sm-end">
-                                    <sup class="fs-28">$</sup>22</h2>
-                            </div>
-                            <div
-                                class="col-lg-7 col-sm-5 text-center text-sm-start last-paragraph-no-margin fs-15 lh-24">
-                                <p>per user/month billed annually</p>
-                            </div>
-                        </div>
-                        <ul class="p-0 mt-20px mb-30px list-style-01 text-start lh-normal">
-                            <li class="border-color-extra-medium-gray pt-20px pb-20px text-dark-gray d-flex"><i
-                                    class="feather icon-feather-check fs-20 text-green me-10px"></i>Marketing strategy
-                            </li>
-                            <li class="border-color-extra-medium-gray pt-20px pb-20px text-dark-gray d-flex"><i
-                                    class="feather icon-feather-check fs-20 text-green me-10px"></i>Competitive work
-                                analysis</li>
-                            <li class="border-color-extra-medium-gray pt-20px pb-20px opacity-6 d-flex"><i
-                                    class="feather icon-feather-x fs-20 text-red me-10px"></i>Social media share audit
-                            </li>
-                            <li class="border-color-extra-medium-gray pt-20px pb-20px opacity-6 d-flex"><i
-                                    class="feather icon-feather-x fs-20 text-red me-10px"></i>Monthly management</li>
-                        </ul>
-                        <div class="pricing-footer w-100">
-                            <a href="demo-seo-agency-pricing.html"
-                                class="btn btn-medium btn-dark-gray btn-round-edge w-100 btn-box-shadow">Choose
-                                package</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- end pricing item -->
-                <!-- start pricing item -->
-                <div class="col-lg-4 col-md-8 md-mb-30px">
-                    <div class="bg-white box-shadow-quadruple-large border-radius-6px p-18 lg-p-13 text-center">
-                        <span
-                            class="ps-15px pe-15px mb-20px text-uppercase text-base-color fs-12 lh-26 alt-font fw-700 border-radius-4px box-shadow-large border border-1 border-color-extra-medium-gray d-inline-block">popular
-                        </span>
-                        <h6 class="text-dark-gray fw-600 alt-font mb-0">Business</h6>
-                        <span class="mb-20px d-inline-block">Unlimited users</span>
-                        <div class="row align-items-center">
-                            <div class="col-sm-5 pe-sm-0">
-                                <h2 class="text-dark-gray mb-0 alt-font fw-600 ls-minus-2px text-center text-sm-end">
-                                    <sup class="fs-28">$</sup>33</h2>
-                            </div>
-                            <div
-                                class="col-lg-7 col-sm-5 text-center text-sm-start last-paragraph-no-margin fs-15 lh-24">
-                                <p>per user/month billed annually</p>
-                            </div>
-                        </div>
-                        <ul class="p-0 mt-20px mb-30px list-style-01 text-start lh-normal">
-                            <li class="border-color-extra-medium-gray pt-20px pb-20px text-dark-gray d-flex"><i
-                                    class="feather icon-feather-check fs-20 text-green me-10px"></i>Marketing strategy
-                            </li>
-                            <li class="border-color-extra-medium-gray pt-20px pb-20px text-dark-gray d-flex"><i
-                                    class="feather icon-feather-check fs-20 text-green me-10px"></i>Competitive work
-                                analysis</li>
-                            <li class="border-color-extra-medium-gray pt-20px pb-20px text-dark-gray d-flex"><i
-                                    class="feather icon-feather-check fs-20 text-green me-10px"></i>Social media share
-                                audit</li>
-                            <li class="border-color-extra-medium-gray pt-20px pb-20px opacity-5 d-flex"><i
-                                    class="feather icon-feather-x fs-20 text-red me-10px"></i>Monthly management</li>
-                        </ul>
-                        <div class="pricing-footer w-100">
-                            <a href="demo-seo-agency-pricing.html"
-                                class="btn btn-medium btn-base-color btn-round-edge w-100 btn-box-shadow">Choose
-                                package</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- end pricing item -->
-                <!-- start pricing item -->
-                <div class="col-lg-4 col-md-8">
-                    <div class="bg-white box-shadow-quadruple-large border-radius-6px p-18 lg-p-13 text-center">
-                        <h6 class="text-dark-gray fw-600 alt-font mb-0">Ultimate</h6>
-                        <span class="mb-20px d-inline-block">Unlimited users</span>
-                        <div class="row align-items-center">
-                            <div class="col-sm-5 pe-sm-0">
-                                <h2 class="text-dark-gray mb-0 alt-font fw-600 ls-minus-2px text-center text-sm-end">
-                                    <sup class="fs-28">$</sup>44</h2>
-                            </div>
-                            <div
-                                class="col-lg-7 col-sm-5 text-center text-sm-start last-paragraph-no-margin fs-15 lh-24">
-                                <p>per user/month billed annually</p>
-                            </div>
-                        </div>
-                        <ul class="p-0 mt-20px mb-30px list-style-01 text-start lh-normal">
-                            <li class="border-color-extra-medium-gray pt-20px pb-20px text-dark-gray d-flex"><i
-                                    class="feather icon-feather-check fs-20 text-green me-10px"></i>Marketing strategy
-                            </li>
-                            <li class="border-color-extra-medium-gray pt-20px pb-20px text-dark-gray d-flex"><i
-                                    class="feather icon-feather-check fs-20 text-green me-10px"></i>Competitive work
-                                analysis</li>
-                            <li class="border-color-extra-medium-gray pt-20px pb-20px text-dark-gray d-flex"><i
-                                    class="feather icon-feather-check fs-20 text-green me-10px"></i>Social media share
-                                audit</li>
-                            <li class="border-color-extra-medium-gray pt-20px pb-20px text-dark-gray d-flex"><i
-                                    class="feather icon-feather-check fs-20 text-green me-10px"></i>Monthly management
-                            </li>
-                        </ul>
-                        <div class="pricing-footer w-100">
-                            <a href="demo-seo-agency-pricing.html"
-                                class="btn btn-medium btn-dark-gray btn-round-edge w-100 btn-box-shadow">Choose
-                                package</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- end pricing item -->
-            </div>
         </div>
     </section>
-    <!-- end section -->
-    <!-- start section -->
-    {{-- <section class="cover-background" style="background-image: url('images/demo-seo-agency-bg-02.jpg')">
-        <div class="container">
-            <div class="row justify-content-center text-center text-lg-start"
-                data-anime='{ "el": "childs", "translateY": [0, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 150, "easing": "easeOutQuad" }'>
-                <div class="col-lg-6 col-md-9 md-mb-35px">
-                    <span
-                        class="ps-20px pe-20px mb-25px text-uppercase text-dark-gray fs-13 lh-40 md-lh-50 ls-1px alt-font fw-700 border-radius-4px bg-white d-inline-block">Satisfied
-                        clients</span>
-                    <h2 class="alt-font text-dark-gray fw-600 ls-minus-1px mb-30px">What our clients are saying about
-                        us?</h2>
-                    <div class="d-flex justify-content-center justify-content-lg-start">
-                        <!-- start slider navigation -->
-                        <div
-                            class="slider-one-slide-prev-1 text-dark-gray swiper-button-prev slider-navigation-style-04 border border-1 border-color-transparent-dark-very-light"><
-                        </div>
-                        <div
-                            class="slider-one-slide-next-1 text-dark-gray swiper-button-next slider-navigation-style-04 border border-1 border-color-transparent-dark-very-light">>
-                            </div>
-                        <!-- end slider navigation -->
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-10">
-                    <div class="swiper slider-one-slide magic-cursor"
-                        data-slider-options='{ "slidesPerView": 1, "loop": true, "autoplay": { "delay": 4000, "disableOnInteraction": false }, "navigation": { "nextEl": ".slider-one-slide-next-1", "prevEl": ".slider-one-slide-prev-1" }, "keyboard": { "enabled": true, "onlyInViewport": true }, "effect": "slide" }'>
-                        <div class="swiper-wrapper">
-                            <!-- start text slider item -->
-                            <div class="swiper-slide">
-                                <span class="d-inline-block fs-22 lh-36 w-90 lg-w-100 mb-20px text-dark-gray">This
-                                    theme has a wide variety of options and a really good customer support. Some of the
-                                    customizations are unlimited but even so the theme still gives a lot of features
-                                    while prioritizing web speed.</span>
-                                <div class="mt-5px">
-                                    <div
-                                        class="rounded-circle bg-white rounded-circle w-100px h-100px d-inline-block align-middle overflow-hidden me-20px">
-                                    </div>
-                                    <div class="d-inline-block align-middle text-start">
-                                        <div class="text-dark-gray fs-20 fw-600 alt-font">Herman miller</div>
-                                        <div class="lh-30">Chief financial</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end text slider item -->
-                            <!-- start text slider item -->
-                            <div class="swiper-slide">
-                                <span class="d-inline-block fs-22 lh-36 w-90 lg-w-100 mb-20px text-dark-gray">Their
-                                    team are easy to work with and helped me make amazing websites in a short amount of
-                                    time. Thanks guys for all your hard work. This is an excellent theme!</span>
-                                <div class="mt-5px">
-                                    <div
-                                        class="rounded-circle bg-white rounded-circle w-100px h-100px d-inline-block align-middle overflow-hidden me-20px">
-                                        <img alt="" data-cfsrc="images/demo-seo-agency-avtar-02.jpg"
-                                            style="display:none;visibility:hidden;"><noscript><img
-                                                src="images/demo-seo-agency-avtar-02.jpg" alt=""></noscript>
-                                    </div>
-                                    <div class="d-inline-block align-middle text-start">
-                                        <div class="text-dark-gray fs-20 fw-600 alt-font">Michelle moore</div>
-                                        <div class="lh-30">Sales manager</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end text slider item -->
-                            <!-- start text slider item -->
-                            <div class="swiper-slide">
-                                <span class="d-inline-block fs-22 lh-36 w-90 lg-w-100 mb-20px text-dark-gray">Our
-                                    experience with your agency has been amazingly satisfying so far. The company I work
-                                    with is happy to let you know that we are a regular customer and look forward to our
-                                    cooperation soon!</span>
-                                <div class="mt-5px">
-                                    <div
-                                        class="rounded-circle bg-white rounded-circle w-100px h-100px d-inline-block align-middle overflow-hidden me-20px">
-                                        <img alt="" data-cfsrc="images/demo-seo-agency-avtar-03.jpg"
-                                            style="display:none;visibility:hidden;"><noscript><img
-                                                src="images/demo-seo-agency-avtar-03.jpg" alt=""></noscript>
-                                    </div>
-                                    <div class="d-inline-block align-middle text-start">
-                                        <div class="text-dark-gray fs-20 fw-600 alt-font">Loretta smith</div>
-                                        <div class="lh-30">Sales manager</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end text slider item -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> --}}
     <!-- end section -->
     <!-- start section -->
     <section class="bg-gradient-top-very-light-gray overlap-height position-relative">
@@ -842,7 +589,7 @@
     </section>
     <!-- end section -->
     <!-- start section -->
-    <section class="p-0 sm-pt-50px">
+    <section id="contact" class="p-0 sm-pt-50px">
         <div class="container overlap-section">
             <div class="row justify-content-center box-shadow-quadruple-large border-radius-6px overflow-hidden g-0">
                 <!-- start contact address -->

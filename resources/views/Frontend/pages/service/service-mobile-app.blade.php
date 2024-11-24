@@ -11,7 +11,7 @@
     <link rel="apple-touch-icon" href="{{ asset('Frontend/images/icons/fav-low.png') }}">
     <link rel="apple-touch-icon" sizes="72x72" href="{{ asset('Frontend/images/icons/fav-low.png') }}">
     <link rel="apple-touch-icon" sizes="114x114" href="{{ asset('Frontend/images/icons/fav-low.png') }}">
-    @include('Frontend.layout.headerLink')
+    @include('frontend.layout.headerlink')
     <link rel="stylesheet" href="{{ asset('Frontend/css/application.css') }}" />
 </head>
 
@@ -28,7 +28,7 @@
         <nav class="navbar navbar-expand-lg header-light bg-transparent disable-fixed" data-header-hover="light">
             <div class="container-fluid">
                 <div class="col-auto me-auto">
-                    <a class="navbar-brand" href="{{route('home')}}">
+                    <a class="navbar-brand" href="{{ route('home') }}">
                         <script type="text/javascript" style="display:none">
                             //<![CDATA[
                             window.__mirage2 = {
@@ -36,10 +36,9 @@
                             };
                             //]]>
                         </script>
-                        <script type="text/javascript" src="{{ asset('Frontend/js/mirage2.min.js') }}">
-                        </script>
-                        <img data-at2x="{{ asset('Frontend') }}/images/logo-text.svg" alt="" class="default-logo"
-                            data-cfsrc="{{ asset('Frontend') }}/images/logo-text.svg"
+                        <script type="text/javascript" src="{{ asset('Frontend/js/mirage2.min.js') }}"></script>
+                        <img data-at2x="{{ asset('Frontend') }}/images/logo-text.svg" alt=""
+                            class="default-logo" data-cfsrc="{{ asset('Frontend') }}/images/logo-text.svg"
                             style="display:none;visibility:hidden;"><noscript><img
                                 src="{{ asset('Frontend') }}/images/logo-text.svg"
                                 data-at2x="{{ asset('Frontend') }}/images/logo-text.svg" alt=""
@@ -50,8 +49,8 @@
                                 src="{{ asset('Frontend') }}/images/logo-text.svg"
                                 data-at2x="{{ asset('Frontend') }}/images/logo-text.svg" alt=""
                                 class="alt-logo"></noscript>
-                        <img data-at2x="{{ asset('Frontend') }}/images/logo-text.svg" alt="" class="mobile-logo"
-                            data-cfsrc="{{ asset('Frontend') }}/images/logo-text.svg"
+                        <img data-at2x="{{ asset('Frontend') }}/images/logo-text.svg" alt=""
+                            class="mobile-logo" data-cfsrc="{{ asset('Frontend') }}/images/logo-text.svg"
                             style="display:none;visibility:hidden;"><noscript><img
                                 src="{{ asset('Frontend') }}/images/logo-text.svg"
                                 data-at2x="{{ asset('Frontend') }}/images/logo-text.svg" alt=""
@@ -77,7 +76,9 @@
                 <div class="col-auto col-auto xs-ps-0">
                     <div class="header-icon">
                         <div class="header-button">
-                            <a href="{{route('contact')}}" class="btn btn-small btn-rounded with-rounded btn-box-shadow btn-dark-gray text-uppercase-inherit">Get a Quote<span class="bg-licorice-blue text-white">➔</span></a>
+                            <a href="{{ route('contact') }}"
+                                class="btn btn-small btn-rounded with-rounded btn-box-shadow btn-dark-gray text-uppercase-inherit">Get
+                                a Quote<span class="bg-licorice-blue text-white">➔</span></a>
                         </div>
                     </div>
                 </div>
@@ -88,7 +89,7 @@
     <!-- end header -->
     <!-- start section -->
     <section class="p-0 cover-background full-screen ipad-top-space-margin md-h-auto position-relative md-pb-70px"
-        style="background-image: url('{{asset('Frontend/images/demo-application-home-banner.jpg')}}')">
+        style="background-image: url('{{ asset('Frontend/images/demo-application-home-banner.jpg') }}')">
         <div id="particles-style-01" class="h-100 position-absolute left-0px top-0 w-100" data-particle="true"
             data-particle-options='{"particles": {"number": {"value": 12,"density": {"enable": true,"value_area": 2000}},"color": {"value": ["#8f76f5", "#a65cef", "#c74ad2", "#e754a4", "#ff6472"]},"shape": {"type": "circle","stroke":{"width":0,"color":"#000000"}},"opacity": {"value": 0.3,"random": false,"anim": {"enable": false,"speed": 1,"sync": false}},"size": {"value": 8,"random": true,"anim": {"enable": false,"sync": true}},"line_linked":{"enable":false,"distance":0,"color":"#ffffff","opacity":0.4,"width":1},"move": {"enable": true,"speed":1,"direction": "right","random": false,"straight": false}},"interactivity": {"detect_on": "canvas","events": {"onhover": {"enable": false,"mode": "repulse"},"onclick": {"enable": false,"mode": "push"},"resize": true}},"retina_detect": false}'>
         </div>
@@ -98,9 +99,11 @@
                     data-anime='{ "el": "childs", "opacity": [0, 1], "translateY": [80, 0], "staggervalue": 200, "duration": 900, "easing": "easeOutCirc" }'>
                     <div class="d-inline-block">
                         <div class="text-end w-90 lg-w-80 ms-auto animation-float">
-                            <img alt="" data-cfsrc="{{ asset('Frontend') }}/images/demo-application-home-01.png"
+                            <img alt=""
+                                data-cfsrc="{{ asset('Frontend') }}/images/demo-application-home-01.png"
                                 style="display:none;visibility:hidden;"><noscript><img
-                                    src="{{ asset('Frontend') }}/images/demo-application-home-01.png" alt=""></noscript>
+                                    src="{{ asset('Frontend') }}/images/demo-application-home-01.png"
+                                    alt=""></noscript>
                         </div>
                     </div>
                     <div
@@ -158,16 +161,19 @@
     <!-- start section -->
     <section class="pb-0">
         <div class="container">
-            <div id="features" class="row row-cols-1 row-cols-lg-3 row-cols-md-2 justify-content-center mb-6 sm-mb-12"
+            <div id="features"
+                class="row row-cols-1 row-cols-lg-3 row-cols-md-2 justify-content-center mb-6 sm-mb-12"
                 data-anime='{ "el": "childs", "translateY": [0, 0], "perspective": [1200,1200], "scale": [1.1, 1], "rotateX": [50, 0], "opacity": [0,1], "duration": 800, "delay": 200, "staggervalue": 300, "easing": "easeOutQuad" }'>
                 <!-- start features box item -->
                 <div class="col icon-with-text-style-04 transition-inner-all md-mb-30px">
                     <div
                         class="feature-box bg-white text-start justify-content-start h-100 border-radius-6px p-16 lg-p-13 box-shadow-quadruple-large box-shadow-quadruple-large-hover">
                         <div class="feature-box-icon mb-25px">
-                            <img class="w-60px" alt="" data-cfsrc="{{ asset('Frontend') }}/images/secure.png"
-                                style="display:none;visibility:hidden;"><noscript><img src="{{ asset('Frontend') }}/images/secure.png"
-                                    class="w-60px" alt=""></noscript>
+                            <img class="w-60px" alt=""
+                                data-cfsrc="{{ asset('Frontend') }}/images/secure.png"
+                                style="display:none;visibility:hidden;"><noscript><img
+                                    src="{{ asset('Frontend') }}/images/secure.png" class="w-60px"
+                                    alt=""></noscript>
                         </div>
                         <div class="feature-box-content last-paragraph-no-margin">
                             <span class="d-inline-block text-dark-gray fw-700 fs-18 mb-5px">Guaranteed safety</span>
@@ -184,9 +190,11 @@
                     <div
                         class="feature-box bg-white text-start justify-content-start h-100 border-radius-6px p-16 lg-p-13 box-shadow-quadruple-large box-shadow-quadruple-large-hover">
                         <div class="feature-box-icon mb-25px">
-                            <img class="w-60px" alt="" data-cfsrc="{{ asset('Frontend') }}/images/market-down.png"
-                                style="display:none;visibility:hidden;"><noscript><img src="{{ asset('Frontend') }}/images/market-down.png"
-                                    class="w-60px" alt=""></noscript>
+                            <img class="w-60px" alt=""
+                                data-cfsrc="{{ asset('Frontend') }}/images/market-down.png"
+                                style="display:none;visibility:hidden;"><noscript><img
+                                    src="{{ asset('Frontend') }}/images/market-down.png" class="w-60px"
+                                    alt=""></noscript>
                         </div>
                         <div class="feature-box-content last-paragraph-no-margin">
                             <span class="d-inline-block text-dark-gray fw-700 fs-18 mb-5px">Fast performance</span>
@@ -205,9 +213,11 @@
                     <div
                         class="feature-box bg-white text-start justify-content-start h-100 border-radius-6px p-16 lg-p-13 box-shadow-quadruple-large box-shadow-quadruple-large-hover">
                         <div class="feature-box-icon mb-25px">
-                            <img class="w-60px" alt="" data-cfsrc="{{ asset('Frontend') }}/images/awesome-design.png"
-                                style="display:none;visibility:hidden;"><noscript><img src="{{ asset('Frontend') }}/images/awesome-design.png"
-                                    class="w-60px" alt=""></noscript>
+                            <img class="w-60px" alt=""
+                                data-cfsrc="{{ asset('Frontend') }}/images/awesome-design.png"
+                                style="display:none;visibility:hidden;"><noscript><img
+                                    src="{{ asset('Frontend') }}/images/awesome-design.png" class="w-60px"
+                                    alt=""></noscript>
                         </div>
                         <div class="feature-box-content last-paragraph-no-margin">
                             <span class="d-inline-block text-dark-gray fw-700 fs-18 mb-5px">Awesome design</span>
@@ -241,17 +251,19 @@
             <div class="row">
                 <div class="p-0 overlap-section position-absolute right-0px text-end w-auto xs-w-200px z-index-minus-1"
                     data-bottom-top="transform: translateY(-150px)" data-top-bottom="transform: translateY(150px)">
-                    <img alt="" data-cfsrc="{{ asset('Frontend') }}/images/demo-application-home-bg-right.png"
+                    <img alt=""
+                        data-cfsrc="{{ asset('Frontend') }}/images/demo-application-home-bg-right.png"
                         style="display:none;visibility:hidden;"><noscript><img
-                            src="{{ asset('Frontend') }}/images/demo-application-home-bg-right.png" alt=""></noscript>
+                            src="{{ asset('Frontend') }}/images/demo-application-home-bg-right.png"
+                            alt=""></noscript>
                 </div>
             </div>
         </div>
         <div class="position-absolute left-0px bottom-minus-100px w-auto xs-w-180px z-index-minus-1"
             data-bottom-top="transform: translateY(-100px)" data-top-bottom="transform: translateY(100px)">
             <img alt="" data-cfsrc="{{ asset('Frontend') }}/images/demo-application-home-bg-left.png"
-                style="display:none;visibility:hidden;"><noscript><img src="{{ asset('Frontend') }}/images/demo-application-home-bg-left.png"
-                    alt=""></noscript>
+                style="display:none;visibility:hidden;"><noscript><img
+                    src="{{ asset('Frontend') }}/images/demo-application-home-bg-left.png" alt=""></noscript>
         </div>
         <div class="container">
             <div class="row align-items-center justify-content-center">
@@ -265,7 +277,8 @@
                                         <img data-atropos-offset="5" alt=""
                                             data-cfsrc="{{ asset('Frontend') }}/images/demo-application-home-02.png"
                                             style="display:none;visibility:hidden;"><noscript><img
-                                                data-atropos-offset="5" src="{{ asset('Frontend') }}/images/demo-application-home-02.png"
+                                                data-atropos-offset="5"
+                                                src="{{ asset('Frontend') }}/images/demo-application-home-02.png"
                                                 alt=""></noscript>
                                     </div>
                                 </div>
@@ -276,8 +289,8 @@
                             <img class="animation-float" alt=""
                                 data-cfsrc="{{ asset('Frontend') }}/images/demo-application-home-02-2.png"
                                 style="display:none;visibility:hidden;"><noscript><img
-                                    src="{{ asset('Frontend') }}/images/demo-application-home-02-2.png" class="animation-float"
-                                    alt=""></noscript>
+                                    src="{{ asset('Frontend') }}/images/demo-application-home-02-2.png"
+                                    class="animation-float" alt=""></noscript>
                         </figcaption>
                     </figure>
                 </div>
@@ -366,8 +379,8 @@
                         <div class="col-5 col-sm-4 md-mb-20px"><img class="rounded-circle w-100" alt=""
                                 data-cfsrc="{{ asset('Frontend') }}/images/demo-application-home-avtar-01.jpg"
                                 style="display:none;visibility:hidden;"><noscript><img
-                                    src="{{ asset('Frontend') }}/images/demo-application-home-avtar-01.jpg" class="rounded-circle w-100"
-                                    alt=""></noscript></div>
+                                    src="{{ asset('Frontend') }}/images/demo-application-home-avtar-01.jpg"
+                                    class="rounded-circle w-100" alt=""></noscript></div>
                         <div class="col-lg-8 text-center text-lg-start">
                             <div class="fs-19 lh-30 mb-3 w-90 md-w-75 sm-w-100 mx-auto mx-lg-0">Travel makes one
                                 modest. You see what a tiny place your favorite occupy in the world.</div>
@@ -439,8 +452,8 @@
                                 <img class="mt-10px" alt=""
                                     data-cfsrc="{{ asset('Frontend') }}/images/demo-application-home-manage-data-graphic.png"
                                     style="display:none;visibility:hidden;"><noscript><img
-                                        src="{{ asset('Frontend') }}/images/demo-application-home-manage-data-graphic.png" class="mt-10px"
-                                        alt=""></noscript>
+                                        src="{{ asset('Frontend') }}/images/demo-application-home-manage-data-graphic.png"
+                                        class="mt-10px" alt=""></noscript>
                             </div>
                             <div class="col-xl-8 col-lg-7 col-md-6 position-relative atropos" data-atropos>
                                 <div class="atropos-scale">
@@ -486,8 +499,8 @@
                                 <img class="mt-10px" alt=""
                                     data-cfsrc="{{ asset('Frontend') }}/images/demo-application-home-easy-payment-graphic.png"
                                     style="display:none;visibility:hidden;"><noscript><img
-                                        src="{{ asset('Frontend') }}/images/demo-application-home-easy-payment-graphic.png" class="mt-10px"
-                                        alt=""></noscript>
+                                        src="{{ asset('Frontend') }}/images/demo-application-home-easy-payment-graphic.png"
+                                        class="mt-10px" alt=""></noscript>
                             </div>
                             <div class="col-xl-8 col-lg-7 col-md-6 position-relative atropos transform-3d"
                                 data-atropos>
@@ -534,8 +547,8 @@
                                 <img class="mt-10px" alt=""
                                     data-cfsrc="{{ asset('Frontend') }}/images/demo-application-home-free-support-graphic.png"
                                     style="display:none;visibility:hidden;"><noscript><img
-                                        src="{{ asset('Frontend') }}/images/demo-application-home-free-support-graphic.png" class="mt-10px"
-                                        alt=""></noscript>
+                                        src="{{ asset('Frontend') }}/images/demo-application-home-free-support-graphic.png"
+                                        class="mt-10px" alt=""></noscript>
                             </div>
                             <div class="col-xl-8 col-lg-7 col-md-6 position-relative atropos transform-3d"
                                 data-atropos>
@@ -816,9 +829,11 @@
             <div class="row">
                 <div class="p-0 overlap-section position-absolute right-0px text-end w-auto"
                     data-bottom-top="transform: translateY(-150px)" data-top-bottom="transform: translateY(150px)">
-                    <img class="w-80" alt="" data-cfsrc="{{ asset('Frontend') }}/images/demo-application-home-bg-right.png"
+                    <img class="w-80" alt=""
+                        data-cfsrc="{{ asset('Frontend') }}/images/demo-application-home-bg-right.png"
                         style="display:none;visibility:hidden;"><noscript><img
-                            src="{{ asset('Frontend') }}/images/demo-application-home-bg-right.png" class="w-80" alt=""></noscript>
+                            src="{{ asset('Frontend') }}/images/demo-application-home-bg-right.png" class="w-80"
+                            alt=""></noscript>
                 </div>
             </div>
         </div>
@@ -864,12 +879,12 @@
                         information you need while travelling.</span>
                     <div class="row pe-20px xl-pe-0 justify-content-center justify-content-lg-start">
                         <a href="#" class="col-6 col-lg-6 col-sm-5">
-                            <img src="{{ asset('Frontend') }}/images/app-store-white.svg" class="box-shadow-medium-bottom border-radius-6px"
-                                alt="">
+                            <img src="{{ asset('Frontend') }}/images/app-store-white.svg"
+                                class="box-shadow-medium-bottom border-radius-6px" alt="">
                         </a>
                         <a href="#" class="col-6 col-lg-6 col-sm-5">
-                            <img src="{{ asset('Frontend') }}/images/play-store-white.svg" class="box-shadow-medium-bottom border-radius-6px"
-                                alt="">
+                            <img src="{{ asset('Frontend') }}/images/play-store-white.svg"
+                                class="box-shadow-medium-bottom border-radius-6px" alt="">
                         </a>
                     </div>
                 </div>
@@ -889,8 +904,8 @@
                                 <img class="w-40px h-40px" alt=""
                                     data-cfsrc="{{ asset('Frontend') }}/images/demo-application-home-icon.png"
                                     style="display:none;visibility:hidden;"><noscript><img
-                                        src="{{ asset('Frontend') }}/images/demo-application-home-icon.png" class="w-40px h-40px"
-                                        alt=""></noscript>
+                                        src="{{ asset('Frontend') }}/images/demo-application-home-icon.png"
+                                        class="w-40px h-40px" alt=""></noscript>
                             </div>
                             <div class="feature-box-content last-paragraph-no-margin">
                                 <h5 class="d-inline-block fw-700 text-white mb-0">Help your customers on live chat.
@@ -900,9 +915,11 @@
                         </div>
                     </div>
                     <div class="col-lg-4 text-center text-lg-end">
-                        <a href="#"><img alt="" data-cfsrc="{{ asset('Frontend') }}/images/demo-application-home-08.png"
+                        <a href="#"><img alt=""
+                                data-cfsrc="{{ asset('Frontend') }}/images/demo-application-home-08.png"
                                 style="display:none;visibility:hidden;"><noscript><img
-                                    src="{{ asset('Frontend') }}/images/demo-application-home-08.png" alt=""></noscript></a>
+                                    src="{{ asset('Frontend') }}/images/demo-application-home-08.png"
+                                    alt=""></noscript></a>
                     </div>
                 </div>
             </div>
@@ -911,7 +928,7 @@
             <div class="row justify-content-center pt-6 sm-pt-40px">
                 <!-- start footer column -->
                 <div class="col-lg-3 col-md-3 col-sm-6 md-mb-30px text-center text-sm-start">
-                    <a href="{{route('home')}}" class="footer-logo mb-15px d-inline-block">
+                    <a href="{{ route('home') }}" class="footer-logo mb-15px d-inline-block">
                         <img data-at2x="{{ asset('Frontend') }}/images/logo-white.png" alt=""
                             data-cfsrc="{{ asset('Frontend') }}/images/logo-white.png"
                             style="display:none;visibility:hidden;"><noscript><img
@@ -942,10 +959,10 @@
                 <div class="col-5 col-lg-2 col-md-3 col-sm-5 offset-sm-1 md-mb-30px">
                     <span class="d-block text-white fw-600 mb-10px">About Synex Digital</span>
                     <ul>
-                        <li><a href="{{route('about')}}">About Us</a></li>
-                        <li><a href="{{route('services')}}">Services</a></li>
-                        <li><a href="{{route('projects')}}">Projects</a></li>
-                        <li><a href="{{route('blogs')}}">Blog</a></li>
+                        <li><a href="{{ route('about') }}">About Us</a></li>
+                        <li><a href="{{ route('services') }}">Services</a></li>
+                        <li><a href="{{ route('projects') }}">Projects</a></li>
+                        <li><a href="{{ route('blogs') }}">Blog</a></li>
                     </ul>
                 </div>
                 <!-- end footer column -->
@@ -956,7 +973,8 @@
                     <a href="tel:1235678901" class="text-white fw-600 mb-15px d-inline-block">+880 1613-408101</a>
                     <span class="d-block">Need live support?</span>
                     <a href="mailto:office@synexdigital.com"
-                        class="text-dark-gray text-dark-gray-hover fw-600 text-decoration-line-bottom"> office@synexdigital.com</a>
+                        class="text-dark-gray text-dark-gray-hover fw-600 text-decoration-line-bottom">
+                        office@synexdigital.com</a>
                 </div>
                 <!-- end footer column -->
                 <!-- start footer column -->

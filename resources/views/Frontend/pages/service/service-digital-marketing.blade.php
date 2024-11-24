@@ -11,7 +11,7 @@
     <link rel="apple-touch-icon" href="{{ asset('Frontend/images/icons/fav-low.png') }}">
     <link rel="apple-touch-icon" sizes="72x72" href="{{ asset('Frontend/images/icons/fav-low.png') }}">
     <link rel="apple-touch-icon" sizes="114x114" href="{{ asset('Frontend/images/icons/fav-low.png') }}">
-    @include('Frontend.layout.headerLink')
+    @include('frontend.layout.headerlink')
     <link rel="stylesheet" href="{{ asset('Frontend/css/seo-agency.css') }}" />
 </head>
 
@@ -38,8 +38,8 @@
                             //]]>
                         </script>
                         <script type="text/javascript" src="{{ asset('Frontend/js/mirage2.min.js') }}"></script>
-                        <img data-at2x="{{ asset('Frontend') }}/images/logo-text.svg" alt="" class="default-logo"
-                            data-cfsrc="{{ asset('Frontend') }}/images/logo-text.svg"
+                        <img data-at2x="{{ asset('Frontend') }}/images/logo-text.svg" alt=""
+                            class="default-logo" data-cfsrc="{{ asset('Frontend') }}/images/logo-text.svg"
                             style="display:none;visibility:hidden;"><noscript><img
                                 src="{{ asset('Frontend') }}/images/logo-text.svg"
                                 data-at2x="{{ asset('Frontend') }}/images/logo-text.svg" alt=""
@@ -50,8 +50,8 @@
                                 src="{{ asset('Frontend') }}/images/logo-text.svg"
                                 data-at2x="{{ asset('Frontend') }}/images/logo-text.svg" alt=""
                                 class="alt-logo"></noscript>
-                        <img data-at2x="{{ asset('Frontend') }}/images/logo-text.svg" alt="" class="mobile-logo"
-                            data-cfsrc="{{ asset('Frontend') }}/images/logo-text.svg"
+                        <img data-at2x="{{ asset('Frontend') }}/images/logo-text.svg" alt=""
+                            class="mobile-logo" data-cfsrc="{{ asset('Frontend') }}/images/logo-text.svg"
                             style="display:none;visibility:hidden;"><noscript><img
                                 src="{{ asset('Frontend') }}/images/logo-text.svg"
                                 data-at2x="{{ asset('Frontend') }}/images/logo-text.svg" alt=""
@@ -80,7 +80,8 @@
                 </div>
                 <div class="col-auto ms-auto">
                     <div class="header-icon">
-                        <div class="header-button"><a href="{{route('contact')}}" class="btn btn-small btn-dark-gray btn-box-shadow btn-rounded">Get a quote</a></div>
+                        <div class="header-button"><a href="{{ route('contact') }}"
+                                class="btn btn-small btn-dark-gray btn-box-shadow btn-rounded">Get a quote</a></div>
                     </div>
                 </div>
             </div>
@@ -90,11 +91,11 @@
     <!-- end header -->
     <!-- start banner slider -->
     <section class="cover-background position-relative ipad-top-space-margin"
-        style="background-image: url({{ asset('Frontend/images/demo-seo-agency-bg.jpg')}})">
+        style="background-image: url({{ asset('Frontend/images/demo-seo-agency-bg.jpg') }})">
         <div class="background-position-left-top h-100 w-100 position-absolute left-0px top-0"
             style="background-image: url('images/vertical-line-bg-medium-gray.svg')"></div>
         <div class="background-position-center-bottom background-size-100 background-no-repeat position-absolute bottom-0 left-0px w-100 h-400px lg-h-170px z-index-1"
-            style="background-image: url({{ asset('Frontend/images/demo-seo-agency-bottom-bg.png')}})"></div>
+            style="background-image: url({{ asset('Frontend/images/demo-seo-agency-bottom-bg.png') }})"></div>
         <div id="particles-style-01" class="h-100 position-absolute left-0px top-0 w-100" data-particle="true"
             data-particle-options='{"particles": {"number": {"value": 1.1,"density": {"enable": true,"value_area": 900}},"shape": {"type": ["image"],"image":{"src":"images/particles-demo-4-bg.png","width":180,"height":100}},"opacity": {"value": 0.5,"random": false,"anim": {"enable": false,"speed": 1,"sync": false}},"size": {"value": 120,"random": true,"anim": {"enable": false,"sync": true}},"line_linked":{"enable":false,"distance":0,"color":"#ffffff","opacity":0.4,"width":1},"move": {"enable": true,"speed":1,"direction": "right","random": false,"straight": false}},"interactivity": {"detect_on": "canvas","events": {"onhover": {"enable": false,"mode": "repulse"},"onclick": {"enable": false,"mode": "push"},"resize": true}},"retina_detect": false}'>
         </div>
@@ -113,25 +114,26 @@
                             class="alt-font fs-20 fw-500 w-70 lg-w-85 sm-w-100 mb-40px md-mb-30px d-block opacity-7">We
                             offer flexible pricing plans so that our clients can take advantage of services.</span>
                     </div>
-                    <a href="{{route('contact')}}"
+                    <a href="{{ route('contact') }}"
                         class="btn btn-extra-large btn-rounded with-rounded btn-gradient-orange-sky-blue btn-box-shadow box-shadow-extra-large"
                         data-anime='{ "opacity": [0, 1], "rotateY": [-90, 0], "rotateZ": [-10, 0], "translateY": [80, 0], "translateZ": [50, 0], "duration": 900, "delay": 800, "easing": "easeOutCirc" }'>Get
                         free analysis<span class="bg-white text-base-color">➔</span></a>
                 </div>
                 <div class="col-md-6 text-center"
                     data-anime='{ "opacity": [0, 1], "translateY": [150, 0], "duration": 2000, "easing": "easeOutBack" }'>
-                    <img alt="" class="animation-float" data-cfsrc="{{ asset('Frontend/images/demo-seo-agency-banner-right.png')}}"
+                    <img alt="" class="animation-float"
+                        data-cfsrc="{{ asset('Frontend/images/demo-seo-agency-banner-right.png') }}"
                         style="display:none;visibility:hidden;"><noscript><img
-                            src="{{ asset('Frontend/images/demo-seo-agency-banner-right.png')}}" alt=""
+                            src="{{ asset('Frontend/images/demo-seo-agency-banner-right.png') }}" alt=""
                             class="animation-float"></noscript>
                 </div>
             </div>
             <div class="position-absolute bottom-minus-90px md-bottom-minus-70px sm-bottom-minus-50px right-30px sm-right-10px z-index-9"
                 data-anime='{ "opacity": [0, 1], "scale": [0, 1], "translateZ": [50, 0], "staggervalue": 200, "duration": 900, "delay": 800, "easing": "easeOutCirc" }'>
                 <img alt="" class="md-w-180px xs-w-150px"
-                    data-cfsrc="{{ asset('Frontend/images/demo-seo-agency-banner-bottom.png')}}"
+                    data-cfsrc="{{ asset('Frontend/images/demo-seo-agency-banner-bottom.png') }}"
                     style="display:none;visibility:hidden;"><noscript><img
-                        src="url({{ asset('Frontend/images/demo-seo-agency-banner-bottom.png')}}" alt=""
+                        src="url({{ asset('Frontend/images/demo-seo-agency-banner-bottom.png') }}" alt=""
                         class="md-w-180px xs-w-150px"></noscript>
             </div>
         </div>
@@ -139,7 +141,7 @@
     <!-- end banner slider -->
     <!-- start section -->
     <section id="about" class="background-position-center-top pb-0 pt-4 sm-pt-40px"
-        style="background-image: url({{ asset('Frontend/images/demo-seo-agency-vertical-line-bg.svg')}})">
+        style="background-image: url({{ asset('Frontend/images/demo-seo-agency-vertical-line-bg.svg') }})">
         <div class="container">
             <div class="row justify-content-center mb-4">
                 <div class="col-xl-7 col-lg-8 col-md-10 text-center"
@@ -153,7 +155,8 @@
                 <div class="col icon-with-text-style-03 lg-mb-50px xs-mb-40px transition-inner-all">
                     <div class="feature-box ps-7 pe-7 sm-ps-4 sm-pe-4">
                         <div class="feature-box-icon mb-30px sm-mb-20px">
-                            <img class="h-65px" src="{{ asset('Frontend/images/demo-seo-agency-icon-03.svg')}}" alt="">
+                            <img class="h-65px" src="{{ asset('Frontend/images/demo-seo-agency-icon-03.svg') }}"
+                                alt="">
                         </div>
                         <div class="feature-box-content last-paragraph-no-margin">
                             <span class="d-inline-block alt-font fw-700 text-dark-gray mb-5px fs-20">Real time
@@ -167,7 +170,8 @@
                 <div class="col icon-with-text-style-03 lg-mb-50px xs-mb-40px transition-inner-all">
                     <div class="feature-box ps-7 pe-7 sm-ps-4 sm-pe-4">
                         <div class="feature-box-icon mb-30px sm-mb-20px">
-                            <img class="h-65px" src="{{ asset('Frontend/images/demo-seo-agency-icon-01.svg')}}" alt="">
+                            <img class="h-65px" src="{{ asset('Frontend/images/demo-seo-agency-icon-01.svg') }}"
+                                alt="">
                         </div>
                         <div class="feature-box-content last-paragraph-no-margin">
                             <span class="d-inline-block alt-font fw-700 text-dark-gray mb-5px fs-20">Keywords
@@ -181,7 +185,8 @@
                 <div class="col icon-with-text-style-03 xs-mb-40px transition-inner-all">
                     <div class="feature-box ps-7 pe-7 sm-ps-4 sm-pe-4">
                         <div class="feature-box-icon mb-30px sm-mb-20px">
-                            <img class="h-65px" src="{{ asset('Frontend/images/demo-seo-agency-icon-04.svg')}}" alt="">
+                            <img class="h-65px" src="{{ asset('Frontend/images/demo-seo-agency-icon-04.svg') }}"
+                                alt="">
                         </div>
                         <div class="feature-box-content last-paragraph-no-margin">
                             <span class="d-inline-block alt-font fw-700 text-dark-gray mb-5px fs-20">SEO
@@ -195,7 +200,8 @@
                 <div class="col icon-with-text-style-03">
                     <div class="feature-box ps-7 pe-7 sm-ps-4 sm-pe-4">
                         <div class="feature-box-icon mb-30px sm-mb-20px">
-                            <img class="h-65px" src="{{ asset('Frontend/images/demo-seo-agency-icon-02.svg')}}" alt="">
+                            <img class="h-65px" src="{{ asset('Frontend/images/demo-seo-agency-icon-02.svg') }}"
+                                alt="">
                         </div>
                         <div class="feature-box-content last-paragraph-no-margin">
                             <span class="d-inline-block alt-font fw-700 text-dark-gray mb-5px fs-20">Boost
@@ -212,7 +218,7 @@
     <!-- start section -->
     <section
         class="position-relative background-position-center-top half-section xs-ps-15px xs-pe-15px overflow-hidden"
-        style="background-image: url({{ asset('Frontend/images/vertical-line-bg-medium-gray.svg')}})">
+        style="background-image: url({{ asset('Frontend/images/vertical-line-bg-medium-gray.svg') }})">
         <div id="particles-style-02" class="h-100 position-absolute left-0px top-0 z-index-minus-1 w-100"
             data-particle="true"
             data-particle-options='{"particles": {"number": {"value":8,"density": {"enable": true,"value_area": 4000}},"shape": {"type": ["image"],"image":{"src":"images/demo-seo-agency-particles-img.png","width":220,"height":134}},"opacity": {"value": 0.5,"random": false,"anim": {"enable": false,"speed": 1,"sync": false}},"size": {"value": 120,"random": true,"anim": {"enable": false,"sync": true}},"line_linked":{"enable":false,"distance":0,"color":"#ffffff","opacity":0.4,"width":1},"move": {"enable": true,"speed":1,"direction": "right","random": false,"straight": false}},"interactivity": {"detect_on": "canvas","events": {"onhover": {"enable": false,"mode": "repulse"},"onclick": {"enable": false,"mode": "push"},"resize": true}},"retina_detect": false}'>
@@ -274,7 +280,7 @@
     <!-- end section -->
     <!-- start section -->
     <section id="process" class="background-position-center-top pt-0"
-        style="background-image: url({{ asset('Frontend/images/vertical-line-bg-medium-gray.svg')}})">
+        style="background-image: url({{ asset('Frontend/images/vertical-line-bg-medium-gray.svg') }})">
         <div class="container">
             <div class="row justify-content-center">
                 <div
@@ -289,9 +295,9 @@
             <div class="row justify-content-center align-items-center">
                 <div class="col-md-6 animation-float sm-mb-50px"
                     data-anime='{ "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 150, "easing": "easeOutQuad" }'>
-                    <img alt="" data-cfsrc="{{ asset('Frontend/images/demo-seo-agency-03.png')}}"
-                        style="display:none;visibility:hidden;"><noscript><img src="{{ asset('Frontend/images/demo-seo-agency-03.png')}}"
-                            alt=""></noscript>
+                    <img alt="" data-cfsrc="{{ asset('Frontend/images/demo-seo-agency-03.png') }}"
+                        style="display:none;visibility:hidden;"><noscript><img
+                            src="{{ asset('Frontend/images/demo-seo-agency-03.png') }}" alt=""></noscript>
                 </div>
                 <div class="col-lg-5 offset-lg-1 col-md-6 text-center text-md-start"
                     data-anime='{ "el": "childs", "willchange": "transform", "opacity": [0, 1], "rotateY": [-90, 0], "rotateZ": [-10, 0], "translateY": [80, 0], "translateZ": [50, 0], "staggervalue": 200, "duration": 600, "delay": 100, "easing": "easeOutCirc" }'>
@@ -309,15 +315,16 @@
     <!-- end section -->
     <!-- start section -->
     <section class="background-position-center-bottom background-size-100 background-no-repeat bg-base-color"
-        style="background-image: url({{ asset('Frontend/images/demo-seo-agency-analysis-bg.png')}})"
+        style="background-image: url({{ asset('Frontend/images/demo-seo-agency-analysis-bg.png') }})"
         data-anime='{ "translate": [0, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 150, "easing": "easeOutQuad" }'>
         <div class="container-fluid d-none d-md-block">
             <div class="row">
                 <div class="p-0 overlap-section text-end pe-4 md-pe-5">
                     <img alt="" class="animation-rotation lg-w-150px"
-                        data-cfsrc="{{ asset('Frontend/images/demo-seo-agency-08.png')}}"
-                        style="display:none;visibility:hidden;"><noscript><img src="{{ asset('Frontend/images/demo-seo-agency-08.png')}}"
-                            alt="" class="animation-rotation lg-w-150px"></noscript>
+                        data-cfsrc="{{ asset('Frontend/images/demo-seo-agency-08.png') }}"
+                        style="display:none;visibility:hidden;"><noscript><img
+                            src="{{ asset('Frontend/images/demo-seo-agency-08.png') }}" alt=""
+                            class="animation-rotation lg-w-150px"></noscript>
                 </div>
             </div>
         </div>
@@ -382,9 +389,11 @@
                             <div class="row align-items-center justify-content-center">
                                 <div class="col-lg-7 col-md-6 sm-mb-30px"
                                     data-anime='{ "opacity": [0, 1], "staggervalue": 200, "duration": 600, "delay": 0, "easing": "easeOutCirc" }'>
-                                    <img alt="" data-cfsrc="{{ asset('Frontend/images/demo-seo-agency-tab-01.png')}}"
+                                    <img alt=""
+                                        data-cfsrc="{{ asset('Frontend/images/demo-seo-agency-tab-01.png') }}"
                                         style="display:none;visibility:hidden;" /><noscript><img
-                                            src="{{ asset('Frontend/images/demo-seo-agency-tab-01.png')}}" alt="" /></noscript>
+                                            src="{{ asset('Frontend/images/demo-seo-agency-tab-01.png') }}"
+                                            alt="" /></noscript>
                                 </div>
                                 <div class="col-lg-5 col-md-6 ps-8 lg-ps-3 sm-ps-15px text-center text-md-start"
                                     data-anime='{ "el": "childs", "willchange": "transform", "opacity": [0, 1], "rotateY": [-90, 0], "rotateZ": [-10, 0], "translateY": [80, 0], "translateZ": [50, 0], "staggervalue": 200, "duration": 600, "delay": 100, "easing": "easeOutCirc" }'>
@@ -404,9 +413,11 @@
                         <div class="tab-pane fade in" id="tab_five2">
                             <div class="row align-items-center justify-content-center">
                                 <div class="col-lg-7 col-md-6 sm-mb-30px">
-                                    <img alt="" data-cfsrc="{{ asset('Frontend/images/demo-seo-agency-tab-02.png')}}"
+                                    <img alt=""
+                                        data-cfsrc="{{ asset('Frontend/images/demo-seo-agency-tab-02.png') }}"
                                         style="display:none;visibility:hidden;" /><noscript><img
-                                            src="{{ asset('Frontend/images/demo-seo-agency-tab-02.png')}}" alt="" /></noscript>
+                                            src="{{ asset('Frontend/images/demo-seo-agency-tab-02.png') }}"
+                                            alt="" /></noscript>
                                 </div>
                                 <div class="col-lg-5 col-md-6 ps-8 lg-ps-3 sm-ps-15px text-center text-md-start">
                                     <span
@@ -425,9 +436,11 @@
                         <div class="tab-pane fade in" id="tab_five3">
                             <div class="row align-items-center justify-content-center">
                                 <div class="col-lg-7 col-md-6 sm-mb-30px">
-                                    <img alt="" data-cfsrc="{{ asset('Frontend/images/demo-seo-agency-tab-03.png')}}"
+                                    <img alt=""
+                                        data-cfsrc="{{ asset('Frontend/images/demo-seo-agency-tab-03.png') }}"
                                         style="display:none;visibility:hidden;" /><noscript><img
-                                            src="{{ asset('Frontend/images/demo-seo-agency-tab-03.png')}}" alt="" /></noscript>
+                                            src="{{ asset('Frontend/images/demo-seo-agency-tab-03.png') }}"
+                                            alt="" /></noscript>
                                 </div>
                                 <div class="col-lg-5 col-md-6 ps-8 lg-ps-3 sm-ps-15px text-center text-md-start">
                                     <span
@@ -446,9 +459,11 @@
                         <div class="tab-pane fade in" id="tab_five4">
                             <div class="row align-items-center justify-content-center">
                                 <div class="col-lg-7 col-md-6 sm-mb-30px">
-                                    <img alt="" data-cfsrc="{{ asset('Frontend/images/demo-seo-agency-tab-04.png')}}"
+                                    <img alt=""
+                                        data-cfsrc="{{ asset('Frontend/images/demo-seo-agency-tab-04.png') }}"
                                         style="display:none;visibility:hidden;" /><noscript><img
-                                            src="{{ asset('Frontend/images/demo-seo-agency-tab-04.png')}}" alt="" /></noscript>
+                                            src="{{ asset('Frontend/images/demo-seo-agency-tab-04.png') }}"
+                                            alt="" /></noscript>
                                 </div>
                                 <div class="col-lg-5 col-md-6 ps-8 lg-ps-3 sm-ps-15px text-center text-md-start">
                                     <span
@@ -487,9 +502,10 @@
                     <div class="client-box">
                         <a href="#"><img alt=""
                                 class="box-shadow-extra-large border-radius-100px lg-w-80 md-w-95 xs-w-auto"
-                                data-cfsrc="{{ asset('Frontend/images/demo-seo-agency-clients-01.jpg')}}"
+                                data-cfsrc="{{ asset('Frontend/images/demo-seo-agency-clients-01.jpg') }}"
                                 style="display:none;visibility:hidden;"><noscript><img
-                                    src="{{ asset('Frontend/images/demo-seo-agency-clients-01.jpg')}}" alt=""
+                                    src="{{ asset('Frontend/images/demo-seo-agency-clients-01.jpg') }}"
+                                    alt=""
                                     class="box-shadow-extra-large border-radius-100px lg-w-80 md-w-95 xs-w-auto"></noscript></a>
                     </div>
                 </div>
@@ -500,9 +516,10 @@
                     <div class="client-box">
                         <a href="#"><img alt=""
                                 class="box-shadow-extra-large border-radius-100px lg-w-80 md-w-95 xs-w-auto"
-                                data-cfsrc="{{ asset('Frontend/images/demo-seo-agency-clients-02.jpg')}}"
+                                data-cfsrc="{{ asset('Frontend/images/demo-seo-agency-clients-02.jpg') }}"
                                 style="display:none;visibility:hidden;"><noscript><img
-                                    src="{{ asset('Frontend/images/demo-seo-agency-clients-02.jpg')}}" alt=""
+                                    src="{{ asset('Frontend/images/demo-seo-agency-clients-02.jpg') }}"
+                                    alt=""
                                     class="box-shadow-extra-large border-radius-100px lg-w-80 md-w-95 xs-w-auto"></noscript></a>
                     </div>
                 </div>
@@ -513,9 +530,10 @@
                     <div class="client-box">
                         <a href="#"><img alt=""
                                 class="box-shadow-extra-large border-radius-100px lg-w-80 md-w-95 xs-w-auto"
-                                data-cfsrc="{{ asset('Frontend/images/demo-seo-agency-clients-03.jpg')}}"
+                                data-cfsrc="{{ asset('Frontend/images/demo-seo-agency-clients-03.jpg') }}"
                                 style="display:none;visibility:hidden;"><noscript><img
-                                    src="{{ asset('Frontend/images/demo-seo-agency-clients-03.jpg')}}" alt=""
+                                    src="{{ asset('Frontend/images/demo-seo-agency-clients-03.jpg') }}"
+                                    alt=""
                                     class="box-shadow-extra-large border-radius-100px lg-w-80 md-w-95 xs-w-auto"></noscript></a>
                     </div>
                 </div>
@@ -526,9 +544,10 @@
                     <div class="client-box">
                         <a href="#"><img alt=""
                                 class="box-shadow-extra-large border-radius-100px lg-w-80 md-w-95 xs-w-auto"
-                                data-cfsrc="{{ asset('Frontend/images/demo-seo-agency-clients-04.jpg')}}"
+                                data-cfsrc="{{ asset('Frontend/images/demo-seo-agency-clients-04.jpg') }}"
                                 style="display:none;visibility:hidden;"><noscript><img
-                                    src="{{ asset('Frontend/images/demo-seo-agency-clients-04.jpg')}}" alt=""
+                                    src="{{ asset('Frontend/images/demo-seo-agency-clients-04.jpg') }}"
+                                    alt=""
                                     class="box-shadow-extra-large border-radius-100px lg-w-80 md-w-95 xs-w-auto"></noscript></a>
                     </div>
                 </div>
@@ -539,9 +558,10 @@
                     <div class="client-box">
                         <a href="#"><img alt=""
                                 class="box-shadow-extra-large border-radius-100px lg-w-80 md-w-95 xs-w-auto"
-                                data-cfsrc="{{ asset('Frontend/images/demo-seo-agency-clients-05.jpg')}}"
+                                data-cfsrc="{{ asset('Frontend/images/demo-seo-agency-clients-05.jpg') }}"
                                 style="display:none;visibility:hidden;"><noscript><img
-                                    src="{{ asset('Frontend/images/demo-seo-agency-clients-05.jpg')}}" alt=""
+                                    src="{{ asset('Frontend/images/demo-seo-agency-clients-05.jpg') }}"
+                                    alt=""
                                     class="box-shadow-extra-large border-radius-100px lg-w-80 md-w-95 xs-w-auto"></noscript></a>
                     </div>
                 </div>
@@ -552,9 +572,10 @@
                     <div class="client-box">
                         <a href="#"><img alt=""
                                 class="box-shadow-extra-large border-radius-100px lg-w-80 md-w-95 xs-w-auto"
-                                data-cfsrc="{{ asset('Frontend/images/demo-seo-agency-clients-06.jpg')}}"
+                                data-cfsrc="{{ asset('Frontend/images/demo-seo-agency-clients-06.jpg') }}"
                                 style="display:none;visibility:hidden;"><noscript><img
-                                    src="{{ asset('Frontend/images/demo-seo-agency-clients-06.jpg')}}" alt=""
+                                    src="{{ asset('Frontend/images/demo-seo-agency-clients-06.jpg') }}"
+                                    alt=""
                                     class="box-shadow-extra-large border-radius-100px lg-w-80 md-w-95 xs-w-auto"></noscript></a>
                     </div>
                 </div>
@@ -565,9 +586,10 @@
                     <div class="client-box">
                         <a href="#"><img alt=""
                                 class="box-shadow-extra-large border-radius-100px lg-w-80 md-w-95 xs-w-auto"
-                                data-cfsrc="{{ asset('Frontend/images/demo-seo-agency-clients-07.jpg')}}"
+                                data-cfsrc="{{ asset('Frontend/images/demo-seo-agency-clients-07.jpg') }}"
                                 style="display:none;visibility:hidden;"><noscript><img
-                                    src="{{ asset('Frontend/images/demo-seo-agency-clients-07.jpg')}}" alt=""
+                                    src="{{ asset('Frontend/images/demo-seo-agency-clients-07.jpg') }}"
+                                    alt=""
                                     class="box-shadow-extra-large border-radius-100px lg-w-80 md-w-95 xs-w-auto"></noscript></a>
                     </div>
                 </div>
@@ -684,7 +706,11 @@
                                 policy.</span>
                         </form> --}}
                         <!-- end contact form -->
-                        <a href="{{route('contact')}}" class="btn btn-small btn-gradient-orange-sky-blue ls-1px mt-30px submit w-100 btn-round-edge-small">Send message</a><span class="mt-5 text-white opacity-3 fs-14 lh-22 d-block">I accept the terms & conditions and i understand that my data will be hold securely in accordance with the privacy policy.</span>
+                        <a href="{{ route('contact') }}"
+                            class="btn btn-small btn-gradient-orange-sky-blue ls-1px mt-30px submit w-100 btn-round-edge-small">Send
+                            message</a><span class="mt-5 text-white opacity-3 fs-14 lh-22 d-block">I accept the terms &
+                            conditions and i understand that my data will be hold securely in accordance with the
+                            privacy policy.</span>
                     </div>
                 </div>
             </div>
@@ -745,12 +771,12 @@
                 <!-- start footer column -->
                 <div class="col">
                     <ul class="footer-navbar fs-18 alt-font text-end fw-600 text-center text-md-end sm-lh-24">
-                        <li class="nav-item active"><a href="{{route('home')}}" class="nav-link">Home</a></li>
-                        <li class="nav-item"><a href="{{route('about')}}" class="nav-link">About Us</a></li>
-                        <li class="nav-item"><a href="{{route('services')}}" class="nav-link">Services</a></li>
-                        <li class="nav-item"><a href="{{route('projects')}}" class="nav-link">Projects</a></li>
-                        <li class="nav-item"><a href="{{route('blogs')}}" class="nav-link">Blog</a></li>
-                        <li class="nav-item"><a href="{{route('contact')}}" class="nav-link">Contact</a></li>
+                        <li class="nav-item active"><a href="{{ route('home') }}" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="{{ route('about') }}" class="nav-link">About Us</a></li>
+                        <li class="nav-item"><a href="{{ route('services') }}" class="nav-link">Services</a></li>
+                        <li class="nav-item"><a href="{{ route('projects') }}" class="nav-link">Projects</a></li>
+                        <li class="nav-item"><a href="{{ route('blogs') }}" class="nav-link">Blog</a></li>
+                        <li class="nav-item"><a href="{{ route('contact') }}" class="nav-link">Contact</a></li>
                     </ul>
                 </div>
                 <!-- end footer column -->

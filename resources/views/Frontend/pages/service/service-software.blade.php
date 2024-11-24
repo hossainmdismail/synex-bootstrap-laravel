@@ -8,8 +8,8 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <meta name="description"
         content="Elevate your online presence with Crafto - a modern, versatile, multipurpose Bootstrap 5 responsive HTML5, SCSS template using highly creative 52+ ready demos.">
-    @include('Frontend.layout.headerlink')
-    <link rel="stylesheet" href="{{ asset('Frontend/css/hosting.css') }}" />
+    @include('frontend.layout.headerlink')
+    <link rel="stylesheet" href="{{ asset('frontend/css/hosting.css') }}" />
 </head>
 
 <body data-mobile-nav-style="full-screen-menu" data-mobile-nav-bg-color="">
@@ -19,7 +19,7 @@
         <nav class="navbar navbar-expand-lg header-transparent bg-transparent header-reverse" data-header-hover="light">
             <div class="container-fluid">
                 <div class="col-auto col-lg-2 me-lg-0 me-auto">
-                    <a class="navbar-brand" href="{{route('home')}}">
+                    <a class="navbar-brand" href="{{ route('home') }}">
                         <script type="text/javascript" style="display:none">
                             //<![CDATA[
                             window.__mirage2 = {
@@ -27,10 +27,9 @@
                             };
                             //]]>
                         </script>
-                        <script type="text/javascript" src="{{ asset('Frontend/js/mirage2.min.js') }}">
-                        </script>
-                        <img data-at2x="{{ asset('Frontend') }}/images/logo-text.svg" alt="" class="default-logo"
-                            data-cfsrc="{{ asset('Frontend') }}/images/logo-text.svg"
+                        <script type="text/javascript" src="{{ asset('Frontend/js/mirage2.min.js') }}"></script>
+                        <img data-at2x="{{ asset('Frontend') }}/images/logo-text.svg" alt=""
+                            class="default-logo" data-cfsrc="{{ asset('Frontend') }}/images/logo-text.svg"
                             style="display:none;visibility:hidden;"><noscript><img
                                 src="{{ asset('Frontend') }}/images/logo-text.svg"
                                 data-at2x="{{ asset('Frontend') }}/images/logo-text.svg" alt=""
@@ -41,8 +40,8 @@
                                 src="{{ asset('Frontend') }}/images/logo-text.svg"
                                 data-at2x="{{ asset('Frontend') }}/images/logo-text.svg" alt=""
                                 class="alt-logo"></noscript>
-                        <img data-at2x="{{ asset('Frontend') }}/images/logo-text.svg" alt="" class="mobile-logo"
-                            data-cfsrc="{{ asset('Frontend') }}/images/logo-text.svg"
+                        <img data-at2x="{{ asset('Frontend') }}/images/logo-text.svg" alt=""
+                            class="mobile-logo" data-cfsrc="{{ asset('Frontend') }}/images/logo-text.svg"
                             style="display:none;visibility:hidden;"><noscript><img
                                 src="{{ asset('Frontend') }}/images/logo-text.svg"
                                 data-at2x="{{ asset('Frontend') }}/images/logo-text.svg" alt=""
@@ -71,7 +70,7 @@
                 <div class="col-auto col-lg-2 text-end lg-pe-5px">
                     <div class="header-icon">
                         <div class="header-button ms-30px xxl-ms-10px xs-ms-0">
-                            <a href="{{route('contact')}}"
+                            <a href="{{ route('contact') }}"
                                 class="btn btn-white btn-small btn-rounded btn-box-shadow btn-switch-text fw-600">
                                 <span>
                                     <span class="btn-double-text" data-text="Get a quote">Get a quote</span>
@@ -88,7 +87,7 @@
     <!-- start banner -->
     <section
         class="cover-background full-screen bg-dark-gray ipad-top-space-margin position-relative section-dark md-h-auto"
-        style="background-image: url({{ asset('Frontend/images/demo-hosting-home-bg.jpg')}})">
+        style="background-image: url({{ asset('Frontend/images/demo-hosting-home-bg.jpg') }})">
         <div id="particles-style-01" class="h-100 position-absolute left-0px top-0 w-100" data-particle="true"
             data-particle-options='{"particles": {"number": {"value": 12,"density": {"enable": true,"value_area": 2000}},"color": {"value": ["#ed00a8", "#ed00a8", "#ed00a8", "#ed00a8"]},"shape": {"type": "edge","stroke":{"width":0,"color":"#000000"}},"opacity": {"value": 0.8,"random": false,"anim": {"enable": false,"speed": 1,"sync": false}},"size": {"value": 5,"random": true,"anim": {"enable": false,"sync": true}},"line_linked":{"enable":false,"distance":0,"color":"#ffffff","opacity":0.4,"width":1},"move": {"enable": true,"speed":1,"direction": "right","random": false,"straight": false}},"interactivity": {"detect_on": "canvas","events": {"onhover": {"enable": false,"mode": "repulse"},"onclick": {"enable": false,"mode": "push"},"resize": true}},"retina_detect": false}'>
         </div>
@@ -99,9 +98,9 @@
                         <div class="d-inline-block"
                             data-anime='{ "translateY": [100, 0], "easing": "easeOutCubic", "duration": 900 }'>
                             Power up web with
-                            <div class="highlight-separator" data-shadow-animation="true"
-                                data-animation-delay="1500">
-                                hosting<span><img src="{{asset('Frontend')}}/images/highlight-separator.svg" alt=""></span>
+                            <div class="highlight-separator" data-shadow-animation="true" data-animation-delay="1500">
+                                hosting<span><img src="{{ asset('Frontend') }}/images/highlight-separator.svg"
+                                        alt=""></span>
                             </div>
                         </div>
                     </div>
@@ -124,14 +123,18 @@
                 <div class="col-xl-5 col-lg-4">
                     <div class="outside-box-right-7 position-relative"
                         data-anime='{ "opacity": [0, 1], "translateY": [100, 0], "easing": "easeOutQuad", "duration": 1200, "delay": 200 }'>
-                        <img class="w-100" alt="" data-cfsrc="{{asset('Frontend')}}/images/demo-hosting-home-slider-01.png"
+                        <img class="w-100" alt=""
+                            data-cfsrc="{{ asset('Frontend') }}/images/demo-hosting-home-slider-01.png"
                             style="display:none;visibility:hidden;"><noscript><img class="w-100"
-                                src="{{asset('Frontend')}}/images/demo-hosting-home-slider-01.png" alt=""></noscript>
+                                src="{{ asset('Frontend') }}/images/demo-hosting-home-slider-01.png"
+                                alt=""></noscript>
                         <img class="w-100 position-absolute left-minus-2px top-minus-5px animation-float"
-                            alt="" data-cfsrc="{{asset('Frontend')}}/images/demo-hosting-home-slider-02.png"
+                            alt=""
+                            data-cfsrc="{{ asset('Frontend') }}/images/demo-hosting-home-slider-02.png"
                             style="display:none;visibility:hidden;"><noscript><img
                                 class="w-100 position-absolute left-minus-2px top-minus-5px animation-float"
-                                src="{{asset('Frontend')}}/images/demo-hosting-home-slider-02.png" alt=""></noscript>
+                                src="{{ asset('Frontend') }}/images/demo-hosting-home-slider-02.png"
+                                alt=""></noscript>
                     </div>
                 </div>
             </div>
@@ -146,18 +149,21 @@
                 class="row justify-content-center overlap-section border-radius-6px overflow-hidden g-0 box-shadow-extra-large">
                 <div
                     class="col-lg-9 text-center fw-600 fs-24 lg-fs-22 ls-minus-05px text-dark-gray bg-white p-30px md-p-20px">
-                    <a href="{{route('contact')}}"
+                    <a href="{{ route('contact') }}"
                         class="fw-700 text-base-color text-decoration-line-bottom-medium">Get free domain</a> with
-                    managed WordPress dedicated hosting.</div>
+                    managed WordPress dedicated hosting.
+                </div>
                 <div class="col-lg-3 text-center bg-yellow pt-30px pb-30px md-p-20px"><a
-                        href="{{route('contact')}}"
-                        class="fw-700 text-dark-gray text-dark-gray-hover fs-24 lg-fs-20 ls-minus-05px">In Affordable Price<i class="feather icon-feather-arrow-right ms-5px"></i></a></div>
+                        href="{{ route('contact') }}"
+                        class="fw-700 text-dark-gray text-dark-gray-hover fs-24 lg-fs-20 ls-minus-05px">In Affordable
+                        Price<i class="feather icon-feather-arrow-right ms-5px"></i></a></div>
             </div>
         </div>
     </section>
     <!-- end section -->
     <!-- start section -->
-    <section id="hosting" class="cover-background pt-5 xs-pt-8" style="background-image: url({{asset('Frontend/images/demo-hosting-home-06.jpg')}})">
+    <section id="hosting" class="cover-background pt-5 xs-pt-8"
+        style="background-image: url({{ asset('Frontend/images/demo-hosting-home-06.jpg') }})">
         <div class="container">
             <div class="row justify-content-center mb-3">
                 <div class="col-lg-8 text-center"
@@ -173,7 +179,8 @@
                     <div
                         class="bg-white feature-box h-100 justify-content-start box-shadow-quadruple-large box-shadow-quadruple-large-hover text-start p-17 sm-p-14 border-radius-6px">
                         <div class="feature-box-icon mb-30px">
-                            <img src="{{asset('Frontend')}}/images/demo-hosting-home-icon-02.svg" class="h-50px" alt="">
+                            <img src="{{ asset('Frontend') }}/images/demo-hosting-home-icon-02.svg" class="h-50px"
+                                alt="">
                         </div>
                         <div class="feature-box-content">
                             <span class="d-inline-block fw-600 text-dark-gray fs-18 ls-minus-05px">Online store</span>
@@ -187,7 +194,8 @@
                     <div
                         class="bg-white feature-box h-100 justify-content-start box-shadow-quadruple-large box-shadow-quadruple-large-hover text-start p-17 sm-p-14 border-radius-6px">
                         <div class="feature-box-icon mb-30px">
-                            <img src="{{asset('Frontend')}}/images/demo-hosting-home-icon-03.svg" class="h-50px" alt="">
+                            <img src="{{ asset('Frontend') }}/images/demo-hosting-home-icon-03.svg" class="h-50px"
+                                alt="">
                         </div>
                         <div class="feature-box-content">
                             <span class="d-inline-block fw-600 text-dark-gray fs-18 ls-minus-05px">Web hosting</span>
@@ -201,7 +209,8 @@
                     <div
                         class="bg-white feature-box h-100 justify-content-start box-shadow-quadruple-large box-shadow-quadruple-large-hover text-start p-17 sm-p-14 border-radius-6px">
                         <div class="feature-box-icon mb-30px">
-                            <img src="{{asset('Frontend')}}/images/demo-hosting-home-icon-04.svg" class="h-50px" alt="">
+                            <img src="{{ asset('Frontend') }}/images/demo-hosting-home-icon-04.svg" class="h-50px"
+                                alt="">
                         </div>
                         <div class="feature-box-content">
                             <span class="d-inline-block fw-600 text-dark-gray fs-18 ls-minus-05px">Business
@@ -216,7 +225,8 @@
                     <div
                         class="bg-white feature-box h-100 justify-content-start box-shadow-quadruple-large box-shadow-quadruple-large-hover text-start p-17 sm-p-14 border-radius-6px">
                         <div class="feature-box-icon mb-30px">
-                            <img src="{{asset('Frontend')}}/images/demo-hosting-home-icon-05.svg" class="h-50px" alt="">
+                            <img src="{{ asset('Frontend') }}/images/demo-hosting-home-icon-05.svg" class="h-50px"
+                                alt="">
                         </div>
                         <div class="feature-box-content">
                             <span class="d-inline-block fw-600 text-dark-gray fs-18 ls-minus-05px">Cloud storage</span>
@@ -237,9 +247,10 @@
                     data-anime='{ "effect": "slide", "color": "#ffffff", "direction":"lr", "easing": "easeOutQuad", "delay":50}'>
                     <img class="w-100" data-bottom-top="transform: translateY(-50px)"
                         data-top-bottom="transform: translateY(50px)" alt=""
-                        data-cfsrc="{{asset('Frontend')}}/images/demo-hosting-home-01.png"
+                        data-cfsrc="{{ asset('Frontend') }}/images/demo-hosting-home-01.png"
                         style="display:none;visibility:hidden;"><noscript><img class="w-100"
-                            src="{{asset('Frontend')}}/images/demo-hosting-home-01.png" data-bottom-top="transform: translateY(-50px)"
+                            src="{{ asset('Frontend') }}/images/demo-hosting-home-01.png"
+                            data-bottom-top="transform: translateY(-50px)"
                             data-top-bottom="transform: translateY(50px)" alt=""></noscript>
                 </div>
                 <div class="col-lg-5 offset-lg-1 last-paragraph-no-margin"
@@ -254,18 +265,20 @@
                             class="border-color-extra-medium-gray fw-600 text-dark-gray d-flex align-items-center pt-15px pb-15px">
                             <div
                                 class="feature-box-icon feature-box-icon-rounded w-35px h-35px rounded-circle bg-solitude-blue me-10px text-center d-flex align-items-center justify-content-center flex-shrink-0">
-                                <i class="fa-solid fa-check fs-13 text-base-color"></i></div>
+                                <i class="fa-solid fa-check fs-13 text-base-color"></i>
+                            </div>
                             Get 30% discount qualifying purchases.
                         </li>
                         <li
                             class="border-color-extra-medium-gray fw-600 text-dark-gray d-flex align-items-center pt-15px pb-15px">
                             <div
                                 class="feature-box-icon feature-box-icon-rounded w-35px h-35px rounded-circle bg-solitude-blue me-10px text-center d-flex align-items-center justify-content-center flex-shrink-0">
-                                <i class="fa-solid fa-check fs-13 text-base-color"></i></div>
+                                <i class="fa-solid fa-check fs-13 text-base-color"></i>
+                            </div>
                             Grow and connect with developers.
                         </li>
                     </ul>
-                    <a href="{{route('contact')}}"
+                    <a href="{{ route('contact') }}"
                         class="btn btn-large btn-dark-gray btn-box-shadow btn-rounded btn-switch-text">
                         <span>
                             <span class="btn-double-text" data-text="Lowest pricing">Premium pricing</span>
@@ -334,8 +347,8 @@
     <!-- end section -->
     <!-- start section -->
     <section id="services" class="cover-background section-dark bg-midnight-dark-blue"
-        style="background-image: url({{ asset('Frontend/images/demo-hosting-home-02.png')}})" data-0-top="background-color:rgb(25,30,61);"
-        data-center-bottom="background-color:rgb(14,16,29);">
+        style="background-image: url({{ asset('Frontend/images/demo-hosting-home-02.png') }})"
+        data-0-top="background-color:rgb(25,30,61);" data-center-bottom="background-color:rgb(14,16,29);">
         <div class="container">
             <div class="row justify-content-center mb-3">
                 <div class="col-lg-8 text-center"
@@ -443,7 +456,8 @@
                             <span>💭</span>
                         </div>
                         <div class="feature-box-content">
-                            <span class="alt-font text-white fs-18">Keep in Touch. <a href="https://www.facebook.com/@synexdigital/"
+                            <span class="alt-font text-white fs-18">Keep in Touch. <a
+                                    href="https://www.facebook.com/@synexdigital/"
                                     class="text-decoration-line-bottom text-white fw-500">Like us on
                                     Facebook</a></span>
                         </div>
@@ -463,7 +477,9 @@
                         class="bg-dark-gray fw-600 text-white text-uppercase border-radius-30px ps-20px pe-20px fs-12 me-10px xs-m-5px d-inline-block align-middle">
                         Limited offer</div>
                     <div class="text-dark-gray fw-500 d-inline-block align-middle ls-minus-05px fs-18">Save 20% on
-                        annual plans. <a href="{{route('contact')}}" class="text-decoration-line-bottom text-dark-gray d-inline-block">Explore pricing plans<span class="bg-dark-gray"></span></a></div>
+                        annual plans. <a href="{{ route('contact') }}"
+                            class="text-decoration-line-bottom text-dark-gray d-inline-block">Explore pricing
+                            plans<span class="bg-dark-gray"></span></a></div>
                 </div>
             </div>
         </div>
@@ -473,14 +489,15 @@
     <section class="overflow-hidden">
         <div class="container">
             <div class="row align-items-center justify-content-center border-radius-8px p-4 xs-p-7 text-center text-lg-start g-0 cover-background"
-                style="background-image: url({{asset('Frontend/images/demo-hosting-home-03.jpg')}})"
+                style="background-image: url({{ asset('Frontend/images/demo-hosting-home-03.jpg') }})"
                 data-bottom-top="transform:scale(1.1, 1.1) translateY(30px);"
                 data-top-bottom="transform:scale(1.0, 1.0) translateY(-30px);">
                 <div class="col-lg-6 col-md-9 md-mb-10px icon-with-text-style-08">
                     <div class="feature-box feature-box-left-icon-middle overflow-hidden">
                         <div
                             class="feature-box-icon feature-box-icon-rounded w-100px h-100px rounded-circle border border-2 border-color-transparent-white-light me-30px xs-me-25px">
-                            <img src="{{asset('Frontend')}}/images/demo-hosting-home-icon.svg" class="w-50px h-50px" alt="">
+                            <img src="{{ asset('Frontend') }}/images/demo-hosting-home-icon.svg"
+                                class="w-50px h-50px" alt="">
                         </div>
                         <div class="feature-box-content last-paragraph-no-margin">
                             <h5 class="d-inline-block fw-600 text-white mb-0">Are you ready for a better productive
@@ -489,7 +506,8 @@
                     </div>
                 </div>
                 <div class="col-lg-6 text-center text-lg-end">
-                    <a href="{{route('contact')}}" class="btn btn-medium btn-yellow btn-rounded fw-600 btn-switch-text btn-box-shadow">
+                    <a href="{{ route('contact') }}"
+                        class="btn btn-medium btn-yellow btn-rounded fw-600 btn-switch-text btn-box-shadow">
                         <span>
                             <span class="btn-double-text" data-text="Sign up free">Sign up free</span>
                         </span>
@@ -546,7 +564,8 @@
                                 <a href="#" data-bs-toggle="collapse" data-bs-target="#accordion-style-02-02"
                                     aria-expanded="false" data-bs-parent="#accordion-style-02">
                                     <div class="accordion-title mb-0 position-relative text-dark-gray pe-30px">
-                                        <span class="fw-600 fs-18">Can i install/upload anything is want on there?</span>
+                                        <span class="fw-600 fs-18">Can i install/upload anything is want on
+                                            there?</span>
                                     </div>
                                 </a>
                             </div>
@@ -619,32 +638,34 @@
                     <div class="swiper-wrapper marquee-slide">
                         <!-- start client item -->
                         <div class="swiper-slide">
-                            <a href="#"><img src="{{ asset('Frontend/images/brand/amazon-web-services.png') }}" class="h-40px xs-h-30px"
-                                    alt="" /></a>
+                            <a href="#"><img src="{{ asset('Frontend/images/brand/amazon-web-services.png') }}"
+                                    class="h-40px xs-h-30px" alt="" /></a>
                         </div>
                         <!-- end client item -->
                         <!-- start client item -->
                         <div class="swiper-slide">
-                            <a href="#"><img src="{{ asset('Frontend/images/brand/Logo-Notion-White-al-vivo.png') }}" class="h-40px xs-h-30px"
-                                    alt="" /></a>
+                            <a href="#"><img
+                                    src="{{ asset('Frontend/images/brand/Logo-Notion-White-al-vivo.png') }}"
+                                    class="h-40px xs-h-30px" alt="" /></a>
                         </div>
                         <!-- end client item -->
                         <!-- start client item -->
                         <div class="swiper-slide">
-                            <a href="#"><img src="{{ asset('Frontend/images/brand/meta_PNG7.png') }}" class="h-40px xs-h-30px"
-                                    alt="" /></a>
+                            <a href="#"><img src="{{ asset('Frontend/images/brand/meta_PNG7.png') }}"
+                                    class="h-40px xs-h-30px" alt="" /></a>
                         </div>
                         <!-- end client item -->
                         <!-- start client item -->
                         <div class="swiper-slide">
-                            <a href="#"><img src="{{ asset('Frontend/images/brand/stripe.png') }}" class="h-40px xs-h-30px"
-                                    alt="" /></a>
+                            <a href="#"><img src="{{ asset('Frontend/images/brand/stripe.png') }}"
+                                    class="h-40px xs-h-30px" alt="" /></a>
                         </div>
                         <!-- end client item -->
                         <!-- start client item -->
                         <div class="swiper-slide">
-                            <a href="#"><img src="{{ asset('Frontend/images/brand/GitHub-Wordmark-White-Dark-Background-Logo.wine.svg') }}" class="h-40px xs-h-30px"
-                                    alt="" /></a>
+                            <a href="#"><img
+                                    src="{{ asset('Frontend/images/brand/GitHub-Wordmark-White-Dark-Background-Logo.wine.svg') }}"
+                                    class="h-40px xs-h-30px" alt="" /></a>
                         </div>
                         <!-- end client item -->
                     </div>
@@ -655,16 +676,20 @@
     <!-- end section -->
     <!-- start footer -->
     <footer id="contact" class="footer-dark bg-dark-blue pb-0 cover-background background-position-left-top"
-        style="background-image: url({{asset('Frontend/images/demo-hosting-footer-bg.jpg')}})">
+        style="background-image: url({{ asset('Frontend/images/demo-hosting-footer-bg.jpg') }})">
         <div class="container">
             <div class="row justify-content-center mb-5 md-mb-8 sm-mb-40px">
                 <!-- start footer column -->
                 <div class="col-6 col-lg-4 last-paragraph-no-margin order-sm-1 md-mb-40px xs-mb-30px">
-                    <a href="{{route('home')}}" class="footer-logo mb-15px d-inline-block"><img
+                    <a href="{{ route('home') }}" class="footer-logo mb-15px d-inline-block"><img
                             data-at2x="{{ asset('Frontend') }}/images/logo-text.svg" alt=""
                             data-cfsrc="{{ asset('Frontend') }}/images/logo-text.svg"
-                            style="display:none;visibility:hidden;"><noscript><img src="{{ asset('Frontend') }}/images/logo-text.svg" data-at2x="{{ asset('Frontend') }}/images/logo-text.svg" alt=""></noscript></a>
-                    <p class="w-90 lg-w-100">We are your one-stop technological solution supplier, meeting your business's particular demands with precision and competence.</p>
+                            style="display:none;visibility:hidden;"><noscript><img
+                                src="{{ asset('Frontend') }}/images/logo-text.svg"
+                                data-at2x="{{ asset('Frontend') }}/images/logo-text.svg"
+                                alt=""></noscript></a>
+                    <p class="w-90 lg-w-100">We are your one-stop technological solution supplier, meeting your
+                        business's particular demands with precision and competence.</p>
                 </div>
                 <!-- end footer column -->
 
@@ -685,10 +710,14 @@
                     <p class="mb-20px">Subscribe our newsletter to get the latest news and updates!</p>
                     <div class="d-inline-block w-100 newsletter-style-02 position-relative mb-15px">
                         <form action="#" class="position-relative w-100">
-                            <input class="input-small bg-transparent-white-light border-color-transparent w-100 form-control pe-50px ps-20px lg-ps-15px required" type="email" name="email" placeholder="Visit Contact Page" />
+                            <input
+                                class="input-small bg-transparent-white-light border-color-transparent w-100 form-control pe-50px ps-20px lg-ps-15px required"
+                                type="email" name="email" placeholder="Visit Contact Page" />
                             <input type="hidden" name="redirect" value="" disabled>
-                            <a href="{{ route('contact') }}" class="btn btn-sm btn-white position-absolute top-0 end-0">✉</a>
-                            <div class="form-results border-radius-4px pt-5px pb-5px ps-15px pe-15px fs-14 lh-22 mt-10px w-100 text-center position-absolute d-none">
+                            <a href="{{ route('contact') }}"
+                                class="btn btn-sm btn-white position-absolute top-0 end-0">✉</a>
+                            <div
+                                class="form-results border-radius-4px pt-5px pb-5px ps-15px pe-15px fs-14 lh-22 mt-10px w-100 text-center position-absolute d-none">
                             </div>
                         </form>
                     </div>
@@ -696,7 +725,8 @@
                 <!-- end footer column -->
             </div>
             <div class="border-top border-color-transparent-white-light pt-35px pb-35px text-center">
-                <span class="fs-13 w-60 lg-w-70 md-w-100 d-block mx-auto lh-22"><span class="fs-15">&copy; 2024 Synex Digital</span></span>
+                <span class="fs-13 w-60 lg-w-70 md-w-100 d-block mx-auto lh-22"><span class="fs-15">&copy; 2024 Synex
+                        Digital</span></span>
             </div>
         </div>
     </footer>

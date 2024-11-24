@@ -11,7 +11,7 @@
     <link rel="apple-touch-icon" href="{{ asset('Frontend/images/icons/fav-low.png') }}">
     <link rel="apple-touch-icon" sizes="72x72" href="{{ asset('Frontend/images/icons/fav-low.png') }}">
     <link rel="apple-touch-icon" sizes="114x114" href="{{ asset('Frontend/images/icons/fav-low.png') }}">
-    @include('Frontend.layout.headerLink')
+    @include('frontend.layout.headerlink')
     <link rel="stylesheet" href="{{ asset('Frontend/css/marketing.css') }}" />
 </head>
 
@@ -28,7 +28,7 @@
         <nav class="navbar navbar-expand-lg header-light header-transparent bg-transparent disable-fixed">
             <div class="container-fluid">
                 <div class="col-auto col-lg-2 me-lg-0 me-auto">
-                    <a class="navbar-brand" href="{{route('home')}}">
+                    <a class="navbar-brand" href="{{ route('home') }}">
                         <script type="text/javascript" style="display:none">
                             //<![CDATA[
                             window.__mirage2 = {
@@ -37,8 +37,8 @@
                             //]]>
                         </script>
                         <script type="text/javascript" src="{{ asset('Frontend/js/mirage2.min.js') }}"></script>
-                        <img data-at2x="{{ asset('Frontend') }}/images/logo-text.svg" alt="" class="default-logo"
-                            data-cfsrc="{{ asset('Frontend') }}/images/logo-text.svg"
+                        <img data-at2x="{{ asset('Frontend') }}/images/logo-text.svg" alt=""
+                            class="default-logo" data-cfsrc="{{ asset('Frontend') }}/images/logo-text.svg"
                             style="display:none;visibility:hidden;"><noscript><img
                                 src="{{ asset('Frontend') }}/images/logo-text.svg"
                                 data-at2x="{{ asset('Frontend') }}/images/logo-text.svg" alt=""
@@ -49,8 +49,8 @@
                                 src="{{ asset('Frontend') }}/images/logo-text.svg"
                                 data-at2x="{{ asset('Frontend') }}/images/logo-text.svg" alt=""
                                 class="alt-logo"></noscript>
-                        <img data-at2x="{{ asset('Frontend') }}/images/logo-text.svg" alt="" class="mobile-logo"
-                            data-cfsrc="{{ asset('Frontend') }}/images/logo-text.svg"
+                        <img data-at2x="{{ asset('Frontend') }}/images/logo-text.svg" alt=""
+                            class="mobile-logo" data-cfsrc="{{ asset('Frontend') }}/images/logo-text.svg"
                             style="display:none;visibility:hidden;"><noscript><img
                                 src="{{ asset('Frontend') }}/images/logo-text.svg"
                                 data-at2x="{{ asset('Frontend') }}/images/logo-text.svg" alt=""
@@ -82,7 +82,7 @@
     <!-- start banner -->
     <section
         class="p-0 full-screen md-h-600px sm-h-600px ipad-top-space-margin background-position-center-top position-relative lg-overflow-hidden"
-        style="background-image: url({{ asset('Frontend/images/demo-marketing-dot.svg')}})">
+        style="background-image: url({{ asset('Frontend/images/demo-marketing-dot.svg') }})">
         <div class="bg-gradient-black-green position-absolute left-0px top-0px h-100 w-100 z-index-minus-1"></div>
         <div class="container h-100">
             <div class="row align-items-center h-100">
@@ -118,7 +118,8 @@
                                     <span class="text-white">✓</span>
                                 </div>
                                 <div class="feature-box-content last-paragraph-no-margin">
-                                    <span class="d-inline-block fs-17 fw-500 text-dark-gray">Custom Web Solutions</span>
+                                    <span class="d-inline-block fs-17 fw-500 text-dark-gray">Custom Web
+                                        Solutions</span>
                                 </div>
                             </div>
                         </div>
@@ -129,7 +130,8 @@
                                     <span class="text-white">✓</span>
                                 </div>
                                 <div class="feature-box-content last-paragraph-no-margin">
-                                    <span class="d-inline-block fs-17 fw-500 text-dark-gray">Responsive Web Design</span>
+                                    <span class="d-inline-block fs-17 fw-500 text-dark-gray">Responsive Web
+                                        Design</span>
                                 </div>
                             </div>
                         </div>
@@ -140,19 +142,19 @@
                         class="position-absolute right-0px bottom-minus-90px xxl-bottom-minus-30px md-bottom-minus-35px md-right-minus-250px lg-right-minus-150px w-50 xl-w-55 lg-w-65 md-w-75 overflow-hidden">
                         <img class="w-100" alt=""
                             data-anime='{ "opacity": [0, 1], "translateX": [100, 0], "duration": 1000, "delay": 200, "easing": "easeOutQuad" }'
-                            data-cfsrc="{{asset('Frontend/images/demo-marketing-home-01.png')}}"
+                            data-cfsrc="{{ asset('Frontend/images/demo-marketing-home-01.png') }}"
                             style="display:none;visibility:hidden;"><noscript><img
-                                src="{{asset('Frontend/images/demo-marketing-home-01.png')}}" class="w-100" alt=""
-                                data-anime="{ "opacity": [0, 1], "translateX" : [100, 0], "duration" : 1000, "delay" :
-                                200, "easing" : "easeOutQuad" }"></noscript>
+                                src="{{ asset('Frontend/images/demo-marketing-home-01.png') }}" class="w-100"
+                                alt="" data-anime="{ "opacity": [0, 1], "translateX" : [100, 0], "duration" :
+                                1000, "delay" : 200, "easing" : "easeOutQuad" }"></noscript>
                     </div>
                     <div class="position-absolute right-0px top-0 me-3 mt-20 md-mt-45 lg-w-250px lg-mt-45 animation-float overflow-hidden d-none d-lg-inline-block"
                         data-bottom-top="transform: translateY(-30px)" data-top-bottom="transform: translateY(80px)">
                         <img class="border-radius-6px box-shadow-quadruple-large" alt=""
                             data-anime='{ "opacity": [0, 1], "clipPath": ["inset(0 0 200px 0)", "inset(0px 0px 0px 0px)"], "duration": 1000, "delay": 1000, "easing": "easeOutQuad" }'
-                            data-cfsrc="{{asset('Frontend/images/demo-marketing-home-02.jpg')}}"
+                            data-cfsrc="{{ asset('Frontend/images/demo-marketing-home-02.jpg') }}"
                             style="display:none;visibility:hidden;"><noscript><img
-                                src="{{asset('Frontend/images/demo-marketing-home-02.jpg')}}"
+                                src="{{ asset('Frontend/images/demo-marketing-home-02.jpg') }}"
                                 class="border-radius-6px box-shadow-quadruple-large" alt=""
                                 data-anime="{ "opacity": [0, 1], "clipPath" : ["inset(0 0 200px
                                 0)", "inset(0px 0px 0px 0px)" ], "duration" : 1000, "delay" : 1000, "easing"
@@ -184,15 +186,16 @@
                 <div class="col-lg-6 col-md-10 position-relative md-mb-50px sm-mb-40px">
                     <figure class="position-relative m-0 text-center"
                         data-anime='{ "effect": "slide", "color": "#fff2ef", "direction":"lr", "easing": "easeOutQuad", "delay":50}'>
-                        <img alt="" data-cfsrc="{{asset('Frontend/images/demo-marketing-home-04.jpg')}}"
+                        <img alt="" data-cfsrc="{{ asset('Frontend/images/demo-marketing-home-04.jpg') }}"
                             style="display:none;visibility:hidden;"><noscript><img
-                                src="{{asset('Frontend/images/demo-marketing-home-04.jpg')}}" alt=""></noscript>
+                                src="{{ asset('Frontend/images/demo-marketing-home-04.jpg') }}"
+                                alt=""></noscript>
                         <figcaption class="position-absolute bottom-90px left-0px"
                             data-anime='{ "translateY": [-50, 0], "opacity": [0,1], "duration": 800, "delay": 1000, "staggervalue": 300, "easing": "easeOutQuad" }'>
                             <img class="animation-float box-shadow-quadruple-large border-radius-6px" alt=""
-                                data-cfsrc="{{asset('Frontend/images/demo-marketing-home-05.jpg')}}"
+                                data-cfsrc="{{ asset('Frontend/images/demo-marketing-home-05.jpg') }}"
                                 style="display:none;visibility:hidden;"><noscript><img
-                                    src="{{asset('Frontend/images/demo-marketing-home-05.jpg')}}"
+                                    src="{{ asset('Frontend/images/demo-marketing-home-05.jpg') }}"
                                     class="animation-float box-shadow-quadruple-large border-radius-6px"
                                     alt=""></noscript>
                         </figcaption>
@@ -201,7 +204,8 @@
                 <div id="service" class="col-lg-5 offset-lg-1 col-md-12"
                     data-anime='{ "el": "childs", "translateX": [50, 0], "opacity": [0,1], "duration": 1200, "delay": 0, "staggervalue": 150, "easing": "easeOutQuad" }'>
                     <span class="fs-15 text-uppercase fw-600 ls-1px mb-15px d-block">About Web Development</span>
-                    <h3 class="fw-700 text-dark-gray ls-minus-1px fancy-text-style-4">Leverage Our Web Design and Development Services to Boost Your <span
+                    <h3 class="fw-700 text-dark-gray ls-minus-1px fancy-text-style-4">Leverage Our Web Design and
+                        Development Services to Boost Your <span
                             data-fancy-text='{ "effect": "rubber-band", "direction": "left", "string": ["business", "industry", "enterprise"] }'></span>
                     </h3>
                     <div class="row mb-9">
@@ -209,14 +213,17 @@
                         <div class="col-12 icon-with-text-style-01 mb-30px">
                             <div class="feature-box feature-box-left-icon last-paragraph-no-margin">
                                 <div class="feature-box-icon">
-                                    <img alt="" data-cfsrc="{{asset('Frontend/images/demo-marketing-home-icon-02.jpg')}}"
+                                    <img alt=""
+                                        data-cfsrc="{{ asset('Frontend/images/demo-marketing-home-icon-02.jpg') }}"
                                         style="display:none;visibility:hidden;"><noscript><img
-                                            src="{{asset('Frontend/images/demo-marketing-home-icon-02.jpg')}}" alt=""></noscript>
+                                            src="{{ asset('Frontend/images/demo-marketing-home-icon-02.jpg') }}"
+                                            alt=""></noscript>
                                 </div>
                                 <div class="feature-box-content">
-                                    <span
-                                        class="d-inline-block text-dark-gray fw-600 mb-5px fs-18 ls-minus-05px">Web Design and Development</span>
-                                    <p class="w-80 lg-w-100">We create visually appealing, easy to use websites that are unique to your enterprise needs and aims.</p>
+                                    <span class="d-inline-block text-dark-gray fw-600 mb-5px fs-18 ls-minus-05px">Web
+                                        Design and Development</span>
+                                    <p class="w-80 lg-w-100">We create visually appealing, easy to use websites that
+                                        are unique to your enterprise needs and aims.</p>
                                 </div>
                             </div>
                         </div>
@@ -224,14 +231,18 @@
                         <div class="col-12 icon-with-text-style-01 mb-30px">
                             <div class="feature-box feature-box-left-icon last-paragraph-no-margin">
                                 <div class="feature-box-icon">
-                                    <img alt="" data-cfsrc="{{asset('Frontend/images/demo-marketing-home-icon-02.jpg')}}"
+                                    <img alt=""
+                                        data-cfsrc="{{ asset('Frontend/images/demo-marketing-home-icon-02.jpg') }}"
                                         style="display:none;visibility:hidden;"><noscript><img
-                                            src="{{asset('Frontend/images/demo-marketing-home-icon-02.jpg')}}" alt=""></noscript>
+                                            src="{{ asset('Frontend/images/demo-marketing-home-icon-02.jpg') }}"
+                                            alt=""></noscript>
                                 </div>
                                 <div class="feature-box-content">
                                     <span
-                                        class="d-inline-block text-dark-gray fw-600 mb-5px fs-18 ls-minus-05px">Website maintenance</span>
-                                    <p class="w-80 lg-w-100">We offer continuous backup that guarantees your site is dynamic, safe, and operates seamlessly all the time.</p>
+                                        class="d-inline-block text-dark-gray fw-600 mb-5px fs-18 ls-minus-05px">Website
+                                        maintenance</span>
+                                    <p class="w-80 lg-w-100">We offer continuous backup that guarantees your site is
+                                        dynamic, safe, and operates seamlessly all the time.</p>
                                 </div>
                             </div>
                         </div>
@@ -239,14 +250,18 @@
                         <div class="col-12 icon-with-text-style-01 mb-30px">
                             <div class="feature-box feature-box-left-icon last-paragraph-no-margin">
                                 <div class="feature-box-icon">
-                                    <img alt="" data-cfsrc="{{asset('Frontend/images/demo-marketing-home-icon-02.jpg')}}"
+                                    <img alt=""
+                                        data-cfsrc="{{ asset('Frontend/images/demo-marketing-home-icon-02.jpg') }}"
                                         style="display:none;visibility:hidden;"><noscript><img
-                                            src="{{asset('Frontend/images/demo-marketing-home-icon-02.jpg')}}" alt=""></noscript>
+                                            src="{{ asset('Frontend/images/demo-marketing-home-icon-02.jpg') }}"
+                                            alt=""></noscript>
                                 </div>
                                 <div class="feature-box-content">
-                                    <span
-                                        class="d-inline-block text-dark-gray fw-600 mb-5px fs-18 ls-minus-05px">Seo integrated web design</span>
-                                    <p class="w-80 lg-w-100">Synex Digital provides distinct web designing and developing services tailored according to specific industry requirements along with brand policies.</p>
+                                    <span class="d-inline-block text-dark-gray fw-600 mb-5px fs-18 ls-minus-05px">Seo
+                                        integrated web design</span>
+                                    <p class="w-80 lg-w-100">Synex Digital provides distinct web designing and
+                                        developing services tailored according to specific industry requirements along
+                                        with brand policies.</p>
                                 </div>
                             </div>
                         </div>
@@ -254,14 +269,18 @@
                         <div class="col-12 icon-with-text-style-01 mb-30px">
                             <div class="feature-box feature-box-left-icon last-paragraph-no-margin">
                                 <div class="feature-box-icon">
-                                    <img alt="" data-cfsrc="{{asset('Frontend/images/demo-marketing-home-icon-02.jpg')}}"
+                                    <img alt=""
+                                        data-cfsrc="{{ asset('Frontend/images/demo-marketing-home-icon-02.jpg') }}"
                                         style="display:none;visibility:hidden;"><noscript><img
-                                            src="{{asset('Frontend/images/demo-marketing-home-icon-02.jpg')}}" alt=""></noscript>
+                                            src="{{ asset('Frontend/images/demo-marketing-home-icon-02.jpg') }}"
+                                            alt=""></noscript>
                                 </div>
                                 <div class="feature-box-content">
                                     <span
-                                        class="d-inline-block text-dark-gray fw-600 mb-5px fs-18 ls-minus-05px">Custom Web Solutions</span>
-                                    <p class="w-80 lg-w-100">Your website will look good on any device including computers or mobile phones while still working perfectly.</p>
+                                        class="d-inline-block text-dark-gray fw-600 mb-5px fs-18 ls-minus-05px">Custom
+                                        Web Solutions</span>
+                                    <p class="w-80 lg-w-100">Your website will look good on any device including
+                                        computers or mobile phones while still working perfectly.</p>
                                 </div>
                             </div>
                         </div>
@@ -269,14 +288,18 @@
                         <div class="col-12 icon-with-text-style-01 mb-30px">
                             <div class="feature-box feature-box-left-icon last-paragraph-no-margin">
                                 <div class="feature-box-icon">
-                                    <img alt="" data-cfsrc="{{asset('Frontend/images/demo-marketing-home-icon-02.jpg')}}"
+                                    <img alt=""
+                                        data-cfsrc="{{ asset('Frontend/images/demo-marketing-home-icon-02.jpg') }}"
                                         style="display:none;visibility:hidden;"><noscript><img
-                                            src="{{asset('Frontend/images/demo-marketing-home-icon-02.jpg')}}" alt=""></noscript>
+                                            src="{{ asset('Frontend/images/demo-marketing-home-icon-02.jpg') }}"
+                                            alt=""></noscript>
                                 </div>
                                 <div class="feature-box-content">
                                     <span
-                                        class="d-inline-block text-dark-gray fw-600 mb-5px fs-18 ls-minus-05px">Responsive Web Design</span>
-                                    <p class="w-80 lg-w-100">You will get tangible results at the end of each sprint and will be able to refine your product based on user feedback..</p>
+                                        class="d-inline-block text-dark-gray fw-600 mb-5px fs-18 ls-minus-05px">Responsive
+                                        Web Design</span>
+                                    <p class="w-80 lg-w-100">You will get tangible results at the end of each sprint
+                                        and will be able to refine your product based on user feedback..</p>
                                 </div>
                             </div>
                         </div>
@@ -284,14 +307,19 @@
                         <div class="col-12 icon-with-text-style-01 mb-30px">
                             <div class="feature-box feature-box-left-icon last-paragraph-no-margin">
                                 <div class="feature-box-icon">
-                                    <img alt="" data-cfsrc="{{asset('Frontend/images/demo-marketing-home-icon-02.jpg')}}"
+                                    <img alt=""
+                                        data-cfsrc="{{ asset('Frontend/images/demo-marketing-home-icon-02.jpg') }}"
                                         style="display:none;visibility:hidden;"><noscript><img
-                                            src="{{asset('Frontend/images/demo-marketing-home-icon-02.jpg')}}" alt=""></noscript>
+                                            src="{{ asset('Frontend/images/demo-marketing-home-icon-02.jpg') }}"
+                                            alt=""></noscript>
                                 </div>
                                 <div class="feature-box-content">
                                     <span
-                                        class="d-inline-block text-dark-gray fw-600 mb-5px fs-18 ls-minus-05px">Content management system (CMS)</span>
-                                    <p class="w-80 lg-w-100">We build user-friendly CMSs which give you control over what goes on your site without knowing anything about web designing or programming.</p>
+                                        class="d-inline-block text-dark-gray fw-600 mb-5px fs-18 ls-minus-05px">Content
+                                        management system (CMS)</span>
+                                    <p class="w-80 lg-w-100">We build user-friendly CMSs which give you control over
+                                        what goes on your site without knowing anything about web designing or
+                                        programming.</p>
                                 </div>
                             </div>
                         </div>
@@ -406,7 +434,8 @@
                                             data-bs-target="#accordion-style-02-01" aria-expanded="true"
                                             data-bs-parent="#accordion-style-02">
                                             <div class="accordion-title mb-0 position-relative text-dark-gray">
-                                                <span class="fw-600 fs-18 ls-minus-05px">Unique and bold website design</span>
+                                                <span class="fw-600 fs-18 ls-minus-05px">Unique and bold website
+                                                    design</span>
                                             </div>
                                         </a>
                                     </div>
@@ -427,7 +456,8 @@
                                             data-bs-target="#accordion-style-02-02" aria-expanded="false"
                                             data-bs-parent="#accordion-style-02">
                                             <div class="accordion-title mb-0 position-relative text-dark-gray">
-                                                <span class="fw-600 fs-18 ls-minus-05px">We're ready to deliver now</span>
+                                                <span class="fw-600 fs-18 ls-minus-05px">We're ready to deliver
+                                                    now</span>
                                             </div>
                                         </a>
                                     </div>
@@ -448,7 +478,8 @@
                                             data-bs-target="#accordion-style-02-03" aria-expanded="false"
                                             data-bs-parent="#accordion-style-02">
                                             <div class="accordion-title mb-0 position-relative text-dark-gray">
-                                                <span class="fw-600 fs-18 ls-minus-05px">Something website for everyone</span>
+                                                <span class="fw-600 fs-18 ls-minus-05px">Something website for
+                                                    everyone</span>
                                             </div>
                                         </a>
                                     </div>
@@ -465,7 +496,8 @@
                             </div>
                         </div>
                     </div>
-                    <a class="btn btn-large btn-dark-gray btn-hover-animation-switch btn-round-edge btn-box-shadow me-30px">
+                    <a
+                        class="btn btn-large btn-dark-gray btn-hover-animation-switch btn-round-edge btn-box-shadow me-30px">
                         <span>
                             <span class="btn-text">How it works</span>
                             <span class="btn-icon">➔</span>
@@ -484,15 +516,16 @@
                 <div class="col-lg-6 offset-xl-1 col-md-10 position-relative">
                     <figure class="position-relative m-0 text-center"
                         data-anime='{ "effect": "slide", "color": "#fff2ef", "direction":"rl", "easing": "easeOutQuad", "delay":50}'>
-                        <img alt="" data-cfsrc="{{asset('Frontend/images/demo-marketing-home-06.jpg')}}"
+                        <img alt="" data-cfsrc="{{ asset('Frontend/images/demo-marketing-home-06.jpg') }}"
                             style="display:none;visibility:hidden;"><noscript><img
-                                src="{{asset('Frontend/images/demo-marketing-home-06.jpg')}}" alt=""></noscript>
+                                src="{{ asset('Frontend/images/demo-marketing-home-06.jpg') }}"
+                                alt=""></noscript>
                         <figcaption class="position-absolute bottom-90px right-0px"
                             data-anime='{ "translateY": [-50, 0], "opacity": [0,1], "duration": 800, "delay": 1000, "staggervalue": 300, "easing": "easeOutQuad" }'>
                             <img class="animation-float box-shadow-quadruple-large border-radius-6px" alt=""
-                                data-cfsrc="{{asset('Frontend/images/demo-marketing-home-07.jpg')}}"
+                                data-cfsrc="{{ asset('Frontend/images/demo-marketing-home-07.jpg') }}"
                                 style="display:none;visibility:hidden;"><noscript><img
-                                    src="{{asset('Frontend/images/demo-marketing-home-07.jpg')}}"
+                                    src="{{ asset('Frontend/images/demo-marketing-home-07.jpg') }}"
                                     class="animation-float box-shadow-quadruple-large border-radius-6px"
                                     alt=""></noscript>
                         </figcaption>
@@ -635,7 +668,7 @@
 
     <!-- start footer -->
     <footer id="contact" class="bg-dark-gray background-position-center-top"
-        style="background-image: url({{ asset('Frontend/images/demo-marketing-footer-dot.svg')}})">
+        style="background-image: url({{ asset('Frontend/images/demo-marketing-footer-dot.svg') }})">
         <div class="container overlap-section">
             <div
                 class="row g-0 justify-content-center align-items-center bg-base-color border-radius-6px ps-7 pe-7 pt-4 pb-4 lg-p-30px sm-p-20px mb-7">
@@ -645,13 +678,15 @@
                 </div>
                 <div class="col-auto col-lg-5 icon-with-text-style-08 offset-lg-1">
                     <div class="feature-box feature-box-left-icon-middle overflow-hidden">
-                        <div class="feature-box-icon feature-box-icon-rounded w-80px h-80px rounded-circle      bg-dark-gray-transparent-light me-25px lg-me-20px text-white" style="font-size: xx-large"> ✉
+                        <div class="feature-box-icon feature-box-icon-rounded w-80px h-80px rounded-circle      bg-dark-gray-transparent-light me-25px lg-me-20px text-white"
+                            style="font-size: xx-large"> ✉
                         </div>
                         <div class="feature-box-content last-paragraph-no-margin">
                             <span class="text-white fs-18 lh-22 mb-5px d-block">Interested in working?</span>
                             <h6 class="d-inline-block fw-600 mb-0"><a href="mailto:office@synexdigital.com"
-                                class="text-dark-gray text-dark-gray-hover fw-600 text-decoration-line-bottom" style="font-size: 25px;">
-                                office@synexdigital.com</a>
+                                    class="text-dark-gray text-dark-gray-hover fw-600 text-decoration-line-bottom"
+                                    style="font-size: 25px;">
+                                    office@synexdigital.com</a>
                             </h6>
                         </div>
                     </div>
@@ -664,18 +699,18 @@
                 <!-- start footer menu -->
                 <div class="col-lg-8 ps-0 text-center text-lg-start md-mb-10px">
                     <ul class="footer-navbar fs-15 lh-normal">
-                        <li class="nav-item"><a href="{{route('about')}}" class="nav-link">About Us</a></li>
-                        <li class="nav-item"><a href="{{route('services')}}" class="nav-link">Services</a>
+                        <li class="nav-item"><a href="{{ route('about') }}" class="nav-link">About Us</a></li>
+                        <li class="nav-item"><a href="{{ route('services') }}" class="nav-link">Services</a>
                         </li>
-                        <li class="nav-item"><a href="{{route('projects')}}" class="nav-link">Projects</a></li>
-                        <li class="nav-item"><a href="{{route('blogs')}}" class="nav-link">Blog</a></li>
-                        <li class="nav-item"><a href="{{route('contact')}}" class="nav-link">Contact</a></li>
+                        <li class="nav-item"><a href="{{ route('projects') }}" class="nav-link">Projects</a></li>
+                        <li class="nav-item"><a href="{{ route('blogs') }}" class="nav-link">Blog</a></li>
+                        <li class="nav-item"><a href="{{ route('contact') }}" class="nav-link">Contact</a></li>
                     </ul>
                 </div>
                 <!-- end footer menu -->
                 <!-- start copyright -->
                 <div class="col-lg-4 last-paragraph-no-margin text-center text-lg-end">
-                    <p class="fs-15">&copy; 2024 <a href="{{route('home')}}" class="text-white">Synex Digital</p>
+                    <p class="fs-15">&copy; 2024 <a href="{{ route('home') }}" class="text-white">Synex Digital</p>
                 </div>
                 <!-- start copyright -->
             </div>

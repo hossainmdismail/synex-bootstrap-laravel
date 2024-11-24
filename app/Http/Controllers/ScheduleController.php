@@ -8,6 +8,6 @@ class ScheduleController extends Controller
 {
     public function index()
     {
-        return view('Frontend.pages.schedule');
+        return view('frontend.pages.schedule');
     }
 }

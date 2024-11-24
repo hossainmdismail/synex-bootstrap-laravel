@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
+
 use Artesaos\SEOTools\Facades\JsonLd;
 use Artesaos\SEOTools\Facades\SEOMeta;
 use Artesaos\SEOTools\Facades\SEOTools;
@@ -95,6 +96,6 @@ class TermsController extends Controller
 
 
 
-        return view('Frontend.pages.terms');
+        return view('frontend.pages.terms');
     }
 }

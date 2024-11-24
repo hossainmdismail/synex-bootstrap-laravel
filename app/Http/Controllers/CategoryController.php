@@ -101,7 +101,7 @@ class CategoryController extends Controller
                 ]);
 
 
-                return view('Frontend.pages.category', [
+                return view('frontend.pages.category', [
                     'category' => $category,
                     'categories' => $categoryList,
                     'blogs' => $blogs,

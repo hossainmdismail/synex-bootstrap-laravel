@@ -11,7 +11,8 @@ use Artesaos\SEOTools\Facades\TwitterCard;
 
 class HomeController extends Controller
 {
-    public function index_new(){
+    public function index_new()
+    {
 
         $project = [];
         $blog = [];
@@ -30,7 +31,7 @@ class HomeController extends Controller
             $blog = $blogResponse->json();
         }
 
-        return view('Frontend.new', [
+        return view('frontend.new', [
             'projects'  => $project,
             'blogs'      => $blog,
         ]);
@@ -147,7 +148,7 @@ class HomeController extends Controller
             $blog = $blogResponse->json();
         }
 
-        return view('Frontend.index', [
+        return view('frontend.index', [
             'projects'  => $project,
             'blogs'      => $blog,
         ]);
@@ -214,7 +215,7 @@ class HomeController extends Controller
                 "contactType" => "Customer Service",  // Type of contact
                 "areaServed" => ["US", "CA", "AU", "GB", "AE"],  // Area served, e.g., Bangladesh
                 "availableLanguage" => "en-US",  // Language available
-                 "email" => "office@synexdigital.com"
+                "email" => "office@synexdigital.com"
             ]
         ]);
 
@@ -244,7 +245,7 @@ class HomeController extends Controller
         ]);
 
 
-        return view('Frontend.pages.contact');
+        return view('frontend.pages.contact');
     }
     public function thanks()
     {
@@ -328,6 +329,6 @@ class HomeController extends Controller
             ]
         ]);
 
-        return view('Frontend.pages.thankyou');
+        return view('frontend.pages.thankyou');
     }
 }

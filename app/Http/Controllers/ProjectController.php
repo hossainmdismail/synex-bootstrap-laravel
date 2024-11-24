@@ -99,7 +99,7 @@ class ProjectController extends Controller
             $pagination = $responseData['pagination']; // Pagination data
         }
 
-        return view('Frontend.pages.projects', [
+        return view('frontend.pages.projects', [
             'projects' => $project,
             'pagination' => $pagination
         ]);

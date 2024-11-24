@@ -13,7 +13,7 @@ class ServiceController extends Controller
 {
     public function services()
     {
-        // return view('Frontend.pages.service.services');
+        // return view('frontend.pages.service.services');
         $site_name = env('APP_NAME', 'Synex Digital');
         $seo_title = 'Comprehensive IT Services | Synex Digital';
         $seo_description = "Explore Synex Digital's wide range of IT services, including web and app development, digital marketing, UI/UX design, SaaS development, custom management software, video editing, and more. Serving clients in the USA, Canada, Australia, UK, and Dubai with tailored digital solutions to grow your business online.";
@@ -136,16 +136,16 @@ class ServiceController extends Controller
             ],
         ]);
 
-        return view('Frontend.pages.service.services');
+        return view('frontend.pages.service.services');
     }
     public function service_software()
     {
-        // return view('Frontend.pages.service.services');
+        // return view('frontend.pages.service.services');
         $site_name = env('APP_NAME', 'Synex Digital');
         $seo_title = 'Custom Management Software Development | Synex Digital';
         $seo_description = 'Boost your business efficiency with custom management software solutions from Synex Digital. Specializing in ERP, CRM, project management, and business intelligence software, we serve clients in the USA, Canada, Australia, UK, and Dubai. Get a tailored solution to streamline your operations. Contact us for a free quote today!';
         $seo_tags =
-        'Custom Management Software,
+            'Custom Management Software,
         ERP Software Development,
         CRM Development Services,
         Project Management Software,
@@ -261,11 +261,11 @@ class ServiceController extends Controller
             ],
         ]);
 
-        return view('Frontend.pages.service.service-software');
+        return view('frontend.pages.service.service-software');
     }
     public function service_web_dev()
     {
-        // return view('Frontend.pages.service.services');
+        // return view('frontend.pages.service.services');
         $site_name = env('APP_NAME', 'Synex Digital');
         $seo_title = 'Professional Web Development Services | Synex Digital';
         $seo_description = 'Transform your online presence with professional web development services from Synex Digital. We offer full-stack development, e-commerce solutions, CMS development, and more. Serving clients in the USA, Canada, Australia, UK, and Dubai. Contact us for a custom website that drives results!';
@@ -385,11 +385,11 @@ class ServiceController extends Controller
                 'inLanguage' => 'en-US',
             ],
         ]);
-        return view('Frontend.pages.service.service-web-dev');
+        return view('frontend.pages.service.service-web-dev');
     }
     public function service_uiux()
     {
-        // return view('Frontend.pages.service.services');
+        // return view('frontend.pages.service.services');
         $site_name = env('APP_NAME', 'Synex Digital');
         $seo_title = 'Expert UI/UX Design Services | Synex Digital';
         $seo_description = "Enhance your digital products with expert UI/UX design services from Synex Digital. Our team creates intuitive, user-centric interfaces and engaging experiences tailored to your audience. Serving businesses in the USA, Canada, Australia, UK, and Dubai. Contact us for a design consultation!";
@@ -509,11 +509,11 @@ class ServiceController extends Controller
                 'inLanguage' => 'en-US',
             ],
         ]);
-        return view('Frontend.pages.service.service-uiux');
+        return view('frontend.pages.service.service-uiux');
     }
     public function service_digital_marketing()
     {
-        // return view('Frontend.pages.service.services');
+        // return view('frontend.pages.service.services');
         $site_name = env('APP_NAME', 'Synex Digital');
         $seo_title = 'Comprehensive Digital Marketing Services | Synex Digital';
         $seo_description = "Boost your online presence with Synex Digital's expert digital marketing services, including SEO, PPC, social media marketing, content marketing, and more. Serving clients in the USA, Canada, Australia, UK, and Dubai with tailored strategies to grow your business. Contact us for a free consultation!";
@@ -633,11 +633,11 @@ class ServiceController extends Controller
                 'inLanguage' => 'en-US',
             ],
         ]);
-        return view('Frontend.pages.service.service-digital-marketing');
+        return view('frontend.pages.service.service-digital-marketing');
     }
     public function service_graphics_design()
     {
-        // return view('Frontend.pages.service.services');
+        // return view('frontend.pages.service.services');
         $site_name = env('APP_NAME', 'Synex Digital');
         $seo_title = 'Professional Graphics Design Services | Synex Digital';
         $seo_description = "Enhance your brand with Synex Digital's expert graphics design services. We offer comprehensive solutions including branding, print design, digital design, and custom illustrations. Serving clients in the USA, Canada, Australia, UK, and Dubai. Contact us for a free design consultation!";
@@ -757,11 +757,11 @@ class ServiceController extends Controller
                 'inLanguage' => 'en-US',
             ],
         ]);
-        return view('Frontend.pages.service.service-graphics-design');
+        return view('frontend.pages.service.service-graphics-design');
     }
     public function service_mobile_app()
     {
-        // return view('Frontend.pages.service.services');
+        // return view('frontend.pages.service.services');
         $site_name = env('APP_NAME', 'Synex Digital');
         $seo_title = 'Top Mobile App Development Services | iOS,Android | Synex Digital';
         $seo_description = "Elevate your business with Synex Digital’s mobile app development services. We specialize in iOS, Android, and cross-platform apps, providing custom solutions for clients in the USA, Canada, Australia, UK, and Dubai. Contact us to create a powerful mobile app tailored to your needs!";
@@ -802,7 +802,7 @@ class ServiceController extends Controller
         // JsonLd for Services Page
         JsonLd::setType('WebPage');  // Changed from 'Service' to 'WebPage'
         JsonLd::setTitle($seo_title);
-        JsonLd::setDescription( "Synex Digital offers expert mobile app development services, including iOS, Android, and cross-platform solutions. We provide custom app development for clients in USA, Canada, Australia, UK, and Dubai. Contact us for a tailored mobile app that meets your business needs.");
+        JsonLd::setDescription("Synex Digital offers expert mobile app development services, including iOS, Android, and cross-platform solutions. We provide custom app development for clients in USA, Canada, Australia, UK, and Dubai. Contact us for a tailored mobile app that meets your business needs.");
         JsonLd::setUrl(url()->current());
         JsonLd::addValue('inLanguage', 'en-US');  // 'inLanguage' is appropriate here
 
@@ -881,11 +881,11 @@ class ServiceController extends Controller
                 'inLanguage' => 'en-US',
             ],
         ]);
-        return view('Frontend.pages.service.service-mobile-app');
+        return view('frontend.pages.service.service-mobile-app');
     }
     public function service_saas()
     {
-        // return view('Frontend.pages.service.services');
+        // return view('frontend.pages.service.services');
         $site_name = env('APP_NAME', 'Synex Digital');
         $seo_title = 'Custom SaaS Development Services | Synex Digital';
         $seo_description = "Transform your business with Synex Digital’s custom SaaS development services. We offer scalable SaaS solutions, including multi-tenant architecture, subscription management, and cloud infrastructure management. Serving clients in the USA, Canada, Australia, UK, and Dubai. Contact us to build your next SaaS product!";
@@ -1004,11 +1004,11 @@ class ServiceController extends Controller
                 'inLanguage' => 'en-US',
             ],
         ]);
-        return view('Frontend.pages.service.service-saas');
+        return view('frontend.pages.service.service-saas');
     }
     public function service_video_edit()
     {
-        // return view('Frontend.pages.service.services');
+        // return view('frontend.pages.service.services');
         $site_name = env('APP_NAME', 'Synex Digital');
         $seo_title = 'Professional Video Editing Services | Synex Digital';
         $seo_description = "Enhance your video content with Synex Digital’s expert video editing services. We specialize in post-production, motion graphics, and social media video editing. Serving clients in the USA, Canada, Australia, UK, and Dubai. Contact us to get high-quality video edits that captivate your audience!";
@@ -1128,6 +1128,6 @@ class ServiceController extends Controller
                 'inLanguage' => 'en-US',
             ],
         ]);
-        return view('Frontend.pages.service.service-video-edit');
+        return view('frontend.pages.service.service-video-edit');
     }
 }

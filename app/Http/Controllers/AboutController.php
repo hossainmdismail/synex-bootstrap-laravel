@@ -109,6 +109,6 @@ class AboutController extends Controller
                 ]
             ]
         ]);
-        return view('Frontend.pages.about');
+        return view('frontend.pages.about');
     }
 }

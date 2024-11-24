@@ -97,6 +97,6 @@ class PrivacyController extends Controller
 
 
 
-        return view('Frontend.pages.privacy');
+        return view('frontend.pages.privacy');
     }
 }

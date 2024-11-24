@@ -119,7 +119,7 @@ class BlogController extends Controller
             $pagination = $responseData['pagination']; // Pagination data
         }
 
-        return view('Frontend.pages.blogs', [
+        return view('frontend.pages.blogs', [
             'bestBlog' => $bestBlog,
             'latestBlog' => $latestBlog,
             'pagination' => $pagination
@@ -223,7 +223,7 @@ class BlogController extends Controller
 
 
             if ($blog['status'] == 1) {
-                return view('Frontend.pages.blog', [
+                return view('frontend.pages.blog', [
                     'categories' => $category,
                     'content' => $blog['content'],
                     'popuar' => $popuar,

@@ -51,30 +51,6 @@
                                 data-bs-toggle="dropdown" aria-expanded="false"></i>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                 <li>
-                                    <a href="{{ route('service.software') }}">
-                                        <img class="w-40px" alt=""
-                                            data-cfsrc="{{ asset('Frontend/images/Services/management-software.svg') }}"
-                                            style="display:none;visibility:hidden;" /><noscript><img
-                                                src="{{ asset('Frontend/images/Services/management-software.svg') }}"
-                                                class="w-40px" alt="" /></noscript>
-                                        <div class="submenu-icon-content">
-                                            <span>Management Software</span>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="{{ route('service.saas') }}">
-                                        <img class="w-40px" alt=""
-                                            data-cfsrc="{{ asset('Frontend/images/Services/saas.svg') }}"
-                                            style="display:none;visibility:hidden;" /><noscript><img
-                                                src="{{ asset('Frontend/images/Services/saas.svg') }}" class="w-40px"
-                                                alt="" /></noscript>
-                                        <div class="submenu-icon-content">
-                                            <span>Software as a Service (SaaS)</span>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li>
                                     <a href="{{ route('service.web-dev') }}">
                                         <img class="w-40px" alt=""
                                             data-cfsrc="{{ asset('Frontend/images/Services/web-developmnet.svg') }}"
@@ -87,14 +63,14 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="{{ route('service.mobile-app') }}">
+                                    <a href="{{ route('service.uiux') }}">
                                         <img class="w-40px" alt=""
-                                            data-cfsrc="{{ asset('Frontend/images/Services/mobile-ap.svg') }}"
+                                            data-cfsrc="{{ asset('Frontend/images/Services/ui-ux.svg') }}"
                                             style="display:none;visibility:hidden;" /><noscript><img
-                                                src="{{ asset('Frontend/images/Services/mobile-ap.svg') }}"
-                                                class="w-40px" alt="" /></noscript>
+                                                src="{{ asset('Frontend/images/Services/ui-ux.svg') }}" class="w-40px"
+                                                alt="" /></noscript>
                                         <div class="submenu-icon-content">
-                                            <span>Mobile and Apps Development</span>
+                                            <span>UI UX Design</span>
                                         </div>
                                     </a>
                                 </li>
@@ -111,18 +87,45 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="{{ route('service.uiux') }}">
+                                    <a href="{{ route('service.mobile-app') }}">
                                         <img class="w-40px" alt=""
-                                            data-cfsrc="{{ asset('Frontend/images/Services/ui-ux.svg') }}"
+                                            data-cfsrc="{{ asset('Frontend/images/Services/mobile-ap.svg') }}"
                                             style="display:none;visibility:hidden;" /><noscript><img
-                                                src="{{ asset('Frontend/images/Services/ui-ux.svg') }}"
+                                                src="{{ asset('Frontend/images/Services/mobile-ap.svg') }}"
                                                 class="w-40px" alt="" /></noscript>
                                         <div class="submenu-icon-content">
-                                            <span>UI UX Design</span>
+                                            <span>Mobile and Apps Development</span>
                                         </div>
                                     </a>
                                 </li>
                                 <li>
+                                    <a href="{{ route('service.software') }}">
+                                        <img class="w-40px" alt=""
+                                            data-cfsrc="{{ asset('Frontend/images/Services/saas.svg') }}"
+                                            style="display:none;visibility:hidden;" /><noscript><img
+                                                src="{{ asset('Frontend/images/Services/saas.svg') }}" class="w-40px"
+                                                alt="" /></noscript>
+                                        <div class="submenu-icon-content">
+                                            <span>Cloud Solution</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                {{-- <li>
+                                    <a href="{{ route('service.saas') }}">
+                                        <img class="w-40px" alt=""
+                                            data-cfsrc="{{ asset('Frontend/images/Services/saas.svg') }}"
+                                            style="display:none;visibility:hidden;" /><noscript><img
+                                                src="{{ asset('Frontend/images/Services/saas.svg') }}" class="w-40px"
+                                                alt="" /></noscript>
+                                        <div class="submenu-icon-content">
+                                            <span>Software as a Service (SaaS)</span>
+                                        </div>
+                                    </a>
+                                </li> --}}
+
+
+
+                                {{-- <li>
                                     <a href="{{ route('service.graphics-design') }}">
                                         <img class="w-40px" alt=""
                                             data-cfsrc="{{ asset('Frontend/images/Services/graphic.svg') }}"
@@ -145,7 +148,7 @@
                                             <span>Video Editing</span>
                                         </div>
                                     </a>
-                                </li>
+                                </li> --}}
                             </ul>
                         </li>
                         <li class="nav-item"><a href="{{ route('projects') }}" class="nav-link">Projects</a></li>

@@ -9,6 +9,7 @@
     <!-- Google tag (gtag.js) -->
     @include('Frontend.layout.headerLink')
     <link rel="stylesheet" href="{{ asset('Frontend') }}/css/web-agency.css" />
+    @yield('style')
 </head>
 
 <body data-mobile-nav-style="classic" class="background-position-center-top"
@@ -52,11 +53,9 @@
                 <li class="fs-18">Follow us <span
                         class="separator-line-1px w-30px bg-dark-gray d-inline-block align-middle ms-15px"></span>
                 </li>
-                <li><a class="facebook" href="https://www.facebook.com/synexdigital/" target="_blank">Fb.</a> </li>
-                <li><a class="dribbble" href="https://www.linkedin.com/company/synex-digital/" target="_blank">Li.</a>
+                <li><a class="twitter" href="https://www.facebook.com/@synexdigital" target="_blank">Fb.</a></li>
+                <li><a class="behance" href="https://www.linkedin.com/company/synex-digital/" target="_blank">Lin</a>
                 </li>
-                <li><a class="twitter" href="https://www.twitter.com/" target="_blank">Dr.</a></li>
-                <li><a class="behance" href="http://www.behance.com/" target="_blank">Be.</a> </li>
             </ul>
         </div>
     </div>

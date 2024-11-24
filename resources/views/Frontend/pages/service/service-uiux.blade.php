@@ -65,7 +65,7 @@
         <nav class="navbar navbar-expand-lg header-light bg-transparent disable-fixed">
             <div class="container-fluid">
                 <div class="col-auto col-lg-2 me-lg-0 me-auto">
-                    <a class="navbar-brand" href="demo-design-agency.html">
+                    <a class="navbar-brand" href="{{ route('home') }}">
                         <script type="text/javascript" style="display:none">
                             //<![CDATA[
                             window.__mirage2 = {
@@ -104,13 +104,11 @@
                     </button>
                     <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
                         <ul class="navbar-nav text-uppercase">
-                            <li class="nav-item"><a href="demo-design-agency.html" class="nav-link">Home</a></li>
-                            <li class="nav-item"><a href="demo-design-agency-about.html" class="nav-link">Agency</a>
+                            <li class="nav-item"><a href="#services" class="nav-link">Services</a>
                             </li>
-                            <li class="nav-item"><a href="demo-design-agency-work.html" class="nav-link">Work</a></li>
-                            <li class="nav-item"><a href="demo-design-agency-expertise.html"
-                                    class="nav-link">Expertise</a></li>
-                            <li class="nav-item"><a href="demo-design-agency-contact.html" class="nav-link">Contact</a>
+                            <li class="nav-item"><a href="#work" class="nav-link">Work</a></li>
+                            <li class="nav-item"><a href="#expertise" class="nav-link">Expertise</a></li>
+                            <li class="nav-item"><a href="{{ route('contact') }}" class="nav-link">Contact</a>
                             </li>
                         </ul>
                     </div>
@@ -118,7 +116,7 @@
                 <div class="col-auto col-lg-2 text-end">
                     <div class="header-icon">
                         <div class="header-button">
-                            <a href="demo-design-agency-contact.html"
+                            <a href="{{ route('contact') }}"
                                 class="btn btn-link btn-hover-animation-switch btn-large text-dark-gray fw-700 section-link">
                                 <span>
                                     <span class="btn-text">Get a quote</span>
@@ -190,7 +188,8 @@
                             <div class="fs-18 lh-32 mb-40px w-90 md-w-100 lg-mb-30px">Our long experience and design
                                 sagacity help us spot essential things while selecting a design that business owners
                                 often miss.</div>
-                            <a href="#" class="btn btn-dark-gray btn-large btn-switch-text btn-box-shadow">
+                            <a href="{{ route('contact') }}"
+                                class="btn btn-dark-gray btn-large btn-switch-text btn-box-shadow">
                                 <span>
                                     <span class="btn-double-text" data-text="Let's talk - Send a message">Let's talk -
                                         Send a message</span>
@@ -281,7 +280,7 @@
         </section> --}}
         <!-- end section -->
         <!-- start section -->
-        <section class="pb-0">
+        <section class="pb-0" id="services">
             <div class="container">
                 <div class="row row-cols-1 row-cols-lg-3 row-cols-md-2 justify-content-center g-0"
                     data-anime='{ "opacity": [0,1], "duration": 600, "delay":0, "staggervalue": 300, "easing": "easeOutQuad" }'>
@@ -411,7 +410,7 @@
         <!-- end section -->
 
         <!-- start page title -->
-        <section
+        <section id="work"
             class="page-title-separate-breadcrumbs big-section position-relative ipad-top-space-margin overflow-hidden">
             <div id="particles-style-01" class="position-absolute h-100 top-0 left-0 w-100 z-index-minus-1"
                 data-particle="true"
@@ -657,7 +656,7 @@
         </section>
 
         <!-- start section -->
-        <section class="pt-0 overflow-hidden">
+        <section class="pt-0 overflow-hidden" id="expertise">
             <div class="container">
                 <div class="row mb-5">
                     <div class="col-12 col-lg-6 text-center text-lg-start align-self-end"
@@ -739,7 +738,7 @@
                     data-anime='{ "el": "childs", "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay":0, "staggervalue": 300, "easing": "easeOutQuad" }'>
                     <div class="col-12 col-xl-12 col-lg-10 text-center">
                         <h3 class="alt-font text-dark-gray d-inline-block align-middle text-uppercase mb-0">Let's make
-                            something great work together. <a href="demo-design-agency-contact.html"
+                            something great work together. <a href="{{ route('contact') }}"
                                 class="text-dark-gray text-decoration-line-bottom-thick">Start a project</a></h3>
                     </div>
                 </div>
@@ -773,9 +772,10 @@
                 <div class="row">
                     <div class="col-12 col-lg-4 md-mb-35px text-center text-lg-start">
                         <p class="w-75 mb-40px md-mb-25px lg-w-90 md-w-100">We combine human empathy and intelligent
-                            data to provide the <a href="#"
+                            data to provide the <a href="#work"
                                 class="text-white text-decoration-line-bottom">highest level of satisfaction.</a></p>
-                        <a href="#" class="btn btn-medium btn-switch-text btn-base-color btn-box-shadow fw-700">
+                        <a href="{{ route('contact') }}"
+                            class="btn btn-medium btn-switch-text btn-base-color btn-box-shadow fw-700">
                             <span>
                                 <span class="btn-double-text" data-text="Let's talk now">Let's talk now</span>
                                 <span><img src="{{ asset('Frontend/images/svg/arrow-right.svg') }}"
@@ -931,11 +931,10 @@
                                 <div class="d-flex justify-content-sm-start justify-content-center">
                                     <!-- start slider navigation -->
                                     <div class="slider-one-slide-prev-1 text-dark-gray swiper-button-prev slider-navigation-style-04 bg-light-medium-gray h-65px w-65px"
-                                        tabindex="0" role="button" aria-label="Previous slide"><i
-                                            class="fa-solid fa-arrow-left"></i></div>
+                                        tabindex="0" role="button" aria-label="Previous slide">◄</div>
                                     <div class="slider-one-slide-next-1 text-dark-gray swiper-button-next slider-navigation-style-04 bg-light-medium-gray h-65px w-65px"
-                                        tabindex="0" role="button" aria-label="Next slide"><i
-                                            class="fa-solid fa-arrow-right"></i></div>
+                                        tabindex="0" role="button" aria-label="Next slide">
+                                        ►</div>
                                     <!-- end slider navigation -->
                                 </div>
                             </div>
@@ -946,11 +945,7 @@
                                     <div class="text-center">
                                         <div
                                             class="bg-base-color text-white border-radius-30px ps-20px pe-20px fs-14 ls-minus-1px">
-                                            <i class="bi bi-star-fill"></i>
-                                            <i class="bi bi-star-fill"></i>
-                                            <i class="bi bi-star-fill"></i>
-                                            <i class="bi bi-star-fill"></i>
-                                            <i class="bi bi-star-fill"></i>
+                                            ★★★★★
                                         </div>
                                         <span class="text-dark-gray fs-13 fw-700 text-uppercase">Clutch review</span>
                                     </div>
@@ -976,7 +971,7 @@
         <div class="container">
             <div class="row align-items-end mb-9">
                 <div class="col-lg-2 md-mb-15px text-center text-md-start">
-                    <a href="demo-design-agency.html" class="footer-logo">
+                    <a href="{{ route('home') }}" class="footer-logo">
                         <img data-at2x="images/demo-design-agency-footer-logo-black@2x.png" alt=""
                             data-cfsrc="images/demo-design-agency-footer-logo-black.png"
                             style="display:none;visibility:hidden;"><noscript><img
@@ -987,41 +982,39 @@
                 </div>
                 <div class="col-xl-4 col-lg-5 col-md-6 offset-lg-1 text-center text-md-start sm-mb-25px">
                     <span
-                        class="fw-600 text-decoration-line-bottom-medium fs-22 text-dark-gray w-90 xl-w-95 sm-w-100 ls-minus-05px">Crafto
+                        class="fw-600 text-decoration-line-bottom-medium fs-22 text-dark-gray w-90 xl-w-95 sm-w-100 ls-minus-05px">Synex
                         is a global design studio.</span>
                     <span class="fs-22 text-dark-gray w-90 xl-w-95 sm-w-100 ls-minus-05px d-block mt-5px">We create
                         design and brands that help companies grow.</span>
                 </div>
                 <div class="col-lg-2 col-md-3 col-sm-6 offset-xl-1 text-center text-md-start">
                     <ul class="fs-20 ls-minus-05px fw-600 sm-mb-5px">
-                        <li><a href="demo-design-agency-about.html">Agency</a></li>
-                        <li><a href="demo-design-agency-work.html">Projects</a></li>
-                        <li><a href="demo-design-agency-expertise.html">Expertise</a></li>
-                        <li><a href="demo-design-agency-contact.html">Contact</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#work">Work</a></li>
+                        <li><a href="#expertise">Expertise</a></li>
+                        <li><a href="{{ route('contact') }}">Contact</a></li>
+
                     </ul>
                 </div>
                 <div class="col-lg-2 col-md-3 col-sm-6 text-center text-md-start">
                     <ul class="fs-20 ls-minus-05px fw-600">
-                        <li><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
-                        <li><a href="http://www.dribbble.com/" target="_blank">Dribbble</a></li>
-                        <li><a href="http://www.behance.com/" target="_blank">Behance</a></li>
-                        <li><a href="http://www.linkedin.com/" target="_blank">Linkedin</a></li>
+                        <li><a href="https://www.facebook.com/@synexdigital" target="_blank">Facebook</a></li>
+                        <li><a href="https://www.linkedin.com/company/synex-digital/" target="_blank">Linkedin</a>
+                        </li>
                     </ul>
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-8 text-center text-lg-start md-mb-15px">
                     <ul class="list-style-05 text-dark-gray fs-18 fw-600">
-                        <li>LDN</li>
-                        <li>NYC</li>
-                        <li>SYD</li>
-                        <li>DXB</li>
-                        <li>SGP</li>
-                        <li>AHM</li>
+                        <li>BUILD</li>
+                        <li>CREATE</li>
+                        <li>PROLONG</li>
                     </ul>
                 </div>
                 <div class="col-lg-4 text-center text-lg-start">
-                    <span class="text-dark-gray ls-minus-05px">&copy; 2024 Crafto. <span class="fw-600">The design
+                    <span class="text-dark-gray ls-minus-05px">&copy; 2024 Synex Digital. <span class="fw-600">The
+                            design
                             agency</span></span>
                 </div>
             </div>

@@ -8,8 +8,8 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <meta name="description"
         content="Elevate your online presence with Crafto - a modern, versatile, multipurpose Bootstrap 5 responsive HTML5, SCSS template using highly creative 52+ ready demos.">
-    @include('frontend.layout.headerlink')
-    <link rel="stylesheet" href="{{ asset('frontend/css/hosting.css') }}" />
+    @include('Frontend.layout.headerlink')
+    <link rel="stylesheet" href="{{ asset('Frontend/css/hosting.css') }}" />
 </head>
 
 <body data-mobile-nav-style="full-screen-menu" data-mobile-nav-bg-color="">

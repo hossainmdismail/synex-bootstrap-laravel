@@ -11,7 +11,7 @@
     <link rel="apple-touch-icon" href="{{ asset('Frontend/images/icons/fav-low.png') }}">
     <link rel="apple-touch-icon" sizes="72x72" href="{{ asset('Frontend/images/icons/fav-low.png') }}">
     <link rel="apple-touch-icon" sizes="114x114" href="{{ asset('Frontend/images/icons/fav-low.png') }}">
-    @include('frontend.layout.headerlink')
+    @include('Frontend.layout.headerlink')
     <link rel="stylesheet" href="{{ asset('Frontend/css/marketing.css') }}" />
 </head>
 

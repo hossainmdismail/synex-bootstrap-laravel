@@ -1,4 +1,4 @@
-@extends('Frontend.layout.app')
+@extends('frontend.layout.app')
 
 @section('content')
     <section class="container py-4 py-md-5 page-404">

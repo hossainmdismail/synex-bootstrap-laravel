@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <meta name="description"
         content="Elevate your online presence with Crafto - a modern, versatile, multipurpose Bootstrap 5 responsive HTML5, SCSS template using highly creative 52+ ready demos.">
-    @include('Frontend.layout.headerlink')
+    @include('frontend.layout.headerlink')
     <link rel="stylesheet" href="{{ asset('Frontend/css/hosting.css') }}" />
 </head>
 
@@ -768,7 +768,7 @@
     </div>
     <!-- end scroll progress -->
     <!-- javascript libraries -->
-    @include('Frontend.layout.footerLink')
+    @include('frontend.layout.footerLink')
 </body>
 
 </html>

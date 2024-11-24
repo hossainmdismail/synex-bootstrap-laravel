@@ -1,4 +1,4 @@
-@extends('Frontend.layout.app')
+@extends('frontend.layout.app')
 @section('content')
     <!-- Privacy Policy Section -->
     <section id="privacy-policy" class="container my-5">

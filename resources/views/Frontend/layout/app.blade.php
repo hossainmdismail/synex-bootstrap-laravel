@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
     <!-- Google tag (gtag.js) -->
-    @include('Frontend.layout.headerlink')
+    @include('frontend.layout.headerlink')
     <link rel="stylesheet" href="{{ asset('Frontend') }}/css/web-agency.css" />
     @yield('style')
 </head>
@@ -16,10 +16,10 @@
     style="background-image: url({{ asset('Frontend/images/vertical-line-bg-small-medium-gray.svg') }})">
 
     {{-- Header --}}
-    @include('Frontend.layout.header')
+    @include('frontend.layout.header')
     @yield('content')
     {{-- Footer --}}
-    @include('Frontend.layout.footer')
+    @include('frontend.layout.footer')
     <!-- start subscription popup -->
     {{-- <div id="subscribe-popup" class="mfp-hide subscribe-popup">
         <div class="container">
@@ -65,7 +65,7 @@
                     class="scroll-point"></span></span>
         </a>
     </div>
-    @include('Frontend.layout.footerLink')
+    @include('frontend.layout.footerLink')
 </body>
 
 </html>

@@ -1,4 +1,4 @@
-@extends('Frontend.layout.app')
+@extends('frontend.layout.app')
 @section('content')
     @php
         $items = [
@@ -34,7 +34,7 @@
             ],
         ];
     @endphp
-    @include('Frontend.layout.calendly')
+    @include('frontend.layout.calendly')
 
     <section class="container-fluid py-5 service-page sp-img-6 overflow-hidden"
         style="background-image: url({{ asset('Frontend/images/Services/srb-6.webp') }})">

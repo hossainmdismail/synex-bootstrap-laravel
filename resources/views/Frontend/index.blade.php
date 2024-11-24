@@ -1,4 +1,4 @@
-@extends('Frontend.layout.app')
+@extends('frontend.layout.app')
 
 @section('content')
     <!-- start banner -->
@@ -87,7 +87,8 @@
                         data-top-bottom="transform:scale(1, 1)">
                         <img alt="synex digital" data-cfsrc="{{ asset('Frontend/images/demo-web-agency-01.jpg') }}"
                             style="display:none;visibility:hidden;" /><noscript><img
-                                src="{{ asset('Frontend/images/demo-web-agency-01.jpg') }}" alt="synex digital" /></noscript>
+                                src="{{ asset('Frontend/images/demo-web-agency-01.jpg') }}"
+                                alt="synex digital" /></noscript>
                     </div>
                 </div>
                 <div class="col-lg-5 offset-lg-1 z-index-9 md-mt-35px"
@@ -102,7 +103,7 @@
                         IT
                         solutions reflect our dedication to excellence. We are your one-stop technological solution
                         supplier, meeting your business's particular demands with precision and competence.</p>
-                    <a href="{{route('projects')}}"
+                    <a href="{{ route('projects') }}"
                         class="btn btn-large btn-expand-ltr text-dark-gray btn-rounded fw-700"><span
                             class="bg-base-color"></span>Explore Our Portfolio</a>
                     <div
@@ -134,7 +135,8 @@
                     <div class="position-relative pb-60px last-paragraph-no-margin">
                         <p class="lh-30 w-90 sm-w-100">ERP Development, CRM Development, Project Management
                             Software, Business Intelligence Software.</p>
-                        <a class="hover-content d-flex justify-content-center align-items-center icon-box w-45px h-45px rounded-circle bg-base-color border-2">→</a>
+                        <a
+                            class="hover-content d-flex justify-content-center align-items-center icon-box w-45px h-45px rounded-circle bg-base-color border-2">→</a>
                     </div>
                 </div>
                 <!-- end process step item -->
@@ -151,7 +153,8 @@
                     <div class="position-relative pb-60px last-paragraph-no-margin">
                         <p class="lh-30 w-90 sm-w-100">SaaS Application Development, Product Design, Maintenance
                             and Support.</p>
-                        <a class="hover-content d-flex justify-content-center align-items-center icon-box w-45px h-45px rounded-circle bg-base-color border-2">→</a>
+                        <a
+                            class="hover-content d-flex justify-content-center align-items-center icon-box w-45px h-45px rounded-circle bg-base-color border-2">→</a>
                     </div>
                 </div>
                 <!-- end process step item -->
@@ -232,7 +235,8 @@
                     <div class="position-relative pb-60px last-paragraph-no-margin">
                         <p class="lh-30 w-90 sm-w-100">Branding and Identity, Print Design, Digital Design,
                             Illustration, 3D Design.</p>
-                        <a class="hover-content d-flex justify-content-center align-items-center icon-box w-45px h-45px rounded-circle bg-base-color border-2">→</a>
+                        <a
+                            class="hover-content d-flex justify-content-center align-items-center icon-box w-45px h-45px rounded-circle bg-base-color border-2">→</a>
                     </div>
                 </div>
                 <!-- end process step item -->
@@ -300,8 +304,7 @@
                                 <div class="portfolio-box" data-bottom-top="transform: translateY(40px)"
                                     data-top-bottom="transform: translateY(-40px)">
                                     <div class="portfolio-image bg-medium-gray border-radius-6px">
-                                        <a><img alt="synex digital"
-                                                data-cfsrc="{{ $project['image'] }}"
+                                        <a><img alt="synex digital" data-cfsrc="{{ $project['image'] }}"
                                                 style="display:none;visibility:hidden;" /><noscript><img
                                                     src="{{ $project['image'] }}" alt="synex digital" /></noscript></a>
                                     </div>
@@ -346,7 +349,8 @@
                         <div class="col-2 text-center align-self-center">
                             <span class="text-dark-gray fs-14 fw-600">1X</span>
                         </div>
-                        <div class="col-8 last-paragraph-no-margin ps-30px pe-30px pt-15px pb-15px border-start border-color-dark-gray">
+                        <div
+                            class="col-8 last-paragraph-no-margin ps-30px pe-30px pt-15px pb-15px border-start border-color-dark-gray">
                             <p class="ls-minus-05px">Creative IT - <span class="fw-600 text-dark-gray">Success Meetup
                                     Awards</span></p>
                         </div>
@@ -358,7 +362,8 @@
                         <div class="col-2 text-center align-self-center">
                             <span class="text-dark-gray fs-14 fw-600">3X</span>
                         </div>
-                        <div class="col-8 last-paragraph-no-margin ps-30px pe-30px pt-15px pb-15px border-start border-color-dark-gray">
+                        <div
+                            class="col-8 last-paragraph-no-margin ps-30px pe-30px pt-15px pb-15px border-start border-color-dark-gray">
                             <p class="ls-minus-05px">Site of the day - <span class="fw-600 text-dark-gray">The
                                     portfolio</span></p>
                         </div>
@@ -368,7 +373,10 @@
                     </div>
                     <div class="row row-cols-2 row-cols-sm-3 align-items-center mt-50px sm-mt-40px justify-content-center">
                         <div class="col xs-mb-30px">
-                            <a><img alt="synex digital" data-cfsrc="{{ asset('Frontend/images/brand/cit.png') }}" style="display:none;visibility:hidden;" /><noscript><img src="{{ asset('Frontend/images/brand/cit.png') }}" alt="synex digital" /></noscript></a>
+                            <a><img alt="synex digital" data-cfsrc="{{ asset('Frontend/images/brand/cit.png') }}"
+                                    style="display:none;visibility:hidden;" /><noscript><img
+                                        src="{{ asset('Frontend/images/brand/cit.png') }}"
+                                        alt="synex digital" /></noscript></a>
                         </div>
                         <div class="col xs-mb-30px">
                             <a><img alt="synex digital"
@@ -410,10 +418,12 @@
                     </div>
                     <div class="d-flex md-mb-25px">
                         <div
-                            class="slider-one-slide-prev-1 bg-sherpa-blue text-white swiper-button-prev slider-navigation-style-04 w-60px h-60px">◄
+                            class="slider-one-slide-prev-1 bg-sherpa-blue text-white swiper-button-prev slider-navigation-style-04 w-60px h-60px">
+                            ◄
                         </div>
                         <div
-                            class="slider-one-slide-next-1 bg-sherpa-blue text-white swiper-button-next slider-navigation-style-04 w-60px h-60px">►
+                            class="slider-one-slide-next-1 bg-sherpa-blue text-white swiper-button-next slider-navigation-style-04 w-60px h-60px">
+                            ►
                         </div>
                     </div>
                 </div>
@@ -476,12 +486,14 @@
                 <!-- end client item -->
                 <!-- start client item -->
                 <div class="col client-box text-center md-mb-40px">
-                    <a><img src="{{ asset('Frontend/images/brand/meta_PNG7.png') }}" class="h-35px" alt="synex digital"></a>
+                    <a><img src="{{ asset('Frontend/images/brand/meta_PNG7.png') }}" class="h-35px"
+                            alt="synex digital"></a>
                 </div>
                 <!-- end client item -->
                 <!-- start client item -->
                 <div class="col client-box text-center sm-mb-40px">
-                    <a><img src="{{ asset('Frontend/images/brand/stripe.png') }}" class="h-35px" alt="synex digital"></a>
+                    <a><img src="{{ asset('Frontend/images/brand/stripe.png') }}" class="h-35px"
+                            alt="synex digital"></a>
                 </div>
                 <!-- end client item -->
                 <!-- start client item -->
@@ -527,8 +539,8 @@
                                         <div class="card-body p-0 pt-30px sm-pt-20px lg-pb-20px">
                                             <span class="fs-14 text-uppercase d-block mb-5px fw-500"><a
                                                     href="{{ route('blog.view', $blog['slug']) }}"
-                                                    class="text-dark-gray text-dark-gray-hover fw-500 categories-text" style="font-size: 13px">{{ $blog['author'] }}</a>👁<a
-                                                    href="#"
+                                                    class="text-dark-gray text-dark-gray-hover fw-500 categories-text"
+                                                    style="font-size: 13px">{{ $blog['author'] }}</a>👁<a href="#"
                                                     class="blog-date text-medium-gray-hover">{{ $blog['view'] }}</a></span>
                                             <a href="{{ route('blog.view', $blog['slug']) }}"
                                                 class="card-title fw-600 fs-17 lh-28 text-dark-gray text-dark-gray-hover d-inline-block w-95 sm-w-100">{{ $blog['title'] }}</a>

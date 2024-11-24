@@ -31,7 +31,7 @@ class HomeController extends Controller
             $blog = $blogResponse->json();
         }
 
-        return view('frontend.new', [
+        return view('Frontend.new', [
             'projects'  => $project,
             'blogs'      => $blog,
         ]);
@@ -148,7 +148,7 @@ class HomeController extends Controller
             $blog = $blogResponse->json();
         }
 
-        return view('frontend.index', [
+        return view('Frontend.index', [
             'projects'  => $project,
             'blogs'      => $blog,
         ]);
@@ -245,7 +245,7 @@ class HomeController extends Controller
         ]);
 
 
-        return view('frontend.pages.contact');
+        return view('Frontend.pages.contact');
     }
     public function thanks()
     {
@@ -329,6 +329,6 @@ class HomeController extends Controller
             ]
         ]);
 
-        return view('frontend.pages.thankyou');
+        return view('Frontend.pages.thankyou');
     }
 }
